@@ -1,4 +1,6 @@
--- Run LOAD spatial in each new connection before spatial queries.
+-- First installation needs internet; existing matching-version installations
+-- are reused offline. See docs/standalone_sql.md for read-only connection setup.
+INSTALL spatial;
 LOAD spatial;
 SELECT * FROM dc_augmentation_coverage;
 

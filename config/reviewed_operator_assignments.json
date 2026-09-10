@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-10",
+  "source_snapshot": {
+    "file": "data/raw/ev_20251216.csv",
+    "sha256": "43970e7751b951ab459a1be7bfd6141756c60ff8aa797debf11c5a597109865a"
+  },
+  "external_snapshot": {
+    "file": "data/raw/ocm_reference.json",
+    "sha256": "71c7ea6f70e8f360ff13cc64ada578d07c05af0bf9e92b5efeda591ff695f7e8"
+  },
+  "reviews": [
+    {
+      "review_id": "operator_counties_richmond_pending_20260910",
+      "record_id": "r_2de8112d918bc8ace5e3",
+      "source_row": 1620,
+      "expected_raw_source": {
+        "OBJECTID": "",
+        "Station_name": "",
+        "Station_address": "59 Lennox St, Richmond, 2753",
+        "Operator": "Counties Energy",
+        "Number_of_plugs": "2",
+        "Charger_Type": "AC",
+        "Charger_rating": "22 kW",
+        "Latitude": "-33.60129234",
+        "Longitude": "150.7534484",
+        "LGANAME": "Hawkesbury City Council",
+        "PCODE": "2753",
+        "Source": "Existing Destination Chargers"
+      },
+      "ocm_operator_id": 3547,
+      "ocm_operator_title": "Counties Energy",
+      "attribute": "operator_website",
+      "value": "https://www.countiesenergy.co.nz/articles/ev-charging",
+      "decision": "withheld_pending_identity_review",
+      "reason": "The TfNSW Richmond AC record and the OCM operator lookup share the Counties Energy name. Neither pinned source establishes that this NSW location is operated by the lookup entity. Retain the original operator label and candidate evidence, but withhold this location-to-operator website assignment pending site-specific corroboration. A New Zealand website alone does not prove a wrong entity; no replacement operator is inferred."
+    }
+  ]
+}

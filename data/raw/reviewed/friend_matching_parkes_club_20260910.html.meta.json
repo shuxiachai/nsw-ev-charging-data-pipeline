@@ -1,0 +1,11 @@
+{
+  "url": "https://parkesservicesclub.com.au/",
+  "resolved_url": "https://parkesservicesclub.com.au/",
+  "retrieved_at_utc": "2026-09-10T09:40:49.268363+00:00",
+  "sha256": "ebf83d918e1999bf8bd2920b70a99c0a1eeea8ac315ce4be602839cecb307806",
+  "bytes": 280647,
+  "method": "GET",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "capture_method": "complete_http_response_body"
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.planningportal.nsw.gov.au/daex/determined/179-183-hume-street-goulburn-construction-and-operation-20-space-ev-charging-car-park",
+  "resolved_url": "https://www.planningportal.nsw.gov.au/daex/determined/179-183-hume-street-goulburn-construction-and-operation-20-space-ev-charging-car-park",
+  "retrieved_at_utc": "2026-09-10T09:40:49.271374+00:00",
+  "sha256": "6bdbc80971d50d3325c5ff0dbeb70fdfdc17fdf24c051b50093d33ac0e070b4c",
+  "bytes": 23545,
+  "method": "GET",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "capture_method": "complete_http_response_body"
+}

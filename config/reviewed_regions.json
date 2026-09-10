@@ -155,6 +155,27 @@
       "sha256": "a868a432616570c931e53d0cff4539a0a38c1efb414e33288333531d5d8fc46e",
       "bytes": 69834,
       "retrieved_at_utc": "2026-09-09T04:24:28.845149+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_new_italy_locality_20260910.geojson",
+      "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname+%3D+%27NEW+ITALY%27&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson",
+      "sha256": "b556dd6543a6779e3fe3f33eca159d4b414ee74f0c5dcfb0e4b8e1ef9e2678c6",
+      "bytes": 10678,
+      "retrieved_at_utc": "2026-09-10T09:32:34.453293+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_new_italy_museum_20260910.html",
+      "url": "https://www.newitaly.org.au/",
+      "sha256": "798ff078e59ec2d7a4c358c725854d2dd4b7dd857412db128a9b95723f6e4aa9",
+      "bytes": 138500,
+      "retrieved_at_utc": "2026-09-10T09:33:02.008486+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_new_italy_council_20260910.html",
+      "url": "https://richmondvalley.nsw.gov.au/building-and-planning-services/da-tracker-misc-registers/statement-of-reasons/statement-of-reasons-2020/",
+      "sha256": "9238c9e3547cec952e4d93386020ae8542e19296171179f970689187be9aab4a",
+      "bytes": 289209,
+      "retrieved_at_utc": "2026-09-10T09:32:36.141109+00:00"
     }
   ],
   "source_csv_file": "data/raw/ev_20251216.csv",
@@ -788,6 +809,101 @@
         "zip": "2567"
       },
       "reason": "The operator public map JSON uniquely identifies site 3525 as Narellan Town Centre at Camden Valley Way & Somerset Avenue, Narellan NSW 2567, matching the source intersection after formatting-only Avenue/Ave normalization. Complete property-owner pages connect Somerset and Queen Street entries with the same centre and identify the Evie South Side charging area. The entire official Narellan locality lies in exactly SA4 123. Both the original and operator map points lie within this locality but differ at bay precision; neither is declared surveyed or substituted. Postcode 2022 and the original coordinate conflict are retained. This regional review supplies neither new augmentation links nor live availability/hardware claims."
+    },
+    {
+      "review_id": "RR_NEW_ITALY_20260910",
+      "review_date": "2026-09-10",
+      "record_id": "r_b8849ef769b7c91abce5",
+      "expected_source": {
+        "source_row": 1711,
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "8275 Pacific Hwy, New Italy NSW 2472",
+          "Operator": "Tesla",
+          "Number_of_plugs": "12",
+          "Charger_Type": "DC",
+          "Charger_rating": "175 kW",
+          "Latitude": "-30.8015492",
+          "Longitude": "152.8689544",
+          "LGANAME": "Richmond Valley Council",
+          "PCODE": "2472",
+          "Source": "Fast Charging R1"
+        }
+      },
+      "expected_location": {
+        "address_postcode": "2472",
+        "original_postcode": "2472",
+        "original_latitude": -30.8015492,
+        "operator_name": "Tesla",
+        "sa4_code": "108",
+        "location_id": "l_2a84bd360ea3fa78f784",
+        "original_longitude": 152.8689544,
+        "address": "8275 Pacific Hwy, New Italy NSW 2472",
+        "postcode": "2472",
+        "latitude": -30.8015492,
+        "original_address_conflict": false,
+        "longitude": 152.8689544,
+        "address_conflict": true
+      },
+      "locality_source_file": "data/raw/reviewed/regional_new_italy_locality_20260910.geojson",
+      "locality_name": "NEW ITALY",
+      "locality_object_id": 27006,
+      "locality_postcode": "2472",
+      "expected_sa4_code": "112",
+      "operator_kind": "venue_address_page",
+      "operator_name": "Tesla",
+      "operator_source_file": "data/raw/reviewed/regional_new_italy_museum_20260910.html",
+      "operator_element_id": "Historic New Italy: EV charging area",
+      "venue_host": "www.newitaly.org.au",
+      "council_host": "richmondvalley.nsw.gov.au",
+      "council_source_file": "data/raw/reviewed/regional_new_italy_council_20260910.html",
+      "council_record_id": "DA2021/0125",
+      "council_address": "8275 Pacific Highway, New Italy",
+      "venue_name": "New Italy Museum",
+      "venue_required_text": [
+        "Tesla Supercharger station at Historic New Italy",
+        "Historic New Italy 8275 Pacific Highway Woodburn NSW 2472",
+        "New Italy Museum"
+      ],
+      "geographic_conflict": {
+        "minimum_distance_m": 1000,
+        "maximum_distance_m": 250000
+      },
+      "reason": "The source postcode and address postcode both equal 2472, so postcode comparison did not detect the displaced point. The complete official NEW ITALY locality is wholly in SA4 112 and the unchanged source point is about 186 km outside it. The museum's own page identifies its Tesla charging station and 8275 Pacific Highway, using Woodburn as postal town. The council's unique DA2021/0125 row ties that same museum and street number to New Italy. Flag the current location as geographically conflicted, while preserving the original false postcode-conflict result, all original coordinates, equipment observations and the DC denominator. This is regional-only evidence; it supplies no surveyed bay coordinate or new augmentation match.",
+      "evidence": [
+        {
+          "source_file": "data/raw/ev_20251216.csv",
+          "role": "source_record",
+          "locator": "source_row=1711; complete original 12-column record"
+        },
+        {
+          "source_file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+          "role": "statistical_boundary",
+          "locator": "Complete NSW 2026 SA4 polygons; full locality covered only by SA4 112"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+          "role": "layer_definition",
+          "locator": "Suburb layer 2; polygon geometry; EPSG:7844"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_new_italy_locality_20260910.geojson",
+          "role": "locality_boundary",
+          "locator": "Unique suburbname NEW ITALY, OBJECTID 27006, postcode 2472; complete GDA2020 geometry"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_new_italy_museum_20260910.html",
+          "role": "venue_charging_statement",
+          "locator": "Visible EV charging statement and location section: Tesla Supercharger at Historic New Italy; 8275 Pacific Highway; Woodburn postal town"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_new_italy_council_20260910.html",
+          "role": "venue_address",
+          "locator": "Unique table row DA2021/0125: New Italy Museum, 8275 Pacific Highway, New Italy"
+        }
+      ],
+      "venue_street_address": "8275 Pacific Highway"
     }
   ]
 }

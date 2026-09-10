@@ -1,6 +1,6 @@
 {
-  "completed_at_utc": "2026-09-10T07:50:14.379135+00:00",
+  "completed_at_utc": "2026-09-10T09:52:55.235996+00:00",
   "duckdb_version": "1.5.5",
-  "input_snapshots": 1403,
+  "input_snapshots": 1410,
   "database": "data/processed/ev_chargers.duckdb"
 }

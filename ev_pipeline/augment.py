@@ -12,6 +12,7 @@ from .acquire import RAW
 from .clean import operator, text
 from .matching_review import load_address_exceptions
 from .augmentation_semantics import classify_url_attribute, operator_website_hosts, source_verified_at
+from .operator_review import load_operator_reviews, usable_operator_details
 
 GEOD = Geod(ellps="WGS84")
 EMPTY_OPS = {"", "(unknown operator)", "(business owner at location)", "(non-networked)", "non-networked"}
@@ -249,10 +250,11 @@ def match_sites(locations, records, sites, *, address_exceptions=None):
 
 
 def operator_details(locations, reference):
-    """Exact canonical operator-name mapping, with country-specific aliases.
+    """Lookup candidates using canonical names and documented regional aliases.
 
-    These are operator-level attributes. They never prove an individual site's
-    connectors, price, access, or current operational status.
+    A shared name is not independent proof of a site's operator identity.
+    Reviewed assignments are withheld before these candidates are propagated.
+    Operator attributes never prove site equipment, prices or current status.
     """
     rows = []
     for name in sorted(locations.operator_name.unique()):
@@ -270,11 +272,13 @@ def operator_details(locations, reference):
     return pd.DataFrame(rows, columns=["operator_name", "ocm_operator_id", "ocm_operator_title", "attribute", "value", "scope", "method", "source_file"])
 
 
-def augment(locations, records):
+def augment(locations, records, *, issues=None):
     sites, connections, ref = external_data()
     exceptions = load_address_exceptions(locations, records, sites)
     matches, audit = match_sites(locations, records, sites, address_exceptions=exceptions)
     details = operator_details(locations, ref)
+    operator_reviews = load_operator_reviews(locations, records, ref)
+    details = usable_operator_details(locations, details, operator_reviews)
     website_hosts = operator_website_hosts(details)
     rows = []
     by_site = sites.set_index("ocm_id")
@@ -298,7 +302,11 @@ def augment(locations, records):
                              "method": "coordinate_operator_address_match"})
     for l in locations.itertuples():
         for d in details[details.operator_name == l.operator_name].itertuples():
+            if (l.location_id, int(d.ocm_operator_id), d.attribute, d.value) in operator_reviews:
+                continue
             rows.append({"location_id": l.location_id, "attribute": d.attribute, "value": d.value, "scope": "operator",
                          "ocm_id": None, "ocm_operator_id": d.ocm_operator_id, "source_file": d.source_file, "method": d.method})
     attributes = pd.DataFrame(rows, columns=["location_id", "attribute", "value", "scope", "ocm_id", "ocm_operator_id", "source_file", "method"])
+    if issues is not None:
+        issues.extend(operator_reviews.values())
     return sites, connections, matches, audit, details, attributes

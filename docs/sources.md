@@ -70,7 +70,9 @@ property-register web extract was a research lead, not applied evidence. See
 elements, page locators, decisions and safeguards. Public availability does not
 establish a blanket reuse license for these council/operator originals; retain
 their publisher information and notices. The final build applies 11 automatic
-and seven reviewed resolutions; seven source-location conflicts remain explicit.
+and seven reviewed resolutions; seven postal conflicts remain explicit. The
+later New Italy geographic review adds an eighth point conflict, separately
+from this original postcode-based queue.
 
 ## Additional originals for reviewed regional assignments
 
@@ -316,3 +318,23 @@ not claim a complete new live download of every dynamic provider.
 No APIs that charge per request are used. No emails or messages were sent to data
 publishers. A successful automated source match is not an operator certification
 of current data accuracy.
+
+## New Italy locality evidence and matching follow-up on 10 September
+
+The New Italy regional review adds three complete originals: the NSW Spatial
+Services NEW ITALY polygon query, the New Italy Museum's own homepage and the
+Richmond Valley Council 2020 statement-of-reasons table. Exact URLs, capture
+times, lengths and SHA-256 values are in the adjacent manifests for
+`data/raw/reviewed/regional_new_italy_*_20260910.*` and in `source_snapshot`.
+The museum's Tesla charging statement is venue evidence; the city decision
+DA2021/0125 connects its street address to the legal New Italy locality. The
+museum's Woodburn postal town is not used to replace that locality. Neither
+page supplies a surveyed bay coordinate. The original false postcode-conflict
+result is preserved while an additional geographic conflict is flagged.
+See [the current decision and safeguards](friend_review_actions_20260910.md).
+
+Additional complete planning and venue originals used for the three priority
+OSM matching reviews are listed in
+[the targeted matching follow-up](friend_matching_followup_20260910.md).
+These September captures add evidence context, not historical station attributes
+or new accepted matches. A planning approval alone is not proof of operation.

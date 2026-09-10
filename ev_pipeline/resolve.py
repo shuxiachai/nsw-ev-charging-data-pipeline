@@ -107,7 +107,7 @@ def resolve_conflicts(records, issues):
         t = e["tags"]
         p = e if e["type"] == "node" else e["center"]
         osm.append({"osm_id": f"{e['type']}/{e['id']}", "operator": operator(t.get("operator") or t.get("brand") or t.get("network")),
-                    "lat": p["lat"], "lon": p["lon"]})
+                    "lat": p["lat"], "lon": p["lon"], "tags": t})
     audit = []
     for index, r in records[records.address_conflict].iterrows():
         candidates = []
@@ -138,6 +138,24 @@ def resolve_conflicts(records, issues):
                     continue
                 _, _, distance = GEOD.inv(e.longitude, e.latitude, s["lon"], s["lat"])
                 if distance <= 150:
+                    # Proximity cannot turn an explicitly different address into
+                    # independent support for the proposed correction. Missing
+                    # OSM address fields remain unknown, as before.
+                    tags = s["tags"]
+                    addresses = [text(tags.get("addr:full")), " ".join(filter(None, [
+                        text(tags.get("addr:housenumber")), text(tags.get("addr:street"))]))]
+                    postcodes = {text(tags.get("addr:postcode"))}
+                    postcodes.update(extract_address_postcode(address) for address in addresses)
+                    postcode_conflict = any(re.fullmatch(r"\d{4}", value or "")
+                                            and value != r.address_postcode for value in postcodes)
+                    conflicts = {extended_address_conflict(address, known)
+                                 for address in addresses for known in (r.address, e.address)} - {""}
+                    if postcode_conflict:
+                        conflicts.add("postcode_conflict")
+                    if conflicts:
+                        rejected_evidence.append(f"OCM {e.ocm_id} / OSM {s['osm_id']}: "
+                                                 + ", ".join(sorted(conflicts)))
+                        continue
                     corroboration.append((distance, s["osm_id"]))
             if corroboration:
                 distance, osm_id = min(corroboration)

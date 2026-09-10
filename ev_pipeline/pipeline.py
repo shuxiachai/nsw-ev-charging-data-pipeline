@@ -229,8 +229,10 @@ def reviewed_source_quality_valid(con):
 def validate(con):
     from .matching_review import database_match_exclusions_valid
     from .regional import database_regional_reviews_valid
+    from .operator_review import database_operator_reviews_valid
     scalar = lambda sql: con.execute(sql).fetchone()[0]
     checks = {
+        "reviewed_operator_assignments_withheld": database_operator_reviews_valid(con),
         **ampol_evidence_checks(con),
         "reviewed_source_quality_warnings_complete": reviewed_source_quality_valid(con),
         "reviewed_identity_audit_matches_configuration": identity_audit_matches_configuration(con),
@@ -389,9 +391,10 @@ def build(offline=True):
     records, resolution = resolve_conflicts(records, issues)
     records, reviewed_resolution = apply_reviewed_resolutions(records, issues)
     locations, regions = spatial_assign(records, issues)
-    from .regional import regional_reviews
+    from .regional import regional_reviews, flag_reviewed_geographic_conflicts
+    records, locations = flag_reviewed_geographic_conflicts(records, locations, issues)
     region_reviews, region_evidence = regional_reviews(records, locations, regions)
-    sites, connectors, matches, audit, details, attributes = augment(locations, records)
+    sites, connectors, matches, audit, details, attributes = augment(locations, records, issues=issues)
     from .matching_review import apply_match_exclusions
     matches, audit, attributes, match_exclusions = apply_match_exclusions(
         locations, records, sites, matches, audit, attributes)

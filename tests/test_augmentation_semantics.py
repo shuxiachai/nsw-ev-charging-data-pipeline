@@ -216,6 +216,7 @@ def test_zero_quantity_and_different_statuses_preserve_original_connections(tmp_
                      dict(ID=13, ConnectionTypeID=2, CurrentTypeID=30, StatusTypeID=150)])
     (tmp_path / "ocm/OCM-1.json").write_text(json.dumps(poi))
     monkeypatch.setattr(augment, "load_address_exceptions", lambda *args: {})
+    monkeypatch.setattr(augment, "load_operator_reviews", lambda *args: {})
     locations, records, _ = frames()
     sites, connectors, matches, _, _, attributes = augment.augment(locations, records)
     assert len(matches) == 1 and len(connectors) == 3

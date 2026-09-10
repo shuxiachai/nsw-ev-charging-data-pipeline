@@ -15,7 +15,7 @@ from ev_pipeline.acquire import ROOT
 from ev_pipeline.clean import FIELDS, identifier, text
 from ev_pipeline.regional import (
     AUDIT_COLUMNS, EVIDENCE_COLUMNS, SOURCE_CSV, acquire_regional,
-    database_regional_reviews_valid, regional_reviews,
+    database_regional_reviews_valid, flag_reviewed_geographic_conflicts, regional_reviews,
 )
 
 
@@ -478,7 +478,7 @@ def test_database_tampering_cannot_validate_its_own_ledger(regional_database,sql
     assert not database_regional_reviews_valid(con,root=root,config=config)
 
 
-def test_actual_seven_regional_reviews_do_not_modify_the_seven_disputed_points():
+def test_actual_eight_regional_reviews_preserve_points_and_detect_new_italy():
     from ev_pipeline.clean import load_clean,spatial_assign
     from ev_pipeline.identity import apply_reviewed_identities
     from ev_pipeline.resolve import resolve_conflicts
@@ -488,10 +488,139 @@ def test_actual_seven_regional_reviews_do_not_modify_the_seven_disputed_points()
     records,_=resolve_conflicts(records,issues)
     records,_=apply_reviewed_resolutions(records,issues)
     locations,regions=spatial_assign(records,issues)
+    original_record = records.loc[records.source_row.eq(1711)].iloc[0].copy()
+    records,locations=flag_reviewed_geographic_conflicts(records,locations,issues)
     before_records,before_locations=records.copy(deep=True),locations.copy(deep=True)
     audit,evidence=regional_reviews(records,locations,regions)
-    assert audit.set_index("source_row").reviewed_sa4_code.to_dict()=={181:"101",380:"105",395:"110",730:"104",823:"110",650:"105",820:"123"}
-    assert len(audit)==7 and len(evidence)==60 and audit.coordinate_status.eq("unresolved").all()
-    assert locations.address_conflict.sum()==7
+    assert audit.set_index("source_row").reviewed_sa4_code.to_dict()=={181:"101",380:"105",395:"110",730:"104",823:"110",650:"105",820:"123",1711:"112"}
+    assert len(audit)==8 and len(evidence)==66 and audit.coordinate_status.eq("unresolved").all()
+    assert locations.address_conflict.sum()==8
+    new_italy = records.loc[records.source_row.eq(1711)].iloc[0]
+    assert new_italy.address_conflict and not new_italy.original_address_conflict
+    assert new_italy.postcode == new_italy.address_postcode == "2472"
+    for field in original_record.index.difference(["address_conflict"]):
+        assert pd.isna(new_italy[field]) and pd.isna(original_record[field]) or new_italy[field] == original_record[field]
+    assert len(records)==1958 and len(locations)==1936
+    assert records.loc[records.charger_type.eq("DC"),"location_id"].nunique()==426
+    new_issues=[issue for issue in issues if issue['code']=='source_point_outside_reviewed_locality']
+    assert len(new_issues)==1 and new_issues[0]['source_row']==1711
     pd.testing.assert_frame_equal(records,before_records)
     pd.testing.assert_frame_equal(locations,before_locations)
+
+
+@pytest.fixture
+def venue_region_fixture(regional_fixture):
+    root, config, records, locations, regions = regional_fixture
+    review = config["reviews"][0]
+    values = review["expected_source"]["raw_values"]
+    values.update(Operator="Tesla", PCODE="2453")
+    record_id = identifier("r_", {key:text(value) for key,value in values.items()})
+    review["record_id"] = record_id
+    records.loc[0,"record_id"] = record_id
+    records.loc[0,"raw_json"] = json.dumps(values)
+    records["address_conflict"] = False
+    records["original_address_conflict"] = False
+    pd.DataFrame([values],columns=FIELDS).to_csv(root/SOURCE_CSV,index=False)
+    for key,value in {"operator_name":"Tesla","postcode":"2453","original_postcode":"2453",
+                      "original_address_conflict":False}.items():
+        locations.loc[0,key]=value
+        review["expected_location"][key]=value
+    locations.loc[0,"address_conflict"] = False
+    venue_file="data/raw/venue_owner.html"
+    config["sources"].append(dict(file=venue_file,url="https://venue.example/",sha256="",bytes=1,
+                                  retrieved_at_utc="2026-09-10T00:00:00+00:00"))
+    review.update(operator_kind="venue_address_page",operator_name="Tesla",operator_source_file=venue_file,
+                  operator_element_id="Testville Museum EV charging area",venue_host="venue.example",
+                  council_host="council.nsw.gov.au",council_source_file="data/raw/venue.html",
+                  council_record_id="DA2021/0125",council_address="81 Hickory Street, Testville",
+                  venue_name="Testville Museum",venue_street_address="81 Hickory Street",
+                  venue_required_text=["Tesla Supercharger station at Testville Museum","81 Hickory Street","NSW 2453"],
+                  geographic_conflict=dict(minimum_distance_m=1000,maximum_distance_m=1000000))
+    next(s for s in config["sources"] if s["file"]=="data/raw/venue.html")["url"]="https://council.nsw.gov.au/decisions"
+    (root/venue_file).write_text("<p>Tesla Supercharger station at Testville Museum</p><p>81 Hickory Street NSW 2453</p>",encoding="utf-8")
+    (root/"data/raw/venue.html").write_text("<table><tr><td>DA2021/0125</td><td>Testville Museum</td>"
+                                         "<td>81 Hickory Street, Testville</td></tr></table>",encoding="utf-8")
+    review["evidence"].append(dict(source_file=venue_file,role="venue_charging_statement",locator="Visible venue statement"))
+    for filename in [SOURCE_CSV,venue_file,"data/raw/venue.html"]:
+        rebind(root,config,filename)
+    return root,config,records,locations,regions
+
+
+def test_equal_postcodes_do_not_hide_evidence_bound_geographic_conflict(venue_region_fixture):
+    root,config,records,locations,regions=venue_region_fixture
+    original_records,original_locations=records.copy(deep=True),locations.copy(deep=True)
+    issues=[]
+    updated_records,updated_locations=flag_reviewed_geographic_conflicts(records,locations,issues,root=root,config=config)
+    assert updated_locations.iloc[0].address_conflict and not updated_locations.iloc[0].original_address_conflict
+    assert updated_records.iloc[0].address_conflict and len(issues)==1
+    assert updated_locations.iloc[0].postcode==updated_locations.iloc[0].address_postcode
+    pd.testing.assert_frame_equal(updated_records.drop(columns="address_conflict"),records.drop(columns="address_conflict"))
+    pd.testing.assert_frame_equal(updated_locations.drop(columns="address_conflict"),locations.drop(columns="address_conflict"))
+    pd.testing.assert_frame_equal(records,original_records)
+    pd.testing.assert_frame_equal(locations,original_locations)
+    audit,_=regional_reviews(updated_records,updated_locations,regions,root=root,config=config)
+    assert audit.iloc[0].reviewed_sa4_code=="104" and audit.iloc[0].coordinate_status=="unresolved"
+
+
+@pytest.mark.parametrize("change",["missing_operator","script_only","different_street","wrong_venue","duplicate_council_row",
+                                  "wrong_publisher","too_near_for_guard","nonfinite_distance","changed_raw_record","changed_original_point"])
+def test_geographic_review_rejects_incomplete_or_inconsistent_evidence(venue_region_fixture,change):
+    root,config,records,locations,_=venue_region_fixture
+    review=config["reviews"][0]
+    filename=None
+    if change in {"missing_operator","script_only"}:
+        filename=review["operator_source_file"]
+        content=(root/filename).read_text(encoding="utf-8")
+        content=content.replace("Tesla Supercharger station at Testville Museum", "Unrelated station") if change=="missing_operator" else "<script>"+content+"</script>"
+        (root/filename).write_text(content,encoding="utf-8")
+    elif change in {"different_street","wrong_venue","duplicate_council_row"}:
+        filename=review["council_source_file"]
+        content=(root/filename).read_text(encoding="utf-8")
+        if change=="different_street":content=content.replace("81 Hickory","99 Elsewhere")
+        elif change=="wrong_venue":content=content.replace("Testville Museum","Another Museum")
+        else:content+=content
+        (root/filename).write_text(content,encoding="utf-8")
+    elif change=="wrong_publisher":
+        review["council_host"]="council.example"
+    elif change=="too_near_for_guard":
+        review["geographic_conflict"]={"minimum_distance_m":1000000,"maximum_distance_m":2000000}
+    elif change=="nonfinite_distance":
+        review["geographic_conflict"]["minimum_distance_m"]=float("nan")
+    elif change=="changed_raw_record":
+        records.loc[0,"raw_json"]="{}"
+    else:
+        locations.loc[0,"original_longitude"]=148
+    if filename:rebind(root,config,filename)
+    before_records,before_locations=records.copy(deep=True),locations.copy(deep=True)
+    issues=[]
+    with pytest.raises(ValueError,match="Regional"):
+        flag_reviewed_geographic_conflicts(records,locations,issues,root=root,config=config)
+    assert issues==[]
+    pd.testing.assert_frame_equal(records,before_records)
+    pd.testing.assert_frame_equal(locations,before_locations)
+
+
+@pytest.fixture
+def venue_regional_database(venue_region_fixture):
+    root,config,records,locations,regions=venue_region_fixture
+    issues=[]
+    records,locations=flag_reviewed_geographic_conflicts(records,locations,issues,root=root,config=config)
+    for con,root,config in _regional_database((root,config,records,locations,regions)):
+        con.register("quality_input",pd.DataFrame(issues))
+        con.execute("CREATE TABLE quality_issue AS SELECT * FROM quality_input")
+        yield con,root,config
+
+
+@pytest.mark.parametrize("sql",[
+    "DELETE FROM quality_issue",
+    "UPDATE quality_issue SET detail='Unreviewed statement'",
+    "UPDATE location SET address_conflict=False",
+    "UPDATE location SET original_address_conflict=True",
+    "UPDATE reviewed_region SET reviewed_sa4_code='105'",
+    "DELETE FROM reviewed_region_evidence WHERE role='venue_charging_statement'",
+])
+def test_geographic_conflict_cannot_be_hidden_by_deleting_its_flag_or_audit(venue_regional_database,sql):
+    con,root,config=venue_regional_database
+    assert database_regional_reviews_valid(con,root=root,config=config)
+    con.execute(sql)
+    assert not database_regional_reviews_valid(con,root=root,config=config)

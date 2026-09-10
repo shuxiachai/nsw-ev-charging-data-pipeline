@@ -20,7 +20,10 @@ DOCUMENTS = ["design.md", "schema.md", "sources.md", "source_version_review_2026
              "regional_sa4_review_20260909.md", "third_review_actions_20260909.md",
              "final_optimization_20260910.md", "final_matching_review_20260910.md",
              "final_matching_review_20260910.csv", "fresh_environment_20260910.md",
-             "identity_evie_council_20260910.md", "external_review_followup_20260910.md"]
+              "identity_evie_council_20260910.md", "external_review_followup_20260910.md",
+              "standalone_sql.md", "operator_identity_review_20260910.md",
+              "friend_review_actions_20260910.md", "friend_matching_followup_20260910.md"]
+EXCLUDED_FILES = {"outputs/clean_environment_verification.json"}
 REQUIRED = ["README.md", "requirements.txt", "sql/schema.sql", "data/processed/ev_chargers.duckdb",
             "docs/design.md", "docs/schema.md", "docs/sources.md"]
 
@@ -32,7 +35,9 @@ def submission_files():
     for folder in FOLDERS:
         files.extend(p for p in (ROOT / folder).rglob("*") if p.is_file() and "__pycache__" not in p.parts
                      and p.suffix.lower() not in {".pyc", ".part", ".building", ".wal"})
-    files = set(files)
+    # Retain dated installation history locally, without presenting its old
+    # checkpoint beside the current submission's test/rebuild evidence.
+    files = {p for p in files if p.relative_to(ROOT).as_posix() not in EXCLUDED_FILES}
     for path in files:
         if not path.is_relative_to(ROOT / "data/raw"):
             continue

@@ -1,0 +1,11 @@
+{
+  "url": "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PAN-473931%2120240927T010446.532%20GMT",
+  "resolved_url": "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PAN-473931%2120240927T010446.532%20GMT",
+  "retrieved_at_utc": "2026-09-10T09:40:48.990993+00:00",
+  "sha256": "3e8ddf00631e7b65593ae5df94d1c15bbe374573c65f7657e68d9d924a25dcd4",
+  "bytes": 3918834,
+  "method": "GET",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "capture_method": "complete_http_response_body"
+}

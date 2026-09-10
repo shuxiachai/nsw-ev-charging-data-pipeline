@@ -51,12 +51,13 @@ def test_stored_resolution_evidence_matches_actual_external_geometry():
 @pytest.fixture
 def corroborated_candidate(monkeypatch):
     """One OCM/OSM point agrees exactly; source address identity still matters."""
-    def configure(address):
+    def configure(address, osm_tags=None, extra_osm=None):
         external = pd.DataFrame([dict(ocm_id=1, ocm_operator="Evie", postcode="2000", town="Sydney",
                                      address=address, latitude=-33.85, longitude=151.20,
                                      source_file="synthetic.json")])
         osm = {"elements": [dict(type="node", id=1, lat=-33.85, lon=151.20,
-                                 tags={"operator": "Evie", "amenity": "charging_station"})]}
+                                 tags={"operator": "Evie", "amenity": "charging_station", **(osm_tags or {})})]}
+        osm["elements"].extend(extra_osm or [])
 
         class MemorySnapshot:
             def __truediv__(self, filename):
@@ -131,3 +132,45 @@ def test_wagga_unit_and_house_number_conflict_is_withheld_in_the_actual_snapshot
     assert decision.decision == "unresolved" and "house_number_conflict" in decision.reason
     assert row.address_conflict and row.resolution_method == "unchanged"
     assert (row.latitude, row.longitude, row.postcode) == (row.original_latitude, row.original_longitude, row.original_postcode)
+
+
+@pytest.mark.parametrize("tags,reason", [
+    ({"addr:housenumber": "999", "addr:street": "Test Street"}, "house_number_conflict"),
+    ({"addr:housenumber": "10", "addr:street": "Test Road"}, "street_type_conflict"),
+    ({"addr:postcode": "2001"}, "postcode_conflict"),
+    ({"addr:full": "999 Test Street, Sydney NSW 2000"}, "house_number_conflict"),
+    ({"addr:full": "10 Test Street, Sydney NSW 2001"}, "postcode_conflict"),
+    ({"addr:postcode": "2000", "addr:full": "10 Test Street, Sydney NSW 2001"}, "postcode_conflict"),
+])
+def test_explicit_osm_contradiction_cannot_corroborate_correction(corroborated_candidate, tags, reason):
+    source = corroborated_candidate("10 Test Street", osm_tags=tags)
+    records = pd.DataFrame([source])
+    issues = []
+    resolved, audit = resolve_conflicts(records, issues)
+    assert audit.iloc[0].decision == "unresolved"
+    assert "OSM node/1" in audit.iloc[0].reason and reason in audit.iloc[0].reason
+    pd.testing.assert_frame_equal(records, resolved[records.columns])
+    assert not issues
+
+
+@pytest.mark.parametrize("tags", [
+    {},
+    {"addr:postcode": "2000"},
+    {"addr:housenumber": "8/10", "addr:street": "Test Street"},
+    {"addr:housenumber": "8-12", "addr:street": "Test Street"},
+    {"addr:full": "10 Test Street, Sydney NSW 2000"},
+])
+def test_compatible_or_missing_osm_address_keeps_corroboration(corroborated_candidate, tags):
+    source = corroborated_candidate("10 Test Street", osm_tags=tags)
+    result, audit = resolve_conflicts(pd.DataFrame([source]), [])
+    assert audit.iloc[0].decision == "resolved"
+    assert not result.iloc[0].address_conflict
+    assert (result.iloc[0].latitude, result.iloc[0].longitude) == (-33.85, 151.20)
+
+
+def test_contradictory_nearest_osm_does_not_hide_a_valid_corroborator(corroborated_candidate):
+    source = corroborated_candidate("10 Test Street", osm_tags={"addr:postcode": "2001"}, extra_osm=[
+        {"type": "way", "id": 2, "center": {"lat": -33.8501, "lon": 151.20},
+         "tags": {"operator": "Evie", "amenity": "charging_station", "addr:postcode": "2000"}}])
+    _, audit = resolve_conflicts(pd.DataFrame([source]), [])
+    assert audit.iloc[0].decision == "resolved" and audit.iloc[0].osm_id == "way/2"

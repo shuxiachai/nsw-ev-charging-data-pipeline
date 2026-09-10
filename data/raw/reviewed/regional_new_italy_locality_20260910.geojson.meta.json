@@ -1,0 +1,9 @@
+{
+  "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname+%3D+%27NEW+ITALY%27&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson",
+  "resolved_url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname+%3D+%27NEW+ITALY%27&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson",
+  "retrieved_at_utc": "2026-09-10T09:32:34.453293+00:00",
+  "sha256": "b556dd6543a6779e3fe3f33eca159d4b414ee74f0c5dcfb0e4b8e1ef9e2678c6",
+  "bytes": 10678,
+  "etag": "\"1788934239\"",
+  "last_modified": null
+}

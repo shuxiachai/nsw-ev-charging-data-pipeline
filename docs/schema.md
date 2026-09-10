@@ -112,7 +112,7 @@ finite, non-Boolean values before insertion to prevent integer-cast rounding.
 
 `reviewed_identity_evidence` identifies the operator map/detail sources, roles,
 element IDs and hashes for the three Exploren groups and the Campbelltown/Mount
-Annan venue groups. Its composite primary
+Annan, Cowell Street and Parraween Street venue groups. Its composite primary
 key is `(review_id,source_file,role)` and its source-file key references
 `source_snapshot`. Independent validation requires the complete configured
 evidence set, matching source hashes and an existing reviewed identity group.
@@ -182,4 +182,4 @@ separately labelled `source_point_sa4_code`. It includes ordinary analysis-ready
 locations and independently reviewed regional records, without point geometry
 or longitude/latitude. Exact view membership, assignments and coordinate status
 are validated. The existing `analysis_ready_locations` remains suitable for
-point use under its documented limits and excludes all seven source conflicts.
+point use under its documented limits and excludes all eight identified source conflicts.

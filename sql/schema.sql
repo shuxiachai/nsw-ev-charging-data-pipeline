@@ -1,6 +1,10 @@
 -- All geometry columns use longitude/latitude WGS84 (EPSG:4326).
--- INSTALL spatial is performed by the Python setup when online; LOAD is needed
--- for each DuckDB connection. This DDL is for a new, empty database.
+-- DuckDB 1.5.5: first installation needs internet access. Ordinary INSTALL is
+-- a local no-op when this connection's extension directory already has spatial;
+-- do not use FORCE INSTALL, which would break cached offline execution.
+-- See docs/standalone_sql.md for extension-directory and CLI examples.
+-- This DDL is for a new, empty database; it does not insert the dataset.
+INSTALL spatial;
 LOAD spatial;
 
 CREATE TABLE source_snapshot (

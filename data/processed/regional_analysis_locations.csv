@@ -324,7 +324,7 @@ l_29c5fd7a40b2e8136221,o_022471524c9d92e538b2,,"5 Footbridge Blvd, Sydney, 2127"
 l_29f9a77792e5d608604d,o_eb0d1fe740ad969aad27,Reflections Bonny Hills,920 Ocean Dr Bonny Hills NSW 2445 Australia,108,108,point_in_polygon,,analysis_ready
 l_2a06c0da0ced06a714b1,o_5b4f3a03bda45dcf8609,,"7 Tank St, Lithgow, 2790",103,103,point_in_polygon,,analysis_ready
 l_2a2805d4e3f8e904e684,o_eb0d1fe740ad969aad27,Rip Curl North Wollongong,"57-61 Flinders St, Wollongong NSW 2500",107,107,point_in_polygon,,analysis_ready
-l_2a84bd360ea3fa78f784,o_022471524c9d92e538b2,,"8275 Pacific Hwy, New Italy NSW 2472",108,108,point_in_polygon,,analysis_ready
+l_2a84bd360ea3fa78f784,o_022471524c9d92e538b2,,"8275 Pacific Hwy, New Italy NSW 2472",112,108,official_locality_containment,RR_NEW_ITALY_20260910,unresolved
 l_2a877bc89839b8526c18,o_e43c5e61858e588c2c2f,,"42 Cloete St, Young, 2594",101,101,point_in_polygon,,analysis_ready
 l_2a8bce0f20868afb7c89,o_6a6e0a5733bcc6eefe20,,9-11 Layton St Camperdown NSW 2050 Australia,117,117,point_in_polygon,,analysis_ready
 l_2ad1b0b4902ce0cfbc14,o_17324b0193cb7a1c3925,,"8 Federation Rd, Sydney, 2050",117,117,point_in_polygon,,analysis_ready

@@ -135,6 +135,26 @@ def test_submission_excludes_internal_reviews_but_keeps_current_technical_eviden
     assert (docs / "codex_handoff.md").exists()  # Packaging does not delete working notes.
 
 
+def test_submission_omits_historical_verification_without_deleting_it(tmp_path, monkeypatch):
+    monkeypatch.setattr(package_submission, "ROOT", tmp_path)
+    outputs = tmp_path / "outputs"
+    outputs.mkdir()
+    historical = outputs / "clean_environment_verification.json"
+    historical.write_text('{"scope":"historical checkpoint"}')
+    for name in ["test_evidence.json", "reproducibility.json", "validation.json"]:
+        (outputs / name).write_text("{}")
+    docs = tmp_path / "docs"
+    docs.mkdir()
+    for name in ["standalone_sql.md", "fresh_environment_20260910.md"]:
+        (docs / name).write_text("documentation")
+    included = {p.relative_to(tmp_path).as_posix() for p in package_submission.submission_files()}
+    assert "outputs/clean_environment_verification.json" not in included
+    assert historical.read_text() == '{"scope":"historical checkpoint"}'
+    assert {"outputs/test_evidence.json", "outputs/reproducibility.json",
+            "outputs/validation.json", "docs/standalone_sql.md",
+            "docs/fresh_environment_20260910.md"} <= included
+
+
 @pytest.mark.parametrize("orphan", ["source.pdf", "source.pdf.meta.json"])
 def test_submission_rejects_raw_files_without_their_provenance_pair(tmp_path, monkeypatch, orphan):
     monkeypatch.setattr(package_submission, "ROOT", tmp_path)

@@ -9,7 +9,7 @@ a prepared report or declaration does not itself establish compliance with the
 course's authorship requirements.
 
 For the current result, start with the validated snapshot below and
-[the latest external-review fixes](docs/external_review_followup_20260910.md). The main
+[the latest review fixes](docs/friend_review_actions_20260910.md). The main
 technical references are [design](docs/design.md), [schema](docs/schema.md) and
 [sources](docs/sources.md). Earlier dated reviews document historical checkpoints;
 their old counts do not describe the current database.
@@ -22,7 +22,7 @@ Start with the [pipeline](ev_pipeline/pipeline.py), [cleaning](ev_pipeline/clean
 snapshot below. The repository includes source code, tests, technical notes,
 small frozen originals with all manifests, processed CSVs and result summaries.
 
-The [baseline-2026-09-10 Release](https://github.com/shuxiachai/comp5339-assignment1-2026s2/releases/tag/baseline-2026-09-10)
+The [review-fixes-2026-09-10 Release](https://github.com/shuxiachai/comp5339-assignment1-2026s2/releases/tag/review-fixes-2026-09-10)
 contains `COMP5339_A1_Code_and_Database.zip` and `SHA256.txt`. The ZIP includes the
 complete frozen inputs and DuckDB database. Large PDF/ZIP originals, the database,
 local environments and review scratch files are excluded from Git history.
@@ -30,14 +30,14 @@ Repository collaborators can access this private Release after accepting an
 invitation. The release is a reviewed working baseline, not a final submission
 declaration; the report and group details remain separate deliverables.
 
-To run the complete baseline, download the ZIP and `SHA256.txt`, compare the ZIP's
+To run the current reviewed version, download the ZIP and `SHA256.txt`, compare the ZIP's
 SHA-256 with the published checksum, extract it into a new folder, then follow
 Quick start below. On Windows, `Get-FileHash -Algorithm SHA256 <zip-path>` computes
 the checksum. Links to PDF originals in the source documentation refer to files
 included in that full package.
 
 To work in a Git clone, use `git clone https://github.com/shuxiachai/comp5339-assignment1-2026s2.git`.
-For this initial baseline, copy the extracted package's `data/` directory into
+For this reviewed version, copy the extracted package's `data/` directory into
 the clone, then run Quick start from the clone. This restores the large frozen
 originals and database without replacing the checked-out code. A clone alone
 does not include all evidence required for an offline build. Match the data
@@ -97,6 +97,12 @@ python3.12 -m venv .venv
 
 Only Windows execution has been verified. Other platforms install their own
 DuckDB extension binary on the initial online run.
+
+For a standalone DuckDB connection, follow [the SQL setup and spatial-query guide](docs/standalone_sql.md).
+`sql/schema.sql` creates the empty schema and installs/loads spatial when needed;
+the first installation needs internet access. Python's project extension cache
+and a default DuckDB CLI cache are separate unless explicitly configured alike.
+The guide also opens the delivered database read-only without rebuilding it.
 
 ## Commands
 
@@ -189,13 +195,14 @@ duplicated in the code submission.
    [reviewed resolution evidence](docs/reviewed_resolution_design.md).
 7. **Regional membership review:** query NSW Spatial Services for the complete
    official locality polygons for Braidwood, Walgett, Moree, Dorrigo, Inverell,
-   Gilgandra and Narellan.
+   Gilgandra, Narellan and New Italy.
    Parse every polygon ring in the stated GDA2020 CRS and require the entire
    locality to lie in exactly one ABS 2026 SA4. Separate government/operator/venue
-   originals support the seven source-to-locality identities. This establishes
+   originals support the eight source-to-locality identities. This establishes
    regional membership without replacing uncertain charger coordinates. See
    [initial regional evidence](docs/regional_sa4_review_20260909.md) and
-   [the two additional confirmations](docs/third_review_actions_20260909.md).
+   [the two additional confirmations](docs/third_review_actions_20260909.md), plus
+   [the New Italy geographic conflict](docs/friend_review_actions_20260910.md).
 8. **Ampol individual station pages:** programmatically download and decode the
    per-location `currentLocation.services.EVCharging` data from official pages.
    Explicit CCS/CHAdeMO labels become dated connector observations. The 15
@@ -303,22 +310,32 @@ To adopt a candidate version:
   Explicit street-number/type contradictions disqualify correction even when
   the string similarity is high. Different clearly parsed localities require
   verified compatibility; postcode agreement alone cannot authorize a move.
+  An OSM corroborator with an explicit contradictory street number/type or
+  postcode is also withheld; its absence of address fields remains unknown.
   Eleven original conflicts meet this rule: ten coordinate corrections and one
   postcode-only correction. Original fields and source IDs are retained in
   `source_resolution`. A second, explicitly reviewed stage corrects seven further
   records using archived venue and coordinate evidence;
-  `reviewed_resolution` stores these decisions and evidence roles separately. Seven conflicts remain
+  `reviewed_resolution` stores these decisions and evidence roles separately. Seven postal conflicts remain
   flagged. The automatic stage's 14 unsuccessful decisions remain as history;
   they are not the final unresolved count.
-- Regional and point certainty are separate. All seven remaining conflicts have
+- Regional and point certainty are separate. The seven remaining postal conflicts have
   a `reviewed_region` audit: Braidwood 101, Walgett 105, Moree 110, Dorrigo 104 and
   Inverell 110, Gilgandra 105 and Narellan 123. Their entire official localities lie within the respective SA4,
   with zero tolerance and no other intersecting SA4. Their point coordinates,
   postcodes and conflict flags remain unchanged. `regional_analysis_locations`
-  combines these seven regional decisions with the ordinary analysis-ready set;
+  combines regional decisions with the ordinary analysis-ready set;
   it exposes no point geometry or coordinates. Use that view for SA4 statistics.
   Gilgandra and Narellan retain their original point-derived SA4 numbers, now
   independently supported at regional precision; their points are not corrected.
+- A further geographic conflict concerns Tesla New Italy (source row 1711): both
+  source/address postcodes are 2472, but the point lies about 186 km outside the
+  official New Italy locality. A guarded venue/council/locality review flags it
+  and retains its original coordinate. Its regional answer is SA4 112, while
+  the stored point remains in 108. There are now eight disputed points and eight
+  regional reviews; the postcode comparison alone is not a geographic check.
+  This evidence-bound review does not claim an exhaustive locality audit of all
+  other source rows. See [the current review](docs/friend_review_actions_20260910.md).
 - Parse individual-plug kW values. `2x350kW & 6x175kW` becomes minimum 175 and
   maximum 350, not a made-up total station power. Bare `AC` is unknown power.
   Count disagreements are flagged because configured units and plugs can differ.
@@ -402,6 +419,10 @@ into a universal AUD/kWh value. Different sources are retained as separate
 observations, including disagreements. Operator website/phone enrichment uses
 exact canonical operator names and is explicitly `scope='operator'`; it does not
 verify a location's connectors or eligibility for non-Tesla vehicles.
+The unverified Counties Energy assignment at Richmond (one AC location) is
+withheld using guarded source evidence, with its candidate value and reason in
+`quality_issue`. No operator label or DC coverage is changed by that decision.
+See [the operator identity review](docs/operator_identity_review_20260910.md).
 Recognized generic network-map URLs are also operator-scoped. In particular,
 the two exact NRMA network-page paths are not treated as individual site pages;
 site-detail URLs, query strings and fragments are not generalized by that rule.
@@ -415,9 +436,9 @@ Current validated snapshot:
 | Explicit DC source records / distinct DC locations | 433 / 426 |
 | Locations assigned by point-in-polygon | 1,935 |
 | Separately labelled coastal approximation | 1 |
-| Regional-only reviews / still disputed points | 7 / 7 |
+| Regional-only reviews / still disputed points | 8 / 8 |
 | Eligible regional-analysis locations / DC locations | 1,936 / 426 |
-| Unresolved point/address conflicts, including the seven reviewed regions | 7 |
+| Unresolved point/address conflicts, including the eight reviewed regions | 8 |
 | Site-specific augmentation (unique DC locations) | **245 / 426 = 57.51%** |
 | At least one non-identifier site attribute, including dated status | 245 / 426 = 57.51% |
 | Site information excluding station codes and network/EVSE states | 214 / 426 = 50.23% |
@@ -429,13 +450,14 @@ matching, not ground-truth verification of every station. Of 25 original source
 postcode/address conflicts, 11 have automatic corroborated corrections, seven
 have archived reviewed corrections, and seven remain
 excluded from automatic site matching and `analysis_ready_locations`.
-`regional_analysis_locations` additionally includes all seven of those locations
+The separately detected New Italy geographic conflict also remains excluded.
+`regional_analysis_locations` additionally includes all eight disputed locations
 with independently reviewed SA4 membership; it does not imply coordinate repair.
 `location.sa4_code` continues to describe its stored point. In `locations.csv`,
 use `regional_sa4_code` for reviewed regional analysis, with its method/review
 columns; a missing regional value means the record is not yet eligible. The full
 426-location DC denominator is retained; regional/point exclusions do not inflate
-coverage. In this follow-up the denominator changed from 428 to 426 through the
+coverage. In the preceding follow-up the denominator changed from 428 to 426 through the
 two evidence-bound Cowell Street and Parraween Street identity merges, preserving
 all 433 DC source records. The preceding Campbelltown and Mount Annan review had
 changed the earlier 430-location checkpoint to 428. These are successive
@@ -445,7 +467,7 @@ not independent accuracy measurements. Inspect the resolution evidence and
 review CSVs before drawing location-specific conclusions.
 
 The integrated Windows/Python 3.12 verification for this follow-up passed
-**815 tests and 45 integrity checks**. Results are recorded in
+**867 tests and 46 integrity checks**. Results are recorded in
 `outputs/test_evidence.json` and `outputs/validation.json`. An offline rebuild
 reproduced all 23 base tables, 40 generated CSVs, persisted schema definitions
 and the complete deterministic validation report.
@@ -461,11 +483,14 @@ have short-lived meaning: 57.51% is not a claim that this many locations gained
 stable connector, price or access information. Excluding both status and station
 codes leaves 214/426 locations (50.23%) with other site information, including two
 literal JOLT carpark-hours notes. This narrower measure is only slightly above
-50% and remains a coverage measure, not a matching-accuracy estimate. Three
-OSM-only contributors (source rows 422, 1309 and 1742) still have pending site
+50% and remains a coverage measure, not a matching-accuracy estimate. Two
+OSM-only contributors (source rows 422 and 1742) still have pending site
 evidence. Conditionally excluding their contributions would give
-(214 - 3) / 426 = 49.53%; no such exclusions are applied in the current database.
-See the [follow-up and limitations](docs/external_review_followup_20260910.md).
+(214 - 2) / 426 = 49.77%; no such exclusions are applied in the current database.
+Official planning evidence now supports the Goulburn venue (row 1309), without
+verifying its precise charger point or equipment attributes. The 27 reviewed
+OSM links now comprise 15 with venue support and 12 pending. See the
+[latest matching evidence and limitations](docs/friend_matching_followup_20260910.md).
 Per-attribute coverage is 211 DC locations for connector types, 103 for cost text,
 44 for opening hours and 31 for site websites. The two generic network-map URL
 observations are operator-scoped. Rows in `augmentation_attribute_coverage.csv`
@@ -473,10 +498,11 @@ overlap and must not be summed.
 
 ## Important output files
 
-The separate [fresh-environment check](docs/fresh_environment_20260910.md)
-records a new virtual environment, public dependency downloads, a first spatial
-extension installation, and reproducible rebuilding. It is distinct from a
-fresh retrieval of every historical data source.
+The archive-specific `submission/package_verification.json`, supplied beside
+the Release ZIP, records the current fresh-environment and archive checks.
+The earlier [fresh-environment check](docs/fresh_environment_20260910.md)
+documents the initial baseline and retains its historical counts and hash.
+Fresh environment setup is distinct from a fresh retrieval of historical sources.
 
 - `data/processed/ev_chargers.duckdb`: primary deliverable, with spatial geometry,
   relational constraints, raw-row provenance and all accepted augmentations.
@@ -484,7 +510,7 @@ fresh retrieval of every historical data source.
 - `data/processed/locations.csv`: one row per project location; point-derived
   `sa4_code` and reviewed `regional_sa4_code` have different stated meanings.
 - `data/processed/regional_analysis_locations.csv`: eligible regional assignments
-  without point coordinates, including the seven region-only reviews.
+  without point coordinates, including the eight region-only reviews.
 - `outputs/regional_sa4_counts.csv`: distinct-location and distinct-DC counts by
   the regional view; excluded records are not removed from the enrichment denominator.
 - `outputs/reviewed_region.csv`, `outputs/reviewed_region_evidence.csv`: original

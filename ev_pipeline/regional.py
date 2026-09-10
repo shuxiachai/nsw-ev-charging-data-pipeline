@@ -7,6 +7,7 @@ from copy import deepcopy
 from datetime import date, datetime
 from hashlib import sha256
 from html import unescape
+from html.parser import HTMLParser
 import json
 import math
 from pathlib import Path
@@ -39,6 +40,11 @@ LOCATION_GUARDS = {
 EVIE_SITE_FIELDS = {"id", "store", "address", "city", "state", "zip", "country", "lat", "lng"}
 
 
+def _review_operator(review):
+    kind = review.get("operator_kind", "nrma_kml")
+    return {"nrma_kml": "NRMA", "evie_public_map": "Evie"}.get(kind, review.get("operator_name"))
+
+
 def _review_files(config, review):
     """Each source kind keeps its own mandatory publication/evidence chain."""
     locality = review.get("locality_source_file", config["locality_source_file"])
@@ -48,6 +54,8 @@ def _review_files(config, review):
         required.update({config["operator_page_file"], config["operator_map_file"]})
     elif kind == "evie_public_map":
         required.update({review["operator_page_file"], review["operator_script_file"], review["operator_source_file"]})
+    elif kind == "venue_address_page":
+        required.add(review["operator_source_file"])
     else:
         raise ValueError("Unsupported regional operator evidence kind")
     return locality, required
@@ -55,7 +63,7 @@ def _review_files(config, review):
 
 def _street_tokens(value):
     # Formatting-only support for the separately reviewed intersection address.
-    aliases = {"ave": "avenue", "st": "street", "rd": "road"}
+    aliases = {"ave": "avenue", "st": "street", "rd": "road", "hwy": "highway"}
     return {aliases.get(token, token) for token in re.findall(r"[a-z0-9]+", value.casefold())}
 
 
@@ -104,10 +112,11 @@ def _configuration(root, config):
             raise ValueError("Missing or duplicate regional review/record ID")
     locations = []
     for review in config["reviews"]:
+        date.fromisoformat(review.get("review_date", config["review_date"]))
         _, review_required = _review_files(config, review)
         if not review_required.issubset(sources):
             raise ValueError("Unpinned required regional review evidence")
-        operator_name = "NRMA" if review.get("operator_kind", "nrma_kml") == "nrma_kml" else "Evie"
+        operator_name = _review_operator(review)
         expected = review["expected_source"]
         if (type(expected["source_row"]) is not int or expected["source_row"] < 2
                 or set(expected["raw_values"]) != set(FIELDS)
@@ -116,8 +125,17 @@ def _configuration(root, config):
         if not LOCATION_GUARDS.issubset(review["expected_location"]):
             raise ValueError("Regional review requires complete current/original location guards")
         locations.append(review["expected_location"]["location_id"])
+        geographic = review.get("geographic_conflict")
+        if geographic is not None:
+            if (review.get("operator_kind") != "venue_address_page"
+                    or not isinstance(geographic, dict)
+                    or set(geographic) != {"minimum_distance_m", "maximum_distance_m"}
+                    or any(type(v) not in (int, float) or not math.isfinite(v) for v in geographic.values())
+                    or not 1000 <= geographic["minimum_distance_m"] < geographic["maximum_distance_m"]
+                    or review["expected_location"]["original_address_conflict"] is not False):
+                raise ValueError("Regional geographic-conflict guard is invalid")
         if (review["expected_location"]["address_conflict"] is not True
-                or review["expected_location"]["original_address_conflict"] is not True):
+                or (geographic is None and review["expected_location"]["original_address_conflict"] is not True)):
             raise ValueError("Regional review must retain the unresolved coordinate conflict")
         if (not isinstance(review["locality_name"], str) or not review["locality_name"].strip()
                 or type(review["locality_object_id"]) is not int
@@ -134,7 +152,7 @@ def _configuration(root, config):
                 or operator(expected["raw_values"]["Operator"]) != operator_name
                 or review["expected_location"]["operator_name"] != operator_name):
             raise ValueError("Regional locality/address/postcode/operator semantic guards disagree")
-        if operator_name == "Evie":
+        if review.get("operator_kind") == "evie_public_map":
             site = review.get("operator_expected_values", {})
             if (set(site) != EVIE_SITE_FIELDS or any(not isinstance(v, str) or not v.strip() for v in site.values())
                     or site["id"] != review["operator_element_id"]
@@ -143,6 +161,20 @@ def _configuration(root, config):
                     or site["state"] != "NSW" or site["country"] != "AUS"
                     or not _street_tokens(site["address"]).issubset(_street_tokens(raw_address))):
                 raise ValueError("Regional Evie operator address/locality semantic guards disagree")
+        if review.get("operator_kind") == "venue_address_page":
+            if (geographic is None or not isinstance(operator_name, str) or not operator_name.strip()
+                    or review.get("council_source_file") not in sources
+                    or review["council_source_file"] == review["operator_source_file"]
+                    or not isinstance(review.get("venue_required_text"), list)
+                    or len(review["venue_required_text"]) < 3
+                    or any(not isinstance(v, str) or not v.strip() for v in review["venue_required_text"])
+                    or not all(isinstance(review.get(v), str) and review[v].strip()
+                               for v in ["venue_host", "council_host", "council_record_id", "council_address", "venue_name", "venue_street_address"])
+                    or operator_name.casefold() not in " ".join(review["venue_required_text"]).casefold()
+                    or review["locality_name"].casefold() not in review["council_address"].casefold()
+                    or not _street_tokens(review["council_address"]).issubset(_street_tokens(raw_address))
+                    or not _street_tokens(review["venue_street_address"]).issubset(_street_tokens(review["council_address"]))):
+                raise ValueError("Regional venue/address evidence semantic guards disagree")
         keys, files = set(), set()
         for evidence in review["evidence"]:
             key = (evidence["source_file"], evidence["role"])
@@ -154,6 +186,10 @@ def _configuration(root, config):
             files.add(evidence["source_file"])
         if not review_required.issubset(files):
             raise ValueError("Regional review evidence omits a required source relationship")
+        if review.get("operator_kind") == "venue_address_page" and not any(
+                item["source_file"] == review["council_source_file"] and item["role"] == "venue_address"
+                for item in review["evidence"]):
+            raise ValueError("Regional venue review lacks its separate council address relationship")
         if not any(item["role"] in {"venue_address", "venue_context"} and item["source_file"] not in review_required
                    for item in review["evidence"]):
             raise ValueError("Regional review requires a separate pinned venue address/context original")
@@ -299,10 +335,115 @@ def _guard_record(records, locations, review, raw):
             equal = pd.notna(actual) and actual == value
         if not equal:
             raise ValueError(f"Regional location guard failed: {field}")
-    expected_operator = "NRMA" if review.get("operator_kind", "nrma_kml") == "nrma_kml" else "Evie"
+    expected_operator = _review_operator(review)
     if location.address_conflict != True or location.operator_name != expected_operator:
         raise ValueError("Regional review requires an unchanged unresolved operator/location")
     return record, location
+
+
+class _VisibleHTML(HTMLParser):
+    """Extract visible page text and complete table rows, excluding script/style."""
+
+    def __init__(self, body):
+        super().__init__(convert_charrefs=True)
+        self.parts, self.rows, self.row, self.hidden = [], [], None, 0
+        self.feed(body)
+
+    def handle_starttag(self, tag, attrs):
+        if tag in {"script", "style"}:
+            self.hidden += 1
+        if tag == "tr" and not self.hidden:
+            self.row = []
+
+    def handle_endtag(self, tag):
+        if tag in {"script", "style"}:
+            self.hidden = max(0, self.hidden - 1)
+        if tag == "tr" and self.row is not None:
+            self.rows.append(" ".join(" ".join(self.row).split()))
+            self.row = None
+
+    def handle_data(self, data):
+        if not self.hidden:
+            self.parts.append(data)
+            if self.row is not None:
+                self.row.append(data)
+
+
+def _venue_address_evidence(root, sources, review):
+    """Bind a venue's charging statement to a separately published civic address.
+
+    This branch establishes locality membership, never a charger-bay coordinate.
+    The venue can use a postal town while the council supplies the legal locality.
+    """
+    venue_file, council_file = review["operator_source_file"], review["council_source_file"]
+    if (urlparse(sources[venue_file]["url"]).hostname != review["venue_host"]
+            or urlparse(sources[council_file]["url"]).hostname != review["council_host"]
+            or not review["council_host"].endswith(".nsw.gov.au")):
+        raise ValueError("Regional venue/council source host differs from reviewed publisher")
+    venue = _VisibleHTML(_path(root, venue_file).read_text(encoding="utf-8"))
+    content = " ".join(" ".join(venue.parts).split()).casefold()
+    if any(" ".join(value.split()).casefold() not in content
+           for value in review["venue_required_text"] + [review["venue_name"], review["venue_street_address"]]):
+        raise ValueError("Regional venue does not establish the reviewed charging/address statement")
+    council = _VisibleHTML(_path(root, council_file).read_text(encoding="utf-8"))
+    rows = [row.casefold() for row in council.rows if review["council_record_id"].casefold() in row.casefold()]
+    if (len(rows) != 1 or review["council_address"].casefold() not in rows[0]
+            or review["venue_name"].casefold() not in rows[0]):
+        raise ValueError("Regional council address record is missing, ambiguous or for a different venue")
+
+
+def _geographic_issue(review, location, geometry):
+    """A guarded kilometre-scale contradiction must not become a trusted point."""
+    if (location.latitude != location.original_latitude or location.longitude != location.original_longitude
+            or location.original_address_conflict != False):
+        raise ValueError("Regional geographic review must preserve the original point and postcode-conflict result")
+    point = gpd.GeoSeries([Point(location.longitude, location.latitude)], crs=4326).to_crs(7844).iloc[0]
+    extent = gpd.GeoSeries([geometry], crs=7844)
+    distance = extent.to_crs(3577).iloc[0].distance(gpd.GeoSeries([point], crs=7844).to_crs(3577).iloc[0])
+    limits = review["geographic_conflict"]
+    if (geometry.covers(point) or not math.isfinite(distance)
+            or not limits["minimum_distance_m"] <= distance <= limits["maximum_distance_m"]):
+        raise ValueError("Regional source point does not meet the reviewed geographic-conflict distance guards")
+    return dict(record_id=review["record_id"], source_row=review["expected_source"]["source_row"],
+                code="source_point_outside_reviewed_locality", severity="warning",
+                detail=f"{review['review_id']}: source point is {distance:.2f} m from the complete official "
+                       f"{review['locality_name']} locality (EPSG:3577). Source/address postcode agreement does not "
+                       "validate coordinates. Keep original point and original postcode-conflict result; flag the "
+                       "current location as conflicted, exclude point/site matching, and use the separate reviewed SA4 only.")
+
+
+def flag_reviewed_geographic_conflicts(records, locations, issues, *, root=ROOT, config=None):
+    """Add evidence-bound spatial conflicts after assignment, before augmentation.
+
+    All source/identity/geometry/publication guards are checked before committing
+    the flags. No source field, coordinate, identity or denominator is rewritten.
+    """
+    root = Path(root)
+    config, _ = _configuration(root, config)
+    reviews = [review for review in config["reviews"] if review.get("geographic_conflict") is not None]
+    if not reviews:
+        return records, locations
+    updated = locations.copy(deep=True)
+    for review in reviews:
+        updated.loc[updated.location_id.eq(review["expected_location"]["location_id"]), "address_conflict"] = True
+    regions = gpd.read_file(_path(root, config["abs_source_file"]))
+    regions = regions.loc[regions.STE_CODE26.eq("1") & regions.geometry.notna() & ~regions.geometry.is_empty]
+    regions = regions.rename(columns={"SA4_CODE26": "sa4_code", "SA4_NAME26": "sa4_name"}).to_crs(4326)
+    # Validate all reviews, including the seven pre-existing corroboration chains.
+    regional_reviews(records, updated, regions, root=root, config=config)
+    result = records.copy(deep=True)
+    additions = []
+    for review in reviews:
+        filename, _ = _review_files(config, review)
+        features = _localities(root, {**config, "locality_source_file": filename})
+        geometry = next(geom for props, geom in features if props["suburbname"] == review["locality_name"])
+        selected = updated.loc[updated.location_id.eq(review["expected_location"]["location_id"])].iloc[0]
+        result.loc[result.location_id.eq(selected.location_id), "address_conflict"] = True
+        additions.append(_geographic_issue(review, selected, geometry))
+    for item in additions:
+        if item not in issues:
+            issues.append(item)
+    return result, updated
 
 
 def regional_reviews(records, locations, regions, *, root=ROOT, config=None):
@@ -356,18 +497,24 @@ def regional_reviews(records, locations, regions, *, root=ROOT, config=None):
             coordinate = [float(value) for value in points[0].text.strip().split(",")[:2]]
             if not _coordinates_valid(coordinate):
                 raise ValueError("Regional operator map contains invalid coordinates")
-        else:
+        elif review.get("operator_kind") == "evie_public_map":
             operator_file = review["operator_source_file"]
             coordinate = _evie_point(root, sources, review)
-        operator_point = gpd.GeoSeries([Point(coordinate)], crs=4326).to_crs(7844).iloc[0]
-        if not geometry.covers(operator_point):
-            raise ValueError("Regional operator point lies outside the complete locality")
+        else:
+            operator_file = review["operator_source_file"]
+            _venue_address_evidence(root, sources, review)
+            _geographic_issue(review, location, geometry)
+            coordinate = None
+        if coordinate is not None:
+            operator_point = gpd.GeoSeries([Point(coordinate)], crs=4326).to_crs(7844).iloc[0]
+            if not geometry.covers(operator_point):
+                raise ValueError("Regional operator point lies outside the complete locality")
         audit = dict(zip(AUDIT_COLUMNS, [
             review["review_id"], record.record_id, location.location_id, int(record.source_row),
             location.sa4_code, review["expected_sa4_code"], "official_locality_containment",
             review["locality_name"], int(review["locality_object_id"]), str(review["locality_postcode"]),
             locality_file, operator_file, label, "unresolved", review["reason"],
-            config["review_date"], to_wkt(local.to_crs(4326).iloc[0], rounding_precision=-1),
+            review.get("review_date", config["review_date"]), to_wkt(local.to_crs(4326).iloc[0], rounding_precision=-1),
         ]))
         audits.append(audit)
         for item in review["evidence"]:
@@ -404,7 +551,24 @@ def database_regional_reviews_valid(con, *, root=ROOT, config=None):
             return False
         actual_evidence = con.execute("SELECT " + ",".join(EVIDENCE_COLUMNS) + " FROM reviewed_region_evidence ORDER BY ALL").fetchall()
         expected_evidence = sorted(evidence.itertuples(index=False, name=None))
-        return actual_evidence == expected_evidence
+        if actual_evidence != expected_evidence:
+            return False
+        geographic_issues = []
+        for review in config["reviews"]:
+            if review.get("geographic_conflict") is None:
+                continue
+            filename, _ = _review_files(config, review)
+            features = _localities(root, {**config, "locality_source_file": filename})
+            geometry = next(geom for props, geom in features if props["suburbname"] == review["locality_name"])
+            location = locations.loc[locations.location_id.eq(review["expected_location"]["location_id"])].iloc[0]
+            geographic_issues.append(_geographic_issue(review, location, geometry))
+        if geographic_issues:
+            fields = ["record_id", "source_row", "code", "severity", "detail"]
+            actual_issues = con.execute("SELECT " + ",".join(fields) + " FROM quality_issue "
+                                       "WHERE code='source_point_outside_reviewed_locality' ORDER BY ALL").fetchall()
+            if actual_issues != sorted(tuple(item[key] for key in fields) for item in geographic_issues):
+                return False
+        return True
     except Exception:
         # The validation API reports failure; the build API above raises errors.
         return False

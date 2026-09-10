@@ -1,5 +1,6 @@
 {
   "integrity_checks": {
+    "reviewed_operator_assignments_withheld": true,
     "ampol_snapshots_match_source": true,
     "ampol_matches_match_evidence": true,
     "ampol_attributes_match_sites": true,
@@ -84,7 +85,9 @@
     "coordinates_reviewed_primary_evidence": 7,
     "address_postcode_locality_mismatch": 1,
     "postcode_verified_ocm_osm": 1,
-    "spatial_coastal_nearest_within_50m": 1
+    "spatial_coastal_nearest_within_50m": 1,
+    "source_point_outside_reviewed_locality": 1,
+    "operator_assignment_pending_review": 1
   },
   "reviewed_identity_groups": 10,
   "reviewed_identity_source_records": 21,
@@ -99,8 +102,8 @@
   "reviewed_source_conflict_resolution": {
     "resolved": 7
   },
-  "unresolved_location_conflicts": 7,
-  "reviewed_region_only_locations": 7,
+  "unresolved_location_conflicts": 8,
+  "reviewed_region_only_locations": 8,
   "regional_analysis_locations": 1936,
   "regional_analysis_dc_locations": 426,
   "location_conflicts_without_region_review": 0,
@@ -153,8 +156,8 @@
     "CSV filename is December 2025; official resource metadata says effective April 2026.",
     "TfNSW source does not state coordinate CRS explicitly: WGS84 is an assumption.",
     "Operator-scope enrichment is not site-scope verification; coverage is reported separately.",
-    "11 source conflicts resolved automatically; 7 further records resolved using archived reviewed evidence; 7 remain excluded from the analysis-ready view.",
-    "7 conflicting locations have independently reviewed SA4 membership through whole-locality containment; their precise coordinates remain unresolved and are absent from the regional view.",
+    "11 source conflicts resolved automatically; 7 further records resolved using archived reviewed evidence; 8 remain excluded from the analysis-ready view.",
+    "8 conflicting locations have independently reviewed SA4 membership through whole-locality containment; their precise coordinates remain unresolved and are absent from the regional view.",
     "Coastal nearest assignment is an approximation, not an exact containment result.",
     "OCM observations may be older than the export; prices are unparsed historical text.",
     "Ampol connector labels are dated per-location website claims with repeated service descriptions; they are not live verification or a complete equipment inventory."
