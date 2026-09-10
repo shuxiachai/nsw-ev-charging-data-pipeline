@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-brownsville",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-brownsville",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:52.235631+00:00",
+  "sha256": "106263cc8f0667fd9d123a19952428f839509b91aecb0f7f5bc24d5300108df0",
+  "bytes": 148364,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-brownsville.html"
+}

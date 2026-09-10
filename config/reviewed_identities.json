@@ -1,0 +1,650 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-09",
+  "source_file": "data/raw/ev_20251216.csv",
+  "groups": [
+    {
+      "review_id": "RI01",
+      "representative_record_id": "r_991e509f6cce0b281e36",
+      "reason": "The same Chargefox 47-49A Cleary Street site is recorded under Newcastle and Hamilton. Both observations state DC, 2 plugs and 60 kW; their coordinates differ by 0.0675556 m. Retain the differing source categories.",
+      "members": [
+        {
+          "record_id": "r_991e509f6cce0b281e36",
+          "source_row": 575,
+          "original_location_id": "l_04198039f157ec10eea7",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "47-49A Cleary St, Newcastle, 2303",
+            "Operator": "Chargefox",
+            "Number_of_plugs": "2",
+            "Charger_Type": "DC",
+            "Charger_rating": "60 kW",
+            "Latitude": "-32.92120425",
+            "Longitude": "151.747975",
+            "LGANAME": "Newcastle City Council",
+            "PCODE": "2303",
+            "Source": "Existing Fast Chargers"
+          }
+        },
+        {
+          "record_id": "r_50392b73ec77634aa2ab",
+          "source_row": 1565,
+          "original_location_id": "l_b6393ff13a82414645a8",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "47-49A Cleary St\nHamilton NSW 2303\nAustralia",
+            "Operator": "Chargefox",
+            "Number_of_plugs": "2",
+            "Charger_Type": "DC",
+            "Charger_rating": "60 kW",
+            "Latitude": "-32.9212044",
+            "Longitude": "151.7479743",
+            "LGANAME": "Newcastle City Council",
+            "PCODE": "2303",
+            "Source": "Kerbside Charging R1"
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "RI02",
+      "representative_record_id": "r_e89046817e62949de6bc",
+      "reason": "The same Exploren 179 Gillards Road, Pokolbin site has AC and 1 plug in both observations; coordinates differ by 0.0691288 m. The earlier 22 kW rating and later unquantified AC rating remain separate source observations.",
+      "members": [
+        {
+          "record_id": "r_48599b2c4a029e5b1fee",
+          "source_row": 223,
+          "original_location_id": "l_f2383f535e01ad560608",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "179 Gillards Rd, Pokolbin, 2320",
+            "Operator": "Exploren",
+            "Number_of_plugs": "1",
+            "Charger_Type": "AC",
+            "Charger_rating": "22 kW",
+            "Latitude": "-32.7640561",
+            "Longitude": "151.2915996",
+            "LGANAME": "Cessnock City Council",
+            "PCODE": "2320",
+            "Source": "Existing Destination Chargers"
+          }
+        },
+        {
+          "record_id": "r_e89046817e62949de6bc",
+          "source_row": 1308,
+          "original_location_id": "l_032d7634b49a50c267b7",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "Gillards Road",
+            "Station_address": "179 Gillards Rd\nPokolbin NSW 2320\nAustralia",
+            "Operator": "Exploren",
+            "Number_of_plugs": "1",
+            "Charger_Type": "AC",
+            "Charger_rating": "AC",
+            "Latitude": "-32.7640555",
+            "Longitude": "151.2915994",
+            "LGANAME": "Cessnock City Council",
+            "PCODE": "2320",
+            "Source": "Destination Charging R2"
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "RI03",
+      "representative_record_id": "r_ccc301cc1d615ec5f1b4",
+      "reason": "The same Exploren 51 Bathurst Street, Condobolin site has AC and 2 plugs in both observations; coordinates differ by 0.1038305 m. The earlier 22 kW rating and later unquantified AC rating remain separate source observations.",
+      "members": [
+        {
+          "record_id": "r_fa0c544eeb7128a29eba",
+          "source_row": 599,
+          "original_location_id": "l_7916790618237eba1e44",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "51 Bathurst St, Condobolin, 2877",
+            "Operator": "Exploren",
+            "Number_of_plugs": "2",
+            "Charger_Type": "AC",
+            "Charger_rating": "22 kW",
+            "Latitude": "-33.08860065",
+            "Longitude": "147.1494875",
+            "LGANAME": "Lachlan Shire Council",
+            "PCODE": "2877",
+            "Source": "Existing Destination Chargers"
+          }
+        },
+        {
+          "record_id": "r_ccc301cc1d615ec5f1b4",
+          "source_row": 1590,
+          "original_location_id": "l_a442eb6c34bcbbf48e94",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "Bathurst Street, Condobolin",
+            "Station_address": "51 Bathurst St\nCondobolin NSW 2877\nAustralia",
+            "Operator": "Exploren",
+            "Number_of_plugs": "2",
+            "Charger_Type": "AC",
+            "Charger_rating": "AC",
+            "Latitude": "-33.0886001",
+            "Longitude": "147.1494866",
+            "LGANAME": "Lachlan Shire Council",
+            "PCODE": "2877",
+            "Source": "Destination Charging R2"
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "RI04",
+      "representative_record_id": "r_2c87bc341e2b7cad8ab2",
+      "reason": "Exploren's published location 845 identifies Kempsey Shire Council at 19 Buchanan Drive, South West Rocks; its map point is within 50 m of all three source observations. The older numbered-address observation and the named council observations have the same operator, AC type, two plugs and sub-metre source coordinates. Include the complete pre-existing 817/1012 group. Preserve row 1012's missing source postcode, LGA and category and all original ratings and coordinates.",
+      "members": [
+        {
+          "record_id": "r_a6c100ac154048c3330f",
+          "source_row": 244,
+          "original_location_id": "l_08de42a319a83564e93e",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "19 Buchanan Drive, South West Rocks, 2431",
+            "Operator": "Exploren",
+            "Number_of_plugs": "2",
+            "Charger_Type": "AC",
+            "Charger_rating": "22 kW",
+            "Latitude": "-30.88653058",
+            "Longitude": "153.037958",
+            "LGANAME": "Kempsey Shire Council",
+            "PCODE": "2431",
+            "Source": "Existing Destination Chargers"
+          }
+        },
+        {
+          "record_id": "r_2c87bc341e2b7cad8ab2",
+          "source_row": 817,
+          "original_location_id": "l_35b94af5266b77903bbd",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "Kempsey Shire Council",
+            "Station_address": "Buchanan Dr\nSouth West Rocks NSW 2431\nAustralia",
+            "Operator": "Exploren",
+            "Number_of_plugs": "2",
+            "Charger_Type": "AC",
+            "Charger_rating": "AC",
+            "Latitude": "-30.88653",
+            "Longitude": "153.0379572",
+            "LGANAME": "Kempsey Shire Council",
+            "PCODE": "2431",
+            "Source": "Destination Charging R1"
+          }
+        },
+        {
+          "record_id": "r_0496ddcfff0b44cf2383",
+          "source_row": 1012,
+          "original_location_id": "l_35b94af5266b77903bbd",
+          "raw_values": {
+            "OBJECTID": "200",
+            "Station_name": "Kempsey Shire Council",
+            "Station_address": "Buchanan Dr, South West Rocks NSW 2431, Australia",
+            "Operator": "Exploren",
+            "Number_of_plugs": "2",
+            "Charger_Type": "AC",
+            "Charger_rating": "22",
+            "Latitude": "-30.88653",
+            "Longitude": "153.0379572",
+            "LGANAME": "",
+            "PCODE": "",
+            "Source": ""
+          }
+        }
+      ],
+      "evidence_required": true,
+      "evidence": {
+        "map_file": "data/raw/reviewed/identity_exploren_map_20260909.html",
+        "detail_file": "data/raw/reviewed/identity_exploren_location_845_20260909.json",
+        "operator_location_id": 845,
+        "name": "Kempsey Shire Council",
+        "address": "19 Buchanan Dr, South West Rocks NSW 2431, Australia",
+        "map_point_latlon": [
+          -30.8862295,
+          153.0383289
+        ],
+        "max_source_distance_m": 50
+      }
+    },
+    {
+      "review_id": "RI05",
+      "representative_record_id": "r_d4f98efb45d1531cf77c",
+      "reason": "Exploren's published location 1437 names Ingenia - Merry Beach at 46 Merry Beach Road, Kioloa, with its map point exactly at the named source observation. The earlier unnumbered street observation has the same operator, AC type, four source plugs and sub-metre coordinates. This is a reviewed venue identity, not an equipment correction: retain the older 6 kW rating, later unknown rating and both four-plug observations. The 2026 operator detail describes two chargers at 7 kW; its date and charger/plug units do not establish the 2025 source equipment counts.",
+      "members": [
+        {
+          "record_id": "r_ce78d20d79e651152408",
+          "source_row": 906,
+          "original_location_id": "l_6eecc5c70283365d5e70",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "Merry Beach Rd, Kioloa, 2539",
+            "Operator": "Exploren",
+            "Number_of_plugs": "4",
+            "Charger_Type": "AC",
+            "Charger_rating": "6 kW",
+            "Latitude": "-35.56540945",
+            "Longitude": "150.371977",
+            "LGANAME": "Shoalhaven City Council",
+            "PCODE": "2539",
+            "Source": "Existing Destination Chargers"
+          }
+        },
+        {
+          "record_id": "r_d4f98efb45d1531cf77c",
+          "source_row": 1562,
+          "original_location_id": "l_948baf6352bf603393f7",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "Ingenia Holiday Parks - Merry Beach",
+            "Station_address": "46 Merry Beach Rd\nKioloa NSW 2539\nAustralia",
+            "Operator": "Exploren",
+            "Number_of_plugs": "4",
+            "Charger_Type": "AC",
+            "Charger_rating": "AC",
+            "Latitude": "-35.5654089",
+            "Longitude": "150.3719759",
+            "LGANAME": "Shoalhaven City Council",
+            "PCODE": "2539",
+            "Source": "Destination Charging R2"
+          }
+        }
+      ],
+      "evidence_required": true,
+      "evidence": {
+        "map_file": "data/raw/reviewed/identity_exploren_map_20260909.html",
+        "detail_file": "data/raw/reviewed/identity_exploren_location_1437_20260909.json",
+        "operator_location_id": 1437,
+        "name": "Ingenia - Merry Beach",
+        "address": "Merry Beach Caravan Park, 46 Merry Beach Rd, Kioloa NSW 2539, Australia",
+        "map_point_latlon": [
+          -35.5654089,
+          150.3719759
+        ],
+        "max_source_distance_m": 1
+      }
+    },
+    {
+      "review_id": "RI06",
+      "representative_record_id": "r_4e03f7a7fd864d0d5658",
+      "reason": "Exploren's published location 1380 names Milton Ulladulla Exservos Club at 212-222 Princes Highway, containing source number 222, with its map point exactly at the named source observation. The earlier unnumbered street observation has the same operator, AC type, four source plugs and sub-metre coordinates. Retain both source categories and ratings. The current operator detail lists two chargers; it is venue evidence and does not overwrite the historical four-plug observations.",
+      "members": [
+        {
+          "record_id": "r_681ef6def250932a2eea",
+          "source_row": 937,
+          "original_location_id": "l_a1cc829f4b8a7e62cd78",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "Princes Hwy, Ulladulla, 2539",
+            "Operator": "Exploren",
+            "Number_of_plugs": "4",
+            "Charger_Type": "AC",
+            "Charger_rating": "22 kW",
+            "Latitude": "-35.36842147",
+            "Longitude": "150.4706086",
+            "LGANAME": "Shoalhaven City Council",
+            "PCODE": "2539",
+            "Source": "Existing Destination Chargers"
+          }
+        },
+        {
+          "record_id": "r_4e03f7a7fd864d0d5658",
+          "source_row": 1398,
+          "original_location_id": "l_89e7bb12912d228537b2",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "Milton Ulladulla Ex Services Club",
+            "Station_address": "222 Princes Hwy\nUlladulla NSW 2539\nAustralia",
+            "Operator": "Exploren",
+            "Number_of_plugs": "4",
+            "Charger_Type": "AC",
+            "Charger_rating": "AC",
+            "Latitude": "-35.3684214",
+            "Longitude": "150.4706082",
+            "LGANAME": "Shoalhaven City Council",
+            "PCODE": "2539",
+            "Source": "Destination Charging R2"
+          }
+        }
+      ],
+      "evidence_required": true,
+      "evidence": {
+        "map_file": "data/raw/reviewed/identity_exploren_map_20260909.html",
+        "detail_file": "data/raw/reviewed/identity_exploren_location_1380_20260909.json",
+        "operator_location_id": 1380,
+        "name": "Milton Ulladulla Exservos Club",
+        "address": "212-222 Princes Hwy, Ulladulla NSW 2539, Australia",
+        "map_point_latlon": [
+          -35.3684214,
+          150.4706082
+        ],
+        "max_source_distance_m": 1
+      }
+    },
+    {
+      "review_id": "RI07",
+      "representative_record_id": "r_27050b90342f57630636",
+      "reason": "The council visitor site identifies one installation of 12 Tesla Superchargers at Campbelltown Catholic Club; the venue confirms 20-22 Camden Rd. Both complete source observations identify this same address, network, DC class and 12 plugs. Their 107.52 m point difference is an individually reviewed venue-location discrepancy, not a clustering tolerance. Source row 307 remains the whole-row representative; all coordinates, source categories and differing ratings are retained. The later webpages establish identity, not historical rating or simultaneous capacity.",
+      "evidence_required": true,
+      "max_member_distance_m": 110,
+      "evidence": {
+        "kind": "campbelltown_tesla_venue",
+        "installation_file": "data/raw/reviewed/identity_campbelltown_installation_20260909.html",
+        "address_file": "data/raw/reviewed/identity_campbelltown_address_20260909.html",
+        "address": "20-22 Camden Rd Campbelltown NSW 2560 Australia",
+        "network": "Tesla",
+        "source_plugs": 12
+      },
+      "members": [
+        {
+          "record_id": "r_27050b90342f57630636",
+          "source_row": 307,
+          "original_location_id": "l_61f32a319bbc9b809bd6",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "20-22 Camden Rd Campbelltown NSW 2560 Australia",
+            "Operator": "Tesla",
+            "Number_of_plugs": "12",
+            "Charger_Type": "DC",
+            "Charger_rating": "175 kW",
+            "Latitude": "-34.0725934",
+            "Longitude": "150.8078816",
+            "LGANAME": "Campbelltown City Council",
+            "PCODE": "2560",
+            "Source": "Fast Charging R1"
+          }
+        },
+        {
+          "record_id": "r_f92ce15b72c57a57f94b",
+          "source_row": 1077,
+          "original_location_id": "l_9ca2e479073623c40d0a",
+          "raw_values": {
+            "OBJECTID": "620",
+            "Station_name": "",
+            "Station_address": "20-22 Camden Rd Campbelltown NSW 2560 Australia",
+            "Operator": "Tesla Motors ",
+            "Number_of_plugs": "12",
+            "Charger_Type": "DC",
+            "Charger_rating": "2x350kW & 2x175kW",
+            "Latitude": "-34.0722029",
+            "Longitude": "150.8068155",
+            "LGANAME": "",
+            "PCODE": "",
+            "Source": ""
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "RI08",
+      "representative_record_id": "r_45ecad6be12cb2462b70",
+      "reason": "Shell station 10110865 identifies EV charging at 241 Waterworth Drive, Mount Annan, with a published venue point. The project supplier SwitchDin identifies the Viva Energy Reddy Express Mt Annan ultrafast installation. Both source observations have that same address, canonical operator, DC class and four plugs, and both lie within 25 m of the official venue point. Source row 361 remains the whole-row representative. All original points and differing ratings are retained; the supplier does not independently validate the source plug count and the observations are not summed.",
+      "evidence_required": true,
+      "max_member_distance_m": 25,
+      "evidence": {
+        "kind": "mount_annan_viva_venue",
+        "site_file": "data/raw/reviewed/identity_mount_annan_site_20260909.html",
+        "supplier_file": "data/raw/reviewed/identity_mount_annan_supplier_20260909.html",
+        "address": "241 Waterworth Dr, Mount Annan NSW 2567, Australia",
+        "network": "Viva Energy Australia",
+        "source_plugs": 4,
+        "site_point_latlon": [
+          -34.049392,
+          150.760258
+        ],
+        "max_source_distance_m": 25
+      },
+      "members": [
+        {
+          "record_id": "r_45ecad6be12cb2462b70",
+          "source_row": 361,
+          "original_location_id": "l_64a0cba3a8bda610eeed",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "241 Waterworth Dr, Mount Annan NSW 2567, Australia",
+            "Operator": "Viva Energy Australia",
+            "Number_of_plugs": "4",
+            "Charger_Type": "DC",
+            "Charger_rating": "175 kW",
+            "Latitude": "-34.049425",
+            "Longitude": "150.7603383",
+            "LGANAME": "Camden Council",
+            "PCODE": "2567",
+            "Source": "Fast Charging R2"
+          }
+        },
+        {
+          "record_id": "r_ae49145695dbcec7c6e2",
+          "source_row": 1088,
+          "original_location_id": "l_2c35098cede420b5ac92",
+          "raw_values": {
+            "OBJECTID": "693",
+            "Station_name": "",
+            "Station_address": "241 Waterworth Dr, Mount Annan NSW 2567, Australia",
+            "Operator": "Viva Energy A",
+            "Number_of_plugs": "4",
+            "Charger_Type": "DC",
+            "Charger_rating": "2x350kW & 2x175kW",
+            "Latitude": "-34.0495366",
+            "Longitude": "150.7601125",
+            "LGANAME": "",
+            "PCODE": "",
+            "Source": ""
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "RI09",
+      "review_date": "2026-09-10",
+      "representative_record_id": "r_414226d0528ed81a9d83",
+      "reason": "Hunters Hill Council's 4 March 2025 proposal update endorses an Evie fast charger with two charging bays at the 3A Cowell St Council carpark, Gladesville, under Kerbside Charging Round 1. Its separately published FAQ confirms an operating Evie charger at that carpark. The two source observations have the same 3A Cowell street address, postcode, operator, two plugs and 75 kW rating, with points 15.380338 m apart. They represent one project location across Existing Fast Chargers and Kerbside Charging R1 sources. Row 1528 is the fixed whole-row representative because its address names Gladesville; its point is not claimed more accurate. All original coordinates, ratings and source categories remain unchanged. The Council texts establish site identity and two bays, not a new verification of 75 kW or physical connector serial numbers.",
+      "evidence_required": true,
+      "max_member_distance_m": 20,
+      "evidence": {
+        "kind": "cowell_evie_council_venue",
+        "proposal_file": "data/raw/reviewed/identity_cowell_council_proposal_20260910.html",
+        "operation_file": "data/raw/reviewed/identity_cowell_council_operation_20260910.html",
+        "address": "3A Cowell St Gladesville NSW 2111 Australia",
+        "network": "Evie",
+        "source_plugs": 2
+      },
+      "members": [
+        {
+          "record_id": "r_87087bde4ca0ce4d15e0",
+          "source_row": 512,
+          "original_location_id": "l_29f355d832a72df5981b",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "3A Cowell St, Sydney, 2111",
+            "Operator": "Evie",
+            "Number_of_plugs": "2",
+            "Charger_Type": "DC",
+            "Charger_rating": "75 kW",
+            "Latitude": "-33.83281286",
+            "Longitude": "151.1277918",
+            "LGANAME": "Hunters Hill, The Council of the Municipality of",
+            "PCODE": "2111",
+            "Source": "Existing Fast Chargers"
+          }
+        },
+        {
+          "record_id": "r_414226d0528ed81a9d83",
+          "source_row": 1528,
+          "original_location_id": "l_cf2fd012b6b93bd68f29",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "3A Cowell St\nGladesville NSW 2111\nAustralia",
+            "Operator": "Evie Networks",
+            "Number_of_plugs": "2",
+            "Charger_Type": "DC",
+            "Charger_rating": "75 kW",
+            "Latitude": "-33.8329216",
+            "Longitude": "151.1276887",
+            "LGANAME": "Hunters Hill, The Council of the Municipality of",
+            "PCODE": "2111",
+            "Source": "Kerbside Charging R1"
+          }
+        }
+      ]
+    },
+    {
+      "review_id": "RI10",
+      "review_date": "2026-09-10",
+      "representative_record_id": "r_7eb57f92ab6f23667688",
+      "reason": "North Sydney Council's 17 June 2025 installation table identifies the Parraween Street, Cremorne Evie site with four charging spaces and 75 kW DC charging. Council's carpark directory independently describes two dual 75 kW DC chargers, four bays, operated by Evie at Parraween Street, Cremorne 2090. Both source records give 106 Parraween St, four plugs and 75 kW, with points 18.004425 m apart, across Existing Fast Chargers and Kerbside Charging R1 sources. The Council directory establishes the carpark identity but does not independently publish the 106 street number. Row 1861 remains the whole-row representative because its address names Cremorne, without asserting greater point accuracy. Every original coordinate, device observation and source category is retained; repeated capacities are not added together.",
+      "evidence_required": true,
+      "max_member_distance_m": 20,
+      "evidence": {
+        "kind": "parraween_evie_council_venue",
+        "installation_file": "data/raw/reviewed/identity_parraween_council_installation_20260910.html",
+        "carpark_file": "data/raw/reviewed/identity_parraween_council_carpark_20260910.html",
+        "address": "106 Parraween St Cremorne NSW 2090 Australia",
+        "network": "Evie",
+        "source_plugs": 4
+      },
+      "members": [
+        {
+          "record_id": "r_18eff170ad77e27b68fb",
+          "source_row": 69,
+          "original_location_id": "l_f0baf3917a54b5836f6a",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "106 Parraween St, Sydney, 2090",
+            "Operator": "Evie",
+            "Number_of_plugs": "4",
+            "Charger_Type": "DC",
+            "Charger_rating": "75 kW",
+            "Latitude": "-33.8273504",
+            "Longitude": "151.2303373",
+            "LGANAME": "North Sydney Council",
+            "PCODE": "2090",
+            "Source": "Existing Fast Chargers"
+          }
+        },
+        {
+          "record_id": "r_7eb57f92ab6f23667688",
+          "source_row": 1861,
+          "original_location_id": "l_6e3d9ca76b87b7e64a7a",
+          "raw_values": {
+            "OBJECTID": "",
+            "Station_name": "",
+            "Station_address": "106 Parraween St\nCremorne NSW 2090\nAustralia",
+            "Operator": "Evie Networks",
+            "Number_of_plugs": "4",
+            "Charger_Type": "DC",
+            "Charger_rating": "75 kW",
+            "Latitude": "-33.8272794",
+            "Longitude": "151.2301624",
+            "LGANAME": "North Sydney Council",
+            "PCODE": "2090",
+            "Source": "Kerbside Charging R1"
+          }
+        }
+      ]
+    }
+  ],
+  "evidence_sources": [
+    {
+      "file": "data/raw/reviewed/identity_exploren_map_20260909.html",
+      "url": "https://exploren.com.au/find-a-charger/",
+      "sha256": "ed08e8f113a3ac94a127a2b7775cfad0e6a0efc51a56f43a099dd6ca7075f7fb",
+      "method": "GET"
+    },
+    {
+      "file": "data/raw/reviewed/identity_exploren_location_845_20260909.json",
+      "url": "https://exploren.com.au/wp-admin/admin-ajax.php",
+      "sha256": "0d9451ecaaca7f5e351b852bf01fa00c18c14bf8c1fead3dd1c5d7a103d156ff",
+      "method": "POST",
+      "request_action": "exploren_get_location_detail",
+      "location_id": 845
+    },
+    {
+      "file": "data/raw/reviewed/identity_exploren_location_1437_20260909.json",
+      "url": "https://exploren.com.au/wp-admin/admin-ajax.php",
+      "sha256": "eb7000061d57da3f8ad6b3650a2e262ec73a46d218086184d2eccdcafd1e45a5",
+      "method": "POST",
+      "request_action": "exploren_get_location_detail",
+      "location_id": 1437
+    },
+    {
+      "file": "data/raw/reviewed/identity_exploren_location_1380_20260909.json",
+      "url": "https://exploren.com.au/wp-admin/admin-ajax.php",
+      "sha256": "c3ca48bf168556a9c7d5adba2c3078222fa69fc62ef65f192feed8b724aced5d",
+      "method": "POST",
+      "request_action": "exploren_get_location_detail",
+      "location_id": 1380
+    },
+    {
+      "file": "data/raw/reviewed/identity_campbelltown_installation_20260909.html",
+      "url": "https://visitcampbelltown.com.au/tesla-ev-charging-station-campbelltown-catholic-club/",
+      "sha256": "5d57b8d3783d3a7f7576a8cead6a87b47bf1d39fd80dbb71153ea4407811a8a0",
+      "method": "GET",
+      "provider": "campbelltown_installation"
+    },
+    {
+      "file": "data/raw/reviewed/identity_campbelltown_address_20260909.html",
+      "url": "https://cathclub.com.au/contact/",
+      "sha256": "89d3fb18775ff499d9fc73ea322bc6aad14922bc8d05f9d6715612f5d981042e",
+      "method": "GET",
+      "provider": "campbelltown_address"
+    },
+    {
+      "file": "data/raw/reviewed/identity_mount_annan_site_20260909.html",
+      "url": "https://find.shell.com/au/fuel/10110865-shell-reddy-express-mount-annan/en_AU",
+      "sha256": "afc5ab435f735f6d29368912d10df86aa2256313a70ea66472cbdfe969de08e3",
+      "method": "GET",
+      "provider": "mount_annan_site"
+    },
+    {
+      "file": "data/raw/reviewed/identity_mount_annan_supplier_20260909.html",
+      "url": "https://www.switchdin.com/resources/ultrafast-ev-chargers-live-in-an-australian-first",
+      "sha256": "a5dee4deed5b5b3b317e04dc96574f191010f17c6533348b3f630981d3134ef2",
+      "method": "GET",
+      "provider": "mount_annan_supplier"
+    },
+    {
+      "file": "data/raw/reviewed/identity_cowell_council_proposal_20260910.html",
+      "url": "https://connect.huntershill.nsw.gov.au/electric-vehicle-charging-proposal",
+      "sha256": "63e8ced4341788926a9510762a4e12a61ab4e3ccee8114357cc0a232ffd07ffb",
+      "method": "GET",
+      "provider": "cowell_council_proposal"
+    },
+    {
+      "file": "data/raw/reviewed/identity_cowell_council_operation_20260910.html",
+      "url": "https://connect.huntershill.nsw.gov.au/ev/widgets/464182/faqs",
+      "sha256": "ae3c8b5465c6a345a85d43610ec41c59b5be17f389f7178d5e8cac7bbbc703e8",
+      "method": "GET",
+      "provider": "cowell_council_operation"
+    },
+    {
+      "file": "data/raw/reviewed/identity_parraween_council_installation_20260910.html",
+      "url": "https://www.northsydney.nsw.gov.au/news/article/310/north-sydney-powers-up-with-60-new-ev-charging-stations",
+      "sha256": "71a72609d38abf1a3f157d389a6781af8fa7e1bce0d3bfb1a585eaac1f56a787",
+      "method": "GET",
+      "provider": "parraween_council_installation"
+    },
+    {
+      "file": "data/raw/reviewed/identity_parraween_council_carpark_20260910.html",
+      "url": "https://www.northsydney.nsw.gov.au/directory-record/134/parraween-street-car-park-cremorne",
+      "sha256": "b38117e318be8f056400e27b40ce117848a280414a1a852c68613674a6135120",
+      "method": "GET",
+      "provider": "parraween_council_carpark"
+    }
+  ]
+}

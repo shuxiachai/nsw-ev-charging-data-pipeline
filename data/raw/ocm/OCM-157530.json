@@ -1,0 +1,40 @@
+{
+    "DateLastVerified": "2023-07-13T23:05:00Z",
+    "ID": 157530,
+    "UUID": "B7F3ADB0-39CB-4E24-97EC-4F1066F069F9",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.40 per kWh",
+    "AddressInfo": {
+        "ID": 157884,
+        "Title": "Audi Centre",
+        "AddressLine1": "337 Harborne St",
+        "Town": "Osborne Park‎",
+        "StateOrProvince": "WA",
+        "Postcode": "6017",
+        "CountryID": 18,
+        "Latitude": -31.91527,
+        "Longitude": 115.819405,
+        "ContactTelephone1": "1300518038",
+        "AccessComments": "Access only 16:00 to 06:30 on Monday to Friday, no restrictions on Saturday to Sunday.",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 226927,
+            "ConnectionTypeID": 33,
+            "Reference": "4199",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 3,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-13T23:05:00Z",
+    "DateCreated": "2020-06-13T23:54:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,262 @@
+location_id,distance_m,address_similarity,same_operator,postcode_conflict,source_address_conflict,extended_address_conflict,eligible,score,decision,source_address,external_address,source_operator,external_operator,address_exception_applied,address_exception_review_id,address_exception_record_id,address_exception_source_file,address_exception_evidence_sha256,address_exception_reason,osm_id
+l_525794e991b51357265b,65.94037462639166,0.0,True,False,False,,True,0.5071291883094848,accepted,"01 Wallgrove Road, Sydney, 2766",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10590006365
+l_fbcee1e03e94d9ac4c0f,66.18492830290896,0.0,True,False,False,,True,0.506599322010364,accepted,"1 Bay St, Sydney, 2037",,Tesla,Tesla,False,,,,,,node/5438383393
+l_d813f6d679728d3c3dcb,26.315236816806486,0.0,True,False,False,,True,0.592983653563586,accepted,"1 Dalgal Way, Sydney, 2037",,Tesla,Tesla,False,,,,,,node/6965052432
+l_f7ffc9db354b0eadfb4d,2.9243798181014067,0.0,True,False,False,,True,0.643663843727447,accepted,"1 Greenbridge Dr, Wilton, 2571",,Chargefox,Chargefox,False,,,,,,node/12624993541
+l_68291ad118eee7eaf940,0.9276566154163,0.0,True,False,False,,True,0.6479900773332647,accepted,"1 Ingham Dr, Casula NSW 2170",,Evie,Evie,False,,,,,,node/9863034303
+l_9deadb2a0afc611a6cea,15.415580141802407,1.0,True,False,False,,True,0.9665995763594282,accepted,"1 Park St, Sydney, 2103",1 Park Street,JOLT,JOLT,False,,,,,,node/9704706490
+l_9deadb2a0afc611a6cea,77.23586607158391,0.4444444444444444,True,False,False,,True,0.6382111790671238,lower_rank,"1 Park St, Sydney, 2103",Bungan Street,JOLT,JOLT,False,,,,,,node/9204398603
+l_9c55cbf88f358f6734fc,149.5011321968635,0.0,False,False,False,,False,0.32608088024012905,rejected_evidence,"1 Perry St, Batemans Bay, 2536",,Evie,NRMA,False,,,,,,node/6512442081
+l_e3fee88b31e9311b5a60,5.603525669592156,0.0,True,False,False,,True,0.6378590277158837,accepted,"10 Brookfield Rd, Minto NSW 2566",,Evie,Evie,False,,,,,,node/12015862929
+l_353ee84dcee8651d78a3,6.046331001214398,0.0,True,False,False,,True,0.6368996161640355,accepted,"10 Elizabeth St, Bathurst, 2795",,Evie,Evie,False,,,,,,node/12481649796
+l_353ee84dcee8651d78a3,198.8625761154875,0.0,False,False,False,,False,0.2191310850831104,rejected_evidence,"10 Elizabeth St, Bathurst, 2795",,Evie,NRMA,False,,,,,,node/13013484065
+l_9da5faf300fd10acd433,9.847030566262015,0.0,True,False,False,,True,0.6286647671064323,accepted,"10 Winery Dr, Port Macquarie, 2444",,Tesla,Tesla,False,,,,,,node/6460587589
+l_4592803be71c761717d7,4.948401903186985,0.0,True,False,False,,True,0.639278462543095,accepted,"105 Station Rd, Sydney, 2147",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/13036266779
+l_75b8ce0254cd2db487a7,26.24364825706613,0.0,False,False,False,,False,0.5931387621096901,rejected_evidence,"1067 Oxley Hwy, Thrumster, 2444",,Chargefox,NRMA,False,,,,,,node/8390250930
+l_1613ca64d30e734b161f,21.268293448816458,0.0,True,False,False,,True,0.6039186975275643,accepted,"11 Ewingsdale Rd, Ewingsdale, 2481",,NRMA,NRMA,False,,,,,,node/6695968988
+l_18260143f953bb72e108,80.48322668926936,0.0,False,False,False,,False,0.475619675506583,rejected_evidence,"1183-1187 The Horsley Dr, Sydney, 2164",,Chargefox,Engie,False,,,,,,node/11048936553
+l_9b366990e3581dafad13,45.56884042339633,0.0,True,False,False,,True,0.5512675124159746,accepted,"1183-1187 The Horsley Dr, Wetherill Park NSW 2164",,Engie,Engie,False,,,,,,node/11048936553
+l_22c2a4f6599fdc9bab94,9.219929596903015,0.0,False,False,False,,False,0.6300234858733768,rejected_evidence,"119 Stenhouse Drive, Cameron Park, 2285",,Evie,Ampol AmpCharge,False,,,,,,node/13389664015
+l_b53c8d230a9365dc443d,47.224875324262946,0.0,True,False,False,,True,0.5476794367974303,accepted,"12 Hume Hwy, Pheasants Nest, 2574",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/11137421689
+l_b45e1b0eaa6413d79c5a,10.54861372584514,0.0,True,False,False,,True,0.6271446702606689,accepted,"12 Hume Hwy, Pheasants Nest, 2574",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/11137421690
+l_a824dbefdb5a072f5da3,171.04146242332104,0.0,False,False,False,,False,0.2794101647494711,rejected_evidence,"121 Princes Hwy, Wollongong, 2519",,Exploren,BP Pulse (AU),False,,,,,,node/10783513810
+l_eead85d23984e6a813de,8.490736839874442,0.0,True,False,False,,True,0.6316034035136053,accepted,"13125 Hume Hwy, Sutton Forest, 2577",,Evie,Evie,False,,,,,,node/9765677232
+l_26ea833cea6288c1737a,175.95653289433628,0.0,False,False,False,,False,0.26876084539560474,rejected_evidence,"13-17 Princes Hwy, Albion Park Rail NSW 2527",,Evie,Ampol AmpCharge,False,,,,,,node/13309552143
+l_23a134d624929bfd15b1,58.58799734686469,0.0,True,False,False,,True,0.5230593390817933,accepted,"132 Pound Street, Grafton, 2460",,NRMA,NRMA,False,,,,,,node/6656345063
+l_28d02cdb22393c3210e9,287.969065072521,0.0,False,False,False,,False,0.02606702567620452,rejected_evidence,"134 Lachlan St, Hay, 2711",,NRMA,Tesla,False,,,,,,node/12087095506
+l_28d02cdb22393c3210e9,30.34770022748841,0.0,True,False,False,,True,0.5842466495071085,accepted,"134 Lachlan St, Hay, 2711",,NRMA,NRMA,False,,,,,,node/6926483227
+l_97d4a48e0cdd6fe1209f,294.46836303211654,0.0,False,False,False,,False,0.011985213430414183,rejected_evidence,"134 Lachlan St, Hay, 2711",,NRMA,Tesla,False,,,,,,node/12087095506
+l_97d4a48e0cdd6fe1209f,147.9830816784526,0.0,True,False,False,,False,0.329369989696686,rejected_evidence,"134 Lachlan St, Hay, 2711",,NRMA,NRMA,False,,,,,,node/6926483227
+l_34d4f73a8f6742baf37b,72.81717325485097,0.0,False,False,False,,False,0.49222945794782297,rejected_evidence,"141 Roselands Ave, Roselands NSW 2196",,Engie,Chargefox,False,,,,,,node/13064595558
+l_97d544f4c0f280a6d782,86.26240767344837,0.0,False,False,False,,False,0.46309811670752854,rejected_evidence,"149 Alison Rd, Sydney, 2031",,JOLT,Chargefox,False,,,,,,node/6965143040
+l_7e80a277fc27451959f7,73.34745558340623,0.0,False,False,False,,False,0.49108051290261984,rejected_evidence,"15 Chancellors Dr, Thrumster , 2444",,Tesla,NRMA,False,,,,,,node/7853821459
+l_7e80a277fc27451959f7,55.45879341381497,0.0,True,False,False,,True,0.5298392809367342,accepted,"15 Chancellors Dr, Thrumster , 2444",,Tesla,Tesla,False,,,,,,node/11433418128
+l_0c3f30201da35fb730e7,102.04581912530944,0.0,False,False,False,,False,0.42890072522849626,rejected_evidence,"153 Coreen Ave Cnr Castlereagh Rd, Penrith, NSW, 2750",,Ampol AmpCharge,BP Pulse (AU),False,,,,,,node/11427578131
+l_0c3f30201da35fb730e7,20.65482676537445,0.0,True,False,False,,True,0.6052478753416887,external_poi_reused_review,"153 Coreen Ave Cnr Castlereagh Rd, Penrith, NSW, 2750",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/10924895189
+l_9e4c2f3014a4770c851c,26.331266631141254,0.0,True,False,False,,True,0.5929489222991939,accepted,"15620 Hume Hwy, Marulan, 2579",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10263943172
+l_c45a8e642136acb713f1,52.47195011217507,0.0,True,False,False,,True,0.536310774756954,accepted,"15666 Hume Hwy, Marulan, 2579",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10263943171
+l_64059e6f54d8548ae62e,190.87732514920606,0.0,False,False,False,,False,0.2364324621767202,rejected_evidence,"157 Rouse Street, Tenterfield, NSW 2372, Australia",,NRMA,Tesla,False,,,,,,node/10258355351
+l_95c3dd4bbc007baec567,3.501154253610206,0.9166666666666666,True,False,False,,True,0.9632474991171779,accepted,"16 Oaks Ave, Sydney, 2099",4-16 Oaks Avenue,JOLT,JOLT,False,,,,,,node/9491233549
+l_95c3dd4bbc007baec567,27.907462681030697,0.0,False,False,False,,False,0.5895338308577669,rejected_evidence,"16 Oaks Ave, Sydney, 2099",,JOLT,Tesla,False,,,,,,node/13688536001
+l_24530937e3d61418af78,8.46486307539287,0.0,True,False,False,,True,0.6316594633366488,accepted,"18 Silver St, Sydney, 2031",,Chargefox,Chargefox,False,,,,,,node/6965143040
+l_b8c46e148a2862d60baa,10.633071854945996,0.0,True,False,False,,True,0.626961677647617,accepted,"18 Victoria Avenue, Castle Hill NSW 2154",,Evie,Evie,False,,,,,,node/11365214134
+l_06c6ea1e177730f1c26f,11.132624671445122,0.0,True,False,False,,True,0.625879313211869,accepted,"185 Princes Hwy, Narooma , 2546",,Tesla,Tesla,False,,,,,,node/5758577851
+l_ef816b6b5395942c25c9,133.96206699731007,0.0,True,False,False,,False,0.3597488548391615,rejected_evidence,"19 Princes Hwy, Figtree NSW 2525, Australia",,Tesla,Tesla,False,,,,,,node/10815562193
+l_0f67a9435af17f08cf79,5.565322589863501,0.0,True,False,False,,True,0.6379418010552957,accepted,"19 Richmond Rd, Sydney, 2140",,JOLT,JOLT,False,,,,,,node/9290610873
+l_16abb5bc4267f02b6bed,49.6898889171947,0.0,True,False,False,,True,0.5423385740127449,external_poi_reused_review,197-215 Condamine St Balgowlah NSW 2093 Australia,,Tesla,Tesla,False,,,,,,node/12968478808
+l_85c7632ab12d02c5bfe2,23.29541227960382,0.0,True,False,False,,True,0.5995266067275251,accepted,"198 Great Western Highway, Hazelbrook, NSW, 2779",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/11335199123
+l_f1afe2858ccda50abd67,6.190070357194191,0.0,True,False,False,,True,0.6365881808927459,accepted,"2 Corkwood Rd, Valla, 2448",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/11495572569
+l_7bc95205a8f87ef9657c,14.154091855893268,0.0,True,False,False,,True,0.619332800978898,accepted,"2 Hercules Street, Murrumbateman, 2582",,Evie,Evie,False,,,,,,node/9366472089
+l_368f35de34030fd756b9,9.54783667572202,0.0,True,False,False,,True,0.6293130205359356,accepted,"2 Ocean Dr, Kew, 2439",,Tesla,Tesla,False,,,,,,node/12753915088
+l_3059ea9a3ffa0b504815,72.03129560556029,0.0,True,False,False,,True,0.49393219285461937,accepted,"2 Stewart St, Lithgow, 2790",,Evie,Evie,False,,,,,,node/12015928951
+l_3915fce4190876f18d00,1.627551483722174,0.0,True,False,False,,True,0.6464736384519353,accepted,"201 Manning River Drive, Taree, 2430",,Evie,Evie,False,,,,,,node/7612252206
+l_5711ab1d8fc3bab1a5f8,4.857057061592481,1.0,True,False,False,,True,0.9894763763665496,accepted,"201 Sloane St, Goulburn , 2580",201 Sloane Street,Tesla,Tesla,False,,,,,,node/4016257448
+l_61f32a319bbc9b809bd6,258.0945051981206,0.0,False,False,False,,False,0.09079523873740533,rejected_evidence,20-22 Camden Rd Campbelltown NSW 2560 Australia,,Tesla,Evie,False,,,,,,node/11419885107
+l_61f32a319bbc9b809bd6,132.96040034916481,0.0,True,False,False,,False,0.3619191325768095,rejected_evidence,20-22 Camden Rd Campbelltown NSW 2560 Australia,,Tesla,Tesla,False,,,,,,node/10774220953
+l_61f32a319bbc9b809bd6,215.03957225847918,0.0,False,False,False,,False,0.18408092677329507,rejected_evidence,20-22 Camden Rd Campbelltown NSW 2560 Australia,,Tesla,Chargefox,False,,,,,,node/11842761957
+l_ad85ecae7e79b1cbf2fd,2.630028127328334,0.0,True,False,False,,True,0.644301605724122,accepted,"205 Old Hume Hwy, Mittagong, 2575",,Evie,Evie,False,,,,,,node/11365114635
+l_c9edb3efcd34476ad94c,38.492657740746665,0.0,True,False,False,,True,0.5665992415617156,accepted,"2072 Camden Valley Way, Edmondson Park, NSW, 2174",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/11419886723
+l_32eb185d7df4945bac3c,1.2225778781292063,0.0,True,False,False,,True,0.6473510812640534,accepted,"224 Princes Hwy, Wollongong, 2519",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10783513810
+l_395d72b887ba3c6c001b,7.626510242855169,0.0,True,False,False,,True,0.6334758944738138,accepted,"224 Prospect Hwy, Seven Hills NSW 2147",,Evie,Evie,False,,,,,,node/11365136257
+l_eb0ffbfcd4758036faaa,7.794441605726239,0.0,True,False,False,,True,0.6331120431875932,external_poi_reused_review,"2260 Camden Valley Way, Sydney, 2170",,JOLT,JOLT,False,,,,,,node/11689937303
+l_5617df25e7fc5dc3ef32,19.00363368268239,0.0,True,False,False,,True,0.6088254603541882,external_poi_reused_review,"2260 Camden Valley Way, Sydney, 2170",,JOLT,JOLT,False,,,,,,node/11689937303
+l_f9ba087aa70daec660fd,84.8946993509153,0.0,True,False,False,,True,0.4660614847396835,accepted,"2285 Pacific Hwy, Heatherbrae, 2324",,Tesla,Tesla,False,,,,,,node/6816990777
+l_58679f2cce2f2abf3628,7.178946256553735,0.0,True,False,False,,True,0.6344456164441336,accepted,"2398 Pacific Hwy, Heatherbrae, 2324",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10647829948
+l_d39f4fc8acfc83c787e0,7.2624824867466495,0.0,True,False,False,,True,0.6342646212787156,accepted,"24 Cooper St, Macksville, 2447",,Evie,Evie,False,,,,,,node/8505686311
+l_bc43dfca880ffb942ad0,6.336079146740039,0.0,True,False,False,,True,0.6362718285153967,accepted,"24 Sallys Corner Rd, Exeter , 2579",,Tesla,Tesla,False,,,,,,node/10744631135
+l_64a0cba3a8bda610eeed,42.57397749122708,0.0,False,False,False,,False,0.5577563821023414,rejected_evidence,"241 Waterworth Dr, Mount Annan NSW 2567, Australia",,Viva Energy Australia,shell recharge solutions,False,,,,,,node/12686156645
+l_51489750c9bacd1f1530,10.109232584233746,0.0,True,False,False,,True,0.6280966627341602,accepted,"24-42 King Georges Rd, Sydney, 2195",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10218282678
+l_1761162d94172575a525,29.725098335350154,0.0,True,False,False,,True,0.5855956202734081,accepted,"250 Comur St, Yass, 2582",,Chargefox,Chargefox,False,,,,,,node/12441111761
+l_1761162d94172575a525,194.3628076830665,0.0,False,False,False,,False,0.22888058335335587,rejected_evidence,"250 Comur St, Yass, 2582",,Chargefox,NRMA,False,,,,,,node/13762401039
+l_1761162d94172575a525,228.59090652458394,0.0,False,False,False,,False,0.15471970253006814,rejected_evidence,"250 Comur St, Yass, 2582",,Chargefox,Tesla,False,,,,,,node/11289934645
+l_41cdbd5ab07905f37d05,7.169955386389355,0.0,True,False,False,,True,0.634465096662823,accepted,"253 Pacific Hwy, Coffs Harbour, 2450",,Tesla,Tesla,False,,,,,,node/5004854821
+l_e07dbfccc7fba71deef0,156.0970308244859,0.0,True,False,False,,False,0.31178976654694723,rejected_evidence,"26 Aspect Dr, Coffs Harbour, 2450",,Tesla,Tesla,False,,,,,,way/1459249999
+l_22efbc6d99f788e022fc,7.453159654009336,0.0,True,False,False,,True,0.6338514874163131,accepted,"26 Bent St, Sydney, 2137",,Evie,Evie,False,,,,,,node/13168689959
+l_98247725bf252bb5e576,20.648122132195162,1.0,True,False,False,,True,0.9552624020469105,accepted,"260A Liverpool Rd, Ashfield NSW 2131",260A Liverpool Road,Evie,Evie,False,,,,,,node/13382573701
+l_0edc9c6d28382f4aca94,82.61053290029643,0.7407407407407407,False,False,False,house_number_conflict,False,0.7302697713086169,rejected_evidence,"27-33 Oaks Ave, Dee Why NSW 2099",4-16 Oaks Avenue,Evie,JOLT,False,,,,,,node/9491233549
+l_0edc9c6d28382f4aca94,109.97116361890707,0.0,False,False,False,,False,0.411729145492368,rejected_evidence,"27-33 Oaks Ave, Dee Why NSW 2099",,Evie,Tesla,False,,,,,,node/13688536001
+l_b63549221fad87b3262c,124.83294316188002,0.0,True,False,True,,False,0.37952862314926,rejected_evidence,"28 Auburn Street, Moree, NSW 2400, Australia",,NRMA,NRMA,False,,,,,,node/8317195266
+l_2b94426354684c3dc9a1,3.154791065185362,0.0,True,False,False,,True,0.643164619358765,accepted,"2848 Pacific Hwy, Tyndale NSW, 2464",,Evie,Evie,False,,,,,,node/8994778322
+l_659502ad4cf8c132bb7b,16.883397093189263,0.0,True,False,False,,True,0.6134193062980899,accepted,"29-55 Twynam St, Narrandera, 2700",,NRMA,NRMA,False,,,,,,node/10159370719
+l_658cb39230ade6768e63,172.4603416756401,0.0,True,False,False,,False,0.2763359263694464,rejected_evidence,"29-55 Twynam St, Narrandera, 2700",,NRMA,NRMA,False,,,,,,node/10159370719
+l_688b0c2087b8ebfbc60f,240.81658066531475,0.0,False,False,False,,False,0.12823074189181802,rejected_evidence,"2A Beach Rd, Batemans Bay, 2536",,NRMA,Evie,False,,,,,,node/7370327570
+l_688b0c2087b8ebfbc60f,186.25376699637235,0.0,True,False,False,,False,0.24645017150785994,rejected_evidence,"2A Beach Rd, Batemans Bay, 2536",,NRMA,NRMA,False,,,,,,node/10026076729
+l_688b0c2087b8ebfbc60f,14.167427154318391,0.0,True,False,False,,True,0.6193039078323102,accepted,"2A Beach Rd, Batemans Bay, 2536",,NRMA,NRMA,False,,,,,,node/6512442081
+l_1578877fcbf36c589211,54.89541889470797,0.0,True,False,False,,True,0.5310599257281328,accepted,"3 Corkhill Pl, Bega, 2550",,Chargefox,Chargefox,False,,,,,,node/12284563526
+l_8f64648fb1b4c05f5d16,9.899963346268079,0.0,True,False,False,,True,0.6285500794164192,accepted,"3 George St, North Strathfield NSW 2137",,Evie,Evie,False,,,,,,node/13168678393
+l_0677e5b44489c9847510,2.046126693403017,1.0,True,False,False,,True,0.9955667254976268,accepted,"30 Dowling St, Sydney, 2096",30 Dowling Street,JOLT,JOLT,False,,,,,,node/9546004749
+l_b0f74363f2923661b48b,5.524040625718603,0.0,True,False,False,,True,0.638031245310943,accepted,"30-36 Sharp St, Cooma, 2630",,Tesla,Tesla,False,,,,,,node/12639666383
+l_38a3d4faaa538c64c4f2,63.47127033710481,0.0,True,False,False,,True,0.5124789142696062,accepted,"316 Victoria Rd, Sydney, 2116",,Exploren,Exploren,False,,,,,,node/12990581486
+l_d9778396c3c14741c1d7,3.9096854762047255,0.0,True,False,False,,True,0.6415290148015564,accepted,"32 Sydney St, Tarcutta, 2652",,Evie,Evie,False,,,,,,node/7478006036
+l_1d1b2fca2fa995389941,0.31553644682484405,0.0,True,False,False,,True,0.6493163376985461,accepted,"322 Woodville Rd, Guildford NSW 2161",,Evie,Evie,False,,,,,,node/11004256023
+l_22ad3567c7fd7e9df8eb,1.1859814579749344,0.0,True,False,False,,True,0.647430373507721,accepted,"329-339 Princes Hwy, Sydney, 2044",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10907235224
+l_765cd59dc025044eb30a,2.3472502607042522,0.0,True,False,False,,True,0.6449142911018075,accepted,"34 Annie Pyers Dr, Gundagai , 2722",,Tesla,Tesla,False,,,,,,node/4027667916
+l_765cd59dc025044eb30a,141.64349803285282,0.0,False,False,False,,False,0.34310575426215223,rejected_evidence,"34 Annie Pyers Dr, Gundagai , 2722",,Tesla,NRMA,False,,,,,,node/13525320796
+l_a571645e8251a1425054,87.76223378927617,0.0,True,False,False,,True,0.45984849345656836,accepted,"3483 Jerrys Plains Rd, Jerrys Plains, 2330",,Tesla,Tesla,False,,,,,,way/762728901
+l_8105e23dfb8bf6df2909,115.28999073758611,0.0,False,False,False,,False,0.4002050200685634,rejected_evidence,"3-5 Underwood Rd, Homebush NSW 2140",,Engie,Chargefox,False,,,,,,node/11842876526
+l_3cadc82143735fb35f71,9.02703562700296,0.0,True,False,False,,True,0.6304414228081603,accepted,"368 Anzac Pde, Sydney, 2032",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/13206142331
+l_221de9e0e2d75945c5b7,15.414739218738058,0.0,True,False,False,,True,0.6166013983594009,accepted,"37 Nabiac St, Nabiac, 2312",,NRMA,NRMA,False,,,,,,node/6489797683
+l_9a08a433ebb3419ee5eb,59.83726007937778,0.0,True,False,False,,True,0.5203526031613481,accepted,"375-383 Windsor Rd, Sydney, 2153",,Tesla,Tesla,False,,,,,,node/13020827820
+l_5e6eeda5a88a0b7c5b3c,39.114225663789114,0.0,False,False,False,,False,0.5652525110617903,rejected_evidence,"38 Abbott Rd, Seven Hills NSW 2147",,Ampol AmpCharge,Evie,False,,,,,,node/8169947525
+l_913c9fe6ba3fdbd68b18,92.61512271429638,0.0,False,False,False,,False,0.4493339007856912,rejected_evidence,"38 Flora St, Sydney, 2232",,Chargefox,Tesla,False,,,,,,node/9467315676
+l_7fd5bfaae6239c1e0b77,14.226579825323975,0.0,True,False,False,,True,0.6191757437117981,accepted,"38 Swift St, Holbrook, 2644",,Tesla,Tesla,False,,,,,,node/11290026319
+l_cf2fd012b6b93bd68f29,30.927149314973747,0.0,True,False,False,,True,0.5829911764842235,accepted,3A Cowell St Gladesville NSW 2111 Australia,,Evie,Evie,False,,,,,,node/13073547942
+l_7af8b0583809ebb8f019,6.151951157657871,0.0,True,False,False,,True,0.6366707724917413,accepted,"4 Tindall St, Sydney, 2560",,Evie,Evie,False,,,,,,node/11419885107
+l_7af8b0583809ebb8f019,210.53968284185123,0.0,False,False,False,,False,0.19383068717598903,rejected_evidence,"4 Tindall St, Sydney, 2560",,Evie,Tesla,False,,,,,,node/10774220953
+l_7af8b0583809ebb8f019,84.34412972079282,0.0,False,False,False,,False,0.46725438560494886,rejected_evidence,"4 Tindall St, Sydney, 2560",,Evie,Chargefox,False,,,,,,node/11842761957
+l_f8b4cc58eae8bfd4a953,18.645055541702007,0.0,True,False,False,,True,0.6096023796596457,accepted,"401 Cabramatta Rd W, Cabramatta NSW 2166",,Evie,Evie,False,,,,,,node/9215252226
+l_bebb19b1156280ae638e,8.173777487215972,0.0,True,False,False,,True,0.6322901487776987,accepted,"403 Tarean Rd, Karuah, 2324",,Chargefox,Chargefox,False,,,,,,node/7042825731
+l_f19fad3e38cd3155245d,5.1122537336288785,0.0,True,False,False,,True,0.638923450243804,accepted,"41 Bruxner Hwy, Ballina, 2478",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10687073170
+l_3acb577be63bc7dc74fa,83.16605239773708,0.0,False,False,False,,False,0.46980688647156965,rejected_evidence,"42 Camden Rd, Sydney, 2560",,Chargefox,Evie,False,,,,,,node/11419885107
+l_3acb577be63bc7dc74fa,127.51836752896952,0.0,False,False,False,,False,0.37371020368723273,rejected_evidence,"42 Camden Rd, Sydney, 2560",,Chargefox,Tesla,False,,,,,,node/10774220953
+l_3acb577be63bc7dc74fa,5.654661123005918,0.0,True,False,False,,True,0.6377482342334873,accepted,"42 Camden Rd, Sydney, 2560",,Chargefox,Chargefox,False,,,,,,node/11842761957
+l_5c37c09d4b2424a67c35,1.0783692829040876,0.0,True,False,False,,True,0.6476635332203745,accepted,"4-6 New St, Lawson NSW 2783",,Evie,Evie,False,,,,,,node/12404567155
+l_a78efb5963484bdfb51f,43.321833319963346,0.0,True,False,False,,True,0.5561360278067461,accepted,"4-6 Niangala Cl, Belrose NSW 2085",,Evie,Evie,False,,,,,,node/10035347983
+l_90d205e857f5babd906e,34.427662730643256,0.0,True,False,False,,True,0.5754067307502729,accepted,"461 Victoria Rd, Sydney, 2111",,Exploren,Exploren,False,,,,,,node/13073647400
+l_4235e7246068561ee36d,3.2488856385044684,0.0,True,False,False,,True,0.6429607477832403,accepted,"5 Willowdale Dr, Denham Court NSW 2565",,Evie,Evie,False,,,,,,node/13064502527
+l_18cd5c4d2cbb2d421237,11.72868858659125,0.0,True,False,False,,True,0.624587841395719,accepted,"528 John Oxley Dr, Thrumster, 2444",,NRMA,NRMA,False,,,,,,node/7853821459
+l_18cd5c4d2cbb2d421237,74.36623391149958,0.0,False,False,False,,False,0.4888731598584176,rejected_evidence,"528 John Oxley Dr, Thrumster, 2444",,NRMA,Tesla,False,,,,,,node/11433418128
+l_48fcdc8e065f25652363,3.9709554554060276,0.0,True,False,False,,True,0.6413962631799537,accepted,"53 Sydney Rd, Goulburn, 2580",,Chargefox,Chargefox,False,,,,,,node/7021322234
+l_0e7182202acba8dfe173,93.22504482221163,0.0,True,False,False,,True,0.44801240288520816,accepted,"53A Orient St, Batemans Bay, 2536",,Evie,Evie,False,,,,,,node/7370327570
+l_e4fc09efdc0639205bea,3.8699990520063174,0.0,True,False,False,,True,0.6416150020539864,accepted,"54 Minjungbal Dr, Tweed Heads, 2486",,Evie,Evie,False,,,,,,node/12926990585
+l_8b0120c8ede2dccc884c,21.623547434026527,0.0,False,False,False,,False,0.6031489805596092,rejected_evidence,"54-76 Captain Cook Dr, Caringbah NSW 2229",,Evie,BP Pulse (AU),False,,,,,,node/13103102258
+l_e9d9d981d53b62bc86f6,5.465418986250761,0.0,True,False,False,,True,0.6381582588631234,accepted,"56 Morpeth St, Harwood , 2465",,Tesla,Tesla,False,,,,,,node/7140188595
+l_c3a86fe148f60f960b43,6.006200471754081,0.0,True,False,False,,True,0.6369865656445328,accepted,"58 Phillip St, West Tamworth , 2340",,Tesla,Tesla,False,,,,,,node/6456723747
+l_fb625704b85a44f0bb0b,4.482381592260098,0.0,True,False,False,,True,0.6402881732167698,accepted,"580 Parramatta Rd, Sydney, 2132",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10208698066
+l_cdc4faf3cb83a0c69e07,54.30797552893188,0.0,True,False,False,,True,0.5323327196873142,accepted,"580 Princes Hwy, Sydney, 2232",,Tesla,Tesla,False,,,,,,node/9467315676
+l_fbf90ba4934aba9bc8c1,16.7507234287085,0.0,True,False,False,,True,0.6137067659044649,external_poi_reused_review,"594 Anzac Pde, Sydney, 2032",,Evie,Evie,False,,,,,,node/13206176474
+l_28af1a4ab616ea376e9c,13.22271650926054,0.0,True,False,False,,True,0.6213507808966021,accepted,"6 Boundary St, Sydney, 2081",,Chargefox,Chargefox,False,,,,,,node/12167440484
+l_029e2e4689ea8dba33e5,35.47404974926991,0.0,True,False,True,,False,0.5731395588765819,rejected_evidence,"6 Castlereagh St Gilgandra, NSW 2827, Australia",,NRMA,NRMA,False,,,,,,node/9278741544
+l_87401b22d3eee15648a2,14.301829557530148,0.0,True,False,False,,True,0.6190127026253514,accepted,"634-726 Princes Hwy, Tempe NSW 2044",,Evie,Evie,False,,,,,,node/13064491791
+l_aaafc1dfb20d75e3b81f,94.29535714886211,0.0,True,False,False,,True,0.44569339284413206,accepted,"69-71 Central Coast Hwy, Gosford West, NSW, 2250",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/11129535113
+l_aaafc1dfb20d75e3b81f,261.26943567639216,0.0,False,False,False,,False,0.08391622270115033,rejected_evidence,"69-71 Central Coast Hwy, Gosford West, NSW, 2250",,Ampol AmpCharge,Tesla,False,,,,,,node/12167451932
+l_9b34ff9cc84f6fae0e90,60.832682196130285,0.5,True,False,False,,True,0.6931958552417177,lower_rank,"7 Bungan St, Sydney, 2103",1 Park Street,JOLT,JOLT,False,,,,,,node/9704706490
+l_9b34ff9cc84f6fae0e90,10.753675465709957,0.9,True,False,False,,True,0.9417003698242952,accepted,"7 Bungan St, Sydney, 2103",Bungan Street,JOLT,JOLT,False,,,,,,node/9204398603
+l_2a06c0da0ced06a714b1,5.361157105482838,0.0,True,False,False,,True,0.6383841596047872,accepted,"7 Tank St, Lithgow, 2790",,NRMA,NRMA,False,,,,,,node/6656233420
+l_e80c0c3eb8aac38325c0,157.51933045024344,0.20689655172413793,True,False,False,,False,0.38112191046125415,rejected_evidence,"725 Pittwater Rd, Sydney, 2099",4-16 Oaks Avenue,JOLT,JOLT,False,,,,,,node/9491233549
+l_e80c0c3eb8aac38325c0,130.2310722959748,0.0,False,False,False,,False,0.3678326766920546,rejected_evidence,"725 Pittwater Rd, Sydney, 2099",,JOLT,Tesla,False,,,,,,node/13688536001
+l_1d7851501ad5506d6004,239.84686314332035,0.0,False,False,False,,False,0.1303317965228059,rejected_evidence,"73 Belmore Road, Randwick NSW 2031",,Evie,Chargefox,False,,,,,,node/6965143040
+l_86933707e2b3b3c67eaa,2.6711256185377317,0.0,True,False,False,,True,0.6442125611598349,accepted,"76 Wingewarra St, Dubbo , 2830",,Tesla,Tesla,False,,,,,,node/6456722833
+l_86933707e2b3b3c67eaa,65.9039240390849,0.0,False,False,False,,False,0.5072081645819827,rejected_evidence,"76 Wingewarra St, Dubbo , 2830",,Tesla,NRMA,False,,,,,,node/6759463884
+l_8dd4f9550e32b973cda3,95.69977574712081,0.0,True,False,False,,True,0.4426504858812383,accepted,"77 Darling St, Cowra, 2794",,NRMA,NRMA,False,,,,,,node/8253300980
+l_fe7ca7311e0ea0c22b37,6.993113030187363,0.0,True,False,False,,True,0.6348482551012607,accepted,"772 Anzac Pde, Sydney, 2035",,Evie,Evie,False,,,,,,node/13206130158
+l_90bc59c5864665a17c6a,37.59943111888054,0.0,True,False,False,,True,0.5685345659090921,accepted,"78 Great Western Hwy Cnr Ross St, Glenbrook, NSW, 2773",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/11335189892
+l_af14af01cf7021c8bb99,13.66107602224353,0.0,True,False,False,,True,0.6204010019518057,accepted,"8 Euston Rd, Sydney, 2015",,Exploren,Exploren,False,,,,,,node/13073609605
+l_133d5a5a9acb5e739b2c,230.5702828811998,0.0,False,False,False,,False,0.1504310537574004,rejected_evidence,"8 Kosciuszko Rd, Jindabyne, 2627",,BP Pulse (AU),NRMA,False,,,,,,node/6460781765
+l_133d5a5a9acb5e739b2c,18.049606799056544,0.0,True,False,False,,True,0.6108925186020442,ambiguous_candidates,"8 Kosciuszko Rd, Jindabyne, 2627",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/14105992281
+l_133d5a5a9acb5e739b2c,15.615602391518259,0.0,True,False,False,,True,0.6161661948183772,ambiguous_candidates,"8 Kosciuszko Rd, Jindabyne, 2627",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/12398804433
+l_49b0a5a2a3f1fe176f67,0.0,0.0,True,False,False,,True,0.65,accepted,"8/24 Cross St, Wagga Wagga, NSW 2650",,NRMA,NRMA,False,,,,,,node/7932870081
+l_57579c6bf729ab6fc9e8,14.938383274427371,0.0,True,False,False,,True,0.6176335029054074,accepted,"81 Meehan St, Yass NSW 2582, Australia",,NRMA,NRMA,False,,,,,,node/7816558586
+l_74fbe0e1e32ee23786fb,7.815860863428256,0.0,True,False,False,,True,0.6330656347959055,accepted,"819-827 Anzac Pde, Sydney, 2035",,JOLT,JOLT,False,,,,,,node/9290676154
+l_74fbe0e1e32ee23786fb,52.48672576925574,0.0,False,False,False,,False,0.5362787608332792,rejected_evidence,"819-827 Anzac Pde, Sydney, 2035",,JOLT,Evie,False,,,,,,node/13206154678
+l_cb36da8a2b4fd41ae0c5,0.7365792311553887,0.0,True,False,False,,True,0.6484040783324967,accepted,"85/91 Commissioner St, Cooma , 2630",,Tesla,Tesla,False,,,,,,node/6979040237
+l_3dac50db68c7b9c1c02a,46.47390159559008,0.0,False,False,False,,False,0.5493065465428881,rejected_evidence,"872 Anzac Pde, Sydney, 2035",,Evie,JOLT,False,,,,,,node/9290676154
+l_3dac50db68c7b9c1c02a,14.024346783130886,0.0,True,False,False,,True,0.6196139153032164,external_poi_reused_review,"872 Anzac Pde, Sydney, 2035",,Evie,Evie,False,,,,,,node/13206154678
+l_afcf0c51c59697437c4b,48.058312659856306,0.0,True,False,False,,True,0.5458736559036447,accepted,"875 Richmond Rd, Marsden Park, NSW, 2765",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/11440214108
+l_6c95fadb8ce41a0f8e4d,67.20645039626615,0.20689655172413793,False,False,False,,False,0.5767998172448717,rejected_evidence,"888 Pittwater Rd, Sydney, 2099",4-16 Oaks Avenue,Tesla,JOLT,False,,,,,,node/9491233549
+l_6c95fadb8ce41a0f8e4d,38.70953103381789,0.0,True,False,False,,True,0.566129349426728,accepted,"888 Pittwater Rd, Sydney, 2099",,Tesla,Tesla,False,,,,,,node/13688536001
+l_851bb80fba7b7b405db1,0.0,0.0,True,False,False,,True,0.65,accepted,"89 Barwan St, Narrabri, NSW 2390, Australia,",,NRMA,NRMA,False,,,,,,node/12583296437
+l_851bb80fba7b7b405db1,293.8858440677039,0.0,False,False,False,,False,0.013247337853308278,rejected_evidence,"89 Barwan St, Narrabri, NSW 2390, Australia,",,NRMA,Tesla,False,,,,,,node/12259891801
+l_27981d4442a7bc636509,21.787189674513478,0.0,True,False,False,,True,0.6027944223718875,accepted,"89 Market St, Balranald, 2715",,NRMA,NRMA,False,,,,,,node/7742159359
+l_34a7c1a247ea3036b133,14.620046319888909,0.0,True,False,False,,True,0.618323232973574,accepted,"917-923 Old Northern Rd, Dural, NSW, 2158",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/13805076026
+l_c8fbc277bca6a916a484,6.886011133315812,0.0,False,False,False,,False,0.6350803092111491,rejected_evidence,"93 Princes Hwy, Ulladulla, 2539",,ChargeHub,,False,,,,,,node/12599800358
+l_4d011ad66e5c03718ea1,175.06171685403893,0.0,False,False,False,,False,0.27069961348291566,rejected_evidence,"9-49 Chapel Rd, Bankstown NSW 2200",,Evie,Tesla,False,,,,,,node/12560173013
+l_4d011ad66e5c03718ea1,9.03069110446975,0.0,True,False,False,,True,0.6304335026069822,accepted,"9-49 Chapel Rd, Bankstown NSW 2200",,Evie,Evie,False,,,,,,node/9363608762
+l_70b62ce6672d7861923c,7.281367321872122,0.0,True,False,False,,True,0.6342237041359438,accepted,"96 Mackay Ave, Yoogali, 2680",,Chargefox,Chargefox,False,,,,,,node/11963693701
+l_767790f8b941a57ed903,13.069658421225377,0.0,True,False,False,,True,0.6216824067540118,accepted,"98-100 Windsor Rd Cnr Lombard Rd, Northmead, NSW, 2152",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/9965036281
+l_670a933bd0fd6afe1b3f,48.518750204147395,0.0,True,False,False,,True,0.5448760412243474,accepted,"B640 Princes Hwy, Berry, 2535",,Tesla,Tesla,False,,,,,,node/6525751310
+l_9538e5057439c6ff0cb4,13.160803091255799,0.0,True,False,False,,True,0.6214849266356124,accepted,"Bryant Dr, Central Coast, 2259",,Tesla,Tesla,False,,,,,,node/6517096170
+l_1a14af4b564a876d23aa,4.183463274362636,0.0,True,False,False,,True,0.6409358295722143,accepted,"Car Park behind the Civic Centre, Orange, 2800",,NRMA,NRMA,False,,,,,,node/13833992860
+l_dd70f0561f79ee1095d1,47.29097734570485,0.0,True,False,True,,False,0.5475362157509729,rejected_evidence,"Car park, 51 Evans St (Victoria Park), Inverell, NSW 2360, Australia",,NRMA,NRMA,False,,,,,,node/7932870081
+l_d7e8a6739689bf98ee77,31.26668024686667,0.0,True,False,False,,True,0.5822555261317889,accepted,"Car park, Little Hoskins St, Temora, NSW 2666",,NRMA,NRMA,False,,,,,,node/10772401236
+l_508197a6e65801e5a667,90.60101273223371,0.0,False,False,False,,False,0.453697805746827,rejected_evidence,"Castlereagh Rd, Sydney, 2750",,Ampol AmpCharge,BP Pulse (AU),False,,,,,,node/11427578131
+l_508197a6e65801e5a667,1.8059849957359926,0.0,True,False,False,,True,0.6460870325092387,external_poi_reused_review,"Castlereagh Rd, Sydney, 2750",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/10924895189
+l_9fc61b13f66f9d01b303,97.28724317206932,0.0,True,False,False,,True,0.4392109731271831,accepted,"Cnr Dunheved Rd & Henry Lawson Dr, Werrington, NSW, 2747",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/11425340896
+l_81ac1c0eb40f1e500ff0,194.9684355257959,0.0,False,False,False,,False,0.22756838969410884,rejected_evidence,"Cnr Herring & Waterloo Rd, North Ryde NSW 2113",,Evie,Tesla,False,,,,,,node/7270664150
+l_81ac1c0eb40f1e500ff0,196.9982696626915,0.0,True,False,False,,False,0.22317041573083504,rejected_evidence,"Cnr Herring & Waterloo Rd, North Ryde NSW 2113",,Evie,Evie,False,,,,,,node/9536966801
+l_d04d0a16f8a413c35ef0,104.20631064910121,0.0,True,False,False,,False,0.42421966026028074,rejected_evidence,"Cnr Herring Rd & Waterloo Rd, Sydney, 2113",,Tesla,Tesla,False,,,,,,node/7270664150
+l_d04d0a16f8a413c35ef0,97.7359279504648,0.0,False,False,False,,False,0.43823882277399295,rejected_evidence,"Cnr Herring Rd & Waterloo Rd, Sydney, 2113",,Tesla,Evie,False,,,,,,node/9536966801
+l_9e7a0beca84a7d9e019d,12.534104552138164,0.0,True,False,False,,True,0.6228427734703673,accepted,"Corner of Snowy River Avenue and Kalkite St, Jindabyne, 2627",,NRMA,NRMA,False,,,,,,node/6460781765
+l_9e7a0beca84a7d9e019d,211.4812813265832,0.0,False,False,False,,False,0.19179055712573642,rejected_evidence,"Corner of Snowy River Avenue and Kalkite St, Jindabyne, 2627",,NRMA,BP Pulse (AU),False,,,,,,node/14105992281
+l_9e7a0beca84a7d9e019d,240.0134906112976,0.0,False,False,False,,False,0.12997077034218849,rejected_evidence,"Corner of Snowy River Avenue and Kalkite St, Jindabyne, 2627",,NRMA,BP Pulse (AU),False,,,,,,node/12398804433
+l_5da82ed9b10e3a7f7cbe,35.264773119798626,0.0,True,False,False,,True,0.5735929915737696,accepted,"Dalton St, Parkes, 2870",,NRMA,NRMA,False,,,,,,node/6460800322
+l_9c853428cee96cd5bac2,2.922084369512827,0.0,True,False,False,,True,0.6436688171993888,accepted,"Eskbank St, Lithgow, 2790",,NRMA,NRMA,False,,,,,,node/12661943299
+l_fdbc3ac1498f235c3c76,3.2473242092989993,0.0,True,False,False,,True,0.6429641308798522,accepted,"f 419 Hinterland Wy, Knockrow , 2479",,Tesla,Tesla,False,,,,,,node/6460580922
+l_29a8eecc85684b5f97c6,36.46890704564745,0.0,True,False,False,,True,0.5709840347344305,external_poi_reused_review,"Gardeners Rd, Sydney, 2020",,JOLT,JOLT,False,,,,,,node/10863588015
+l_4718a5a8373d9d0b8d97,31.480652375101567,0.0,True,False,False,,True,0.5817919198539466,external_poi_reused_review,"Gardeners Rd, Sydney, 2020",,JOLT,JOLT,False,,,,,,node/10863588015
+l_bab6f0f232d08a6bbeb9,15.971988092870467,0.0,True,False,False,,True,0.6153940257987807,accepted,"Gipps St, Bega, 2550",,NRMA,NRMA,False,,,,,,node/6711862737
+l_1cc092cb94d3d011a9d3,14.26288048714732,0.0,True,False,False,,True,0.6190970922778475,external_poi_reused_review,"Hassall St, Sydney, 2142",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10807470662
+l_21b540521adb40fdbe53,8.77119780313044,0.0,True,False,False,,True,0.6309957380932174,external_poi_reused_review,"Hassall Street & James Rouse Drive, Sydney, 2142",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10807470662
+l_d4078fc4eb2f6a6b0d67,104.293523254768,0.0,True,False,False,,False,0.4240306996146693,rejected_evidence,"Holborn Ct, Sydney, 2557",,Exploren,Exploren,False,,,,,,node/13135189454
+l_9be809db1a1a29023bf8,3.8388723380478753,0.0,True,False,False,,True,0.641682443267563,accepted,"Jersey St, Sydney, 2077",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/10687053371
+l_980db725973a4ce1fa18,2.9539162925214106,0.0,True,False,False,,True,0.6435998480328703,accepted,"Kiewa St, Albury, 2640",,NRMA,NRMA,False,,,,,,node/7244697466
+l_cb8d878a5b38f0f26308,4.558349992809724,0.0,True,False,False,,True,0.6401235750155789,accepted,"Lauder St, Tumbarumba, 2653",,Chargefox,Chargefox,False,,,,,,node/12885318910
+l_7db26718bcad6ce8bf53,123.63414657988535,0.0,True,False,False,,False,0.38212601574358174,rejected_evidence,"M4 Motorway Westbound, Sydney, 2766",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/13371885230
+l_828c50ea7a5f58a7b7d8,4.174210818738007,0.0,True,False,False,,True,0.640955876559401,accepted,"Murray Rose Ave, Sydney, 2127",,NRMA,NRMA,False,,,,,,node/6595579456
+l_ae8414370c21e9d1a591,71.50368661929733,0.0,True,False,False,,True,0.49507534565818917,accepted,"NARELLAN RD CNR MAXWELL PL, Sydney, 2567",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/13018467011
+l_2ba6c9ec7c0fff4bf689,37.13482569870498,0.0,True,False,False,,True,0.5695412109861392,accepted,"Newbridge Road 216, Sydney, 2170",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/11957109508
+l_749d8c0cc4c947ffdc97,26.992135836003964,0.0,True,False,False,,True,0.5915170390219915,accepted,"Pacific Hwy, Boambee, 2450",,Chargefox,Chargefox,False,,,,,,node/10861584624
+l_52980b7c8f66f02c17dc,20.960593240625432,0.0,True,False,False,,True,0.6045853813119783,external_poi_reused_review,"Pole Ln, Sydney, 2065",,Evie,Evie,False,,,,,,node/13059026685
+l_2b7abbfc1277536bcba1,171.456018795971,0.0,True,False,False,,False,0.2785119592753961,rejected_evidence,"Prospect St, Holbrook, 2644",,NRMA,NRMA,False,,,,,,node/6749392356
+l_23a291542d287073b9fa,30.408555323370994,0.0,True,False,False,,True,0.5841147967993628,accepted,"Riverside Dr, Jugiong, 2726",,NRMA,NRMA,False,,,,,,node/6749417820
+l_bad37c5230a82b6f4b4c,5.693134092893285,0.0,True,False,False,,True,0.6376648761320646,accepted,"Rogan Ln, Young, 2594",,NRMA,NRMA,False,,,,,,node/6460798626
+l_98af0b98434bdf876e53,29.472606080379723,0.0,True,False,False,,True,0.5861426868258439,accepted,"Shire St, West Wyalong, 2671",,NRMA,NRMA,False,,,,,,node/6460796546
+l_07c8e1fedef617b1e41f,14.83365861460121,0.0,True,False,False,,True,0.6178604063350307,accepted,"Short St, Mudgee, 2850",,NRMA,NRMA,False,,,,,,node/13341675501
+l_ed0df2fad12f7a17f5cb,15.004526179589277,0.0,True,False,False,,True,0.6174901932775566,accepted,"Vesper St, Batemans Bay, 2536",,NRMA,NRMA,False,,,,,,node/10026076729
+l_ed0df2fad12f7a17f5cb,163.91671709859426,0.0,True,False,False,,False,0.2948471129530457,rejected_evidence,"Vesper St, Batemans Bay, 2536",,NRMA,NRMA,False,,,,,,node/6512442081
+l_f3de993021435cf66317,168.91483188136323,0.0,True,False,False,,False,0.28401786425704634,rejected_evidence,"Western Motorway, Sydney, 2766",,Ampol AmpCharge,Ampol AmpCharge,False,,,,,,node/13036304448
+l_81f63ead85ad719be04b,3.6927379443313315,0.0,True,False,False,,True,0.6419990677872822,accepted,"William St, Sydney, 2046",,Evie,Evie,False,,,,,,node/13586251301
+l_9725f8739754cc2e95f6,62.604036951636175,0.0,False,False,False,,False,0.5143579199381216,rejected_evidence,"Wingewarra St, Dubbo, 2830",,NRMA,Tesla,False,,,,,,node/6456722833
+l_9725f8739754cc2e95f6,15.761632313283338,0.0,True,False,False,,True,0.6158497966545528,accepted,"Wingewarra St, Dubbo, 2830",,NRMA,NRMA,False,,,,,,node/6759463884
+l_94c213ba9128e4d38d37,36.70938368773323,0.0,True,False,False,,True,0.5704630020099114,external_poi_reused_review,197-215 Condamine St Balgowlah NSW 2093 Australia,,Tesla,Tesla,False,,,,,,node/12968478808
+l_0e54f68c8cebc26be2a4,168.35046216743655,0.0,True,False,False,,False,0.28524066530388753,rejected_evidence,"173 Canterbury Road, Bankstown NSW 2200",,Tesla,Tesla,False,,,,,,node/12560173013
+l_0e54f68c8cebc26be2a4,172.34627744954622,0.0,False,False,False,,False,0.2765830655259832,rejected_evidence,"173 Canterbury Road, Bankstown NSW 2200",,Tesla,Evie,False,,,,,,node/9363608762
+l_51967fa50fe906492641,99.13169630702254,0.0,True,False,False,,True,0.4352146580014512,accepted,"179-183 Hume St, Goulburn NSW 2580",,Tesla,Tesla,False,,,,,,node/12564147445
+l_51967fa50fe906492641,42.13296762818753,0.0,False,False,False,,False,0.5587119034722603,rejected_evidence,"179-183 Hume St, Goulburn NSW 2580",,Tesla,Chargefox,False,,,,,,node/10792695777
+l_9480589138e27915442e,87.25341492923715,0.0,True,False,False,,True,0.4609509343199861,accepted,188 Fernleigh Rd Glenfield Park NSW 2650 Australia,,Tesla,Tesla,False,,,,,,node/11155180657
+l_d5c1e6df77c05237a6a1,108.72146579418472,0.0,True,False,False,,False,0.4144368241125998,rejected_evidence,2 Bridge Rd Griffith NSW 2680 Australia,,Tesla,Tesla,False,,,,,,node/12024063277
+l_7b41f16b1e7c13f0bf4a,69.08506864678246,0.0,True,False,False,,True,0.500315684598638,accepted,2 Moonee Beach Rd Moonee Beach NSW 2450 Australia,,Tesla,Tesla,False,,,,,,node/12437997269
+l_219b3680b6bd70df878d,176.31174006507348,0.0,True,False,False,,False,0.26799122985900753,rejected_evidence,25 Danks St Waterloo NSW 2017,,Tesla,Tesla,False,,,,,,node/13167181353
+l_4397075d670cc490811e,198.32267461117218,0.0,False,False,False,,False,0.22030087167579362,rejected_evidence,"392 Manns Road, West Gosford NSW 2250 Australia",,Tesla,Ampol AmpCharge,False,,,,,,node/11129535113
+l_4397075d670cc490811e,105.75010777472063,0.0,True,False,False,,False,0.42087476648810535,rejected_evidence,"392 Manns Road, West Gosford NSW 2250 Australia",,Tesla,Tesla,False,,,,,,node/12167451932
+l_5fc20065eb2541c94590,180.47027519443108,0.0,True,False,False,,False,0.258981070412066,rejected_evidence,"46 Wynter St, Taree NSW 2430, Australia",,Tesla,Tesla,False,,,,,,node/11952634938
+l_4d0dcff3a3f0cac850b8,73.27040263035,0.0,True,False,False,,True,0.491247460967575,accepted,477 Coolac Rd Coolac NSW 2727 Australia,,Tesla,Tesla,False,,,,,,node/13146732524
+l_1995e1a6c4976cfbee6d,78.81525694077303,0.0,True,False,False,,True,0.4792336099616585,external_poi_reused_review,592 Anzac Pde Kingsford NSW 2032 Australia,,Evie,Evie,False,,,,,,node/13206176474
+l_df304c7cb30586f66cfd,51.49716833984718,0.0,True,False,False,,True,0.5384228019303312,accepted,618 Dean St Albury NSW 2640 Australia,,Tesla,Tesla,False,,,,,,node/11386697708
+l_fd1c645a4c6adad04f5b,69.67409297756774,0.0,True,False,False,,True,0.49903946521526993,external_poi_reused_review,65 Hume St Crows Nest NSW 2065 Australia,,Evie,Evie,False,,,,,,node/13059026685
+l_9aa3a2f47fd3c7772fd7,238.7617332608625,0.0,False,False,False,,False,0.13268291126813123,rejected_evidence,"68 Lead St, Yass NSW 2582, Australia",,Tesla,Chargefox,False,,,,,,node/12441111761
+l_9aa3a2f47fd3c7772fd7,237.7299140586322,0.0,False,False,False,,False,0.13491851953963022,rejected_evidence,"68 Lead St, Yass NSW 2582, Australia",,Tesla,NRMA,False,,,,,,node/13762401039
+l_9aa3a2f47fd3c7772fd7,17.123963756673355,0.0,True,False,False,,True,0.6128980785272077,accepted,"68 Lead St, Yass NSW 2582, Australia",,Tesla,Tesla,False,,,,,,node/11289934645
+l_17f908982cce1c898a43,13.902091816858608,0.0,True,False,False,,True,0.619878801063473,accepted,"7 Northwood Rd, Longueville NSW 2066, Australia",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/13103099620
+l_5c13ea0a9b82151ef235,14.093355952837374,0.0,True,False,False,,True,0.619464395435519,accepted,72 Lachlan St Hay NSW 2711 Australia,,Tesla,Tesla,False,,,,,,node/12087095506
+l_5c13ea0a9b82151ef235,262.7304421149467,0.0,False,False,False,,False,0.08075070875094884,rejected_evidence,72 Lachlan St Hay NSW 2711 Australia,,Tesla,NRMA,False,,,,,,node/6926483227
+l_545ce1fb21a9cf76bfd1,12.088798108050852,0.0,True,False,False,,True,0.6238076040992232,ambiguous_candidates,"76 Glossop St, North St Marys NSW 2760, Australia",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/13036287127
+l_545ce1fb21a9cf76bfd1,8.134978089879656,0.0,True,False,False,,True,0.6323742141385941,ambiguous_candidates,"76 Glossop St, North St Marys NSW 2760, Australia",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/13346922346
+l_fc6e53d34a4135bb6a18,198.66157561456373,0.0,False,False,False,,False,0.21956658616844527,rejected_evidence,"8 Stanley St, Bathurst, NSW, 2795, Australia",,NRMA,Evie,False,,,,,,node/12481649796
+l_fc6e53d34a4135bb6a18,31.662958442625953,0.0,True,False,False,,True,0.5813969233743105,accepted,"8 Stanley St, Bathurst, NSW, 2795, Australia",,NRMA,NRMA,False,,,,,,node/13013484065
+l_1c7fcbf725de8ea9ae41,283.0949456510392,0.0,False,False,False,,False,0.03662761775608174,rejected_evidence,"85 South St, Ulladulla NSW 2539, Australia",,Evie,,False,,,,,,node/12599800358
+l_fca5756c31bf279c79e2,61.77979398296427,0.0,True,False,False,,True,0.5161437797035775,accepted,"850 Woodville Rd, Villawood 2163, NSW",,Evie,Evie,False,,,,,,node/13185195202
+l_676e925031a605f309a5,270.7185764927331,0.0,True,False,False,,False,0.06344308426574488,rejected_evidence,"872 Anzac Pde, Maroubra, NSW, 2035",,Evie,Evie,False,,,,,,node/13206154678
+l_676e925031a605f309a5,297.3475738363596,0.0,True,False,False,,False,0.005746923354554268,rejected_evidence,"872 Anzac Pde, Maroubra, NSW, 2035",,Evie,Evie,False,,,,,,node/13206130158
+l_96c745c3f95f444c2914,71.20464177169146,0.0,True,False,False,,True,0.49572327616133516,accepted,"9-17 Short St, Parkes NSW 2870",,Tesla,Tesla,False,,,,,,node/12221169446
+l_b4a12ab004b6d7395619,96.61655780054319,0.0,False,False,False,,False,0.4406641247654897,rejected_evidence,924 Anzac Pde Maroubra NSW 2035 Australia,,Evie,JOLT,False,,,,,,node/9290676154
+l_b4a12ab004b6d7395619,60.37415127878084,0.0,True,False,False,,True,0.5191893388959749,external_poi_reused_review,924 Anzac Pde Maroubra NSW 2035 Australia,,Evie,Evie,False,,,,,,node/13206154678
+l_fe6316ce802f85a7e9dd,150.03220794967285,0.0,True,False,False,,False,0.32493021610904216,rejected_evidence,Brewer St Concord NSW 2137 Australia,,Evie,Evie,False,,,,,,node/13168689959
+l_5fa6bda966daf369546e,94.05962830682878,0.0,False,False,False,,False,0.44620413866853764,rejected_evidence,"Cnr Cumberland Hwy & Cabramatta Rd W, Cabramatta NSW 2166, Australia",,BP Pulse (AU),Evie,False,,,,,,node/9215252226
+l_3c6e58d2f5c4c5469289,8.417360424978932,0.0,True,False,False,,True,0.631762385745879,accepted,"Coonabarabran Visitor Cntr, Coonabarabran, 2357",,NRMA,NRMA,False,,,,,,node/7384135909
+l_9faf5dd65d8e18b735f3,87.71020052511088,0.0,True,False,False,,True,0.4599612321955931,accepted,Corner Sturgeon St & Glenelg St Raymond Terrace NSW 2324 Australia,,Tesla,Tesla,False,,,,,,node/11842613041
+l_f856a7a51b109d4937fa,43.515586751774734,0.0,True,False,False,,True,0.5557162287044881,accepted,"Gasworks Ln, Molong, NSW, 2866, Australia",,NRMA,NRMA,False,,,,,,way/1550315727
+l_9f7d8443d2a153ab0819,26.24180399834873,0.0,True,False,False,,True,0.5931427580035777,accepted,"Hope St, Blaxland NSW 2774, Australia",,Tesla,Tesla,False,,,,,,node/10861761260
+l_e81517695cb9719b6f9c,38.10565568177408,0.0,True,False,False,,True,0.5674377460228228,accepted,"Jessie St, Armidale NSW 2350, Australia",,Tesla,Tesla,False,,,,,,node/12856495137
+l_9e972a90d9c046302d2d,14.600498044812118,0.0,False,False,False,,False,0.6183655875695737,rejected_evidence,"1 Kendall Ave, Bathurst , 2795",,Tesla,NRMA,False,,,,,,node/6489744914
+l_9e972a90d9c046302d2d,12.140454303016249,0.0,True,False,False,,True,0.6236956823434648,accepted,"1 Kendall Ave, Bathurst , 2795",,Tesla,Tesla,False,,,,,,node/8302152508
+l_186fb0152eafb21824f9,4.3963606893442275,0.0,True,False,False,,True,0.6404745518397542,accepted,"1 Kendall Ave, Bathurst, 2795",,NRMA,NRMA,False,,,,,,node/6489744914
+l_186fb0152eafb21824f9,12.43934571882597,0.0,False,False,False,,False,0.6230480842758771,rejected_evidence,"1 Kendall Ave, Bathurst, 2795",,NRMA,Tesla,False,,,,,,node/8302152508
+l_b968027079594c1cc4a3,53.79522147594667,0.0,True,False,False,,True,0.5334436868021155,accepted,"1 Tasman Rd, Gumly Gumly NSW 2652, Australia",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/12884912873
+l_2688ec2a58857f91448b,41.92400382597585,0.0,True,False,False,,True,0.5591646583770523,accepted,"1/118 Bourke Rd, Alexandria NSW 2015",,Tesla,Tesla,False,,,,,,node/13073638889
+l_0c3816b48ac55c57196a,169.66921547511845,0.0,False,False,False,,False,0.2823833664705767,rejected_evidence,105-107 Alt St Ashfield NSW 2131 Australia,,EVE Australia,Chargefox,False,,,,,,node/13854720801
+l_f6918e39dd984b94f460,166.44672116219897,0.0,True,False,False,,False,0.2893654374819022,rejected_evidence,117 Tibbereena St Narrabri NSW 2390 Australia,,Tesla,Tesla,False,,,,,,node/12259891801
+l_9dba4affc6e49c90859a,27.887312187443786,0.0,True,False,False,,True,0.5895774902605384,accepted,"1234 Princes Hwy, Engadine NSW 2233, Australia",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/12605963234
+l_cae4f0f9f9135808389b,34.38935188519288,0.0,True,False,False,,True,0.5754897375820821,accepted,"13 Southey St, Jerilderie NSW 2716, Australia",,BP Pulse (AU),BP Pulse (AU),False,,,,,,node/12885318906
+l_763ff75aac5153ec953c,118.98239954398845,0.0,True,False,False,,False,0.392204800988025,rejected_evidence,"154 Beach Rd, Batemans Bay NSW 2536",,Tesla,Tesla,False,,,,,,node/12854473381
+l_73c72e9ef358fc5781aa,76.8110827519741,0.0,True,False,False,,True,0.4835759873707228,accepted,"162 Rouse St, Tenterfield NSW 2372, Australia",,Tesla,Tesla,False,,,,,,node/10258355351

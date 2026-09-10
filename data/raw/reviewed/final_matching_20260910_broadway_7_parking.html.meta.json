@@ -1,0 +1,10 @@
+{
+  "url": "https://www.broadwaysydney.com.au/visit/parking",
+  "resolved_url": "https://www.broadwaysydney.com.au/visit/parking",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:13:58.584871+00:00",
+  "sha256": "2c50c7ed2e37a39e1b0ed50982d331fcc9b2f14fc414a6f8e1c800647628b6d7",
+  "bytes": 763575,
+  "content_type": "text/html; charset=utf-8"
+}

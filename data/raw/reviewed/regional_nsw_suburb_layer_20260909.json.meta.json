@@ -1,0 +1,9 @@
+{
+  "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2?f=pjson",
+  "resolved_url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2?f=pjson",
+  "retrieved_at_utc": "2026-09-09T04:24:34.864941+00:00",
+  "sha256": "497b296adac47a6816b9eaf902d478058988e6d136f7765f1992841c7e949d12",
+  "bytes": 6293,
+  "etag": "\"db5e5f4a\"",
+  "last_modified": null
+}

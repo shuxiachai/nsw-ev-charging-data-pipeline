@@ -1,0 +1,58 @@
+{
+    "DateLastVerified": "2023-07-17T13:24:00Z",
+    "ID": 190452,
+    "UUID": "22628236-EF4A-4264-BE58-1D8A676DAB94",
+    "DataProviderID": 1,
+    "OperatorID": 3317,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.30 per kWh ",
+    "AddressInfo": {
+        "ID": 190811,
+        "Title": "Cardwell QESH",
+        "AddressLine1": "Liverpool Street",
+        "Town": "Cardwell",
+        "StateOrProvince": "Queensland",
+        "Postcode": "4849",
+        "CountryID": 18,
+        "Latitude": -18.262614406268767,
+        "Longitude": 146.02462137635962,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308770,
+            "ConnectionTypeID": 33,
+            "Reference": "4072",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 308771,
+            "ConnectionTypeID": 2,
+            "Reference": "4072",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 308772,
+            "ConnectionTypeID": 25,
+            "Reference": "5080",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "Pay QESH rate per kWh, not Chargefox rate (via Chargefox account) ",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-17T13:24:00Z",
+    "DateCreated": "2021-12-08T14:01:00Z",
+    "SubmissionStatusTypeID": 200
+}

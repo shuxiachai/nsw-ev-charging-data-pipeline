@@ -1,0 +1,10 @@
+{
+  "url": "https://map.bp.com/en-AU/AU/gas-station/gumly-gumly/bp-gumly-gumly/4091",
+  "resolved_url": "https://map.bp.com/en-AU/AU/gas-station/gumly-gumly/bp-gumly-gumly/4091",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:13:59.527570+00:00",
+  "sha256": "207e344391c9c9220d70bd5d05e45aeed9aac6bf728eac3f3deb5ba01f702766",
+  "bytes": 59540,
+  "content_type": "text/html; charset=utf-8"
+}

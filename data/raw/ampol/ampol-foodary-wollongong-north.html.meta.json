@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-wollongong-north",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-wollongong-north",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:59.053135+00:00",
+  "sha256": "d25a280130ca688860aa26f614ec7e16299774747e6ee81e6ce489c0cdf7aca2",
+  "bytes": 149734,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-wollongong-north.html"
+}

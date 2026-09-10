@@ -1,0 +1,72 @@
+{
+    "DateLastVerified": "2023-07-06T20:52:00Z",
+    "ID": 189998,
+    "UUID": "0FB80303-953B-4CE6-8B91-154361287740",
+    "DataProviderID": 1,
+    "OperatorID": 3398,
+    "UsageTypeID": 4,
+    "UsageCost": "$AU 0.40/kWh",
+    "AddressInfo": {
+        "ID": 190357,
+        "Title": "McDonald’s Melton South",
+        "AddressLine1": "179-253 Exford Road",
+        "Town": "Weir Views",
+        "StateOrProvince": "Victoria",
+        "Postcode": "3338",
+        "CountryID": 18,
+        "Latitude": -37.7224393461178,
+        "Longitude": 144.57233401223442,
+        "ContactTelephone1": "+61 1300 463 843",
+        "RelatedURL": "http://www.goevie.com.au",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 307770,
+            "ConnectionTypeID": 33,
+            "Reference": "MM020A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1,
+            "Comments": "Near McDonalds"
+        },
+        {
+            "ID": 311764,
+            "ConnectionTypeID": 2,
+            "Reference": "MM020",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 461044,
+            "ConnectionTypeID": 33,
+            "Reference": "MM020B",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 461045,
+            "ConnectionTypeID": 2,
+            "Reference": "MM020B",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "In the McDonalds Carpark area.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-06T20:52:00Z",
+    "DateCreated": "2021-11-14T07:23:00Z",
+    "SubmissionStatusTypeID": 200
+}

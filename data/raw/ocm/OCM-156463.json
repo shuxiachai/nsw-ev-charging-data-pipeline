@@ -1,0 +1,37 @@
+{
+    "DateLastVerified": "2021-11-27T16:38:00Z",
+    "ID": 156463,
+    "UUID": "481393AF-8EA3-4800-A09A-FCDBE16F8EEC",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 156817,
+        "Title": "Jubilee Oval and Showgrounds ",
+        "AddressLine1": "16 Chidlow Street",
+        "Town": "Northam",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6401",
+        "CountryID": 18,
+        "Latitude": -31.65111734318809,
+        "Longitude": 116.67845947514633,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 220175,
+            "ConnectionTypeID": 1041,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 20,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Enter the gate near the guard house - the charging station is located near the north end of the Exhibition Pavilion. There are a number of boxes with similar plugs in each. 20 amp 3 phase (14 kW) Will need adapter from 32A 5-connector.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-11-27T16:38:00Z",
+    "DateCreated": "2020-05-22T04:17:00Z",
+    "SubmissionStatusTypeID": 200
+}

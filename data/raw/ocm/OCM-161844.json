@@ -1,0 +1,99 @@
+{
+    "MediaItems": [
+        {
+            "ID": 36441,
+            "ChargePointID": 161844,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM161844/OCM-161844.orig.2023012900225053.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM161844/OCM-161844.thmb.2023012900225053.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 44410,
+                "Username": "mrmoog"
+            },
+            "DateCreated": "2023-01-29T00:23:00Z"
+        },
+        {
+            "ID": 36440,
+            "ChargePointID": 161844,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM161844/OCM-161844.orig.2023012900221053.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM161844/OCM-161844.thmb.2023012900221053.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 44410,
+                "Username": "mrmoog"
+            },
+            "DateCreated": "2023-01-29T00:22:00Z"
+        },
+        {
+            "ID": 36439,
+            "ChargePointID": 161844,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM161844/OCM-161844.orig.2023012900185929.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM161844/OCM-161844.thmb.2023012900185929.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 44410,
+                "Username": "mrmoog"
+            },
+            "DateCreated": "2023-01-29T00:19:00Z"
+        }
+    ],
+    "DateLastVerified": "2025-10-12T01:54:00Z",
+    "ID": 161844,
+    "UUID": "826B3947-43D2-452C-8F22-0E32B4852000",
+    "DataProviderID": 1,
+    "OperatorID": 3388,
+    "UsageTypeID": 1,
+    "UsageCost": "Currently free but will be fee at some point for non NRMA Members.",
+    "AddressInfo": {
+        "ID": 162201,
+        "Title": "Mittagong NRMA",
+        "AddressLine1": "9 Bessemer Street",
+        "AddressLine2": "RSL club",
+        "Town": "Mittagong",
+        "StateOrProvince": "NSW",
+        "Postcode": "2575",
+        "CountryID": 18,
+        "Latitude": -34.450559453605436,
+        "Longitude": 150.442468762437,
+        "AccessComments": "",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 232890,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 5
+        },
+        {
+            "ID": 232891,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 5,
+    "GeneralComments": "Non-NRMA members need app; app is free but charging payable",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2025-10-12T01:54:00Z",
+    "DateCreated": "2020-07-26T22:48:00Z",
+    "SubmissionStatusTypeID": 200
+}

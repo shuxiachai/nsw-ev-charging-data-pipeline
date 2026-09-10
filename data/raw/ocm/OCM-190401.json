@@ -1,0 +1,60 @@
+{
+    "DateLastVerified": "2023-07-17T13:33:00Z",
+    "ID": 190401,
+    "UUID": "3C1F2111-C993-41B2-9148-241F8B42D1FF",
+    "DataProviderID": 1,
+    "OperatorID": 3317,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.30",
+    "AddressInfo": {
+        "ID": 190760,
+        "Title": "Rockhampton QESH",
+        "AddressLine1": "Alma Street",
+        "Town": "Rockhampton",
+        "StateOrProvince": "Queensland",
+        "Postcode": "4700",
+        "CountryID": 18,
+        "Latitude": -23.382146860599264,
+        "Longitude": 150.51355170231477,
+        "AccessComments": "Council carpark behind City Hall",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308665,
+            "ConnectionTypeID": 33,
+            "Reference": "4514",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 308666,
+            "ConnectionTypeID": 2,
+            "Reference": "4514",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 468665,
+            "ConnectionTypeID": 25,
+            "Reference": "1016",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Pay QESH rate per kWh, not Chargefox rate (via Chargefox account) ",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-17T13:33:00Z",
+    "DateCreated": "2021-12-04T06:19:00Z",
+    "SubmissionStatusTypeID": 200
+}

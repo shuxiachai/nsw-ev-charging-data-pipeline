@@ -1,0 +1,64 @@
+{
+    "UserComments": [
+        {
+            "ID": 25230,
+            "ChargePointID": 190487,
+            "CommentTypeID": 50,
+            "UserName": "Wild Rice",
+            "Comment": "Sign on unit says, \"Out of order-do not use\". Apparently the local power supply is not up to the job.",
+            "DateCreated": "2022-01-08T02:00:01.707Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 0,
+            "IsActionedByEditor": false
+        }
+    ],
+    "DateLastVerified": "2022-09-29T03:22:00Z",
+    "ID": 190487,
+    "UUID": "1EB7A8CE-04DE-4FDD-9DB3-1D982CD25D11",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "UsageCost": "0.44",
+    "AddressInfo": {
+        "ID": 190846,
+        "Title": "BP Truckstop Merredin",
+        "AddressLine1": "49 Great Eastern Highway",
+        "Town": "Merredin",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6415",
+        "CountryID": 18,
+        "Latitude": -31.482755542949874,
+        "Longitude": 118.26874281054063,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308840,
+            "ConnectionTypeID": 33,
+            "Reference": "5262",
+            "StatusTypeID": 100,
+            "LevelID": 3,
+            "PowerKW": 24,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 308841,
+            "ConnectionTypeID": 2,
+            "Reference": "5262",
+            "StatusTypeID": 100,
+            "LevelID": 3,
+            "PowerKW": 24,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 100,
+    "DateLastStatusUpdate": "2022-09-29T03:22:00Z",
+    "DateCreated": "2021-12-10T10:26:00Z",
+    "SubmissionStatusTypeID": 200
+}

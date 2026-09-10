@@ -1,0 +1,168 @@
+{
+    "UserComments": [
+        {
+            "ID": 28897,
+            "ChargePointID": 190267,
+            "CommentTypeID": 50,
+            "UserName": "Wild Rice",
+            "Comment": "Fully functional.",
+            "Rating": 2,
+            "DateCreated": "2023-08-20T13:28:31.41Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 28449,
+            "ChargePointID": 190267,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "The site that will have the charging cabinet has been leveled and surveyed.",
+            "Rating": 4,
+            "DateCreated": "2023-04-25T12:56:04.633Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 22,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 39236,
+            "ChargePointID": 190267,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.orig.2023082013294800.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.thmb.2023082013294800.jpg",
+            "Comment": "Very poor layout.",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2023-08-20T13:30:00Z"
+        },
+        {
+            "ID": 38661,
+            "ChargePointID": 190267,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.orig.2023071311564265.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.thmb.2023071311564265.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 31813,
+                "Username": "EVADER"
+            },
+            "DateCreated": "2023-07-13T11:57:00Z"
+        },
+        {
+            "ID": 37491,
+            "ChargePointID": 190267,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.orig.2023042512532433.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.thmb.2023042512532433.jpg",
+            "Comment": "Site works for Tesla Supercharger have commenced.",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2023-04-25T12:53:00Z"
+        },
+        {
+            "ID": 37490,
+            "ChargePointID": 190267,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.orig.2023042512514774.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.thmb.2023042512514774.jpg",
+            "Comment": "Site works commenced for Tesla Supercharger",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2023-04-25T12:52:00Z"
+        },
+        {
+            "ID": 29921,
+            "ChargePointID": 190267,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.orig.2021112905490697.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.thmb.2021112905490697.jpg",
+            "Comment": "Showing location pre construction ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-11-29T05:49:00Z"
+        },
+        {
+            "ID": 29920,
+            "ChargePointID": 190267,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.orig.2021112905472758.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM190267/OCM-190267.thmb.2021112905472758.jpg",
+            "Comment": "Showing location pre construction. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-11-29T05:48:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-10-09T01:48:00Z",
+    "ID": 190267,
+    "UUID": "9C347DB0-C59B-47E8-8D1A-F3A659BAD7CE",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.59 per kWh",
+    "AddressInfo": {
+        "ID": 190626,
+        "Title": "Lancelin Supercharger",
+        "AddressLine1": "Rock way",
+        "Town": "Lancelin",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6044",
+        "CountryID": 18,
+        "Latitude": -31.020579082688826,
+        "Longitude": 115.33236022088863,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308367,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 250,
+            "CurrentTypeID": 30,
+            "Quantity": 3,
+            "Comments": "Approved by Shire Council"
+        }
+    ],
+    "NumberOfPoints": 3,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-10-09T01:48:00Z",
+    "DateCreated": "2021-11-27T10:29:00Z",
+    "SubmissionStatusTypeID": 200
+}

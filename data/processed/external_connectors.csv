@@ -1,0 +1,2350 @@
+ocm_id,connection_id,connection_type,current_type_id,power_kw,quantity,status_type_id,status,is_operational
+100220,141579,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+100220,264170,CCS (Type 2),30.0,125.0,2.0,50.0,Operational,True
+100221,141580,Type 1 (J1772),10.0,7.0,2.0,50.0,Operational,True
+100222,141582,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+100223,141583,Type 1 (J1772),10.0,7.0,2.0,50.0,Operational,True
+100224,141584,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+100225,141585,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+100228,141588,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+100229,141589,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+100230,141590,Type 1 (J1772),10.0,6.6,1.0,50.0,Operational,True
+100231,141591,Type 1 (J1772),10.0,6.6,1.0,50.0,Operational,True
+100235,141596,Type 1 (J1772),10.0,6.6,1.0,50.0,Operational,True
+100235,141597,Tesla (Model S/X),10.0,6.0,2.0,50.0,Operational,True
+100236,141598,Type 1 (J1772),10.0,6.6,1.0,50.0,Operational,True
+100237,141599,Type 1 (J1772),10.0,6.6,1.0,50.0,Operational,True
+100238,141600,Type 1 (J1772),,6.6,1.0,50.0,Operational,True
+100239,141601,Type 1 (J1772),10.0,6.6,2.0,50.0,Operational,True
+100240,141602,Type 2 (Tethered Connector) ,20.0,,1.0,50.0,Operational,True
+100271,141644,Type I (AS 3112),10.0,3.6,2.0,50.0,Operational,True
+100310,141702,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+100337,141746,Type 1 (J1772),10.0,6.6,1.0,50.0,Operational,True
+100338,141747,Type 1 (J1772),10.0,6.6,2.0,50.0,Operational,True
+100338,141748,Type 2 (Tethered Connector) ,10.0,6.6,1.0,50.0,Operational,True
+100339,141749,Type 1 (J1772),10.0,6.6,2.0,50.0,Operational,True
+100340,141750,Type 1 (J1772),10.0,7.0,2.0,50.0,Operational,True
+100340,141751,Type 2 (Tethered Connector) ,10.0,,2.0,50.0,Operational,True
+100404,141823,CCS (Type 2),30.0,120.0,8.0,50.0,Operational,True
+105174,148283,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+105174,148284,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+105174,176178,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+105175,148285,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+105175,148286,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+105175,148287,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+105176,148288,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+105176,148289,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+105176,148290,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+105177,148291,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+105177,148292,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+105177,148293,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+106815,150568,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+106815,150569,Type 1 (J1772),10.0,2.4,6.0,50.0,Operational,True
+106815,150570,Type I (AS 3112),10.0,3.6,6.0,50.0,Operational,True
+106988,150823,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+106989,150824,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+106990,150825,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,100.0,Not Operational,False
+107003,150848,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+107775,152178,Type 2 (Socket Only),20.0,22.0,16.0,50.0,Operational,True
+107776,152179,Type 2 (Socket Only),20.0,22.0,11.0,50.0,Operational,True
+107777,152180,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+107778,152181,Type 2 (Socket Only),20.0,22.0,4.0,50.0,Operational,True
+107779,152182,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+107780,152183,Type 2 (Socket Only),20.0,22.0,4.0,50.0,Operational,True
+107781,152184,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+109340,154458,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+113602,160096,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+113821,160391,CCS (Type 2),30.0,120.0,8.0,50.0,Operational,True
+113903,160473,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+114101,160671,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+114487,161167,Type 2 (Socket Only),20.0,22.0,4.0,50.0,Operational,True
+114996,161798,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+114996,161847,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+116989,165605,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+116989,165606,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+116989,165607,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+116989,468687,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+116989,468688,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+121546,171273,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+121552,171279,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+125734,176202,Type 1 (J1772),10.0,7.0,2.0,,,
+125885,176421,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+126130,176775,CHAdeMO,30.0,50.0,,50.0,Operational,True
+126130,176776,CCS (Type 2),30.0,50.0,,50.0,Operational,True
+126235,176924,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+126235,176925,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+126300,177009,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+126300,177010,CCS (Type 2),30.0,350.0,1.0,50.0,Operational,True
+126300,177011,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+126300,177012,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+126300,460840,CCS (Type 2),30.0,350.0,1.0,50.0,Operational,True
+126300,460841,CHAdeMO,30.0,350.0,1.0,50.0,Operational,True
+126300,460842,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+126300,460843,CHAdeMO,30.0,350.0,1.0,50.0,Operational,True
+126602,177336,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+126602,177337,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+126602,177338,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+126602,177339,CCS (Type 2),30.0,350.0,1.0,50.0,Operational,True
+126602,460844,CCS (Type 2),30.0,350.0,1.0,50.0,Operational,True
+126602,460845,CHAdeMO,30.0,350.0,1.0,50.0,Operational,True
+126602,460846,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+126602,460847,CHAdeMO,,50.0,1.0,50.0,Operational,True
+126610,177351,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+126711,177496,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+126711,466925,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+128195,179395,Type 1 (J1772),10.0,,2.0,50.0,Operational,True
+128195,179396,Tesla (Model S/X),,,1.0,,,
+128195,307938,Type 2 (Socket Only),,7.0,3.0,50.0,Operational,True
+128371,179685,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+128374,179688,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+128458,179832,Type 1 (J1772),10.0,6.6,2.0,50.0,Operational,True
+128500,179882,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+129973,181963,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+129982,181972,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+130686,182953,Tesla (Model S/X),,22.0,2.0,50.0,Operational,True
+131201,183707,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+131563,184137,Type 2 (Socket Only),20.0,22.0,2.0,100.0,Not Operational,False
+131564,184138,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+131610,184191,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+131610,184192,CCS (Type 2),30.0,180.0,1.0,150.0,Planned For Future Date,False
+131610,184296,Type I (AS 3112),10.0,3.45,1.0,50.0,Operational,True
+131841,774854,Unknown,,,1.0,50.0,Operational,True
+131881,184547,Type 1 (J1772),10.0,7.2,2.0,50.0,Operational,True
+131881,262480,Type 2 (Tethered Connector) ,10.0,7.2,2.0,50.0,Operational,True
+131895,184563,Tesla (Model S/X),10.0,7.2,2.0,75.0,Partly Operational (Mixed),True
+132346,185233,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+132347,185234,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+132348,185235,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+132348,185236,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+132448,185437,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+132642,185706,Type 2 (Socket Only),10.0,7.0,1.0,100.0,Not Operational,False
+133061,186342,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+133760,187201,Type 1 (J1772),,6.6,4.0,50.0,Operational,True
+134363,188052,Type 2 (Tethered Connector) ,20.0,22.0,1.0,100.0,Not Operational,False
+135413,189716,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+135414,189717,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+135438,189766,Type 2 (Socket Only),10.0,3.8,1.0,50.0,Operational,True
+148039,205517,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+148039,205536,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+148040,205518,Type 2 (Socket Only),20.0,11.0,2.0,50.0,Operational,True
+148048,205537,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+148048,205538,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+148049,205539,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,200.0,Removed (Decommissioned),False
+148049,790500,CCS (Type 2),30.0,40.0,2.0,50.0,Operational,True
+148050,205542,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+148057,205553,Type 2 (Socket Only),10.0,7.2,2.0,50.0,Operational,True
+148058,205554,Type 2 (Socket Only),10.0,7.2,1.0,50.0,Operational,True
+148058,205555,Type 1 (J1772),10.0,7.2,1.0,50.0,Operational,True
+148059,205556,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+148115,205620,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+148118,205626,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+148118,466920,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+148118,466921,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+148118,466922,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+148118,466923,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+148118,466924,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+148393,206019,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,100.0,Not Operational,False
+148393,206020,Tesla (Model S/X),20.0,11.0,1.0,200.0,Removed (Decommissioned),False
+148394,206021,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+148518,206228,Unknown,10.0,7.0,1.0,50.0,Operational,True
+148518,269940,Unknown,10.0,7.0,1.0,50.0,Operational,True
+148518,578629,Type I (AS 3112),10.0,3.5,1.0,50.0,Operational,True
+148518,578630,Type I (AS 3112),10.0,3.5,1.0,50.0,Operational,True
+148535,206258,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+148535,206259,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+148535,206260,Type 2 (Tethered Connector) ,20.0,43.0,1.0,50.0,Operational,True
+148535,206261,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+148545,206275,CCS (Type 2),30.0,50.0,2.0,75.0,Partly Operational (Mixed),True
+148545,206294,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+149179,207145,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+149219,207204,CHAdeMO,30.0,100.0,2.0,50.0,Operational,True
+149219,207205,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+149456,207502,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+149466,207530,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+149622,207734,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+149622,207735,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+149817,208028,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+150024,208301,Tesla (Model S/X),20.0,17.0,1.0,50.0,Operational,True
+150032,208310,CCS (Type 2),30.0,150.0,10.0,50.0,Operational,True
+150039,208317,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+150117,208432,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+154488,217281,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+154488,217282,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+155242,218534,Type 2 (Socket Only),20.0,11.0,1.0,50.0,Operational,True
+155278,218601,Type 2 (Socket Only),20.0,11.0,1.0,50.0,Operational,True
+155292,218620,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+155300,218628,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+155370,218753,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+155439,218841,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+155440,218842,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+155440,218843,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+155496,218915,Type 2 (Socket Only),,,1.0,50.0,Operational,True
+155497,218916,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+155529,218949,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+155530,218950,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+155545,218970,Type 2 (Socket Only),,7.0,1.0,50.0,Operational,True
+155546,218971,Type 1 (J1772),,7.0,1.0,50.0,Operational,True
+155820,219387,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+155842,219409,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+156010,219595,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+156010,219596,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+156019,219609,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+156052,219653,CCS (Type 2),30.0,120.0,1.0,50.0,Operational,True
+156052,434812,CCS (Type 2),30.0,120.0,1.0,50.0,Operational,True
+156173,219795,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+156173,219796,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+156174,219797,Tesla (Model S/X),10.0,8.0,2.0,50.0,Operational,True
+156175,219798,CHAdeMO,30.0,50.0,1.0,30.0,Temporarily Unavailable,True
+156175,219799,CCS (Type 2),30.0,50.0,1.0,30.0,Temporarily Unavailable,True
+156175,219800,Type 2 (Socket Only),20.0,22.0,2.0,30.0,Temporarily Unavailable,True
+156184,219809,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+156185,219810,Type 2 (Socket Only),10.0,7.4,2.0,50.0,Operational,True
+156186,219811,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+156247,219881,Type I (AS 3112),20.0,22.0,2.0,50.0,Operational,True
+156248,219882,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+156251,219886,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+156252,219887,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+156254,219889,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+156254,219890,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+156256,219892,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+156257,219893,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+156312,219963,Type I (AS 3112),20.0,22.0,1.0,50.0,Operational,True
+156358,220022,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+156359,220023,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+156360,220024,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+156361,220025,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+156365,220031,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+156413,220083,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+156417,220087,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+156417,220088,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+156430,315116,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+156430,315117,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+156463,220175,Three Phase 5-Pin (AS/NZ 3123),20.0,20.0,1.0,50.0,Operational,True
+156482,220204,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+156482,220205,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+156483,220206,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+156483,220207,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+157429,226760,Tesla (Model S/X),20.0,22.0,3.0,50.0,Operational,True
+157429,226761,Type 2 (Socket Only),20.0,22.0,3.0,50.0,Operational,True
+157430,226762,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+157431,226763,Tesla (Model S/X),20.0,14.0,2.0,50.0,Operational,True
+157432,226764,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+157435,226771,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+157435,226772,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+157445,226795,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+157456,226812,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+157457,226813,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+157463,226821,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+157530,226927,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+157531,226929,Type I (AS 3112),10.0,3.6,5.0,50.0,Operational,True
+157545,226965,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+157545,226966,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+157547,226970,Type I (AS 3112),10.0,2.4,3.0,50.0,Operational,True
+157548,226971,Type I (AS 3112),10.0,2.4,4.0,50.0,Operational,True
+157549,226972,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+157549,226973,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+157551,226975,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+157551,226976,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+157552,226977,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+157552,226978,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+157557,226984,Type 2 (Tethered Connector) ,20.0,11.0,2.0,50.0,Operational,True
+157566,226994,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+157566,226995,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+157589,227036,Type I (AS 3112),10.0,2.4,5.0,50.0,Operational,True
+157591,227038,Type 2 (Socket Only),20.0,22.0,2.0,100.0,Not Operational,False
+157595,227043,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+157595,227044,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+157596,227045,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+157596,227046,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+157597,227047,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+157597,466918,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+157597,466919,CHAdeMO,30.0,24.0,1.0,50.0,Operational,True
+157608,227086,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+157608,227087,CCS (Type 2),30.0,350.0,4.0,50.0,Operational,True
+157608,460848,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+157608,460849,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+157608,460850,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+160807,231438,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+161350,232210,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+161356,232222,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+161356,232223,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+161357,232224,Tesla (Model S/X),20.0,,1.0,50.0,Operational,True
+161654,232617,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+161827,232857,CCS (Type 2),30.0,35.0,1.0,50.0,Operational,True
+161827,601140,CHAdeMO,30.0,35.0,1.0,50.0,Operational,True
+161829,232859,Unknown,20.0,11.0,1.0,50.0,Operational,True
+161831,232861,Type 2 (Socket Only),10.0,22.0,2.0,50.0,Operational,True
+161831,466917,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+161832,232862,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+161843,232888,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+161843,232889,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+161844,232890,CCS (Type 2),30.0,50.0,5.0,50.0,Operational,True
+161844,232891,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+161845,232892,CCS (Type 2),30.0,50.0,1.0,100.0,Not Operational,False
+161845,232893,CHAdeMO,30.0,50.0,1.0,100.0,Not Operational,False
+161846,232894,Type 1 (J1772),10.0,7.0,4.0,50.0,Operational,True
+161993,233151,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+161993,257779,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+16213,14643,Type 2 (Socket Only),,3.8,2.0,50.0,Operational,True
+16214,14644,Type 1 (J1772),10.0,3.6,1.0,50.0,Operational,True
+16214,14645,Type I (AS 3112),10.0,3.6,2.0,50.0,Operational,True
+16228,14664,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+16263,14717,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,15.0,50.0,Operational,True
+16263,220046,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+16266,14720,Type 1 (J1772),10.0,3.8,1.0,50.0,Operational,True
+16268,264541,Type 2 (Socket Only),,22.0,1.0,50.0,Operational,True
+16270,219101,Type I (AS 3112),10.0,2.0,1.0,50.0,Operational,True
+162778,234298,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+162778,234299,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+162778,263303,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+162794,234316,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+16283,14740,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+162843,234375,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+162843,234376,CHAdeMO,30.0,100.0,2.0,50.0,Operational,True
+16285,14742,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+16286,14743,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+16287,14744,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+16287,220047,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+16288,14745,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+16299,14760,Type 2 (Socket Only),10.0,4.8,2.0,50.0,Operational,True
+16299,61969,Type 2 (Socket Only),10.0,,1.0,0.0,Unknown,
+16300,14761,Type I (AS 3112),10.0,2.3,1.0,50.0,Operational,True
+16322,14787,Type I (AS 3112),10.0,3.6,9.0,50.0,Operational,True
+163388,234956,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+165108,236708,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+165108,236709,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+165108,263304,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+16526,14958,Type I (AS 3112),10.0,3.6,1.0,50.0,Operational,True
+16652,15099,Type 2 (Socket Only),10.0,3.3,2.0,50.0,Operational,True
+16654,15101,Type I (AS 3112),10.0,3.6,1.0,50.0,Operational,True
+16655,15102,Type I (AS 3112),10.0,3.6,1.0,50.0,Operational,True
+16666,219096,Type 2 (Socket Only),,4.0,1.0,50.0,Operational,True
+16667,15119,Type 2 (Socket Only),10.0,7.2,1.0,50.0,Operational,True
+16669,474025,Type 2 (Socket Only),,7.0,1.0,50.0,Operational,True
+16670,91328,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+16670,91329,Type 2 (Socket Only),20.0,43.0,1.0,50.0,Operational,True
+16670,91330,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+16671,15122,Type 2 (Socket Only),10.0,7.2,2.0,50.0,Operational,True
+16672,15123,Type 2 (Socket Only),10.0,4.8,2.0,10.0,Currently Available (Automated Status),True
+167436,253615,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+167436,253616,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+16827,17061,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+168484,255890,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+168484,255891,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+168544,256002,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+168544,256003,CHAdeMO,30.0,,1.0,50.0,Operational,True
+168556,256021,Type 2 (Socket Only),,22.0,4.0,50.0,Operational,True
+168665,256272,CCS (Type 2),30.0,30.0,1.0,50.0,Operational,True
+168666,256274,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+168667,256275,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+168667,256276,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+168667,256277,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+168667,460838,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+168667,460839,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+168774,256524,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+168801,256587,CCS (Type 2),30.0,43.0,1.0,50.0,Operational,True
+168912,256849,Type 1 (J1772),10.0,7.0,1.0,100.0,Not Operational,False
+168913,273918,Unknown,,,1.0,50.0,Operational,True
+169558,258108,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+169558,258109,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+169558,263305,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+169646,258276,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+169646,258277,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+169684,258387,Type 2 (Socket Only),20.0,22.0,4.0,50.0,Operational,True
+169684,258388,Type 2 (Tethered Connector) ,,6.0,2.0,50.0,Operational,True
+169767,258664,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+169767,259240,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+169768,258666,Type 2 (Tethered Connector) ,,22.0,1.0,50.0,Operational,True
+169769,258668,Unknown,,3.0,1.0,50.0,Operational,True
+169770,258669,Three Phase 5-Pin (AS/NZ 3123),,22.0,1.0,50.0,Operational,True
+169823,258765,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+169823,258766,CHAdeMO,,350.0,2.0,50.0,Operational,True
+169994,259082,Type 2 (Tethered Connector) ,10.0,22.0,2.0,50.0,Operational,True
+170042,259208,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+170042,259209,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+170042,308373,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+170056,259231,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+170057,259232,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+170058,259233,Three Phase 5-Pin (AS/NZ 3123),,22.0,1.0,50.0,Operational,True
+170079,259272,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+170276,259675,CCS (Type 2),30.0,60.0,1.0,50.0,Operational,True
+170276,313198,CCS (Type 2),30.0,60.0,1.0,50.0,Operational,True
+170600,260429,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+170600,260430,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+170600,260431,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+170607,260461,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+170607,260462,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+170663,260608,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+170664,260610,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+170665,260611,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+170665,260612,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+170770,260915,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+170771,260916,Type 2 (Tethered Connector) ,,22.0,2.0,50.0,Operational,True
+170773,260920,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+170824,261015,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+170824,261016,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+170933,261147,Type 2 (Tethered Connector) ,10.0,7.0,2.0,50.0,Operational,True
+170945,261170,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+170985,261237,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+171061,261390,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+171061,261391,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+171061,261392,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+171146,261547,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+171313,261840,Three Phase 5-Pin (AS/NZ 3123),,22.0,1.0,50.0,Operational,True
+171316,261846,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+171316,261847,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+171592,262398,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+171592,262399,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+171640,262463,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+171646,262477,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+171647,262478,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+171647,262479,CHAdeMO,30.0,100.0,2.0,50.0,Operational,True
+171658,262496,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+172030,262950,Type 2 (Tethered Connector) ,10.0,5.5,1.0,50.0,Operational,True
+172031,262952,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+172181,263172,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+172232,263306,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+172232,263307,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+172232,263308,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+172233,263309,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+172234,263310,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+172242,263321,Type 2 (Tethered Connector) ,20.0,32.0,1.0,50.0,Operational,True
+172242,263322,Type 2 (Tethered Connector) ,20.0,32.0,1.0,50.0,Operational,True
+172360,263522,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+172360,263523,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+172360,263524,Type 2 (Socket Only),10.0,22.0,1.0,50.0,Operational,True
+172361,263530,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+172361,263531,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+172361,263532,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+172362,263533,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+172362,263534,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+172362,263535,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+172373,263546,Type 2 (Tethered Connector) ,10.0,7.0,2.0,50.0,Operational,True
+172641,263971,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+172641,263972,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+172641,263973,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+172652,263993,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+172652,309294,CHAdeMO,,100.0,2.0,50.0,Operational,True
+172836,264360,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+172836,264361,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+172836,264362,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+172837,264363,Type I (AS 3112),10.0,2.4,1.0,50.0,Operational,True
+172837,264364,Type I (AS 3112),10.0,3.6,1.0,50.0,Operational,True
+172852,264405,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+172852,264406,CHAdeMO,30.0,100.0,2.0,50.0,Operational,True
+172853,264407,Type 2 (Socket Only),10.0,7.2,1.0,50.0,Operational,True
+172853,264408,Tesla (Model S/X),20.0,8.0,2.0,50.0,Operational,True
+172854,264409,Type 2 (Socket Only),20.0,11.0,1.0,50.0,Operational,True
+172919,264533,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+172919,264534,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+172919,264535,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+172920,264536,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+172920,264537,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+172921,264538,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+172921,264539,CHAdeMO,30.0,100.0,2.0,50.0,Operational,True
+173908,267539,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+173908,267540,CHAdeMO,30.0,100.0,2.0,50.0,Operational,True
+174349,269934,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+174394,270127,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+174474,270288,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+174956,271124,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+175167,271580,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+175224,271683,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+175300,271886,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+175300,271887,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+175607,272650,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+175607,272651,CHAdeMO,30.0,24.0,1.0,50.0,Operational,True
+175665,272764,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+175665,272765,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+175694,272808,Unknown,20.0,13.3,1.0,50.0,Operational,True
+175885,273143,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+175885,273144,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+175886,273145,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+175886,273147,Type 2 (Socket Only),20.0,,1.0,50.0,Operational,True
+175886,303796,CHAdeMO,,50.0,1.0,50.0,Operational,True
+176173,273774,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+176173,273775,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+176298,274020,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+176298,274021,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+188496,304423,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+189018,305517,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+189033,305546,Type 2 (Socket Only),20.0,11.0,2.0,50.0,Operational,True
+189036,305552,Type 2 (Socket Only),20.0,22.0,3.0,50.0,Operational,True
+189315,306139,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+189315,306140,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+189631,306767,Type 2 (Socket Only),20.0,22.8,2.0,50.0,Operational,True
+189632,306768,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+189634,306770,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+189634,306771,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+189634,311766,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+189634,311767,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+189635,306772,Type 2 (Tethered Connector) ,20.0,22.0,4.0,50.0,Operational,True
+189741,306991,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+189741,306992,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+189741,306993,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+189742,306994,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+189742,351507,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+189744,306996,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+189744,351560,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+189745,306997,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+189745,306998,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+189747,307000,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+189747,307001,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+189747,351501,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+189748,307002,CCS (Type 2),30.0,80.0,2.0,50.0,Operational,True
+189748,351565,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+189750,307004,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+189750,351557,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+189750,461052,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+189750,461053,CHAdeMO,,50.0,1.0,50.0,Operational,True
+189751,307005,CCS (Type 2),30.0,350.0,6.0,50.0,Operational,True
+189753,307009,Type 2 (Socket Only),10.0,7.4,1.0,50.0,Operational,True
+189882,307369,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+189982,307737,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+189983,307738,Type 2 (Tethered Connector) ,10.0,7.0,1.0,50.0,Operational,True
+189997,307769,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+189997,311763,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+189998,307770,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+189998,311764,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+189998,461044,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+189998,461045,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190000,307772,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+190003,307780,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+190003,307781,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190003,307797,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190003,307798,CHAdeMO,30.0,100.0,2.0,50.0,Operational,True
+190005,307782,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190005,307783,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190033,307856,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+190041,307880,Type 2 (Socket Only),20.0,12.0,6.0,50.0,Operational,True
+190043,307882,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190043,351403,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+190044,307883,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190053,307912,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+190054,307913,Type 2 (Socket Only),,9.0,2.0,50.0,Operational,True
+190055,307914,Type 2 (Tethered Connector) ,10.0,8.0,2.0,50.0,Operational,True
+190067,307945,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190075,307965,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190075,308375,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190075,308376,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190155,308157,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+190155,308158,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+190224,308307,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+190224,308308,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+190225,308311,CCS (Type 2),30.0,84.0,2.0,50.0,Operational,True
+190225,308312,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190225,308314,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190241,308334,Three Phase 5-Pin (AS/NZ 3123),,11.0,1.0,50.0,Operational,True
+190242,308335,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190243,308336,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190244,308337,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,150.0,Planned For Future Date,False
+190245,308338,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190245,308339,Tesla (Model S/X),20.0,22.0,1.0,50.0,Operational,True
+190246,308340,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190247,308341,Three Phase 5-Pin (AS/NZ 3123),20.0,17.0,1.0,50.0,Operational,True
+190247,308342,Tesla (Model S/X),20.0,17.0,1.0,50.0,Operational,True
+190248,308343,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,3.0,50.0,Operational,True
+190252,308349,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190253,308350,IEC 60309 5-pin,20.0,7.0,1.0,50.0,Operational,True
+190254,308351,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190255,308352,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,100.0,Not Operational,False
+190256,308353,Three Phase 5-Pin (AS/NZ 3123),20.0,14.0,1.0,50.0,Operational,True
+190257,308354,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190257,308355,Three Phase 5-Pin (AS/NZ 3123),20.0,17.0,1.0,50.0,Operational,True
+190257,308356,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+190258,308357,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190259,308358,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190260,308359,Three Phase 5-Pin (AS/NZ 3123),20.0,17.0,1.0,50.0,Operational,True
+190261,308360,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190264,308364,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190265,308365,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190266,308366,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190266,309939,CCS (Type 2),30.0,22.0,1.0,50.0,Operational,True
+190267,308367,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+190268,308368,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190272,308374,Three Phase 5-Pin (AS/NZ 3123),20.0,17.0,1.0,50.0,Operational,True
+190273,308377,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190274,308378,Three Phase 5-Pin (AS/NZ 3123),20.0,17.0,1.0,50.0,Operational,True
+190274,308379,Type I (AS 3112),10.0,3.0,1.0,50.0,Operational,True
+190275,308380,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,75.0,Partly Operational (Mixed),True
+190276,308381,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+190276,308382,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190276,308383,Type I (AS 3112),10.0,3.0,1.0,50.0,Operational,True
+190277,308384,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190278,308385,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190278,308386,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+190279,308387,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190280,308388,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190281,308389,Three Phase 5-Pin (AS/NZ 3123),20.0,17.0,1.0,50.0,Operational,True
+190282,308390,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190283,308391,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190286,308394,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190287,308395,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190288,308396,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190290,308398,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190291,308399,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190292,308400,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190293,308401,Three Phase 5-Pin (AS/NZ 3123),20.0,18.0,1.0,50.0,Operational,True
+190293,308402,Type I (AS 3112),10.0,7.0,4.0,50.0,Operational,True
+190294,308403,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190295,308404,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190296,308405,Three Phase 5-Pin (AS/NZ 3123),20.0,4.0,1.0,50.0,Operational,True
+190298,308407,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190302,308414,Type 2 (Socket Only),20.0,,1.0,50.0,Operational,True
+190317,308456,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,19.0,50.0,Operational,True
+190317,308457,Type I (AS 3112),10.0,3.0,8.0,50.0,Operational,True
+190339,308530,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+190339,308561,Type 2 (Socket Only),20.0,,1.0,50.0,Operational,True
+190350,308552,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+190350,308554,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+190351,308556,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+190351,308557,CHAdeMO,30.0,,2.0,50.0,Operational,True
+190352,308558,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+190354,308560,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+190356,308565,Type I (AS 3112),10.0,7.0,1.0,50.0,Operational,True
+190358,308568,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190358,308569,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190359,308570,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190359,308571,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190360,308572,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190360,308573,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190361,308574,Type 2 (Socket Only),,22.0,1.0,50.0,Operational,True
+190362,308575,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190362,308576,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+190362,460827,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190363,308577,Type I (AS 3112),10.0,2.5,1.0,50.0,Operational,True
+190373,308605,Type 2 (Socket Only),20.0,,1.0,50.0,Operational,True
+190389,308639,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+190389,308640,Type I (AS 3112),10.0,2.4,1.0,50.0,Operational,True
+190392,308648,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+190392,308649,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+190393,308650,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190393,308651,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190394,308652,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190394,308653,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190395,308654,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+190395,308699,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+190396,308655,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190396,308656,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190396,468689,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190397,308657,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190397,308658,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190397,468466,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190397,468467,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190397,468468,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190397,468469,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190397,468470,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190397,468471,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190398,308659,CCS (Type 2),30.0,50.0,,50.0,Operational,True
+190398,308660,CHAdeMO,,50.0,1.0,50.0,Operational,True
+190398,468669,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+190399,308661,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190399,308662,CHAdeMO,,50.0,1.0,50.0,Operational,True
+190399,468666,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190400,308663,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190400,308664,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190400,468670,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+190401,308665,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190401,308666,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190401,468665,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190406,308673,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+190407,308674,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+190408,308675,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+190408,308676,Type 1 (J1772),10.0,3.6,1.0,50.0,Operational,True
+190409,308677,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+190409,308678,Type 2 (Socket Only),20.0,11.0,1.0,50.0,Operational,True
+190410,308679,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+190417,308692,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+190417,308693,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+190442,308743,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190442,308744,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190442,308745,Type 2 (Socket Only),,22.0,1.0,50.0,Operational,True
+190443,308746,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190443,308747,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190444,308748,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190444,308749,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190444,308750,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190445,308751,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190445,308752,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190445,308753,Type 2 (Socket Only),20.0,22.0,,50.0,Operational,True
+190446,308754,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190446,308755,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190446,308756,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190447,308757,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190447,308758,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190447,468664,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190448,308759,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190448,308760,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190448,308761,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190449,308762,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190449,308763,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190449,308764,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190450,308765,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190450,308766,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190450,308767,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+190451,308768,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+190451,308769,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+190452,308770,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190452,308771,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190452,308772,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+190453,308773,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190453,308774,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190453,468683,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190454,308775,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190454,308776,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190454,308777,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190455,308778,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190455,308779,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190455,308780,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190456,308781,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190456,308782,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190456,308783,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190457,308784,Type 2 (Socket Only),,7.0,1.0,50.0,Operational,True
+190462,308798,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+190463,308799,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190463,308800,Type 1 (J1772),20.0,,1.0,50.0,Operational,True
+190464,308801,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+190465,308802,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,2.0,50.0,Operational,True
+190466,308803,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190466,308804,Tesla (Model S/X),20.0,22.0,2.0,50.0,Operational,True
+190466,308805,Unknown,20.0,6.2,1.0,50.0,Operational,True
+190467,308806,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190467,308807,Type I (AS 3112),10.0,2.4,1.0,50.0,Operational,True
+190468,308808,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190469,308809,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190469,308810,Type I (AS 3112),10.0,3.0,1.0,50.0,Operational,True
+190469,308811,Tesla (Model S/X),20.0,11.0,2.0,50.0,Operational,True
+190470,308812,Three Phase 5-Pin (AS/NZ 3123),20.0,14.4,1.0,50.0,Operational,True
+190471,308813,Three Phase 5-Pin (AS/NZ 3123),20.0,14.4,1.0,50.0,Operational,True
+190471,308814,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+190471,308815,Tesla (Model S/X),10.0,3.1,1.0,50.0,Operational,True
+190472,308816,Type 2 (Tethered Connector) ,10.0,7.2,1.0,50.0,Operational,True
+190472,308817,Three Phase 5-Pin (AS/NZ 3123),20.0,11.0,1.0,50.0,Operational,True
+190473,308818,Three Phase 5-Pin (AS/NZ 3123),10.0,7.0,1.0,50.0,Operational,True
+190473,308819,Type I (AS 3112),10.0,3.0,1.0,50.0,Operational,True
+190474,308820,Three Phase 5-Pin (AS/NZ 3123),20.0,14.4,7.0,50.0,Operational,True
+190474,308821,Type I (AS 3112),10.0,3.6,5.0,50.0,Operational,True
+190487,308840,CCS (Type 2),30.0,24.0,1.0,100.0,Not Operational,False
+190487,308841,CHAdeMO,30.0,24.0,1.0,100.0,Not Operational,False
+190492,308849,Type 2 (Socket Only),20.0,7.0,1.0,50.0,Operational,True
+190498,308860,Type 2 (Socket Only),20.0,7.2,2.0,50.0,Operational,True
+190498,308861,Type I (AS 3112),10.0,3.6,1.0,50.0,Operational,True
+190500,308866,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190500,308867,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190502,308869,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+190620,309059,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+190668,309212,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190668,309213,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190669,309214,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190669,309215,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190670,309216,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190670,309217,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190671,309218,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190671,309219,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190674,309222,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190674,309223,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190675,309224,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190675,309225,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190676,309226,CCS (Type 2),30.0,150.0,3.0,50.0,Operational,True
+190676,309227,CHAdeMO,30.0,150.0,1.0,50.0,Operational,True
+190677,309228,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190677,309229,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190678,309230,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+190678,309231,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+190679,309232,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190679,309233,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190680,309234,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190680,309235,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190681,309236,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190681,309237,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190682,309238,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190682,309239,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190683,309240,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190683,309241,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190706,309295,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190706,309296,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190757,309359,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+190757,309360,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+190790,309419,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+190809,309461,CCS (Type 2),30.0,250.0,0.0,50.0,Operational,True
+190845,309536,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+190845,309537,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+190861,309558,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+190861,309559,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+190875,309591,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+190875,309592,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+190893,309625,CHAdeMO,30.0,50.0,1.0,150.0,Planned For Future Date,False
+190893,309626,CCS (Type 2),30.0,50.0,1.0,150.0,Planned For Future Date,False
+190904,309650,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+190904,309651,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190904,309652,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+190904,309653,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+190915,309684,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+190915,309685,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191051,309932,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+191051,309933,CHAdeMO,,24.0,1.0,50.0,Operational,True
+191052,309934,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+191052,466849,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+191055,309937,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191055,309938,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191055,461481,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191055,461482,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191062,309952,CCS (Type 2),30.0,165.0,1.0,50.0,Operational,True
+191063,309953,CCS (Type 2),30.0,30.0,2.0,50.0,Operational,True
+191063,310008,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+191127,310122,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+191127,310123,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+191128,310126,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+191160,310187,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191160,310188,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191160,468546,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191160,468547,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191161,310189,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191161,310190,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191161,468494,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191161,468495,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191162,310191,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191162,310192,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191162,468420,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191162,468421,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191163,310193,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191163,310194,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191163,310195,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+191164,310196,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191164,310197,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191165,310198,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191165,310199,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191165,468428,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191165,468429,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191177,310228,CCS (Type 2),30.0,150.0,1.0,50.0,Operational,True
+191177,310229,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+191177,310268,CCS (Type 2),,75.0,1.0,50.0,Operational,True
+191183,310254,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191183,310255,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191204,310299,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+191204,310300,Three Phase 5-Pin (AS/NZ 3123),20.0,,1.0,50.0,Operational,True
+191204,310301,Type I (AS 3112),10.0,3.6,2.0,50.0,Operational,True
+191280,310454,CCS (Type 2),30.0,250.0,0.0,50.0,Operational,True
+191289,310472,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191289,310473,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191394,310755,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191394,310756,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191467,310917,Type 2 (Socket Only),10.0,4.8,2.0,50.0,Operational,True
+191467,466848,Type 2 (Socket Only),10.0,4.8,2.0,50.0,Operational,True
+191620,311175,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+191620,311176,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+191761,311446,CCS (Type 2),30.0,250.0,3.0,30.0,Temporarily Unavailable,True
+191762,311447,Type 2 (Tethered Connector) ,20.0,22.0,3.0,50.0,Operational,True
+191891,311670,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+191892,311671,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+191892,311672,CHAdeMO,30.0,100.0,2.0,50.0,Operational,True
+191893,311673,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+191893,311674,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+191894,311675,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+191894,311676,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+191895,311677,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+191895,311678,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+191896,311679,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+191896,311680,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+191897,311681,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+191897,311682,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+191898,311683,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+191898,311684,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+191899,311685,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+191899,311686,CCS (Type 2),,25.0,1.0,50.0,Operational,True
+191900,311687,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191900,311688,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191901,311689,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191901,311690,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191902,311691,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191902,311692,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191903,311693,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+191903,311694,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+191904,311695,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+191904,311696,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+191905,311697,CHAdeMO,30.0,25.0,2.0,50.0,Operational,True
+191905,311698,CCS (Type 2),,25.0,2.0,50.0,Operational,True
+191906,311699,CHAdeMO,30.0,25.0,2.0,50.0,Operational,True
+191906,311700,CCS (Type 2),30.0,25.0,2.0,50.0,Operational,True
+191907,311701,CHAdeMO,30.0,25.0,2.0,50.0,Operational,True
+191907,311702,CCS (Type 2),30.0,25.0,2.0,50.0,Operational,True
+191908,311703,CHAdeMO,30.0,25.0,2.0,50.0,Operational,True
+191908,311704,CCS (Type 2),,25.0,2.0,50.0,Operational,True
+191909,311705,CHAdeMO,30.0,25.0,2.0,50.0,Operational,True
+191909,311706,CCS (Type 2),30.0,25.0,2.0,50.0,Operational,True
+191910,311707,CHAdeMO,30.0,25.0,2.0,50.0,Operational,True
+191910,311708,CCS (Type 2),30.0,25.0,2.0,50.0,Operational,True
+191911,311729,Type 2 (Socket Only),20.0,11.0,2.0,50.0,Operational,True
+191937,311769,Type 2 (Socket Only),10.0,11.0,2.0,50.0,Operational,True
+191953,311800,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191953,311801,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191954,311802,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191954,311803,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191955,311804,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191955,311805,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191956,311806,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191956,311807,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191957,311808,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191957,311809,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191958,311810,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191958,311811,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191959,311812,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+191959,311813,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+191986,311852,Type 2 (Socket Only),20.0,22.0,4.0,50.0,Operational,True
+191986,585740,Unknown,,,1.0,50.0,Operational,True
+191986,585741,Unknown,,,1.0,50.0,Operational,True
+192376,312544,Three Phase 5-Pin (AS/NZ 3123),20.0,7.0,1.0,50.0,Operational,True
+192687,313199,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+192687,313200,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+192769,313371,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+192769,336039,CHAdeMO,30.0,125.0,1.0,50.0,Operational,True
+192929,313618,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+192929,313619,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+192930,313620,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+192930,313621,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+192943,313648,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+193048,313853,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+193048,313854,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+193048,468576,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+193048,468577,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+193377,460830,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+193377,460831,CCS (Type 2),,75.0,2.0,50.0,Operational,True
+193377,460832,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+193377,460833,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+193377,460834,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+193377,460835,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+193377,460836,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+193388,314590,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+193388,314591,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+193388,314592,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+193389,314593,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+193389,314594,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193389,314595,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+193390,314596,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+193390,314597,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193390,314598,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+193630,315126,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+193630,315127,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+193630,512700,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+193630,512701,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+193706,315288,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+193706,315289,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+193706,315290,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+193706,315291,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+193706,315292,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+193706,315293,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+193787,315487,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+193903,315726,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193903,315727,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193903,315728,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193903,315729,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193904,315730,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193904,315731,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193904,315732,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193904,315733,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+193937,315798,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+193937,315800,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+193937,471046,CCS (Type 2),30.0,60.0,2.0,50.0,Operational,True
+194076,316092,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+194383,316732,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+194383,316733,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+194566,317162,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+194566,317163,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+194566,317164,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+194566,317165,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+194567,317166,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+195290,318487,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+201487,336210,Type I (AS 3112),10.0,2.4,1.0,50.0,Operational,True
+201487,336211,Three Phase 5-Pin (AS/NZ 3123),20.0,,1.0,50.0,Operational,True
+201488,336212,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+201489,336213,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+201490,336214,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+201490,336215,Type I (AS 3112),10.0,2.4,1.0,50.0,Operational,True
+201491,336216,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+201719,336811,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+202087,337752,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202087,472696,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+202088,337753,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202088,341543,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202089,337754,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202089,476064,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202090,337755,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202090,341544,Type 2 (Socket Only),20.0,7.0,1.0,50.0,Operational,True
+202092,337758,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202092,438548,Type 2 (Socket Only),,7.0,1.0,50.0,Operational,True
+202096,337767,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202096,484002,Type 2 (Socket Only),10.0,22.0,1.0,50.0,Operational,True
+202097,337768,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202097,435573,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+202098,337769,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202098,505713,Type 2 (Socket Only),,22.0,1.0,50.0,Operational,True
+202099,337770,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202101,337772,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202101,484240,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+202103,337776,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202103,472697,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+202104,337777,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202104,486880,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+202105,337778,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+202105,473046,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+202106,337779,CCS (Type 2),30.0,150.0,2.0,150.0,Planned For Future Date,False
+202106,453518,Type 2 (Socket Only),,11.0,1.0,150.0,Planned For Future Date,False
+202113,337801,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+202117,337811,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+202118,337812,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+202119,337813,IEC 60309 5-pin,20.0,22.0,1.0,50.0,Operational,True
+202146,337882,Type 2 (Socket Only),20.0,11.0,6.0,50.0,Operational,True
+202147,337883,Type 2 (Tethered Connector) ,20.0,11.0,8.0,50.0,Operational,True
+202148,337884,Type 2 (Socket Only),20.0,11.0,6.0,50.0,Operational,True
+202149,337885,Type 2 (Tethered Connector) ,20.0,11.0,4.0,50.0,Operational,True
+203222,339649,Type 2 (Socket Only),10.0,22.0,2.0,50.0,Operational,True
+204317,341383,Type 2 (Socket Only),20.0,11.0,4.0,50.0,Operational,True
+204367,341443,CCS (Type 2),30.0,250.0,6.0,150.0,Planned For Future Date,False
+204438,341541,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+204438,453517,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+207833,345941,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+207833,351572,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+207833,351573,Type I (AS 3112),10.0,,1.0,50.0,Operational,True
+209732,348976,Type I (AS 3112),10.0,1.5,2.0,50.0,Operational,True
+209950,349455,CHAdeMO,30.0,75.0,2.0,50.0,Operational,True
+209950,349456,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+209951,349457,CCS (Type 2),30.0,124.0,1.0,50.0,Operational,True
+209951,349458,CHAdeMO,30.0,124.0,1.0,50.0,Operational,True
+210012,349589,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210012,349590,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210012,349591,Type 2 (Socket Only),30.0,22.0,2.0,50.0,Operational,True
+210013,349592,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210013,349593,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210013,349594,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210014,349595,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210014,349596,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210014,349597,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210015,349598,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210015,349599,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210015,349600,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210160,349896,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+210161,349897,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+210161,452592,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+210162,349898,Type I (AS 3112),10.0,3.0,1.0,50.0,Operational,True
+210163,349899,Type I (AS 3112),10.0,3.5,1.0,50.0,Operational,True
+210163,349900,Type 2 (Tethered Connector) ,10.0,7.2,1.0,50.0,Operational,True
+210173,349916,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210173,349917,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210173,349918,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210299,350204,CCS (Type 2),30.0,110.0,2.0,50.0,Operational,True
+210361,350343,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210361,350344,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210755,351193,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+210755,351194,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+210757,351197,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210757,351198,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210760,351202,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210760,351203,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210760,466703,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210760,466704,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210762,351206,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210762,351207,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210763,466707,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210763,466708,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210763,466709,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210763,466710,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210764,351210,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210764,351211,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210765,351212,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210765,351213,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210766,351214,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210766,351215,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210767,351216,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210767,351217,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210768,351218,CCS (Type 2),30.0,50.0,6.0,150.0,Planned For Future Date,False
+210768,351219,Type 2 (Socket Only),20.0,22.0,8.0,150.0,Planned For Future Date,False
+210769,351220,CHAdeMO,30.0,120.0,1.0,50.0,Operational,True
+210769,351221,CCS (Type 2),30.0,120.0,7.0,50.0,Operational,True
+210769,468536,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+210770,351222,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+210770,351223,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+210771,351224,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210771,351225,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210772,351226,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210772,351227,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210772,351228,CCS (Type 2),30.0,350.0,1.0,50.0,Operational,True
+210772,351229,CHAdeMO,30.0,350.0,1.0,50.0,Operational,True
+210772,460851,CCS (Type 2),30.0,350.0,1.0,50.0,Operational,True
+210772,460852,CHAdeMO,30.0,350.0,1.0,50.0,Operational,True
+210772,460853,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210772,460854,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210773,351232,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210773,351233,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210774,351234,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210774,351235,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210775,351236,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210775,351237,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210776,351238,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210776,351239,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210777,470925,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210777,470926,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210777,470927,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210777,470928,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210778,351242,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210778,351243,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210778,351244,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210779,351245,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210779,351246,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210779,461060,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210779,461061,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210780,351247,Unknown,,,,150.0,Planned For Future Date,False
+210780,351248,CHAdeMO,30.0,50.0,1.0,150.0,Planned For Future Date,False
+210780,351249,Type 1 (J1772),,,1.0,150.0,Planned For Future Date,False
+210781,351250,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210781,351251,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210782,351252,Type 2 (Socket Only),20.0,11.0,1.0,50.0,Operational,True
+210783,351253,Type 2 (Tethered Connector) ,20.0,11.0,1.0,50.0,Operational,True
+210784,351254,Type 2 (Tethered Connector) ,20.0,11.0,1.0,50.0,Operational,True
+210785,351255,Type 2 (Tethered Connector) ,20.0,11.0,3.0,50.0,Operational,True
+210785,351256,Three Phase 5-Pin (AS/NZ 3123),20.0,,1.0,50.0,Operational,True
+210786,351257,Type 2 (Tethered Connector) ,10.0,3.6,1.0,50.0,Operational,True
+210787,351258,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+210788,351259,Type 2 (Tethered Connector) ,20.0,11.0,1.0,50.0,Operational,True
+210789,351260,Type 1 (J1772),10.0,6.6,6.0,50.0,Operational,True
+210790,351261,Type 1 (J1772),10.0,6.6,1.0,30.0,Temporarily Unavailable,True
+210791,351262,Type 2 (Tethered Connector) ,20.0,11.0,1.0,50.0,Operational,True
+210791,351263,Type 2 (Socket Only),10.0,11.0,1.0,50.0,Operational,True
+210791,351264,Type 1 (J1772),10.0,6.6,1.0,50.0,Operational,True
+210792,351265,Type 2 (Tethered Connector) ,20.0,11.0,2.0,50.0,Operational,True
+210792,351266,Type 2 (Socket Only),20.0,11.0,2.0,50.0,Operational,True
+210825,351336,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210825,351337,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210825,351338,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210826,351339,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210826,351340,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210826,351341,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210827,351342,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210827,351343,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210827,351344,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210836,351369,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210836,351370,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210837,351371,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+210838,351372,CCS (Type 2),30.0,150.0,1.0,50.0,Operational,True
+210838,351373,CHAdeMO,30.0,150.0,1.0,50.0,Operational,True
+210846,351394,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210846,351395,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210846,351396,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210849,351400,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+210849,351401,CCS (Type 2),30.0,120.0,1.0,50.0,Operational,True
+210850,351402,Type 1 (J1772),10.0,6.6,2.0,50.0,Operational,True
+210851,351404,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210851,351405,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210851,351406,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+210852,351407,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210852,351408,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210853,351409,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210853,351410,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210854,351411,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210854,351412,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210854,461042,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210854,461043,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210855,351414,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210855,351415,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210856,351416,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210856,351417,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210857,351418,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210857,351419,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210874,351444,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210874,351445,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210887,351475,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210887,351476,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210888,351477,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210888,351478,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210889,351479,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210889,351480,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210890,351481,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210890,351482,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210891,351483,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210891,351484,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210892,351485,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210892,351486,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210893,351487,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210893,351488,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210894,351489,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210894,351490,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210896,351493,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210896,351494,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210896,466641,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210896,466642,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210897,351495,CCS (Type 2),30.0,180.0,2.0,50.0,Operational,True
+210897,351496,CHAdeMO,30.0,100.0,2.0,50.0,Operational,True
+210898,351497,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210898,351498,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210899,351499,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210899,351500,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210900,351503,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210900,351504,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210900,461050,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210900,461051,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210901,351506,CCS (Type 2),30.0,150.0,8.0,50.0,Operational,True
+210902,351508,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210902,351509,CCS (Type 2),30.0,75.0,5.0,50.0,Operational,True
+210903,351510,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+210904,351511,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+210922,351549,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210922,351550,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210922,461058,CHAdeMO,,50.0,1.0,50.0,Operational,True
+210922,461059,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210923,351551,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210923,351552,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210923,461054,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210923,461055,CHAdeMO,,50.0,1.0,50.0,Operational,True
+210924,351553,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210924,351554,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210924,461056,CCS (Type 2),,50.0,1.0,50.0,Operational,True
+210924,461057,CHAdeMO,,50.0,1.0,50.0,Operational,True
+210925,351555,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210925,351556,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210926,351558,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+210926,351559,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+210928,351566,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210928,351567,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210929,351568,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+210929,351569,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+210937,351583,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+210952,351618,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210952,351619,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210953,351620,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+210953,351621,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210953,461048,CCS (Type 2),,50.0,1.0,50.0,Operational,True
+210953,461049,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+210994,351720,CCS (Type 2),30.0,124.0,1.0,50.0,Operational,True
+210994,351721,CHAdeMO,30.0,124.0,1.0,50.0,Operational,True
+212646,354072,Type 2 (Socket Only),10.0,7.3,4.0,50.0,Operational,True
+213182,355111,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+213182,355112,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+213182,355113,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+213183,355114,Type 1 (J1772),10.0,,1.0,50.0,Operational,True
+213275,355255,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+213653,355889,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+235054,387653,Type 2 (Tethered Connector) ,10.0,22.0,3.0,50.0,Operational,True
+235340,388150,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+235340,388151,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+235457,388375,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+235457,388376,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+235458,388377,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+235459,388378,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+235459,388379,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+235460,388380,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+235460,388381,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+235461,388382,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+235461,388383,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+235461,466695,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+235461,466696,CCS (Type 2),30.0,,1.0,50.0,Operational,True
+238124,391676,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+238124,391677,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+238124,466705,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+238124,466706,CHAdeMO,30.0,350.0,1.0,50.0,Operational,True
+238125,391678,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+238125,391679,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+238126,391680,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+238126,391681,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+238412,392211,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+238412,392212,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+24508,26736,Type I (AS 3112),10.0,3.6,2.0,50.0,Operational,True
+24508,308796,Three Phase 5-Pin (AS/NZ 3123),20.0,14.4,2.0,50.0,Operational,True
+24508,308797,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+257192,429027,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+257192,429028,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+258482,432278,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+258482,432279,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+258483,432280,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+258483,432281,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+259607,435568,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+259607,435569,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+259690,435703,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+259691,435704,CCS (Type 2),,100.0,3.0,50.0,Operational,True
+259691,435705,CHAdeMO,,100.0,1.0,50.0,Operational,True
+259692,435706,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+259692,435707,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+259692,461046,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+259692,461047,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+259710,435744,CCS (Type 2),30.0,80.0,2.0,50.0,Operational,True
+259710,435745,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+259795,435949,Type 2 (Socket Only),10.0,22.0,1.0,30.0,Temporarily Unavailable,True
+260085,437373,CCS (Type 2),30.0,80.0,2.0,50.0,Operational,True
+260085,437374,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+260185,437627,Type 2 (Tethered Connector) ,10.0,7.2,2.0,100.0,Not Operational,False
+260229,437676,Type 2 (Tethered Connector) ,10.0,7.0,1.0,50.0,Operational,True
+260392,438070,CCS (Type 2),,50.0,2.0,0.0,Unknown,
+260392,438071,CHAdeMO,,50.0,2.0,0.0,Unknown,
+260420,438211,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+260617,438685,Type 2 (Socket Only),10.0,22.0,4.0,50.0,Operational,True
+260774,439011,CCS (Type 2),,22.0,1.0,50.0,Operational,True
+260774,439012,Unknown,,,8.0,50.0,Operational,True
+265199,449563,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+265199,449564,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+265390,450394,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+265390,450395,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+265390,468478,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+265390,468479,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+265655,451874,Type I (AS 3112),10.0,2.5,10.0,50.0,Operational,True
+266022,452586,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+266022,452587,CHAdeMO,30.0,125.0,1.0,50.0,Operational,True
+266253,453074,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+266253,453075,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+266384,453293,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+266384,453294,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+266384,453295,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+266384,453296,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+266480,453563,CCS (Type 2),30.0,70.0,1.0,50.0,Operational,True
+266480,453564,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+266499,453614,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+266499,453615,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+266500,453616,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+266500,453617,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+266501,453618,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+266538,453690,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+266540,453692,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+266540,453693,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+266540,468476,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+266540,468477,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+266586,453800,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+266586,453801,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+266620,453865,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+266767,454224,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+266767,454225,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+266872,454544,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+267110,455085,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+267110,455086,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+267111,455087,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+267111,455088,CHAdeMO,30.0,125.0,1.0,50.0,Operational,True
+267315,455540,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+267315,455541,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+267345,455579,Type 2 (Socket Only),,,2.0,50.0,Operational,True
+267498,455758,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+267498,455759,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+267498,461483,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+267547,455881,Type 2 (Socket Only),10.0,22.0,2.0,50.0,Operational,True
+267563,455910,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+267563,455911,CHAdeMO,30.0,125.0,1.0,50.0,Operational,True
+267588,455964,Type 2 (Socket Only),20.0,22.0,8.0,50.0,Operational,True
+270847,460811,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270847,460812,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270902,461025,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270902,461026,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270903,461027,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270903,461028,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270904,461029,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+270904,461030,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+270905,461031,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270905,461032,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270908,461062,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+270908,461063,CCS (Type 2),30.0,100.0,1.0,50.0,Operational,True
+270909,461064,CCS (Type 2),30.0,100.0,3.0,50.0,Operational,True
+270909,461065,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+270910,461066,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270910,461067,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270933,461136,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270933,461137,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270934,461138,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+270935,461139,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270935,461140,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270936,461141,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270936,461142,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270947,461181,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+270949,461188,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+270949,461189,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+270950,461190,CHAdeMO,30.0,80.0,1.0,50.0,Operational,True
+270950,461191,CCS (Type 2),30.0,80.0,1.0,50.0,Operational,True
+270950,461192,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+270994,461280,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270994,461281,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270994,461282,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270994,461283,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270996,461285,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270996,461286,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+270996,461287,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+270996,461288,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271003,461296,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271003,461297,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271006,461300,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271006,461301,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271011,461306,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271011,461307,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271011,461308,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271011,461309,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271014,461312,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271014,461313,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271017,461316,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271017,461317,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271022,461322,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271022,461323,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271024,461325,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271024,461326,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271033,461335,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271033,461336,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271037,461340,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271037,461341,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271060,461369,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271060,461370,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271062,461373,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271062,461374,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271063,461375,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271063,461376,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271064,461377,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271064,461378,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271065,461379,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271065,461380,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271066,461381,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271066,461382,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+271067,461383,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+271067,461384,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272486,466660,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272486,466661,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272496,466691,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272496,466692,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272496,466693,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272496,466694,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272497,466697,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272497,466698,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272497,466699,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272497,466700,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272498,466701,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272498,466702,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272499,466711,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+272499,466717,CCS (Type 2),30.0,150.0,1.0,50.0,Operational,True
+272499,466718,CHAdeMO,30.0,62.5,1.0,50.0,Operational,True
+272500,466713,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272500,466714,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272501,466715,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272501,466716,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272504,466730,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+272504,466731,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+272506,466734,CCS (Type 2),30.0,60.0,1.0,50.0,Operational,True
+272506,466735,CHAdeMO,30.0,60.0,1.0,50.0,Operational,True
+272507,466736,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+272507,466737,CHAdeMO,30.0,24.0,1.0,50.0,Operational,True
+272508,466738,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272510,466741,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272510,466742,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272511,466743,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272521,466851,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+272531,466935,Type 1 (J1772),20.0,22.0,1.0,50.0,Operational,True
+272531,466936,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272532,466937,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272533,466938,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272534,466939,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272534,466940,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272535,466941,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272536,466942,Type 2 (Socket Only),10.0,11.0,2.0,50.0,Operational,True
+272537,466943,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+272537,466944,CHAdeMO,30.0,24.0,1.0,50.0,Operational,True
+272537,466945,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272540,466952,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272540,466953,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272541,466954,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272542,466955,CHAdeMO,30.0,22.0,1.0,50.0,Operational,True
+272542,466956,CCS (Type 2),30.0,22.0,1.0,50.0,Operational,True
+272561,467038,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272561,467039,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272562,467040,CCS (Type 2),20.0,44.0,2.0,50.0,Operational,True
+272562,467041,CCS (Type 2),20.0,44.0,2.0,50.0,Operational,True
+272562,467042,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+272562,467043,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+272562,467044,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+272562,467045,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+272562,467046,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+272562,467047,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+272563,467048,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272563,467049,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272564,467050,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272564,467051,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272564,467052,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272565,467053,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272566,467054,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272566,467055,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+272567,467056,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+272567,467057,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+272568,467058,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272568,467059,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272568,467060,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272568,467061,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272568,467062,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272568,467063,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272569,467064,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272570,467065,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272571,467066,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272571,467067,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272571,467068,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272571,467069,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272572,467070,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272572,467071,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272572,467072,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272573,467073,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272573,467074,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272573,467075,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272573,467076,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272574,467077,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+272574,467078,CHAdeMO,30.0,22.0,1.0,50.0,Operational,True
+272574,467079,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272592,468296,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+272592,468297,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+272598,468324,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+272598,468325,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+272599,468326,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272600,468327,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+272600,468328,CHAdeMO,30.0,24.0,1.0,50.0,Operational,True
+272600,468329,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272601,468330,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272602,468331,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272603,468332,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272604,468333,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+272604,468334,CHAdeMO,30.0,24.0,1.0,50.0,Operational,True
+272604,468335,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272605,468336,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+272605,468337,CHAdeMO,30.0,24.0,1.0,50.0,Operational,True
+272605,468338,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+272606,468339,CCS (Type 2),30.0,60.0,1.0,50.0,Operational,True
+272606,468340,CHAdeMO,30.0,60.0,1.0,50.0,Operational,True
+272607,468341,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+272607,468342,CHAdeMO,30.0,22.0,1.0,50.0,Operational,True
+272607,468343,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272608,468344,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272608,468345,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272608,468346,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272610,468349,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272610,468350,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272610,468351,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+272611,468352,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+272611,468353,CHAdeMO,30.0,22.0,1.0,50.0,Operational,True
+272612,468354,CCS (Type 2),30.0,80.0,2.0,50.0,Operational,True
+272612,468355,Type 2 (Socket Only),,,1.0,50.0,Operational,True
+272613,468356,CCS (Type 2),30.0,22.0,1.0,50.0,Operational,True
+272613,468357,CHAdeMO,30.0,22.0,1.0,50.0,Operational,True
+272614,468358,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272614,468359,CHAdeMO,30.0,22.0,1.0,50.0,Operational,True
+272614,468360,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272614,468361,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272614,468362,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272614,468363,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272615,468364,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+272616,468393,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+272616,468394,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272616,468395,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272617,468396,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+272618,468397,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+272619,468398,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+272619,468399,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+272619,468400,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+272619,468401,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+272619,468402,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+272619,468403,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+272619,468404,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+272619,468405,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+272620,468406,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+272622,468409,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+272624,468412,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+272627,468416,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272627,468417,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272627,468418,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272627,468419,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272628,468422,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272628,468423,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272628,468424,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272628,468425,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272629,468426,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+272629,468427,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+272630,468430,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272630,468431,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272630,468432,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272630,468433,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272631,468434,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272631,468435,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272631,468436,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272631,468437,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272632,468438,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272632,468439,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272632,468440,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272632,468441,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272633,468442,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272633,468443,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272633,468444,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272633,468445,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272634,468446,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272634,468447,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272634,468448,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272634,468449,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272635,468450,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272635,468451,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272635,468452,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272635,468453,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272636,468454,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272636,468455,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272636,468456,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272636,468457,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272637,468458,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+272637,468459,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+272638,468460,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272638,468461,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272638,468462,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272638,468463,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272639,468464,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+272639,468465,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+272640,468472,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272640,468473,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272640,468474,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272640,468475,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272641,468480,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272641,468481,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272641,468482,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272641,468483,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272642,468484,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272642,468485,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272642,468486,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272642,468487,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272643,468488,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272643,468489,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272643,468490,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272643,468491,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272644,468492,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+272644,468493,CHAdeMO,30.0,350.0,2.0,50.0,Operational,True
+272661,468522,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+272665,468535,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+272666,468537,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+272670,468548,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272670,468549,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272670,468550,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272670,468551,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272671,468552,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272671,468553,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272671,468554,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272671,468555,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272672,468556,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272672,468557,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272672,468558,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272672,468559,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272673,468560,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272673,468561,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272673,468562,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272673,468563,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272674,468564,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272674,468565,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272674,468566,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272674,468567,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272675,468568,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272675,468569,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272675,468570,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272675,468571,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272676,468572,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272676,468573,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272676,468574,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272676,468575,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272684,468585,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272684,468586,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272684,468587,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272684,468588,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272685,468589,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272685,468590,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272685,468591,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272685,468592,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272686,468593,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272686,468594,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272686,468595,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272686,468596,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272687,468597,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272687,468598,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272687,468599,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272687,468600,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272688,468601,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272688,468602,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272688,468603,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272688,468604,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272689,468605,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272689,468606,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272693,468619,CCS (Type 2),30.0,350.0,2.0,50.0,Operational,True
+272693,468620,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+272694,468621,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272694,468622,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272694,468623,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272694,468624,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272695,468625,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+272700,468646,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272700,468647,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272700,468648,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272700,468649,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272701,468650,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272701,468651,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272701,468652,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272701,468653,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272702,468654,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272702,468655,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272702,468656,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272702,468657,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272707,468667,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+272707,468668,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+272708,468671,CCS (Type 2),30.0,120.0,1.0,50.0,Operational,True
+272709,468672,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+272709,468673,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+272709,468674,Type 2 (Socket Only),30.0,22.0,2.0,50.0,Operational,True
+272711,468676,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+272711,468677,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+272712,468678,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+272712,468679,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+272713,468680,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+272713,468681,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+272713,468682,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272714,468684,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+272714,468685,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+272714,468686,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+272784,468794,CCS (Type 2),,100.0,1.0,50.0,Operational,True
+272905,469096,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+273073,469733,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+273073,484239,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+273194,470923,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+273194,470924,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+273195,470929,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+273195,470930,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+273206,471018,Type 2 (Tethered Connector) ,20.0,22.0,3.0,50.0,Operational,True
+273219,471047,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273219,471048,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273220,471049,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273220,471050,CHAdeMO,30.0,63.0,1.0,50.0,Operational,True
+273221,471051,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+273222,471052,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+273222,471053,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+273223,471054,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273223,471055,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273224,471056,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273224,471057,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273225,471058,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+273225,471059,CHAdeMO,30.0,24.0,1.0,50.0,Operational,True
+273226,471060,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+273226,471061,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+273227,471063,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273227,471064,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273227,471065,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+273235,471085,CCS (Type 2),30.0,60.0,1.0,50.0,Operational,True
+273235,471188,CCS (Type 2),30.0,60.0,1.0,50.0,Operational,True
+273238,471106,CCS (Type 2),30.0,150.0,1.0,50.0,Operational,True
+273238,471107,CHAdeMO,30.0,150.0,1.0,50.0,Operational,True
+273318,471412,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+273341,471455,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273341,471456,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273356,471488,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+273393,471626,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273393,471627,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273393,471628,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273394,471629,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273394,471630,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273425,471844,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273426,471845,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273427,471846,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273428,471847,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273429,471848,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273429,471849,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273430,471850,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273431,471851,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273432,471852,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273432,471853,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273432,471854,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273433,471855,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273433,471856,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273434,471857,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273434,471858,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273435,471859,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273435,471860,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273436,471861,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+273436,471862,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+273437,471863,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273458,472091,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+273458,474906,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+273474,472190,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+273474,484480,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+273534,472375,CCS (Type 2),30.0,100.0,3.0,50.0,Operational,True
+273534,472376,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+273535,472377,CCS (Type 2),30.0,40.0,2.0,50.0,Operational,True
+273755,473573,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+273755,473574,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+273755,473575,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+273867,473872,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273868,473873,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273869,473874,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273870,473875,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+273903,473998,Type 2 (Tethered Connector) ,20.0,22.0,4.0,50.0,Operational,True
+273904,473999,Type 2 (Socket Only),10.0,7.0,6.0,50.0,Operational,True
+273905,474000,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+273933,474186,Type 2 (Socket Only),10.0,7.4,10.0,75.0,Partly Operational (Mixed),True
+273935,474188,Type 2 (Socket Only),10.0,7.4,1.0,50.0,Operational,True
+274000,474391,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+274000,474392,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+274056,474533,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+274056,474534,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+274072,474770,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+274072,474771,CHAdeMO,30.0,120.0,2.0,50.0,Operational,True
+274073,474772,CCS (Type 2),30.0,150.0,5.0,50.0,Operational,True
+274073,474773,CHAdeMO,30.0,150.0,1.0,50.0,Operational,True
+274074,474774,CCS (Type 2),30.0,135.0,4.0,50.0,Operational,True
+274075,474775,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+274077,474777,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+274078,474778,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+274102,474829,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+274102,474830,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+274108,474890,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+274115,474904,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+274115,474905,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+274144,475007,CCS (Type 2),30.0,180.0,3.0,50.0,Operational,True
+274144,475916,CHAdeMO,30.0,,1.0,50.0,Operational,True
+274204,475130,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+274204,475131,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+274299,475469,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+274300,475475,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+274300,475476,Type 2 (Socket Only),30.0,22.0,1.0,50.0,Operational,True
+274302,475478,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+274302,505324,Type 2 (Socket Only),,22.0,1.0,50.0,Operational,True
+274328,475540,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+274328,475541,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+274328,475542,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+274328,475543,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+274329,475544,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+274390,475658,Type I (AS 3112),10.0,,,50.0,Operational,True
+274395,475650,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+274395,475651,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+274407,475688,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+274407,475689,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+274452,475808,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+274452,475809,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+274480,475930,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+274480,475931,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+274485,475958,Type 2 (Tethered Connector) ,20.0,11.0,1.0,50.0,Operational,True
+274586,476284,CCS (Type 2),30.0,150.0,1.0,50.0,Operational,True
+274586,476285,CHAdeMO,30.0,125.0,1.0,50.0,Operational,True
+274592,476337,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+274740,476846,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+274740,476847,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+274740,476848,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+278525,481320,CCS (Type 2),30.0,,1.0,50.0,Operational,True
+278541,481489,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+278575,481604,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+278575,481605,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+278667,482174,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+278667,482175,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+278691,482295,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+279051,483350,Type 2 (Tethered Connector) ,20.0,22.0,3.0,50.0,Operational,True
+279052,483351,Type 2 (Socket Only),20.0,22.0,8.0,50.0,Operational,True
+279179,484082,CCS (Type 2),30.0,150.0,6.0,50.0,Operational,True
+279179,484083,CHAdeMO,30.0,100.0,3.0,50.0,Operational,True
+279180,484084,CCS (Type 2),30.0,150.0,6.0,50.0,Operational,True
+279180,484085,CHAdeMO,30.0,50.0,3.0,50.0,Operational,True
+279191,484101,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+279191,484102,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+279192,484103,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+279192,484104,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+279252,484210,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+279252,484211,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+279254,484213,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+280043,487021,Type 2 (Socket Only),20.0,22.0,1.0,75.0,Partly Operational (Mixed),True
+280044,487022,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+280045,487024,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+280046,487025,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+280195,487399,Unknown,,75.0,2.0,50.0,Operational,True
+280205,487424,CCS (Type 2),30.0,120.0,1.0,50.0,Operational,True
+280205,541180,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+280226,487469,CCS (Type 2),30.0,120.0,7.0,,,
+280226,487558,CHAdeMO,30.0,120.0,1.0,50.0,Operational,True
+280226,487559,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+280253,487495,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+280371,487706,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+280715,488243,CCS (Type 2),30.0,,2.0,50.0,Operational,True
+280715,488244,CCS (Type 2),,,1.0,50.0,Operational,True
+280715,488245,CHAdeMO,,,1.0,50.0,Operational,True
+280995,488748,CCS (Type 2),30.0,50.0,2.0,30.0,Temporarily Unavailable,True
+280995,488749,Type 2 (Socket Only),20.0,22.0,1.0,30.0,Temporarily Unavailable,True
+281065,488843,CCS (Type 2),30.0,200.0,3.0,50.0,Operational,True
+281065,488844,CHAdeMO,30.0,200.0,1.0,50.0,Operational,True
+281066,488845,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+288441,506221,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+288618,506565,CCS (Type 2),30.0,150.0,2.0,150.0,Planned For Future Date,False
+288618,506566,CCS (Type 2),30.0,150.0,2.0,150.0,Planned For Future Date,False
+288939,507098,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+288968,507148,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+289009,507234,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+289009,507235,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+289309,508366,CCS (Type 2),30.0,,2.0,50.0,Operational,True
+289309,508367,CHAdeMO,30.0,,1.0,50.0,Operational,True
+289312,508372,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+289970,511818,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+289971,511819,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+289972,511820,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+289988,511854,CCS (Type 2),30.0,250.0,4.0,50.0,Operational,True
+290685,513510,Three Phase 5-Pin (AS/NZ 3123),20.0,15.0,1.0,50.0,Operational,True
+290685,588803,CCS (Type 2),10.0,7.0,3.0,50.0,Operational,True
+295863,527595,Unknown,,,1.0,50.0,Operational,True
+295940,527750,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+295940,527751,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+295979,527815,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+295979,527816,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+295989,527832,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+295989,527833,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+295989,527834,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+295990,527835,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+295990,527836,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+295991,527837,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+295991,527838,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+295992,527839,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+295993,527840,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+295993,527841,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+295994,527842,CCS (Type 2),30.0,300.0,2.0,50.0,Operational,True
+295994,527843,CCS (Type 2),30.0,87.0,1.0,50.0,Operational,True
+295994,527844,CHAdeMO,30.0,87.0,1.0,50.0,Operational,True
+295994,527845,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+295995,527846,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+296032,527924,CHAdeMO,30.0,120.0,1.0,50.0,Operational,True
+296032,527925,CCS (Type 2),30.0,120.0,3.0,50.0,Operational,True
+296033,527926,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+296033,527927,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+296034,527928,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+296034,527929,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+296035,527930,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+296035,527931,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+296036,527932,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+296036,527933,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+296037,527934,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+296037,527935,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+296038,527936,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+296044,527949,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+296045,527950,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+296536,531349,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+296536,531350,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+296683,532106,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+296683,532107,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+297042,534217,CCS (Type 2),30.0,150.0,1.0,50.0,Operational,True
+297042,534218,CHAdeMO,30.0,150.0,1.0,50.0,Operational,True
+297165,535321,Three Phase 5-Pin (AS/NZ 3123),20.0,22.2,1.0,50.0,Operational,True
+297166,535327,CCS (Type 2),30.0,150.0,1.0,50.0,Operational,True
+297166,535328,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+297509,538639,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+297730,540385,Type 2 (Socket Only),20.0,22.0,8.0,50.0,Operational,True
+297859,541791,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+298091,543160,Type 2 (Socket Only),10.0,7.0,3.0,50.0,Operational,True
+298092,543161,CCS (Type 2),30.0,200.0,5.0,50.0,Operational,True
+298092,543162,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+298092,543163,CHAdeMO,30.0,200.0,1.0,50.0,Operational,True
+298207,544263,Unknown,,,1.0,50.0,Operational,True
+298208,544264,CCS (Type 2),10.0,,1.0,50.0,Operational,True
+298483,546136,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+298483,546137,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+299804,552919,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+299879,554274,CCS (Type 2),30.0,75.0,3.0,50.0,Operational,True
+299879,554275,CHAdeMO,30.0,65.0,1.0,50.0,Operational,True
+299904,554636,Type 2 (Socket Only),20.0,22.0,4.0,50.0,Operational,True
+299958,555204,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+299958,555205,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+300146,557212,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+300146,557213,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+300147,557214,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+300147,557215,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+300148,557216,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+300149,557217,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+300150,557218,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+300150,557219,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+300151,557220,CHAdeMO,,120.0,1.0,50.0,Operational,True
+300151,557221,CCS (Type 2),,120.0,3.0,50.0,Operational,True
+300152,557222,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+300152,557223,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+300153,557224,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+300154,557225,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+300155,557226,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+300418,559371,Type 2 (Socket Only),,11.0,3.0,50.0,Operational,True
+300463,559430,Type 2 (Tethered Connector) ,10.0,7.0,1.0,50.0,Operational,True
+300801,560438,CCS (Type 2),30.0,300.0,2.0,50.0,Operational,True
+300802,560439,CCS (Type 2),30.0,160.0,2.0,50.0,Operational,True
+300856,560888,CCS (Type 2),30.0,150.0,6.0,50.0,Operational,True
+301260,562709,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+301260,562710,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+301868,564967,CCS (Type 2),30.0,150.0,4.0,50.0,Operational,True
+302211,566398,CCS (Type 2),30.0,250.0,1.0,150.0,Planned For Future Date,False
+302211,566399,CCS (Type 2),30.0,250.0,1.0,150.0,Planned For Future Date,False
+302211,566400,CCS (Type 2),30.0,250.0,1.0,150.0,Planned For Future Date,False
+302211,566401,CCS (Type 2),30.0,250.0,1.0,150.0,Planned For Future Date,False
+302211,566402,CCS (Type 2),30.0,250.0,1.0,150.0,Planned For Future Date,False
+302211,566403,CCS (Type 2),30.0,250.0,1.0,150.0,Planned For Future Date,False
+302397,567076,CCS (Type 2),20.0,22.0,2.0,50.0,Operational,True
+302585,568719,CCS (Type 2),30.0,150.0,6.0,50.0,Operational,True
+303446,571948,CCS (Type 2),30.0,125.0,1.0,50.0,Operational,True
+303446,571949,CHAdeMO,30.0,125.0,1.0,50.0,Operational,True
+303716,573231,CCS (Type 2),30.0,120.0,1.0,50.0,Operational,True
+303716,573232,CHAdeMO,30.0,120.0,1.0,50.0,Operational,True
+303937,575281,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+303938,575283,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+303938,580406,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+304196,576072,CHAdeMO,30.0,,1.0,,,
+304196,576073,CCS (Type 2),30.0,,3.0,,,
+304318,576251,CCS (Type 2),,120.0,1.0,50.0,Operational,True
+304318,576252,CHAdeMO,,50.0,1.0,50.0,Operational,True
+304335,576276,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+304358,576338,CCS (Type 2),30.0,120.0,1.0,50.0,Operational,True
+304358,576339,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+304459,576526,CCS (Type 2),30.0,200.0,2.0,50.0,Operational,True
+304459,576527,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+304459,576528,CHAdeMO,30.0,200.0,1.0,50.0,Operational,True
+305540,578081,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+305975,579521,CCS (Type 2),30.0,60.0,1.0,50.0,Operational,True
+305975,579522,CCS (Type 2),30.0,60.0,1.0,50.0,Operational,True
+305975,582558,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+305975,582559,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+305977,579525,CCS (Type 2),30.0,150.0,3.0,50.0,Operational,True
+305977,579526,CHAdeMO,30.0,150.0,1.0,50.0,Operational,True
+305978,579527,CCS (Type 2),30.0,150.0,3.0,50.0,Operational,True
+305978,579528,CHAdeMO,30.0,150.0,1.0,50.0,Operational,True
+305979,579529,CCS (Type 2),30.0,180.0,3.0,50.0,Operational,True
+305979,579530,CHAdeMO,30.0,180.0,1.0,50.0,Operational,True
+305980,579531,CCS (Type 2),30.0,150.0,3.0,50.0,Operational,True
+305980,579532,CHAdeMO,30.0,150.0,1.0,50.0,Operational,True
+306013,579758,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+306014,579759,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+306015,579760,CCS (Type 2),30.0,24.0,1.0,50.0,Operational,True
+306016,579761,CCS (Type 2),30.0,25.0,1.0,50.0,Operational,True
+306016,579762,CHAdeMO,30.0,25.0,1.0,50.0,Operational,True
+306017,579763,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+306018,579764,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+306072,580196,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+306072,580197,CHAdeMO,30.0,125.0,1.0,50.0,Operational,True
+306095,580403,CCS (Type 2),30.0,150.0,2.0,150.0,Planned For Future Date,False
+306096,580404,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+306096,580405,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+306224,581102,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+306581,583914,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+306581,583915,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+306626,584277,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+306626,584278,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+306743,585133,Type 2 (Socket Only),20.0,22.0,4.0,50.0,Operational,True
+306858,585530,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+306891,585599,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+307477,586538,CCS (Type 2),30.0,60.0,2.0,50.0,Operational,True
+307478,586539,Type 2 (Socket Only),20.0,22.0,2.0,150.0,Planned For Future Date,False
+307698,586946,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+307759,587084,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+307759,587085,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+307760,587086,CCS (Type 2),30.0,250.0,10.0,50.0,Operational,True
+307761,587087,CCS (Type 2),30.0,250.0,4.0,50.0,Operational,True
+307762,587088,CCS (Type 2),30.0,50.0,3.0,50.0,Operational,True
+307762,587089,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+307763,587090,CCS (Type 2),30.0,50.0,3.0,50.0,Operational,True
+307763,587091,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+307764,587092,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+307764,587093,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+307765,587094,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+307766,587095,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+307766,587096,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+307767,587097,Type 2 (Socket Only),20.0,22.0,4.0,50.0,Operational,True
+307768,587098,Type 2 (Socket Only),20.0,22.0,4.0,50.0,Operational,True
+307769,587099,CCS (Type 2),30.0,50.0,3.0,50.0,Operational,True
+307769,587100,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+307770,587101,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+307771,587102,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+307771,587103,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+307772,587104,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+307772,587105,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+307773,587106,CCS (Type 2),30.0,180.0,2.0,50.0,Operational,True
+307774,587107,CCS (Type 2),30.0,180.0,2.0,50.0,Operational,True
+307775,587108,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+307784,587122,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+307785,587123,CCS (Type 2),30.0,200.0,7.0,50.0,Operational,True
+307785,587124,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+307785,587125,CHAdeMO,30.0,200.0,1.0,50.0,Operational,True
+307786,587126,CCS (Type 2),30.0,200.0,3.0,50.0,Operational,True
+307786,587127,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+307786,587128,CHAdeMO,30.0,200.0,1.0,50.0,Operational,True
+307787,587129,CCS (Type 2),30.0,250.0,4.0,50.0,Operational,True
+307788,587130,CCS (Type 2),30.0,150.0,8.0,50.0,Operational,True
+307898,587351,CHAdeMO,30.0,60.0,1.0,50.0,Operational,True
+307898,587352,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+307898,587353,CCS (Type 2),,75.0,1.0,50.0,Operational,True
+307898,587354,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+307988,587607,CCS (Type 2),30.0,50.0,4.0,50.0,Operational,True
+307989,587608,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+307990,587609,CCS (Type 2),30.0,50.0,4.0,50.0,Operational,True
+308029,587873,Type 2 (Socket Only),10.0,7.0,3.0,50.0,Operational,True
+308158,588505,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+308158,588506,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+308159,588507,CCS (Type 2),30.0,200.0,2.0,50.0,Operational,True
+308159,588508,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+308160,588509,CCS (Type 2),30.0,200.0,3.0,50.0,Operational,True
+308160,588510,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+308160,588511,CHAdeMO,30.0,200.0,1.0,50.0,Operational,True
+308225,588948,CCS (Type 2),30.0,150.0,8.0,50.0,Operational,True
+308226,588949,CCS (Type 2),30.0,180.0,2.0,50.0,Operational,True
+308227,588950,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+308228,588951,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+308228,588952,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+308229,588953,CCS (Type 2),30.0,75.0,3.0,50.0,Operational,True
+308229,588954,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+308262,589286,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+308263,589287,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+308263,589288,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+308264,589289,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+308264,589290,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+308265,589291,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+308266,589292,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+308267,589293,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+308593,591891,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+308593,591892,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+308594,591893,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+308594,591894,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+308595,591895,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+308595,591896,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+308596,591897,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+308597,591898,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+308597,591899,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+308598,591900,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+308598,591901,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+308599,591902,Type 2 (Socket Only),10.0,7.0,5.0,50.0,Operational,True
+308599,591903,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+308738,592156,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+308742,592163,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+308742,592164,CCS (Type 2),,180.0,1.0,50.0,Operational,True
+308750,592178,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+308826,592300,CCS (Type 2),30.0,50.0,4.0,50.0,Operational,True
+308827,592301,CCS (Type 2),30.0,50.0,4.0,50.0,Operational,True
+308828,592302,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+308828,592303,CHAdeMO,30.0,100.0,1.0,50.0,Operational,True
+308829,592304,CCS (Type 2),30.0,100.0,6.0,50.0,Operational,True
+309094,592783,CCS (Type 2),30.0,60.0,2.0,50.0,Operational,True
+309172,592927,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+309173,592928,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+309174,592929,CCS (Type 2),30.0,75.0,2.0,50.0,Operational,True
+309175,592930,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+309175,592931,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+309176,592932,Type 2 (Tethered Connector) ,10.0,3.0,1.0,50.0,Operational,True
+309473,594496,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+309473,594497,CHAdeMO,30.0,63.0,2.0,50.0,Operational,True
+31109,34362,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+311246,599753,CCS (Type 2),,,1.0,50.0,Operational,True
+311308,599881,CCS (Type 2),20.0,22.0,3.0,50.0,Operational,True
+311437,600127,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+311438,600128,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+311438,600129,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+311439,600130,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+311704,600537,CCS (Type 2),30.0,250.0,15.0,50.0,Operational,True
+311851,600805,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+311913,600886,Type 2 (Socket Only),20.0,11.0,3.0,50.0,Operational,True
+312202,601523,CCS (Type 2),30.0,24.0,1.0,150.0,Planned For Future Date,False
+312205,601526,CHAdeMO,30.0,150.0,4.0,50.0,Operational,True
+312205,601527,CCS (Type 2),30.0,150.0,4.0,50.0,Operational,True
+312274,601676,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+312348,601831,Type 2 (Socket Only),10.0,7.4,1.0,50.0,Operational,True
+312348,601832,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+312659,602389,CCS (Type 2),30.0,300.0,4.0,50.0,Operational,True
+312659,602390,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+312994,603094,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+312994,603095,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+312994,603096,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+312994,603097,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+312994,603098,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+313013,603127,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+313013,603128,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+459291,772341,CCS (Type 2),30.0,250.0,8.0,50.0,Operational,True
+459292,772342,CCS (Type 2),30.0,270.0,6.0,50.0,Operational,True
+459819,773695,CCS (Type 2),30.0,80.0,,50.0,Operational,True
+459866,773782,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+459875,773799,CCS (Type 2),30.0,400.0,2.0,50.0,Operational,True
+459875,773800,CCS (Type 2),30.0,400.0,2.0,50.0,Operational,True
+460103,774092,CCS (Type 2),30.0,40.0,1.0,50.0,Operational,True
+460103,774093,CHAdeMO,30.0,40.0,1.0,50.0,Operational,True
+460104,774094,CCS (Type 2),20.0,22.0,4.0,50.0,Operational,True
+460216,774237,CCS (Type 2),20.0,22.0,1.0,50.0,Operational,True
+460223,774248,CHAdeMO,30.0,180.0,1.0,50.0,Operational,True
+460223,774249,CCS (Type 2),30.0,180.0,3.0,50.0,Operational,True
+460266,774313,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+460266,774314,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+460267,774315,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+460267,774316,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460268,774317,CCS (Type 2),30.0,160.0,2.0,50.0,Operational,True
+460274,774324,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+460274,774325,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+460280,774332,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+460385,774516,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+460387,774534,CCS (Type 2),,80.0,1.0,50.0,Operational,True
+460387,774535,CHAdeMO,,80.0,1.0,50.0,Operational,True
+460388,774539,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774581,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774597,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774598,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774599,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774600,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774601,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774602,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774603,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774604,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460405,774605,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774582,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774587,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774588,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774589,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774590,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774591,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774592,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774593,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774594,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460406,774595,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+460472,774721,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+460473,774722,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+460474,774723,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+460608,774935,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+460608,774936,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+460615,774948,CCS (Type 2),30.0,250.0,4.0,50.0,Operational,True
+460617,774952,CCS (Type 2),30.0,250.0,8.0,50.0,Operational,True
+460625,774963,CCS (Type 2),30.0,250.0,12.0,50.0,Operational,True
+461192,775890,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+461335,776100,CCS (Type 2),30.0,300.0,12.0,50.0,Operational,True
+461728,776719,CCS (Type 2),30.0,50.0,4.0,50.0,Operational,True
+461729,776720,CCS (Type 2),30.0,120.0,2.0,50.0,Operational,True
+461730,776721,CCS (Type 2),30.0,180.0,8.0,50.0,Operational,True
+461731,776722,CCS (Type 2),30.0,150.0,6.0,50.0,Operational,True
+461732,776723,CCS (Type 2),30.0,350.0,4.0,50.0,Operational,True
+461734,776726,CCS (Type 2),30.0,270.0,4.0,50.0,Operational,True
+461735,776727,CCS (Type 2),30.0,270.0,6.0,50.0,Operational,True
+461814,776894,Type 2 (Tethered Connector) ,,,2.0,50.0,Operational,True
+461963,777102,CCS (Type 2),,,10.0,50.0,Operational,True
+461964,777103,CCS (Type 2),,,2.0,50.0,Operational,True
+462383,777714,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+462383,777715,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+462699,778315,Unknown,,,2.0,50.0,Operational,True
+470241,789506,CCS (Type 2),30.0,75.0,1.0,150.0,Planned For Future Date,False
+470241,789507,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+470241,789508,CCS (Type 2),30.0,75.0,1.0,50.0,Operational,True
+470241,789509,CHAdeMO,30.0,75.0,1.0,50.0,Operational,True
+470243,789511,CCS (Type 2),30.0,250.0,1.0,50.0,Operational,True
+470243,789512,CCS (Type 2),30.0,250.0,1.0,50.0,Operational,True
+470243,789513,CCS (Type 2),30.0,250.0,1.0,50.0,Operational,True
+470243,789514,CCS (Type 2),30.0,250.0,1.0,50.0,Operational,True
+470243,789515,CCS (Type 2),30.0,250.0,1.0,50.0,Operational,True
+470243,789516,CCS (Type 2),30.0,250.0,1.0,50.0,Operational,True
+470244,789517,CCS (Type 2),30.0,60.0,2.0,50.0,Operational,True
+470301,789617,CCS (Type 2),30.0,100.0,1.0,50.0,Operational,True
+470327,789674,CCS (Type 2),,50.0,1.0,50.0,Operational,True
+470327,789675,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+470328,789676,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+470328,789677,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+470502,790147,CCS (Type 2),30.0,100.0,2.0,50.0,Operational,True
+470663,790495,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+470663,790496,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+470663,790497,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+470663,790498,CHAdeMO,30.0,180.0,1.0,50.0,Operational,True
+470672,790511,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+470672,790512,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+470672,790513,CCS (Type 2),30.0,180.0,1.0,50.0,Operational,True
+470672,790514,CHAdeMO,30.0,180.0,1.0,50.0,Operational,True
+470793,790796,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+471033,791138,CCS (Type 2),30.0,60.0,2.0,50.0,Operational,True
+471034,791139,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+471035,791140,CCS (Type 2),30.0,250.0,6.0,50.0,Operational,True
+471411,791780,Unknown,,250.0,1.0,50.0,Operational,True
+472388,793271,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+472388,793272,Type 2 (Socket Only),20.0,22.0,1.0,50.0,Operational,True
+472991,794330,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+473174,794703,CCS (Type 2),30.0,20.0,1.0,50.0,Operational,True
+474435,796279,CCS (Type 2),30.0,250.0,1.0,150.0,Planned For Future Date,False
+474435,796280,CCS (Type 2),,250.0,1.0,150.0,Planned For Future Date,False
+474435,796281,CCS (Type 2),,250.0,1.0,150.0,Planned For Future Date,False
+474457,796326,CCS (Type 2),,150.0,,50.0,Operational,True
+474459,796339,CCS (Type 2),30.0,300.0,1.0,50.0,Operational,True
+474459,796340,CCS (Type 2),30.0,300.0,1.0,50.0,Operational,True
+475513,798516,Unknown,,,1.0,50.0,Operational,True
+475911,799343,CCS (Type 2),30.0,250.0,6.0,150.0,Planned For Future Date,False
+475912,799344,CCS (Type 2),30.0,160.0,2.0,50.0,Operational,True
+479439,805063,Type 2 (Socket Only),30.0,8.0,2.0,50.0,Operational,True
+479810,805568,Type 2 (Tethered Connector) ,20.0,22.0,1.0,50.0,Operational,True
+479811,805569,CCS (Type 2),30.0,250.0,1.0,50.0,Operational,True
+479812,805570,Type 2 (Tethered Connector) ,20.0,22.0,4.0,50.0,Operational,True
+479813,805571,CCS (Type 2),30.0,180.0,4.0,50.0,Operational,True
+479816,805583,CCS (Type 2),30.0,180.0,10.0,50.0,Operational,True
+479817,805584,CCS (Type 2),30.0,150.0,4.0,50.0,Operational,True
+479891,805695,CCS (Type 2),,150.15,5.0,75.0,Partly Operational (Mixed),True
+479891,805696,CHAdeMO,,62.5,1.0,50.0,Operational,True
+479892,805697,Type 2 (Socket Only),,11.0,91.0,30.0,Temporarily Unavailable,True
+479893,805698,Type 2 (Socket Only),,22.0,2.0,50.0,Operational,True
+479894,805699,Type 2 (Tethered Connector) ,,7.0,1.0,,,
+480135,806026,CCS (Type 2),30.0,,2.0,50.0,Operational,True
+480135,806027,CHAdeMO,30.0,,2.0,50.0,Operational,True
+480188,806101,CCS (Type 2),30.0,4.0,1.0,50.0,Operational,True
+480398,806378,CCS (Type 2),30.0,250.0,1.0,50.0,Operational,True
+480613,806670,CCS (Type 2),30.0,150.0,2.0,50.0,Operational,True
+480799,806966,Type 2 (Socket Only),,,1.0,50.0,Operational,True
+480800,806967,Type 2 (Socket Only),,,1.0,50.0,Operational,True
+481550,815079,CCS (Type 2),30.0,180.0,4.0,50.0,Operational,True
+481551,808884,CCS (Type 2),30.0,50.0,2.0,50.0,Operational,True
+48358,59785,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+48358,59786,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+48358,466854,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+48364,59793,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+48364,59794,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+48364,59795,Type 2 (Socket Only),10.0,7.2,1.0,50.0,Operational,True
+48365,59797,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+48365,59798,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+48365,59799,Type 2 (Socket Only),10.0,7.2,1.0,50.0,Operational,True
+48375,59813,CCS (Type 2),30.0,50.0,,50.0,Operational,True
+48375,59814,CHAdeMO,30.0,50.0,,50.0,Operational,True
+52844,65768,Tesla (Model S/X),10.0,3.0,2.0,0.0,Unknown,
+54547,68836,Tesla (Model S/X),10.0,7.6,2.0,50.0,Operational,True
+55007,69501,Tesla (Model S/X),10.0,7.6,2.0,50.0,Operational,True
+59151,75104,CHAdeMO,30.0,50.0,,50.0,Operational,True
+59151,75105,CCS (Type 2),30.0,50.0,,50.0,Operational,True
+60186,76174,Type 2 (Socket Only),10.0,7.0,2.0,100.0,Not Operational,False
+60416,76533,Type 2 (Socket Only),10.0,3.5,2.0,50.0,Operational,True
+60416,76534,Type I (AS 3112),10.0,2.4,2.0,50.0,Operational,True
+60564,76745,Type 1 (J1772),10.0,7.2,1.0,50.0,Operational,True
+62518,79432,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+62518,310052,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+62518,349100,CHAdeMO,30.0,50.0,2.0,50.0,Operational,True
+62518,468906,Type 2 (Socket Only),10.0,,4.0,50.0,Operational,True
+66031,94234,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+66031,94235,Type I (AS 3112),10.0,3.0,,50.0,Operational,True
+66032,506462,CCS (Type 2),,22.0,1.0,50.0,Operational,True
+66033,91312,Three Phase 5-Pin (AS/NZ 3123),20.0,16.0,1.0,50.0,Operational,True
+66034,91315,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+66034,309944,CCS (Type 2),30.0,22.0,1.0,50.0,Operational,True
+66035,94229,Three Phase 5-Pin (AS/NZ 3123),20.0,22.0,1.0,50.0,Operational,True
+66036,94228,Unknown,20.0,22.0,2.0,,,
+66038,94240,Unknown,20.0,22.0,1.0,50.0,Operational,True
+66040,91309,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+66040,91310,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+66040,91311,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+66041,91323,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+66041,91324,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+66041,466926,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+66042,91325,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+66042,91326,Type 2 (Socket Only),20.0,43.0,1.0,50.0,Operational,True
+66042,91327,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+66044,91303,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+66044,91305,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+66044,227077,Type 2 (Socket Only),10.0,7.0,1.0,50.0,Operational,True
+66046,91296,CHAdeMO,30.0,50.0,1.0,50.0,Operational,True
+66046,91297,Type 2 (Socket Only),20.0,43.0,1.0,50.0,Operational,True
+66046,91298,CCS (Type 2),30.0,50.0,1.0,50.0,Operational,True
+66046,91299,Type 1 (J1772),10.0,7.0,1.0,50.0,Operational,True
+70019,98913,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+70019,218610,Tesla (Model S/X),,22.0,1.0,50.0,Operational,True
+70021,106534,Type 1 (J1772),10.0,7.0,1.0,0.0,Unknown,
+70034,98914,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+70036,98917,Type I (AS 3112),10.0,3.0,,50.0,Operational,True
+72049,103322,Type 2 (Tethered Connector) ,20.0,22.0,,50.0,Operational,True
+73305,105478,Type 2 (Tethered Connector) ,20.0,22.0,2.0,50.0,Operational,True
+74343,106909,Type 2 (Socket Only),10.0,7.0,2.0,50.0,Operational,True
+77174,110878,Type 2 (Tethered Connector) ,,,,,,
+79243,113862,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+79311,113938,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+79411,114050,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+79490,114129,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+79760,114406,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+79804,114451,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+79851,114498,CCS (Type 2),30.0,120.0,8.0,50.0,Operational,True
+8745,15140,Type 1 (J1772),10.0,7.7,1.0,50.0,Operational,True
+90199,127852,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+91621,129890,Type 2 (Socket Only),20.0,22.0,2.0,50.0,Operational,True
+91847,130196,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+93371,132248,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+93384,132261,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+93403,132280,CCS (Type 2),30.0,120.0,4.0,50.0,Operational,True
+93426,132303,CCS (Type 2),30.0,250.0,3.0,50.0,Operational,True
+93664,132622,CCS (Type 2),30.0,150.0,6.0,50.0,Operational,True
+95080,134720,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+97236,138087,Type 2 (Tethered Connector) ,20.0,22.0,2.0,30.0,Temporarily Unavailable,True
+97619,138527,CCS (Type 2),30.0,120.0,6.0,50.0,Operational,True
+9892,7744,Type 1 (J1772),,,,,,

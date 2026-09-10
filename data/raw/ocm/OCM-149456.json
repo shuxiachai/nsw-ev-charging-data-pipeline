@@ -1,0 +1,187 @@
+{
+    "MediaItems": [
+        {
+            "ID": 21363,
+            "ChargePointID": 149456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.orig.2020022611270007.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.thmb.2020022611270007.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-26T11:27:00Z"
+        },
+        {
+            "ID": 21362,
+            "ChargePointID": 149456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.orig.2020022611254637.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.thmb.2020022611254637.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-26T11:26:00Z"
+        },
+        {
+            "ID": 21361,
+            "ChargePointID": 149456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.orig.2020022611250049.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.thmb.2020022611250049.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-26T11:25:00Z"
+        },
+        {
+            "ID": 21360,
+            "ChargePointID": 149456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.orig.2020022611225419.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.thmb.2020022611225419.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-26T11:23:00Z"
+        },
+        {
+            "ID": 21359,
+            "ChargePointID": 149456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.orig.2020022611215012.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.thmb.2020022611215012.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-26T11:22:00Z"
+        },
+        {
+            "ID": 21358,
+            "ChargePointID": 149456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.orig.2020022611210388.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.thmb.2020022611210388.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-26T11:21:00Z"
+        },
+        {
+            "ID": 21357,
+            "ChargePointID": 149456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.orig.2020022611200062.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.thmb.2020022611200062.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-26T11:20:00Z"
+        },
+        {
+            "ID": 21356,
+            "ChargePointID": 149456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.orig.2020022611184614.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.thmb.2020022611184614.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-26T11:19:00Z"
+        },
+        {
+            "ID": 21355,
+            "ChargePointID": 149456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.orig.2020022611173761.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM149456/OCM-149456.thmb.2020022611173761.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-26T11:18:00Z"
+        }
+    ],
+    "DateLastVerified": "2024-04-12T09:55:00Z",
+    "ID": 149456,
+    "UUID": "A3BEA116-4FCA-41DB-866A-9B72D2E6805B",
+    "DataProviderID": 1,
+    "OperatorID": 3775,
+    "UsageTypeID": 1,
+    "UsageCost": "$0.45 per kWh, may vary. See chargehub app.",
+    "AddressInfo": {
+        "ID": 149809,
+        "Title": "Boddington Shire",
+        "AddressLine1": "33 Bannister Road",
+        "Town": "Boddington",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6390",
+        "CountryID": 18,
+        "Latitude": -32.801926832445744,
+        "Longitude": 116.47539431242421,
+        "ContactTelephone1": "+61 8 9883 4999",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 207502,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 240,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2,
+            "Comments": "Located in the shire parking lot."
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2024-04-12T09:55:00Z",
+    "DateCreated": "2020-02-26T11:15:00Z",
+    "SubmissionStatusTypeID": 200
+}

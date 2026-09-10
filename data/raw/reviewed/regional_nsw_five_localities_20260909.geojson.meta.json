@@ -1,0 +1,9 @@
+{
+  "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname+IN+%28%27BRAIDWOOD%27%2C%27WALGETT%27%2C%27MOREE%27%2C%27DORRIGO%27%2C%27INVERELL%27%29&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson&orderByFields=suburbname",
+  "resolved_url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname+IN+%28%27BRAIDWOOD%27%2C%27WALGETT%27%2C%27MOREE%27%2C%27DORRIGO%27%2C%27INVERELL%27%29&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson&orderByFields=suburbname",
+  "retrieved_at_utc": "2026-09-09T04:24:35.240733+00:00",
+  "sha256": "55a99205433259f73d3ea5ea400de3e25bd324092e6212d0f8d12a5c9feaa053",
+  "bytes": 896442,
+  "etag": "\"1788847985\"",
+  "last_modified": null
+}

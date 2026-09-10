@@ -1,0 +1,12 @@
+{
+  "file": "moree_plains_visitor_guide.pdf",
+  "url": "https://visitmoreeplains.com.au/downloads/moree-plains-visitor-guide.pdf",
+  "resolved_url": "https://visitmoreeplains.com.au/downloads/moree-plains-visitor-guide.pdf",
+  "retrieved_at_utc": "2026-09-09T04:23:11.823731+00:00",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "sha256": "0a3013cd9a8868e5805602fe8eb6ba00224da2fc8751fcfca430df09628f9e9c",
+  "bytes": 21534862,
+  "capture_method": "direct_http_response",
+  "original_http_response": true
+}

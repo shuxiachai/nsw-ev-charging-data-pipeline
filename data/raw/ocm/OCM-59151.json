@@ -1,0 +1,171 @@
+{
+    "UserComments": [
+        {
+            "ID": 9851,
+            "ChargePointID": 59151,
+            "CommentTypeID": 10,
+            "UserName": "bnh",
+            "Comment": "",
+            "DateCreated": "2016-03-04T07:58:14.86Z",
+            "User": {
+                "ID": 6815,
+                "Username": "bnh"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 9786,
+            "ChargePointID": 59151,
+            "CommentTypeID": 10,
+            "UserName": "bnh",
+            "Comment": "",
+            "Rating": 5,
+            "DateCreated": "2016-02-24T09:00:55.48Z",
+            "User": {
+                "ID": 6815,
+                "Username": "bnh"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 9754,
+            "ChargePointID": 59151,
+            "CommentTypeID": 10,
+            "UserName": "bnh",
+            "Comment": "Perfect ",
+            "Rating": 5,
+            "DateCreated": "2016-02-20T05:28:34.607Z",
+            "User": {
+                "ID": 6815,
+                "Username": "bnh"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 9739,
+            "ChargePointID": 59151,
+            "CommentTypeID": 10,
+            "UserName": "bnh",
+            "Comment": "",
+            "Rating": 5,
+            "DateCreated": "2016-02-18T06:43:28.37Z",
+            "User": {
+                "ID": 6815,
+                "Username": "bnh"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 9727,
+            "ChargePointID": 59151,
+            "CommentTypeID": 10,
+            "UserName": "bnh",
+            "Comment": "In operation.\r\nAsk Brent Lamont Project Manager 'Project Murrumbidgee' Phone 02 62935801 for RFID card. Currently free but fee will be applied soon. ",
+            "Rating": 5,
+            "DateCreated": "2016-02-16T08:14:36.91Z",
+            "User": {
+                "ID": 6815,
+                "Username": "bnh"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 5912,
+            "ChargePointID": 59151,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM59151/OCM-59151.orig.2016022005321413.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM59151/OCM-59151.thmb.2016022005321413.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6815,
+                "Username": "bnh"
+            },
+            "DateCreated": "2016-02-20T05:32:00Z"
+        },
+        {
+            "ID": 5898,
+            "ChargePointID": 59151,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM59151/OCM-59151.orig.2016021608172476.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM59151/OCM-59151.thmb.2016021608172476.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6815,
+                "Username": "bnh"
+            },
+            "DateCreated": "2016-02-16T08:18:00Z"
+        },
+        {
+            "ID": 4749,
+            "ChargePointID": 59151,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM59151/OCM-59151.orig.2016010912265777.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM59151/OCM-59151.thmb.2016010912265777.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 6815,
+                "Username": "bnh"
+            },
+            "DateCreated": "2016-01-09T12:27:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-07-12T22:41:00Z",
+    "ID": 59151,
+    "UUID": "4EC61328-2378-43FB-B3BE-A3BD80BD1F5D",
+    "DataProviderID": 1,
+    "OperatorID": 3398,
+    "UsageTypeID": 4,
+    "UsageCost": "Pricing set to 50c per kWh of charging.",
+    "AddressInfo": {
+        "ID": 59497,
+        "Title": "Evoenergy Visitor Carpark",
+        "AddressLine1": "28 Oakden Street",
+        "Town": "Greenway",
+        "StateOrProvince": "ACT",
+        "Postcode": "2900",
+        "CountryID": 18,
+        "Latitude": -35.42275,
+        "Longitude": 149.072389,
+        "ContactTelephone1": " (02) 6293 5159",
+        "ContactEmail": "admin@actewaglevlution.com.au",
+        "RelatedURL": "https://actewaglevlution.com.au/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 75104,
+            "ConnectionTypeID": 2,
+            "Reference": "AA006",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30
+        },
+        {
+            "ID": 75105,
+            "ConnectionTypeID": 33,
+            "Reference": "AA006",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "ActewAGL Electricity Networks",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-12T22:41:00Z",
+    "DateCreated": "2016-01-09T00:02:00Z",
+    "SubmissionStatusTypeID": 200
+}

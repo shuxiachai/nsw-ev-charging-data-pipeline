@@ -1,0 +1,81 @@
+{
+    "UserComments": [
+        {
+            "ID": 24710,
+            "ChargePointID": 161356,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Access difficult for those cars that need to back in in order to charge (e.g. Tesla)",
+            "Rating": 3,
+            "DateCreated": "2021-08-09T07:28:18.99Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 28941,
+            "ChargePointID": 161356,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM161356/OCM-161356.orig.2021080907310311.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM161356/OCM-161356.thmb.2021080907310311.jpg",
+            "Comment": "Power is reported to be limited at this site. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-08-09T07:31:00Z"
+        }
+    ],
+    "DateLastVerified": "2021-08-09T07:31:00Z",
+    "ID": 161356,
+    "UUID": "30039794-7E0C-4597-A1C9-05A1DE76E5CE",
+    "DataProviderID": 1,
+    "OperatorID": 3310,
+    "UsageTypeID": 4,
+    "UsageCost": "45c/kWh",
+    "AddressInfo": {
+        "ID": 161713,
+        "Title": "Katanning Shire Visitors Center",
+        "AddressLine1": "Austral Terrace",
+        "Town": "Katanning",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6317",
+        "CountryID": 18,
+        "Latitude": -33.69137986156912,
+        "Longitude": 117.55573870330295,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 232222,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 232223,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-08-09T07:31:00Z",
+    "DateCreated": "2020-07-10T00:03:00Z",
+    "SubmissionStatusTypeID": 200
+}

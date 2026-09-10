@@ -1,0 +1,10 @@
+{
+  "url": "https://api.openstreetmap.org/api/0.6/node/8253300980/history",
+  "resolved_url": "https://api.openstreetmap.org/api/0.6/node/8253300980/history",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:18.100779+00:00",
+  "sha256": "1b5853149a117aeefb2f39bde77879e6f251cb7ed017951671c04b97f9253974",
+  "bytes": 2248,
+  "content_type": "application/xml; charset=utf-8"
+}

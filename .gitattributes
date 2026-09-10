@@ -1,0 +1,2 @@
+# Preserve exact code/input bytes used by the project's SHA-256 verification.
+* -text

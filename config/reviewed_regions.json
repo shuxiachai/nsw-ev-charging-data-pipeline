@@ -1,0 +1,793 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-09",
+  "sources": [
+    {
+      "file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+      "url": "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs/edition-4-july-2026-june-2031/access-and-downloads/digital-boundary-files/SA4_2026_AUST_SHP_GDA2020.zip",
+      "sha256": "d2df15ee57dac089457fd6ff27e342d4f6286ab0dbc587fff20cf05664657323",
+      "bytes": 29543412,
+      "retrieved_at_utc": "2026-09-06T00:51:14.637889+00:00"
+    },
+    {
+      "file": "data/raw/ev_20251216.csv",
+      "url": "https://opendata.transport.nsw.gov.au/data/dataset/be1c4de4-4517-4bd0-8a09-2965ddfc7179/resource/7bbb6461-e52d-4fe7-ace4-a15c30198de0/download/ev_20251216.csv",
+      "sha256": "43970e7751b951ab459a1be7bfd6141756c60ff8aa797debf11c5a597109865a",
+      "bytes": 283033,
+      "retrieved_at_utc": "2026-09-06T00:51:11.506072+00:00"
+    },
+    {
+      "file": "data/raw/nrma_network.html",
+      "url": "https://www.mynrma.com.au/cars-and-driving/electric-vehicles/charging-network",
+      "sha256": "21118cbd1fc125861aa914b1e6dd4e4e57f73bfe50f7aef97a9ff495655ca2fe",
+      "bytes": 256670,
+      "retrieved_at_utc": "2026-09-06T05:13:54.398820+00:00"
+    },
+    {
+      "file": "data/raw/nrma_stations.kml",
+      "url": "https://www.google.com/maps/d/kml?mid=1x7Qs_rCijBa-6hDJITFvBQNDN0lBkzk&forcekml=1",
+      "sha256": "2f51cd5d52f489657eb9e151cff189251592e7519d6e2ddfff20a2463597546f",
+      "bytes": 73947,
+      "retrieved_at_utc": "2026-09-06T05:13:55.177784+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/matching_evie_find_a_charger.html",
+      "url": "https://evie.com.au/find-a-charger/",
+      "sha256": "54f4033ea24ad8ac1e5f653b42bf843028d031083fc97a16820558f57415a85a",
+      "bytes": 233690,
+      "retrieved_at_utc": "2026-09-09T03:24:30.789949+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/matching_evie_locator_script.js",
+      "url": "https://evie.com.au/wp-content/plugins/wp-store-locator/js/wpsl-gmap.min.js?ver=2.3.23",
+      "sha256": "ffc09489dc1b6bce9ccca772e6516ac1d2c01d428846aa17db43d228671a5270",
+      "bytes": 34790,
+      "retrieved_at_utc": "2026-09-09T03:25:59.361113+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_braidwood_fuelcheck_20260909.json",
+      "url": "https://www.fuelcheck.nsw.gov.au/fuel/api/v1/fuel/prices/bylocation?fuelType=EV&brands=SelectAll&suburb=BRAIDWOOD&postcode=2622&radius=4&bottomLeftLatitude=-35.46&bottomLeftLongitude=149.78&topRightLatitude=-35.43&topRightLongitude=149.82",
+      "sha256": "7e3cdc99f038378565d6af0f35101d906215540617b15dd9fac2e9654537abdb",
+      "bytes": 1829,
+      "retrieved_at_utc": "2026-09-09T04:26:57.504208+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_dorrigo_council_q1_2023.pdf",
+      "url": "https://www.bellingen.nsw.gov.au/files/sharedassets/public/v/3/files/ipr/quarterly-reports/operational-plan-progress-report-jul-sep-2023-q1.pdf",
+      "sha256": "d5ed8906fdca9a67a5056d6d417bffe3b0473afe15ba997a09ada45ad3a90912",
+      "bytes": 14203947,
+      "retrieved_at_utc": "2026-09-09T03:23:25.859916+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_dorrigo_pamp_2016.pdf",
+      "url": "https://www.bellingen.nsw.gov.au/files/sharedassets/public/files/accessibility/bellingen-shire-pedestrian-access-and-mobility-plan-and-bike-plan-pamp.pdf",
+      "sha256": "1deb8f57f23e67af1c59ada3a43f82f90dd18148037b81f0576fcef50b9f799f",
+      "bytes": 7995076,
+      "retrieved_at_utc": "2026-09-09T04:23:44.221318+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_evie_narellan_search_20260909.json",
+      "url": "https://evie.com.au/wp-admin/admin-ajax.php?action=store_search&lat=-34.04&lng=150.738&max_results=50&search_radius=5",
+      "sha256": "dcbdc787cc815cafbcf1bc012de722ce226d7b7c2b0c536d51925d8b57a05f82",
+      "bytes": 1324,
+      "retrieved_at_utc": "2026-09-09T13:02:46.820994+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_fuelcheck_app_20260909.html",
+      "url": "https://www.fuelcheck.nsw.gov.au/app",
+      "sha256": "54aa8a8d4fa5a16f48f4cf95446a65c76669efbc1f7125d29b821ffa9418fa1a",
+      "bytes": 62709,
+      "retrieved_at_utc": "2026-09-09T04:24:27.175996+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_fuelcheck_public_app_20260909.js",
+      "url": "https://www.fuelcheck.nsw.gov.au/assets/index-DbuG--gx.js",
+      "sha256": "1b5f0ed685b1955ca13673a1a08084ec97c0d0b19ea66f8edbd4942d225d6e89",
+      "bytes": 1002957,
+      "retrieved_at_utc": "2026-09-09T04:25:12.038988+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_gilgandra_nsw_museum_20260909.html",
+      "url": "https://www.nsw.gov.au/visiting-and-exploring-nsw/locations-and-attractions/gilgandra-museum",
+      "sha256": "368f8822194e90318509b2e89343e420c60ca8564ba9cde1fab1c1cb4649467e",
+      "bytes": 188971,
+      "retrieved_at_utc": "2026-09-09T13:03:44.951367+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_inverell_victoria_park.html",
+      "url": "https://www.inverell.com.au/venue/victoria-park-inverell/",
+      "sha256": "4bcb710ebcb41fa4882af146a51df5e4a6138694c2c51eeef0a0710e80403aa1",
+      "bytes": 81364,
+      "retrieved_at_utc": "2026-09-09T04:26:24.506118+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_moree_visitor_guide.pdf",
+      "url": "https://visitmoreeplains.com.au/downloads/moree-plains-visitor-guide.pdf",
+      "sha256": "0a3013cd9a8868e5805602fe8eb6ba00224da2fc8751fcfca430df09628f9e9c",
+      "bytes": 21534862,
+      "retrieved_at_utc": "2026-09-09T04:23:11.823731+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_narellan_centre_getting_here_20260909.html",
+      "url": "https://www.narellantowncentre.com.au/customer-service/getting-here",
+      "sha256": "cae959d6f4d7bd9fb35dbdece0fa87cef3e7d3970c6100c50a8906b688a09487",
+      "bytes": 55885,
+      "retrieved_at_utc": "2026-09-09T13:02:45.370171+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_narellan_centre_services_20260909.html",
+      "url": "https://www.narellantowncentre.com.au/customer-service/customer-service",
+      "sha256": "a1051dc7e628113e31d6e5f5c3c36c25aa74d0bdc6c671f83da495f679deaeed",
+      "bytes": 62575,
+      "retrieved_at_utc": "2026-09-09T13:02:45.189401+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_nsw_five_localities_20260909.geojson",
+      "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname+IN+%28%27BRAIDWOOD%27%2C%27WALGETT%27%2C%27MOREE%27%2C%27DORRIGO%27%2C%27INVERELL%27%29&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson&orderByFields=suburbname",
+      "sha256": "55a99205433259f73d3ea5ea400de3e25bd324092e6212d0f8d12a5c9feaa053",
+      "bytes": 896442,
+      "retrieved_at_utc": "2026-09-09T04:24:35.240733+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_nsw_gilgandra_narellan_20260909.geojson",
+      "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname+IN+%28%27GILGANDRA%27%2C%27NARELLAN%27%29&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson&orderByFields=suburbname",
+      "sha256": "39e66f9044af01dcaa9266a6f5a8048a5bb55e47565eaff38785d9c1367b9a64",
+      "bytes": 32752,
+      "retrieved_at_utc": "2026-09-09T13:02:44.190185+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_nsw_nrma_opening_20231110.html",
+      "url": "https://www.nsw.gov.au/media-releases/more-ev-chargers-connecting-regional-nsw",
+      "sha256": "93f25cf7c3d11f93b0762ab4922824826136d01a0296a84ee21006a11f317e45",
+      "bytes": 140749,
+      "retrieved_at_utc": "2026-09-09T04:23:13.031266+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+      "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2?f=pjson",
+      "sha256": "497b296adac47a6816b9eaf902d478058988e6d136f7765f1992841c7e949d12",
+      "bytes": 6293,
+      "retrieved_at_utc": "2026-09-09T04:24:34.864941+00:00"
+    },
+    {
+      "file": "data/raw/reviewed/regional_walgett_community_carpark.html",
+      "url": "https://www.dharriwaaeldersgroup.org.au/index.php?id=11&view=category",
+      "sha256": "a868a432616570c931e53d0cff4539a0a38c1efb414e33288333531d5d8fc46e",
+      "bytes": 69834,
+      "retrieved_at_utc": "2026-09-09T04:24:28.845149+00:00"
+    }
+  ],
+  "source_csv_file": "data/raw/ev_20251216.csv",
+  "locality_source_file": "data/raw/reviewed/regional_nsw_five_localities_20260909.geojson",
+  "layer_source_file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+  "abs_source_file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+  "operator_page_file": "data/raw/nrma_network.html",
+  "operator_map_file": "data/raw/nrma_stations.kml",
+  "reviews": [
+    {
+      "review_id": "RR_BRAIDWOOD_20260909",
+      "record_id": "r_f52c4475d66d2f9baa40",
+      "expected_source": {
+        "source_row": 181,
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "15 Victory St, Braidwood, NSW 2622, Australia",
+          "Operator": "NRMA",
+          "Number_of_plugs": "4",
+          "Charger_Type": "DC",
+          "Charger_rating": "50 kW",
+          "Latitude": "-31.4988197",
+          "Longitude": "145.8375768",
+          "LGANAME": "Queanbeyan-Palerang Regional Council",
+          "PCODE": "2835",
+          "Source": "TfNSW Regional"
+        }
+      },
+      "expected_location": {
+        "location_id": "l_a42a882d90dba5b5bab2",
+        "address": "15 Victory St, Braidwood, NSW 2622, Australia",
+        "operator_name": "NRMA",
+        "postcode": "2835",
+        "address_postcode": "2622",
+        "original_postcode": "2835",
+        "sa4_code": "105",
+        "latitude": -31.4988197,
+        "longitude": 145.8375768,
+        "original_latitude": -31.4988197,
+        "original_longitude": 145.8375768,
+        "address_conflict": true,
+        "original_address_conflict": true
+      },
+      "locality_name": "BRAIDWOOD",
+      "locality_object_id": 21591,
+      "locality_postcode": "2622",
+      "expected_sa4_code": "101",
+      "operator_element_id": "NRMA Fast Charger - Braidwood",
+      "evidence": [
+        {
+          "source_file": "data/raw/ev_20251216.csv",
+          "role": "source_record",
+          "locator": "CSV logical source row 181; all twelve values fixed in expected_source.raw_values"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_five_localities_20260909.geojson",
+          "role": "locality_boundary",
+          "locator": "Complete EPSG:7844 feature suburbname=BRAIDWOOD, OBJECTID=21591; every polygon ring retained"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+          "role": "layer_definition",
+          "locator": "NSW Spatial Services Suburb layer 2; esriGeometryPolygon, GDA2020 wkid 7844"
+        },
+        {
+          "source_file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+          "role": "statistical_boundary",
+          "locator": "Official 2026 ABS SA4 polygons, STE_CODE26=1; full geometry, not town centroid"
+        },
+        {
+          "source_file": "data/raw/nrma_network.html",
+          "role": "operator_publication",
+          "locator": "NRMA page publishes Google My Maps map ID 1x7Qs_rCijBa-6hDJITFvBQNDN0lBkzk"
+        },
+        {
+          "source_file": "data/raw/nrma_stations.kml",
+          "role": "operator_locality",
+          "locator": "Exact unique named placemark: NRMA Fast Charger - Braidwood"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_nrma_opening_20231110.html",
+          "role": "government_operator_locality",
+          "locator": "NSW Minister for Regional Transport and Roads, 10 November 2023; NRMA program and named town Braidwood"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_braidwood_fuelcheck_20260909.json",
+          "role": "venue_address",
+          "locator": "FuelCheck ServiceStationID 20817, Brand NRMA, FuelType EV, 15 VICTORY ST, BRAIDWOOD NSW 2622"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_fuelcheck_app_20260909.html",
+          "role": "public_api_page",
+          "locator": "Official NSW FuelCheck public EV map page and referenced app script"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_fuelcheck_public_app_20260909.js",
+          "role": "public_api_definition",
+          "locator": "Public GET /fuel/api/v1/fuel/prices/bylocation implementation; no authentication or website key used"
+        }
+      ],
+      "reason": "Official NSW FuelCheck EV record 20817 names NRMA at the source address 15 Victory Street, Braidwood Servicemens Club & Golf Course. NSW release and published NRMA map also identify Braidwood. The entire official NSW locality polygon is wholly contained in exactly one ABS 2026 SA4, with no other intersecting region and no geometric tolerance. All original points, postcodes and conflict flags remain unchanged; this audit never authorizes precise location analysis, source matching or current availability claims. The whole-locality boundary is a dated geographic observation, not a surveyed charging bay."
+    },
+    {
+      "review_id": "RR_WALGETT_20260909",
+      "record_id": "r_1f8b175f54b73f63a5fb",
+      "expected_source": {
+        "source_row": 380,
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "26 Neilly St, Walgett, NSW 2832, Australia",
+          "Operator": "NRMA",
+          "Number_of_plugs": "2",
+          "Charger_Type": "DC",
+          "Charger_rating": "75 kW",
+          "Latitude": "-28.8659158",
+          "Longitude": "153.0485564",
+          "LGANAME": "Walgett Shire Council",
+          "PCODE": "2337",
+          "Source": "TfNSW Regional"
+        }
+      },
+      "expected_location": {
+        "location_id": "l_b2d2b4a86d06edc75a09",
+        "address": "26 Neilly St, Walgett, NSW 2832, Australia",
+        "operator_name": "NRMA",
+        "postcode": "2337",
+        "address_postcode": "2832",
+        "original_postcode": "2337",
+        "sa4_code": "112",
+        "latitude": -28.8659158,
+        "longitude": 153.0485564,
+        "original_latitude": -28.8659158,
+        "original_longitude": 153.0485564,
+        "address_conflict": true,
+        "original_address_conflict": true
+      },
+      "locality_name": "WALGETT",
+      "locality_object_id": 19506,
+      "locality_postcode": "2832",
+      "expected_sa4_code": "105",
+      "operator_element_id": "NRMA Fast Charger Walgett",
+      "evidence": [
+        {
+          "source_file": "data/raw/ev_20251216.csv",
+          "role": "source_record",
+          "locator": "CSV logical source row 380; all twelve values fixed in expected_source.raw_values"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_five_localities_20260909.geojson",
+          "role": "locality_boundary",
+          "locator": "Complete EPSG:7844 feature suburbname=WALGETT, OBJECTID=19506; every polygon ring retained"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+          "role": "layer_definition",
+          "locator": "NSW Spatial Services Suburb layer 2; esriGeometryPolygon, GDA2020 wkid 7844"
+        },
+        {
+          "source_file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+          "role": "statistical_boundary",
+          "locator": "Official 2026 ABS SA4 polygons, STE_CODE26=1; full geometry, not town centroid"
+        },
+        {
+          "source_file": "data/raw/nrma_network.html",
+          "role": "operator_publication",
+          "locator": "NRMA page publishes Google My Maps map ID 1x7Qs_rCijBa-6hDJITFvBQNDN0lBkzk"
+        },
+        {
+          "source_file": "data/raw/nrma_stations.kml",
+          "role": "operator_locality",
+          "locator": "Exact unique named placemark: NRMA Fast Charger Walgett"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_nrma_opening_20231110.html",
+          "role": "government_operator_locality",
+          "locator": "NSW Minister for Regional Transport and Roads, 10 November 2023; NRMA program and named town Walgett"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_walgett_community_carpark.html",
+          "role": "venue_context",
+          "locator": "Dharriwaa Elders Group local tour: caravan car park behind Fox Street, Neilly/Pitt/Wee Waa entries and an EV charging station"
+        }
+      ],
+      "reason": "TfNSW identifies NRMA at 26 Neilly Street, Walgett; the NSW Government NRMA program announcement and unique operator-published map placemark independently identify Walgett. A local community organisation describes EV charging in the car park entered from Neilly Street. That page is community context, not council authority or independent proof of number 26. The inference confirms locality membership only; no candidate bay is selected. The entire official NSW locality polygon is wholly contained in exactly one ABS 2026 SA4, with no other intersecting region and no geometric tolerance. All original points, postcodes and conflict flags remain unchanged; this audit never authorizes precise location analysis, source matching or current availability claims. The whole-locality boundary is a dated geographic observation, not a surveyed charging bay."
+    },
+    {
+      "review_id": "RR_MOREE_20260909",
+      "record_id": "r_78d9a81044a26cf7b6de",
+      "expected_source": {
+        "source_row": 395,
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "28 Auburn Street, Moree, NSW 2400, Australia",
+          "Operator": "NRMA",
+          "Number_of_plugs": "2",
+          "Charger_Type": "DC",
+          "Charger_rating": "50 kW",
+          "Latitude": "-35.3548636",
+          "Longitude": "145.725081",
+          "LGANAME": "Moree Plains Shire Council",
+          "PCODE": "2716",
+          "Source": "TfNSW Regional"
+        }
+      },
+      "expected_location": {
+        "location_id": "l_b63549221fad87b3262c",
+        "address": "28 Auburn Street, Moree, NSW 2400, Australia",
+        "operator_name": "NRMA",
+        "postcode": "2716",
+        "address_postcode": "2400",
+        "original_postcode": "2716",
+        "sa4_code": "109",
+        "latitude": -35.3548636,
+        "longitude": 145.725081,
+        "original_latitude": -35.3548636,
+        "original_longitude": 145.725081,
+        "address_conflict": true,
+        "original_address_conflict": true
+      },
+      "locality_name": "MOREE",
+      "locality_object_id": 29008,
+      "locality_postcode": "2400",
+      "expected_sa4_code": "110",
+      "operator_element_id": "NRMA Fast Charger - Moree",
+      "evidence": [
+        {
+          "source_file": "data/raw/ev_20251216.csv",
+          "role": "source_record",
+          "locator": "CSV logical source row 395; all twelve values fixed in expected_source.raw_values"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_five_localities_20260909.geojson",
+          "role": "locality_boundary",
+          "locator": "Complete EPSG:7844 feature suburbname=MOREE, OBJECTID=29008; every polygon ring retained"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+          "role": "layer_definition",
+          "locator": "NSW Spatial Services Suburb layer 2; esriGeometryPolygon, GDA2020 wkid 7844"
+        },
+        {
+          "source_file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+          "role": "statistical_boundary",
+          "locator": "Official 2026 ABS SA4 polygons, STE_CODE26=1; full geometry, not town centroid"
+        },
+        {
+          "source_file": "data/raw/nrma_network.html",
+          "role": "operator_publication",
+          "locator": "NRMA page publishes Google My Maps map ID 1x7Qs_rCijBa-6hDJITFvBQNDN0lBkzk"
+        },
+        {
+          "source_file": "data/raw/nrma_stations.kml",
+          "role": "operator_locality",
+          "locator": "Exact unique named placemark: NRMA Fast Charger - Moree"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_nrma_opening_20231110.html",
+          "role": "government_operator_locality",
+          "locator": "NSW Minister for Regional Transport and Roads, 10 November 2023; NRMA program and named town Moree"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_moree_visitor_guide.pdf",
+          "role": "venue_address",
+          "locator": "Actual PDF page 9 / printed page 7, ONCE YOU GET HERE: public EV charging at Council carpark on Auburn Street; not explicit number 28"
+        }
+      ],
+      "reason": "Official Moree Plains visitor guide confirms public EV charging at the Auburn Street council carpark. The NSW Government announcement confirms NRMA opened in Moree and the unique operator map placemark is in this locality. TfNSW street, town and LGA agree with this context. This is a reviewed locality inference, not independent verification of number 28 or a bay. The entire official NSW locality polygon is wholly contained in exactly one ABS 2026 SA4, with no other intersecting region and no geometric tolerance. All original points, postcodes and conflict flags remain unchanged; this audit never authorizes precise location analysis, source matching or current availability claims. The whole-locality boundary is a dated geographic observation, not a surveyed charging bay."
+    },
+    {
+      "review_id": "RR_DORRIGO_20260909",
+      "record_id": "r_ec4d5b86478c54a3f5d0",
+      "expected_source": {
+        "source_row": 730,
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "81 Hickory St, Dorrigo, NSW 2453, Australia",
+          "Operator": "NRMA",
+          "Number_of_plugs": "4",
+          "Charger_Type": "DC",
+          "Charger_rating": "75 kW",
+          "Latitude": "-30.9529988",
+          "Longitude": "148.3875852",
+          "LGANAME": "Bellingen Shire Council",
+          "PCODE": "2829",
+          "Source": "TfNSW Regional"
+        }
+      },
+      "expected_location": {
+        "location_id": "l_c81d973a2a4846de0390",
+        "address": "81 Hickory St, Dorrigo, NSW 2453, Australia",
+        "operator_name": "NRMA",
+        "postcode": "2829",
+        "address_postcode": "2453",
+        "original_postcode": "2829",
+        "sa4_code": "105",
+        "latitude": -30.9529988,
+        "longitude": 148.3875852,
+        "original_latitude": -30.9529988,
+        "original_longitude": 148.3875852,
+        "address_conflict": true,
+        "original_address_conflict": true
+      },
+      "locality_name": "DORRIGO",
+      "locality_object_id": 26253,
+      "locality_postcode": "2453",
+      "expected_sa4_code": "104",
+      "operator_element_id": "NRMA Fast Charger - Dorrigo",
+      "evidence": [
+        {
+          "source_file": "data/raw/ev_20251216.csv",
+          "role": "source_record",
+          "locator": "CSV logical source row 730; all twelve values fixed in expected_source.raw_values"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_five_localities_20260909.geojson",
+          "role": "locality_boundary",
+          "locator": "Complete EPSG:7844 feature suburbname=DORRIGO, OBJECTID=26253; every polygon ring retained"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+          "role": "layer_definition",
+          "locator": "NSW Spatial Services Suburb layer 2; esriGeometryPolygon, GDA2020 wkid 7844"
+        },
+        {
+          "source_file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+          "role": "statistical_boundary",
+          "locator": "Official 2026 ABS SA4 polygons, STE_CODE26=1; full geometry, not town centroid"
+        },
+        {
+          "source_file": "data/raw/nrma_network.html",
+          "role": "operator_publication",
+          "locator": "NRMA page publishes Google My Maps map ID 1x7Qs_rCijBa-6hDJITFvBQNDN0lBkzk"
+        },
+        {
+          "source_file": "data/raw/nrma_stations.kml",
+          "role": "operator_locality",
+          "locator": "Exact unique named placemark: NRMA Fast Charger - Dorrigo"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_nrma_opening_20231110.html",
+          "role": "government_operator_locality",
+          "locator": "NSW Minister for Regional Transport and Roads, 10 November 2023; NRMA program and named town Dorrigo"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_dorrigo_pamp_2016.pdf",
+          "role": "venue_address",
+          "locator": "Actual PDF page 19 / printed page 14, action 3.12: Coronation Park, 81 Hickory Street, Dorrigo"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_dorrigo_council_q1_2023.pdf",
+          "role": "operator_venue",
+          "locator": "Actual PDF page 38, PP3.3.1: installed NRMA charging points at Coronation Park in Dorrigo"
+        }
+      ],
+      "reason": "Council PAMP links source 81 Hickory Street to Coronation Park; its 2023 Q1 report confirms NRMA installed there. The NSW release and operator-published map independently identify the named locality. The entire official NSW locality polygon is wholly contained in exactly one ABS 2026 SA4, with no other intersecting region and no geometric tolerance. All original points, postcodes and conflict flags remain unchanged; this audit never authorizes precise location analysis, source matching or current availability claims. The whole-locality boundary is a dated geographic observation, not a surveyed charging bay."
+    },
+    {
+      "review_id": "RR_INVERELL_20260909",
+      "record_id": "r_24333f7d2b86c04fbe70",
+      "expected_source": {
+        "source_row": 823,
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "Car park, 51 Evans St (Victoria Park), Inverell, NSW 2360, Australia",
+          "Operator": "NRMA",
+          "Number_of_plugs": "2",
+          "Charger_Type": "DC",
+          "Charger_rating": "75 kW",
+          "Latitude": "-35.1086448",
+          "Longitude": "147.3732036",
+          "LGANAME": "Inverell Shire Council",
+          "PCODE": "2650",
+          "Source": "TfNSW Regional"
+        }
+      },
+      "expected_location": {
+        "location_id": "l_dd70f0561f79ee1095d1",
+        "address": "Car park, 51 Evans St (Victoria Park), Inverell, NSW 2360, Australia",
+        "operator_name": "NRMA",
+        "postcode": "2650",
+        "address_postcode": "2360",
+        "original_postcode": "2650",
+        "sa4_code": "113",
+        "latitude": -35.1086448,
+        "longitude": 147.3732036,
+        "original_latitude": -35.1086448,
+        "original_longitude": 147.3732036,
+        "address_conflict": true,
+        "original_address_conflict": true
+      },
+      "locality_name": "INVERELL",
+      "locality_object_id": 27888,
+      "locality_postcode": "2360",
+      "expected_sa4_code": "110",
+      "operator_element_id": "NRMA Fast Charger Inverell",
+      "evidence": [
+        {
+          "source_file": "data/raw/ev_20251216.csv",
+          "role": "source_record",
+          "locator": "CSV logical source row 823; all twelve values fixed in expected_source.raw_values"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_five_localities_20260909.geojson",
+          "role": "locality_boundary",
+          "locator": "Complete EPSG:7844 feature suburbname=INVERELL, OBJECTID=27888; every polygon ring retained"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+          "role": "layer_definition",
+          "locator": "NSW Spatial Services Suburb layer 2; esriGeometryPolygon, GDA2020 wkid 7844"
+        },
+        {
+          "source_file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+          "role": "statistical_boundary",
+          "locator": "Official 2026 ABS SA4 polygons, STE_CODE26=1; full geometry, not town centroid"
+        },
+        {
+          "source_file": "data/raw/nrma_network.html",
+          "role": "operator_publication",
+          "locator": "NRMA page publishes Google My Maps map ID 1x7Qs_rCijBa-6hDJITFvBQNDN0lBkzk"
+        },
+        {
+          "source_file": "data/raw/nrma_stations.kml",
+          "role": "operator_locality",
+          "locator": "Exact unique named placemark: NRMA Fast Charger Inverell"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_nrma_opening_20231110.html",
+          "role": "government_operator_locality",
+          "locator": "NSW Minister for Regional Transport and Roads, 10 November 2023; NRMA program and named town Inverell"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_inverell_victoria_park.html",
+          "role": "venue_address",
+          "locator": "Inverell Council Victoria Park venue page: Inverell NSW 2360; 81 Vivian Street is the Council venue address, not a verified charger address or a replacement for source 51 Evans Street"
+        }
+      ],
+      "reason": "Inverell Council identifies Victoria Park in Inverell NSW 2360; the NSW Government announcement confirms an opened NRMA site in Inverell and its unique operator map placemark is in that locality. This corroborates the source-named park/town/LGA at locality scale. The Council venue entry does not verify charger number 51 or resolve the 51/59 Evans address discrepancy. The entire official NSW locality polygon is wholly contained in exactly one ABS 2026 SA4, with no other intersecting region and no geometric tolerance. All original points, postcodes and conflict flags remain unchanged; this audit never authorizes precise location analysis, source matching or current availability claims. The whole-locality boundary is a dated geographic observation, not a surveyed charging bay."
+    },
+    {
+      "review_id": "RR_GILGANDRA_20260909",
+      "record_id": "r_060007bd0d9465e46dde",
+      "expected_source": {
+        "source_row": 650,
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "6 Castlereagh St Gilgandra, NSW 2827, Australia",
+          "Operator": "NRMA",
+          "Number_of_plugs": "4",
+          "Charger_Type": "DC",
+          "Charger_rating": "75 kW",
+          "Latitude": "-30.0205758",
+          "Longitude": "148.1181013",
+          "LGANAME": "Gilgandra Shire Council",
+          "PCODE": "2832",
+          "Source": "TfNSW Regional"
+        }
+      },
+      "expected_location": {
+        "address": "6 Castlereagh St Gilgandra, NSW 2827, Australia",
+        "address_conflict": true,
+        "address_postcode": "2827",
+        "latitude": -30.0205758,
+        "location_id": "l_029e2e4689ea8dba33e5",
+        "longitude": 148.1181013,
+        "original_address_conflict": true,
+        "original_latitude": -30.0205758,
+        "original_longitude": 148.1181013,
+        "original_postcode": "2832",
+        "postcode": "2832",
+        "sa4_code": "105",
+        "operator_name": "NRMA"
+      },
+      "locality_name": "GILGANDRA",
+      "locality_object_id": 28743,
+      "locality_postcode": "2827",
+      "locality_source_file": "data/raw/reviewed/regional_nsw_gilgandra_narellan_20260909.geojson",
+      "expected_sa4_code": "105",
+      "operator_element_id": "NRMA Fast Charger - Gilgandra",
+      "evidence": [
+        {
+          "source_file": "data/raw/ev_20251216.csv",
+          "role": "source_record",
+          "locator": "CSV logical row 650; all twelve original fields pinned"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_gilgandra_narellan_20260909.geojson",
+          "role": "locality_boundary",
+          "locator": "Complete EPSG:7844 feature suburbname=GILGANDRA, OBJECTID=28743; all rings preserved"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+          "role": "layer_definition",
+          "locator": "NSW Spatial Services Suburb layer 2, esriGeometryPolygon, GDA2020 wkid 7844"
+        },
+        {
+          "source_file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+          "role": "statistical_boundary",
+          "locator": "Complete official ABS 2026 NSW SA4 polygons; whole-locality unique covers/intersects, no tolerance"
+        },
+        {
+          "source_file": "data/raw/nrma_network.html",
+          "role": "operator_publication",
+          "locator": "NRMA publishes Google My Maps ID 1x7Qs_rCijBa-6hDJITFvBQNDN0lBkzk"
+        },
+        {
+          "source_file": "data/raw/nrma_stations.kml",
+          "role": "operator_locality",
+          "locator": "Exact unique placemark NRMA Fast Charger - Gilgandra; locality corroboration only"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_nrma_opening_20231110.html",
+          "role": "government_operator_locality",
+          "locator": "NSW NRMA program release dated 10 November 2023, named Gilgandra"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_gilgandra_nsw_museum_20260909.html",
+          "role": "venue_address",
+          "locator": "NSW Government attraction listing, Where and map sections: 6 Castlereagh Street, Gilgandra NSW 2827"
+        }
+      ],
+      "reason": "NSW Government attraction listing independently confirms the source street number/address in Gilgandra; the official state NRMA program release and unique operator-published map identify NRMA in Gilgandra. The museum listing verifies locality/address, not an NRMA bay at the museum. The complete official Gilgandra locality lies wholly in SA4 105 with no other intersecting SA4. The source point also maps to 105 but is outside the identified locality, so retaining that region requires this separate evidence. No coordinate, postcode or conflict flag changes; precise site matching and live availability remain outside this review."
+    },
+    {
+      "review_id": "RR_NARELLAN_20260909",
+      "record_id": "r_84b606d329163a77e96c",
+      "expected_source": {
+        "source_row": 820,
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "Camden Valley Way &, Somerset Ave, Narellan NSW 2567",
+          "Operator": "Evie",
+          "Number_of_plugs": "4",
+          "Charger_Type": "DC",
+          "Charger_rating": "150 kW",
+          "Latitude": "-34.0397301",
+          "Longitude": "150.7385139",
+          "LGANAME": "Camden Council",
+          "PCODE": "2022",
+          "Source": "ARENA - Driving the Nation"
+        }
+      },
+      "expected_location": {
+        "address": "Camden Valley Way &, Somerset Ave, Narellan NSW 2567",
+        "address_conflict": true,
+        "address_postcode": "2567",
+        "latitude": -34.0397301,
+        "location_id": "l_e813dc4295e8d0dcb035",
+        "longitude": 150.7385139,
+        "original_address_conflict": true,
+        "original_latitude": -34.0397301,
+        "original_longitude": 150.7385139,
+        "original_postcode": "2022",
+        "postcode": "2022",
+        "sa4_code": "123",
+        "operator_name": "Evie"
+      },
+      "locality_name": "NARELLAN",
+      "locality_object_id": 26470,
+      "locality_postcode": "2567",
+      "locality_source_file": "data/raw/reviewed/regional_nsw_gilgandra_narellan_20260909.geojson",
+      "expected_sa4_code": "123",
+      "operator_element_id": "3525",
+      "evidence": [
+        {
+          "source_file": "data/raw/ev_20251216.csv",
+          "role": "source_record",
+          "locator": "CSV logical row 820; all twelve original fields pinned"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_gilgandra_narellan_20260909.geojson",
+          "role": "locality_boundary",
+          "locator": "Complete EPSG:7844 feature suburbname=NARELLAN, OBJECTID=26470; all rings preserved"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_nsw_suburb_layer_20260909.json",
+          "role": "layer_definition",
+          "locator": "NSW Spatial Services Suburb layer 2, esriGeometryPolygon, GDA2020 wkid 7844"
+        },
+        {
+          "source_file": "data/raw/SA4_2026_AUST_SHP_GDA2020.zip",
+          "role": "statistical_boundary",
+          "locator": "Complete official ABS 2026 NSW SA4 polygons; whole-locality unique covers/intersects, no tolerance"
+        },
+        {
+          "source_file": "data/raw/reviewed/matching_evie_find_a_charger.html",
+          "role": "operator_publication",
+          "locator": "Published Evie map: wpslSettings.ajaxurl and the exact linked wp-store-locator script"
+        },
+        {
+          "source_file": "data/raw/reviewed/matching_evie_locator_script.js",
+          "role": "public_api_definition",
+          "locator": "Public GET wpslSettings.ajaxurl with action store_search; no login, key or cookie used"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_evie_narellan_search_20260909.json",
+          "role": "operator_locality",
+          "locator": "Complete site-search array, unique id 3525; Narellan Town Centre, Camden Valley Way & Somerset Avenue, Narellan NSW 2567; pinned point inside full locality"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_narellan_centre_services_20260909.html",
+          "role": "venue_context",
+          "locator": "Electronic Vehicle Charging section: Evie on South Side carpark, Queen Street entry; footer identifies Narellan NSW 2567"
+        },
+        {
+          "source_file": "data/raw/reviewed/regional_narellan_centre_getting_here_20260909.html",
+          "role": "venue_address",
+          "locator": "Getting here: Somerset Avenue and Queen Street entries; footer 326 Camden Valley Way, Narellan NSW 2567"
+        }
+      ],
+      "operator_kind": "evie_public_map",
+      "operator_page_file": "data/raw/reviewed/matching_evie_find_a_charger.html",
+      "operator_script_file": "data/raw/reviewed/matching_evie_locator_script.js",
+      "operator_source_file": "data/raw/reviewed/regional_evie_narellan_search_20260909.json",
+      "operator_expected_values": {
+        "address": "Camden Valley Way & Somerset Avenue",
+        "city": "Narellan",
+        "country": "AUS",
+        "id": "3525",
+        "lat": "-34.0417882133",
+        "lng": "150.735485686",
+        "state": "NSW",
+        "store": "Narellan Town Centre",
+        "zip": "2567"
+      },
+      "reason": "The operator public map JSON uniquely identifies site 3525 as Narellan Town Centre at Camden Valley Way & Somerset Avenue, Narellan NSW 2567, matching the source intersection after formatting-only Avenue/Ave normalization. Complete property-owner pages connect Somerset and Queen Street entries with the same centre and identify the Evie South Side charging area. The entire official Narellan locality lies in exactly SA4 123. Both the original and operator map points lie within this locality but differ at bay precision; neither is declared surveyed or substituted. Postcode 2022 and the original coordinate conflict are retained. This regional review supplies neither new augmentation links nor live availability/hardware claims."
+    }
+  ]
+}

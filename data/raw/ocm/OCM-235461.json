@@ -1,0 +1,67 @@
+{
+    "DateLastVerified": "2023-07-12T21:49:00Z",
+    "ID": 235461,
+    "UUID": "78643962-EC03-4BBA-BE1F-365B8D9F2B63",
+    "DataProviderID": 1,
+    "OperatorID": 3398,
+    "UsageTypeID": 4,
+    "UsageCost": "50c per kWh energy consumed.",
+    "AddressInfo": {
+        "ID": 235845,
+        "Title": "Wollongong Central - Regent St Carpark",
+        "AddressLine1": "Regent Street",
+        "AddressLine2": "",
+        "Town": "Wollongong",
+        "StateOrProvince": "New South Wales",
+        "Postcode": "2500",
+        "CountryID": 18,
+        "Latitude": -34.423975432207065,
+        "Longitude": 150.8913817469645,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 388382,
+            "ConnectionTypeID": 33,
+            "Reference": "MS051A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 388383,
+            "ConnectionTypeID": 2,
+            "Reference": "MS051A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 466695,
+            "ConnectionTypeID": 33,
+            "Reference": "MS051B",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 466696,
+            "ConnectionTypeID": 33,
+            "Reference": "MS051B",
+            "StatusTypeID": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-12T21:49:00Z",
+    "DateCreated": "2023-02-20T17:20:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,570 @@
+{
+    "UserComments": [
+        {
+            "ID": 28993,
+            "ChargePointID": 175167,
+            "CommentTypeID": 50,
+            "UserName": "Wild Rice",
+            "Comment": "This site is now open for non Teslas to use",
+            "Rating": 4,
+            "DateCreated": "2023-09-15T12:05:48.317Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24855,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 5,
+            "DateCreated": "2021-09-16T10:03:10.783Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24830,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Good location. Easy access. ",
+            "Rating": 5,
+            "DateCreated": "2021-09-10T10:53:57.583Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24750,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Fully operational ",
+            "Rating": 4,
+            "DateCreated": "2021-08-20T06:27:48.517Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24743,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "There is an unconfirmed report that 2 out of the 3 stands are powered and operational. Will check this tomorrow. ",
+            "DateCreated": "2021-08-19T09:12:01.58Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 0,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24730,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "This site will probably be commissioned today.",
+            "DateCreated": "2021-08-17T01:54:21.417Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 22,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24709,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Installation work continues. The electrians have 3 or 4 more days then commissioning starts. Probably 1 more week. ",
+            "Rating": 4,
+            "DateCreated": "2021-08-09T04:18:49.123Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 22,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24633,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Concrete pads installed",
+            "DateCreated": "2021-07-24T06:25:18.523Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 22,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24520,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "The utility power connection is scheduled for 2021/07/24. This site is due to be commissioned in early August. ",
+            "DateCreated": "2021-06-26T06:59:54.657Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 50,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24422,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "No progress from 2 weeks ago ",
+            "DateCreated": "2021-05-31T05:04:21.01Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 22,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24359,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 4,
+            "DateCreated": "2021-05-18T04:58:09.263Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24340,
+            "ChargePointID": 175167,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Site works commenced ",
+            "Rating": 4,
+            "DateCreated": "2021-05-15T07:44:59.333Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 22,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 29273,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021091610042685.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021091610042685.jpg",
+            "Comment": "176kW max",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-16T10:05:00Z"
+        },
+        {
+            "ID": 29252,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021091404235158.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021091404235158.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-14T04:24:00Z"
+        },
+        {
+            "ID": 29225,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021091010530644.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021091010530644.jpg",
+            "Comment": "Quite night ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-10T10:53:00Z"
+        },
+        {
+            "ID": 28984,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021081701531185.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021081701531185.jpg",
+            "Comment": "Work continues ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-08-17T01:53:00Z"
+        },
+        {
+            "ID": 28940,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021080904224250.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021080904224250.jpg",
+            "Comment": "New transformer. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-08-09T04:23:00Z"
+        },
+        {
+            "ID": 28939,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021080904215352.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021080904215352.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-08-09T04:22:00Z"
+        },
+        {
+            "ID": 28937,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021080904204071.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021080904204071.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-08-09T04:21:00Z"
+        },
+        {
+            "ID": 28938,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021080904211992.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021080904211992.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-08-09T04:21:00Z"
+        },
+        {
+            "ID": 28935,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021080904193011.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021080904193011.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-08-09T04:20:00Z"
+        },
+        {
+            "ID": 28936,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021080904195724.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021080904195724.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-08-09T04:20:00Z"
+        },
+        {
+            "ID": 28758,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021072414260108.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021072414260108.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-07-24T14:26:00Z"
+        },
+        {
+            "ID": 28757,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021072414245777.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021072414245777.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-07-24T14:25:00Z"
+        },
+        {
+            "ID": 28755,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021072414233225.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021072414233225.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-07-24T14:24:00Z"
+        },
+        {
+            "ID": 28756,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021072414242461.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021072414242461.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-07-24T14:24:00Z"
+        },
+        {
+            "ID": 28754,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021072414220833.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021072414220833.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-07-24T14:22:00Z"
+        },
+        {
+            "ID": 27731,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021051705195422.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021051705195422.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-17T05:20:00Z"
+        },
+        {
+            "ID": 27730,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021051705184210.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021051705184210.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-17T05:19:00Z"
+        },
+        {
+            "ID": 27729,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021051705175653.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021051705175653.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-17T05:18:00Z"
+        },
+        {
+            "ID": 27728,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021051705165571.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021051705165571.jpg",
+            "Comment": "Provision for three stations?",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-17T05:17:00Z"
+        },
+        {
+            "ID": 27667,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021051507434378.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021051507434378.jpg",
+            "Comment": "Site works commenced ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-15T07:44:00Z"
+        },
+        {
+            "ID": 27666,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021051507424260.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021051507424260.jpg",
+            "Comment": "Site works commenced ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-15T07:43:00Z"
+        },
+        {
+            "ID": 27665,
+            "ChargePointID": 175167,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.orig.2021051507414673.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM175167/OCM-175167.thmb.2021051507414673.jpg",
+            "Comment": "Site works commenced",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-15T07:42:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-10-09T01:47:00Z",
+    "ID": 175167,
+    "UUID": "95CACD99-5083-43D0-A2F9-168BC17DDB78",
+    "DataProviderID": 1,
+    "OperatorID": 3534,
+    "UsageTypeID": 4,
+    "UsageCost": "Tesla Supercharger Cost",
+    "AddressInfo": {
+        "ID": 175526,
+        "Title": "Williams Supercharger",
+        "AddressLine1": "Richardson Street",
+        "AddressLine2": "Williams",
+        "Town": "Williams",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6391",
+        "CountryID": 18,
+        "Latitude": -33.0246396689368,
+        "Longitude": 116.87898753225318,
+        "RelatedURL": "https://www.tesla.com/findus/location/supercharger/williamsaustraliasupercharger",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 271580,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 250,
+            "CurrentTypeID": 30,
+            "Quantity": 3
+        }
+    ],
+    "NumberOfPoints": 3,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-10-09T01:47:00Z",
+    "DateCreated": "2021-04-29T03:26:00Z",
+    "SubmissionStatusTypeID": 200
+}

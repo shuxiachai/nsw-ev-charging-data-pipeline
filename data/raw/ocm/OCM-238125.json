@@ -1,0 +1,49 @@
+{
+    "DateLastVerified": "2023-08-09T12:16:00Z",
+    "ID": 238125,
+    "UUID": "B1CBCA59-66F9-4C43-8542-5014F6271652",
+    "DataProviderID": 1,
+    "OperatorID": 3659,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.55/kWh",
+    "AddressInfo": {
+        "ID": 238509,
+        "Title": "Marulan Roadhouse Southbound",
+        "AddressLine1": "15597 Hume Hwy",
+        "Town": "Marulan",
+        "StateOrProvince": "NSW",
+        "CountryID": 18,
+        "Latitude": -34.71861069630692,
+        "Longitude": 150.0006732657858,
+        "ContactTelephone1": "1300 002 788",
+        "RelatedURL": "https://www.bp.com/en_au/australia/home/products-services/bppulse/find-a-charging-station.html",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 391678,
+            "ConnectionTypeID": 33,
+            "Reference": "BPAC2328",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 75,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 391679,
+            "ConnectionTypeID": 2,
+            "Reference": "BPAC2328",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 75,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-08-09T12:16:00Z",
+    "DateCreated": "2023-03-01T23:49:00Z",
+    "SubmissionStatusTypeID": 200
+}

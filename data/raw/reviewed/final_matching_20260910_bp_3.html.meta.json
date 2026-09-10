@@ -1,0 +1,10 @@
+{
+  "url": "https://map.bp.com/en-AU/AU/gas-station/eastern-creek/bp-eastern-creek/6795",
+  "resolved_url": "https://map.bp.com/en-AU/AU/gas-station/eastern-creek/bp-eastern-creek/6795",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:14:00.043836+00:00",
+  "sha256": "43dd86de1e438dcc7e9d9e8788dfb4a2f899e4bb417b02dfa1025fe3756606e5",
+  "bytes": 59850,
+  "content_type": "text/html; charset=utf-8"
+}

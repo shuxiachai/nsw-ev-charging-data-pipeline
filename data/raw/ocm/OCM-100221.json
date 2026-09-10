@@ -1,0 +1,69 @@
+{
+    "UserComments": [
+        {
+            "ID": 19238,
+            "ChargePointID": 100221,
+            "CommentTypeID": 10,
+            "UserName": "Harry",
+            "Comment": "No card or phone app needed",
+            "DateCreated": "2018-02-25T12:10:21.637Z",
+            "User": {
+                "ID": 18040,
+                "Username": "Harry"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 19224,
+            "ChargePointID": 100221,
+            "CommentTypeID": 10,
+            "UserName": "Harry",
+            "Comment": "Ordinary three phase socket in car park nearby.",
+            "Rating": 5,
+            "DateCreated": "2018-02-23T01:02:24.847Z",
+            "User": {
+                "ID": 18040,
+                "Username": "Harry"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "DateLastVerified": "2018-02-25T12:10:00Z",
+    "ID": 100221,
+    "UUID": "C61B4A6A-6877-47CE-AC9B-A525E105CAB4",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 100567,
+        "Title": "Summit Health Centre",
+        "AddressLine1": "85 Wellington Road",
+        "Town": "Mount Barker",
+        "StateOrProvince": "South Australia",
+        "Postcode": "5251",
+        "CountryID": 18,
+        "Latitude": -35.0812612,
+        "Longitude": 138.8692225,
+        "AccessComments": "In carpark",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 141580,
+            "ConnectionTypeID": 1,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Voltage": 240,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "Open all hours",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2018-02-25T12:10:00Z",
+    "DateCreated": "2018-02-18T01:10:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,177 @@
+{
+    "UserComments": [
+        {
+            "ID": 31319,
+            "ChargePointID": 274480,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Charger screen appears to be off. Charging using card works.",
+            "Rating": 5,
+            "DateCreated": "2026-01-21T06:50:26.597Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 30112,
+            "ChargePointID": 274480,
+            "CommentTypeID": 10,
+            "UserName": "evgoesburrr",
+            "Comment": "Great place, nice restaurant across the road",
+            "DateCreated": "2024-11-01T11:03:29.357Z",
+            "User": {
+                "ID": 54260,
+                "Username": "evgoesburrr"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 29789,
+            "ChargePointID": 274480,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Very good site, easy access. ",
+            "Rating": 5,
+            "DateCreated": "2024-06-16T05:22:04.703Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 42525,
+            "ChargePointID": 274480,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.orig.2024061605012725.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.thmb.2024061605012725.jpg",
+            "Comment": "22kW 3 phase not 7kW as sign posted on stand. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2024-06-16T05:02:00Z"
+        },
+        {
+            "ID": 42524,
+            "ChargePointID": 274480,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.orig.2024061604594261.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.thmb.2024061604594261.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2024-06-16T05:00:00Z"
+        },
+        {
+            "ID": 42523,
+            "ChargePointID": 274480,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.orig.2024061604584198.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.thmb.2024061604584198.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2024-06-16T04:59:00Z"
+        },
+        {
+            "ID": 42522,
+            "ChargePointID": 274480,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.orig.2024061604575959.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.thmb.2024061604575959.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2024-06-16T04:58:00Z"
+        },
+        {
+            "ID": 42521,
+            "ChargePointID": 274480,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.orig.2024061604570131.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM274480/OCM-274480.thmb.2024061604570131.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2024-06-16T04:57:00Z"
+        }
+    ],
+    "DateLastVerified": "2026-01-21T06:50:00Z",
+    "ID": 274480,
+    "UUID": "C7011C00-8A71-45D2-BF64-5B68F017C34B",
+    "DataProviderID": 1,
+    "OperatorID": 3626,
+    "UsageTypeID": 1,
+    "UsageCost": "DC Charging $0.35 - $0.60 per kWh at all times.",
+    "AddressInfo": {
+        "ID": 274864,
+        "Title": "Brookton (WA EV Network)",
+        "AddressLine1": "Robinson Road",
+        "Town": "Brookton",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6306",
+        "CountryID": 18,
+        "Latitude": -32.36748025468421,
+        "Longitude": 117.00946148863972,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 475930,
+            "ConnectionTypeID": 25,
+            "Reference": "1532",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 475931,
+            "ConnectionTypeID": 33,
+            "Reference": "6248",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Good trailer pull through access. ",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2026-01-21T06:50:00Z",
+    "DateCreated": "2023-09-15T15:41:00Z",
+    "SubmissionStatusTypeID": 200
+}

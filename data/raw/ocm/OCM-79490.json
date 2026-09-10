@@ -1,0 +1,38 @@
+{
+    "DateLastVerified": "2021-12-19T02:07:00Z",
+    "ID": 79490,
+    "UUID": "07A8D942-91C4-4376-B3EA-76FE308696A9",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "OperatorsReference": "23457",
+    "UsageTypeID": 4,
+    "UsageCost": "$0.52/kWh",
+    "AddressInfo": {
+        "ID": 79836,
+        "Title": "Heatherbrae Supercharger [Tesla]",
+        "AddressLine1": "2285 Pacific Highway",
+        "Town": "Heatherbrae",
+        "Postcode": "2324",
+        "CountryID": 18,
+        "Latitude": -32.787812,
+        "Longitude": 151.727704,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 114129,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 120,
+            "CurrentTypeID": 30,
+            "Quantity": 6
+        }
+    ],
+    "NumberOfPoints": 6,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-12-19T02:07:00Z",
+    "DateCreated": "2017-01-29T17:30:00Z",
+    "SubmissionStatusTypeID": 200
+}

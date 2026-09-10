@@ -1,0 +1,9 @@
+{
+  "url": "https://opendata.transport.nsw.gov.au/api/3/action/package_show?id=ev-charging-locations",
+  "resolved_url": "https://opendata.transport.nsw.gov.au/api/3/action/package_show?id=ev-charging-locations",
+  "retrieved_at_utc": "2026-09-06T00:51:11.275280+00:00",
+  "sha256": "9f8e4e2533386d85b74e5969e0feaf29a9788db8052195d2d458e973fc158904",
+  "bytes": 7413,
+  "etag": null,
+  "last_modified": null
+}

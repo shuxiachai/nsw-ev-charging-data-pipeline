@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/openchargemap/ocm-export/8e3bedca48ca94807d96b2f5e7ee02cffe63ae54/data/referencedata.json",
+  "resolved_url": "https://raw.githubusercontent.com/openchargemap/ocm-export/8e3bedca48ca94807d96b2f5e7ee02cffe63ae54/data/referencedata.json",
+  "retrieved_at_utc": "2026-09-06T00:51:56.848351+00:00",
+  "sha256": "71c7ea6f70e8f360ff13cc64ada578d07c05af0bf9e92b5efeda591ff695f7e8",
+  "bytes": 563770,
+  "etag": "W/\"84ca1a0836c44da2732930e8ad647739185358de175a814ea15427937920a958\"",
+  "last_modified": null
+}

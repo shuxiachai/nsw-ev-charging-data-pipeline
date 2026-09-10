@@ -1,0 +1,75 @@
+{
+    "UserComments": [
+        {
+            "ID": 23329,
+            "ChargePointID": 168774,
+            "CommentTypeID": 10,
+            "UserName": "Christopher Cook",
+            "Comment": "",
+            "Rating": 4,
+            "DateCreated": "2020-10-05T10:34:43.993Z",
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 24946,
+            "ChargePointID": 168774,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM168774/OCM-168774.orig.2020100513270956.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM168774/OCM-168774.thmb.2020100513270956.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "DateCreated": "2020-10-05T13:27:00Z"
+        }
+    ],
+    "DateLastVerified": "2021-06-29T09:56:00Z",
+    "ID": 168774,
+    "UUID": "35946F63-C642-4908-92C8-5D50D3EBF2DE",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "OperatorsReference": "44811",
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 169133,
+        "Title": "The Gerald Apartment Hotel",
+        "AddressLine1": "Cathedral Avenue",
+        "Town": "Geraldton",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6531",
+        "CountryID": 18,
+        "Latitude": -28.7745077,
+        "Longitude": 114.6095279,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 256524,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Voltage": 240,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "Parking accessible from street ramp.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-06-29T09:56:00Z",
+    "DateCreated": "2020-10-05T09:39:00Z",
+    "SubmissionStatusTypeID": 200
+}

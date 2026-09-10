@@ -1,0 +1,36 @@
+{
+    "DateLastVerified": "2023-07-16T04:44:00Z",
+    "ID": 169768,
+    "UUID": "D8F7E248-B020-48C7-A264-F3F913531DE9",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 170127,
+        "Title": "Billabong Homestead Hotel Motel",
+        "AddressLine1": "North West Coastal Highway",
+        "Town": "",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "",
+        "CountryID": 18,
+        "Latitude": -26.81708566363524,
+        "Longitude": 114.61415587631006,
+        "ContactTelephone1": "+61899425980",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 258666,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-16T04:44:00Z",
+    "DateCreated": "2020-11-09T14:18:00Z",
+    "SubmissionStatusTypeID": 200
+}

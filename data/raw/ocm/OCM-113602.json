@@ -1,0 +1,75 @@
+{
+    "UserComments": [
+        {
+            "ID": 20541,
+            "ChargePointID": 113602,
+            "CommentTypeID": 10,
+            "UserName": "shanelord",
+            "Comment": "Rodney from TOCA (Tesla Owners Club of Australia) just posted successful charging at the new Tamworth Supercharger in the Facebook Group. Also Tesla have listed this as live on their website as per below.",
+            "RelatedURL": "https://www.tesla.com/en_AU/findus/location/supercharger/tamsworthnswsupercharger",
+            "DateCreated": "2018-12-23T09:21:02.677Z",
+            "User": {
+                "ID": 19594,
+                "Username": "shanelord"
+            },
+            "CheckinStatusTypeID": 140
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 17254,
+            "ChargePointID": 113602,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM113602/OCM-113602.orig.2018122309165502.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM113602/OCM-113602.thmb.2018122309165502.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 19594,
+                "Username": "shanelord"
+            },
+            "DateCreated": "2018-12-23T09:17:00Z"
+        }
+    ],
+    "DateLastVerified": "2019-03-22T18:24:00Z",
+    "ID": 113602,
+    "UUID": "7CE93ACF-1205-449E-9B46-9BCE0B8047A9",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "OperatorsReference": "34728",
+    "UsageTypeID": 1,
+    "UsageCost": "AUD 0.42/kWh;other tariffs for older cars",
+    "AddressInfo": {
+        "ID": 113948,
+        "Title": "Tamworth Supercharger",
+        "AddressLine1": "West Tamworth League Club",
+        "AddressLine2": "21 Park Street",
+        "Town": "Tamworth",
+        "StateOrProvince": "NSW",
+        "Postcode": "2340",
+        "CountryID": 18,
+        "Latitude": -31.1016479615861,
+        "Longitude": 150.9173432295,
+        "RelatedURL": "https://www.tesla.com/en_AU/findus/location/supercharger/tamsworthnswsupercharger",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 160096,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 120,
+            "CurrentTypeID": 30,
+            "Quantity": 4
+        }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "4 Superchargers, available 24/7, up to 120kW",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2019-03-22T18:24:00Z",
+    "DateCreated": "2018-12-23T02:15:00Z",
+    "SubmissionStatusTypeID": 200
+}

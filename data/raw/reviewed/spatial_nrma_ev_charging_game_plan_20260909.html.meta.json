@@ -1,0 +1,11 @@
+{
+  "url": "https://jss.sitecore.prod.svc.mynrma.com.au/open-road/advice-and-how-to/ev-charging-game-plan",
+  "final_url": "https://jss.sitecore.prod.svc.mynrma.com.au/open-road/advice-and-how-to/ev-charging-game-plan",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-09T03:19:23.761123+00:00",
+  "sha256": "175673d3f829bcdd560abba1547fce56150abc2394b0ae562a3314d9b6929915",
+  "bytes": 180763,
+  "content_type": "text/html; charset=utf-8",
+  "file": "nrma_ev_charging_game_plan.html"
+}

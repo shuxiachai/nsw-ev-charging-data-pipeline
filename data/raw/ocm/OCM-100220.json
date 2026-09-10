@@ -1,0 +1,100 @@
+{
+    "UserComments": [
+        {
+            "ID": 19212,
+            "ChargePointID": 100220,
+            "CommentTypeID": 10,
+            "UserName": "Harry",
+            "Comment": "You need to bring your own cable for the Mennekes AC station. The others are tethered.",
+            "Rating": 5,
+            "DateCreated": "2018-02-19T22:08:12.207Z",
+            "User": {
+                "ID": 18040,
+                "Username": "Harry"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 19211,
+            "ChargePointID": 100220,
+            "CommentTypeID": 100,
+            "UserName": "Harry",
+            "Comment": "The 4 Tesla Superchargers are part of the EV Hub - 8 bays in total. The address you have for the Superchargers is a bit misleading. It's better to put 109 Franklin St.  More information about the Hub is at website below. Fees for charging have not started yet. 2 hour parking limit for all cars.\nhttp://www.cityofadelaide.com.au/explore-the-city/city-travelling-transport/green-travel/electric-vehicle-charging-points",
+            "Rating": 5,
+            "DateCreated": "2018-02-19T21:54:56.17Z",
+            "User": {
+                "ID": 18040,
+                "Username": "Harry"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": true
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 15097,
+            "ChargePointID": 100220,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM100220/OCM-100220.orig.2018022005324077.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM100220/OCM-100220.thmb.2018022005324077.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 18040,
+                "Username": "Harry"
+            },
+            "DateCreated": "2018-02-20T05:33:00Z"
+        }
+    ],
+    "DateLastVerified": "2024-08-25T01:06:00Z",
+    "ID": 100220,
+    "UUID": "873DE7B3-4C66-48E6-9087-692C578F94EF",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 1,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 100566,
+        "Title": "City of Adelaide EV Hub",
+        "AddressLine1": "109 Franklin St",
+        "Town": "Adelaide",
+        "StateOrProvince": "SA",
+        "Postcode": "5000",
+        "CountryID": 18,
+        "Latitude": -34.9275656868653,
+        "Longitude": 138.5951846838,
+        "ContactTelephone1": "1300518038",
+        "AccessComments": "Next to Adelaide Central Bus Station\r\nEnter from Franklin Street and exit to Grote Street as it is a one way street",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 141579,
+            "ConnectionTypeID": 25,
+            "Reference": "3",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Voltage": 240,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 264170,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 125,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "2 x CCS2.  AC units are BYO cable - Type 2 socket. Operated by the City of Adelaide on the Chargefox app",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2024-08-25T01:06:00Z",
+    "DateCreated": "2018-02-18T01:10:00Z",
+    "SubmissionStatusTypeID": 200
+}

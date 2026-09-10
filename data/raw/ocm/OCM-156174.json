@@ -1,0 +1,87 @@
+{
+    "MediaItems": [
+        {
+            "ID": 27650,
+            "ChargePointID": 156174,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM156174/OCM-156174.orig.2021051305380008.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM156174/OCM-156174.thmb.2021051305380008.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-13T05:38:00Z"
+        },
+        {
+            "ID": 27649,
+            "ChargePointID": 156174,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM156174/OCM-156174.orig.2021051305364825.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM156174/OCM-156174.thmb.2021051305364825.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-13T05:37:00Z"
+        },
+        {
+            "ID": 27648,
+            "ChargePointID": 156174,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM156174/OCM-156174.orig.2021051305345592.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM156174/OCM-156174.thmb.2021051305345592.jpg",
+            "Comment": "Stations apparently ICEd but spoke to restaurant owner who said they are staff cars which can be moved",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-05-13T05:35:00Z"
+        }
+    ],
+    "DateLastVerified": "2021-05-13T05:38:00Z",
+    "ID": 156174,
+    "UUID": "0A2BD9CA-A79A-4459-AC26-6C62691B866F",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 156528,
+        "Title": "Edgecombe Brothers",
+        "AddressLine1": "Edgecombe Brothers",
+        "Town": "Aveley",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6069",
+        "CountryID": 18,
+        "Latitude": -31.795210554294098,
+        "Longitude": 115.99853463481739,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 219797,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 8,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "00-H",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-05-13T05:38:00Z",
+    "DateCreated": "2020-05-10T04:37:00Z",
+    "SubmissionStatusTypeID": 200
+}

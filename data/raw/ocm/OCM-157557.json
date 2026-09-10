@@ -1,0 +1,69 @@
+{
+    "UserComments": [
+        {
+            "ID": 23652,
+            "ChargePointID": 157557,
+            "CommentTypeID": 10,
+            "UserName": "Christopher Cook",
+            "Comment": "One unit didn't work but probably needs switched off and on.",
+            "Rating": 4,
+            "DateCreated": "2020-12-15T06:28:18.27Z",
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 25818,
+            "ChargePointID": 157557,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM157557/OCM-157557.orig.2020121509061232.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM157557/OCM-157557.thmb.2020121509061232.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "DateCreated": "2020-12-15T09:06:00Z"
+        }
+    ],
+    "DateLastVerified": "2020-12-15T09:06:00Z",
+    "ID": 157557,
+    "UUID": "D9E75493-6E31-4912-8B43-CB2384179017",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 157911,
+        "Title": "Woodlands Wines",
+        "AddressLine1": "",
+        "CountryID": 18,
+        "Latitude": -33.78702282277545,
+        "Longitude": 115.0311330653251,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 226984,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "02-j",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2020-12-15T09:06:00Z",
+    "DateCreated": "2020-06-15T08:57:00Z",
+    "SubmissionStatusTypeID": 200
+}

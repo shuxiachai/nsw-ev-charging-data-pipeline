@@ -1,0 +1,58 @@
+{
+    "DateLastVerified": "2023-07-17T11:19:00Z",
+    "ID": 190399,
+    "UUID": "6EA649C3-88F9-4909-9EE8-E869ED1D56C9",
+    "DataProviderID": 1,
+    "OperatorID": 3317,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.30 per kWh",
+    "AddressInfo": {
+        "ID": 190758,
+        "Title": "Gunalda QESH",
+        "AddressLine1": "Queen Street",
+        "Town": "Gunalda",
+        "StateOrProvince": "Queensland",
+        "Postcode": "4570",
+        "CountryID": 18,
+        "Latitude": -25.994198141547088,
+        "Longitude": 152.56269417739531,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308661,
+            "ConnectionTypeID": 33,
+            "Reference": "4067",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 308662,
+            "ConnectionTypeID": 2,
+            "Reference": "4067",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 50,
+            "Quantity": 1
+        },
+        {
+            "ID": 468666,
+            "ConnectionTypeID": 25,
+            "Reference": "1241",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "QESH rate per kWh, not Chargefox (pay via Chargefox) ",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-17T11:19:00Z",
+    "DateCreated": "2021-12-04T06:10:00Z",
+    "SubmissionStatusTypeID": 200
+}

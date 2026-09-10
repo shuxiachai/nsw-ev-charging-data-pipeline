@@ -1,0 +1,32 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.runtime/
+tmp/
+data/raw/*.part
+data/raw/ocm/*.part
+data/processed/*.building
+
+# Local review work, secrets and generated archives stay outside Git history.
+.review/
+submission/
+.env.*
+!.env.example
+*.duckdb
+*.duckdb.wal
+*.building
+*.part
+
+# The full frozen originals and database are supplied in the private Release.
+# Keep adjacent manifests and smaller originals readable in the repository.
+data/raw/**/*.pdf
+data/raw/**/*.zip
+
+# Machine-specific test logs and superseded internal review material.
+outputs/test_run.log
+outputs/tests.xml
+outputs/clean_environment_verification.json
+docs/matching_review_20260908.md
+docs/matching_review_20260908.csv

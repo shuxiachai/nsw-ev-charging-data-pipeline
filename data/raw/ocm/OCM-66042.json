@@ -1,0 +1,80 @@
+{
+    "UserComments": [
+        {
+            "ID": 29463,
+            "ChargePointID": 66042,
+            "CommentTypeID": 10,
+            "UserName": "thallam08",
+            "Comment": "Great charger for the older smaller EVs. Would be better if it was on a network so status could be checked. Screen is not working.",
+            "Rating": 4,
+            "DateCreated": "2024-01-25T05:17:19.737Z",
+            "User": {
+                "ID": 48334,
+                "Username": "thallam08"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "DateLastVerified": "2024-01-25T05:17:00Z",
+    "ID": 66042,
+    "UUID": "1AFFFCA5-E1D1-4F2F-90E8-103FBA3B4DCC",
+    "DataProviderID": 1,
+    "OperatorID": 3310,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 66388,
+        "Title": "Nannup Fast Charger",
+        "AddressLine1": "16–19 Adam Street",
+        "Town": "Nannup‎",
+        "StateOrProvince": "WA‎",
+        "Postcode": "6275",
+        "CountryID": 18,
+        "Latitude": -33.979816,
+        "Longitude": 115.763459,
+        "ContactTelephone1": "tel:+611300661895",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 91325,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 91326,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 63,
+            "Voltage": 400,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 91327,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Ex RAC Electric Highway site.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2024-01-25T05:17:00Z",
+    "DateCreated": "2016-05-09T22:49:00Z",
+    "SubmissionStatusTypeID": 200
+}

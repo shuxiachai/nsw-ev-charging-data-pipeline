@@ -1,0 +1,49 @@
+{
+    "DateLastVerified": "2024-06-12T21:39:00Z",
+    "ID": 202096,
+    "UUID": "B9B10C72-3CFD-4396-9EA0-50FDA1712B08",
+    "DataProviderID": 1,
+    "OperatorID": 3554,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.60 per Kwh for DC, $0.35 per Kwh for AC",
+    "AddressInfo": {
+        "ID": 202463,
+        "Title": "Kalbarri (WA EV Network)",
+        "AddressLine1": "Grey Street",
+        "Town": "Kalbarri",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6536",
+        "CountryID": 18,
+        "Latitude": -27.709188634154067,
+        "Longitude": 114.16688703445095,
+        "RelatedURL": "",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 337767,
+            "ConnectionTypeID": 33,
+            "Reference": "6208",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 484002,
+            "ConnectionTypeID": 25,
+            "Reference": "1539",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 3,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2024-06-12T21:39:00Z",
+    "DateCreated": "2022-09-07T07:03:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,79 @@
+{
+    "DateLastVerified": "2023-07-05T13:16:00Z",
+    "ID": 157608,
+    "UUID": "F7FADE91-8165-47DB-93A0-CA906C33A940",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.65 per kwH, discount for RACV members",
+    "AddressInfo": {
+        "ID": 157962,
+        "Title": "Chargefox Airport West",
+        "AddressLine1": "29-35 Louis St",
+        "Town": "Airport West",
+        "StateOrProvince": "Victoria",
+        "Postcode": "3042",
+        "CountryID": 18,
+        "Latitude": -37.71364567547256,
+        "Longitude": 144.88569078594128,
+        "RelatedURL": "http://www.chargefox.com",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 227086,
+            "ConnectionTypeID": 2,
+            "Reference": "4016",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 227087,
+            "ConnectionTypeID": 33,
+            "Reference": "4502",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 350,
+            "CurrentTypeID": 30,
+            "Quantity": 4
+        },
+        {
+            "ID": 460848,
+            "ConnectionTypeID": 33,
+            "Reference": "4016",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 460849,
+            "ConnectionTypeID": 33,
+            "Reference": "4017",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 460850,
+            "ConnectionTypeID": 2,
+            "Reference": "4017",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 6,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-05T13:16:00Z",
+    "DateCreated": "2020-06-20T14:32:00Z",
+    "SubmissionStatusTypeID": 200
+}

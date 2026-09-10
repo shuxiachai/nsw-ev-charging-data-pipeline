@@ -1,0 +1,120 @@
+{
+    "UserComments": [
+        {
+            "ID": 24905,
+            "ChargePointID": 170057,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Located downtown. Easy access with plenty of services and parking. ",
+            "Rating": 4,
+            "DateCreated": "2021-09-29T05:43:46.75Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 29396,
+            "ChargePointID": 170057,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170057/OCM-170057.orig.2021092905414765.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170057/OCM-170057.thmb.2021092905414765.jpg",
+            "Comment": "Located on main st. Services nearby. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-29T05:42:00Z"
+        },
+        {
+            "ID": 29395,
+            "ChargePointID": 170057,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170057/OCM-170057.orig.2021092905403062.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170057/OCM-170057.thmb.2021092905403062.jpg",
+            "Comment": "Coffee near by",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-29T05:41:00Z"
+        },
+        {
+            "ID": 29394,
+            "ChargePointID": 170057,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170057/OCM-170057.orig.2021092905390819.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170057/OCM-170057.thmb.2021092905390819.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-29T05:39:00Z"
+        },
+        {
+            "ID": 29393,
+            "ChargePointID": 170057,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170057/OCM-170057.orig.2021092905381077.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170057/OCM-170057.thmb.2021092905381077.jpg",
+            "Comment": "11 kW on a Model 3",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-29T05:38:00Z"
+        }
+    ],
+    "DateLastVerified": "2021-09-29T05:44:00Z",
+    "ID": 170057,
+    "UUID": "8E973FC8-2605-4A0B-948A-EF5851DE9BF3",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 170416,
+        "Title": "Moora Shire",
+        "AddressLine1": "The Midlands Road",
+        "Town": "Moora",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "",
+        "CountryID": 18,
+        "Latitude": -30.63817666322631,
+        "Longitude": 116.00532228746147,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 259232,
+            "ConnectionTypeID": 1041,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-09-29T05:44:00Z",
+    "DateCreated": "2020-11-17T08:56:00Z",
+    "SubmissionStatusTypeID": 200
+}

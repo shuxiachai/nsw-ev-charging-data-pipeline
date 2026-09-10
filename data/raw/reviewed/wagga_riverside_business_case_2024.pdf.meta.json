@@ -1,0 +1,11 @@
+{
+  "url": "https://meetings.wagga.nsw.gov.au/RedirectToInvalidFileName.aspx?FileName=OC_13052024_AGN_4963_AT_ExternalAttachments%5COC_13052024_AGN_4963_AT_Attachment_20853_2.PDF%2A%24",
+  "final_url": "https://meetings.wagga.nsw.gov.au/Open/2024/05/OC_13052024_AGN_4963_AT_ExternalAttachments/OC_13052024_AGN_4963_AT_Attachment_20853_2.PDF",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-09T02:48:32.947448+00:00",
+  "sha256": "9b69c172994864378e180cde13da17cce1b5cd516b82fec1bb121c2af948e24d",
+  "bytes": 50762732,
+  "content_type": "application/pdf",
+  "file": "data/raw/reviewed/wagga_riverside_business_case_2024.pdf",
+  "capture_method": "direct_http_response"
+}

@@ -1,0 +1,29 @@
+sa4_code,sa4_name,locations,dc_locations,reviewed_region_only_locations
+101,Capital Region,117,27,1
+102,Central Coast,44,9,0
+103,Central West,112,17,0
+104,Coffs Harbour - Grafton,33,9,1
+105,Far West and Orana,31,12,2
+106,Hunter Valley exc Newcastle,126,9,0
+107,Illawarra,64,17,0
+108,Mid North Coast,62,12,0
+109,Murray,67,11,0
+110,New England and North West,62,15,2
+111,Newcastle and Lake Macquarie,85,12,0
+112,Richmond - Tweed,76,14,0
+113,Riverina,73,15,0
+114,Southern Highlands and Shoalhaven,74,9,0
+115,Sydney - Baulkham Hills and Hawkesbury,26,9,0
+116,Sydney - Blacktown,39,17,0
+117,Sydney - City and Inner South,139,19,0
+118,Sydney - Eastern Suburbs,219,34,0
+119,Sydney - Inner South West,43,20,0
+120,Sydney - Inner West,113,17,0
+121,Sydney - North Sydney and Hornsby,107,40,0
+122,Sydney - Northern Beaches,59,21,0
+123,Sydney - Outer South West,16,12,1
+124,Sydney - Outer West and Blue Mountains,46,14,0
+125,Sydney - Parramatta,34,7,0
+126,Sydney - Ryde,21,7,0
+127,Sydney - South West,33,13,0
+128,Sydney - Sutherland,15,8,0

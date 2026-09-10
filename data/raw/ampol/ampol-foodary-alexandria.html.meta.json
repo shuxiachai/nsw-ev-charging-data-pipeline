@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-alexandria",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-alexandria",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:46.569574+00:00",
+  "sha256": "6ad56fe7bfada5d05c973b7509418430cfaadb4ec49ce377449fce76e1694249",
+  "bytes": 150795,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-alexandria.html"
+}

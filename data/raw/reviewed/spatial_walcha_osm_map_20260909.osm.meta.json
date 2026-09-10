@@ -1,0 +1,11 @@
+{
+  "url": "https://api.openstreetmap.org/api/0.6/map?bbox=151.587,-30.988,151.598,-30.977",
+  "final_url": "https://api.openstreetmap.org/api/0.6/map?bbox=151.587,-30.988,151.598,-30.977",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-09T03:27:09.001525+00:00",
+  "sha256": "3a32581808cc05f34a712e63522cc61b6b71efac522b6757bb0f8f5a78d21dca",
+  "bytes": 1079226,
+  "content_type": "application/xml; charset=utf-8",
+  "file": "walcha_osm_current_map_20260909.osm"
+}

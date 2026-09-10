@@ -1,0 +1,75 @@
+{
+    "UserComments": [
+        {
+            "ID": 23653,
+            "ChargePointID": 170985,
+            "CommentTypeID": 10,
+            "UserName": "i3_REx",
+            "Comment": "As good as it gets from an AC Charger",
+            "Rating": 5,
+            "DateCreated": "2020-12-16T11:12:57.14Z",
+            "User": {
+                "ID": 22202,
+                "Username": "i3_REx"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 25821,
+            "ChargePointID": 170985,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170985/OCM-170985.orig.2020121611102643.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170985/OCM-170985.thmb.2020121611102643.jpg",
+            "Comment": "Full 32A per phase",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 22202,
+                "Username": "i3_REx"
+            },
+            "DateCreated": "2020-12-16T11:10:00Z"
+        }
+    ],
+    "DateLastVerified": "2021-01-08T03:32:00Z",
+    "ID": 170985,
+    "UUID": "DD76AF4A-D997-4FD6-B0AB-9B0B0497BFD7",
+    "DataProviderID": 1,
+    "OperatorID": 1,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 171344,
+        "Title": "The Place @ Warrawong Plaza",
+        "AddressLine1": "King Street",
+        "Town": "Warrawong",
+        "StateOrProvince": "New South Wales",
+        "Postcode": "2502",
+        "CountryID": 18,
+        "Latitude": -34.486377904198555,
+        "Longitude": 150.88795170004096,
+        "AccessComments": "Access from South bound lane on King Street.",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 261237,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-01-08T03:32:00Z",
+    "DateCreated": "2020-12-15T14:48:00Z",
+    "SubmissionStatusTypeID": 200
+}

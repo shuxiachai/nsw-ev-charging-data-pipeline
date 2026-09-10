@@ -1,0 +1,10 @@
+{
+  "url": "https://exploren.com.au/find-a-charger/",
+  "resolved_url": "https://exploren.com.au/find-a-charger/",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:17.523477+00:00",
+  "sha256": "fca3d1a3c50a0e904d0439bf7e60e3db07fc4ffe07fce54217c418f2fb9780cd",
+  "bytes": 234536,
+  "content_type": "text/html; charset=UTF-8"
+}

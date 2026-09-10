@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-09",
+  "source_file": "data/raw/ev_20251216.csv",
+  "sources": [
+    {
+      "file": "data/raw/reviewed/quality_dapto_locality_20260909.geojson",
+      "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname%3D%27DAPTO%27&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson",
+      "sha256": "c991a6aab0122acfc9bb81fea0b7e00a67e6d43df1c8233f58d366230632d374",
+      "bytes": 47493,
+      "retrieved_at_utc": "2026-09-09T13:04:35.260761+00:00"
+    }
+  ],
+  "reviews": [
+    {
+      "review_id": "SQ01",
+      "record_id": "r_3a97e82907762706f94f",
+      "source_row": 1000,
+      "raw_values": {
+        "OBJECTID": "134",
+        "Station_name": "",
+        "Station_address": "37-39 Bong Bong Street,, Dapto NSW 2023, Australia",
+        "Operator": "NRMA Electric",
+        "Number_of_plugs": "4",
+        "Charger_Type": "Upcoming",
+        "Charger_rating": "2x350kW & 2x175kW",
+        "Latitude": "-34.4940356",
+        "Longitude": "150.7915413",
+        "LGANAME": "",
+        "PCODE": "",
+        "Source": ""
+      },
+      "source_file": "data/raw/reviewed/quality_dapto_locality_20260909.geojson",
+      "locality_name": "DAPTO",
+      "locality_object_id": 26918,
+      "reviewed_postcode": "2530"
+    }
+  ]
+}

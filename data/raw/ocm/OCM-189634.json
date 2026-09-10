@@ -1,0 +1,101 @@
+{
+    "MediaItems": [
+        {
+            "ID": 36170,
+            "ChargePointID": 189634,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM189634/OCM-189634.orig.2023010504492332.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM189634/OCM-189634.thmb.2023010504492332.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 37021,
+                "Username": "Myles"
+            },
+            "DateCreated": "2023-01-05T04:49:00Z"
+        },
+        {
+            "ID": 31680,
+            "ChargePointID": 189634,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM189634/OCM-189634.orig.2022051408022433.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM189634/OCM-189634.thmb.2022051408022433.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 37021,
+                "Username": "Myles"
+            },
+            "DateCreated": "2022-05-14T08:02:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-07-04T14:52:00Z",
+    "ID": 189634,
+    "UUID": "1118DD0F-77EF-4751-A8FD-15FCCE70106F",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+        "ID": 189993,
+        "Title": "RACV - Horsham",
+        "AddressLine1": "126 Baillie St",
+        "Town": "Horsham",
+        "StateOrProvince": "Victoria",
+        "Postcode": "3400",
+        "CountryID": 18,
+        "Latitude": -36.711118864173116,
+        "Longitude": 142.20194581205692,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 306770,
+            "ConnectionTypeID": 33,
+            "Reference": "4530",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 350,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 306771,
+            "ConnectionTypeID": 33,
+            "Reference": "4059",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 311766,
+            "ConnectionTypeID": 2,
+            "Reference": "4530",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 350,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 311767,
+            "ConnectionTypeID": 2,
+            "Reference": "4059",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-04T14:52:00Z",
+    "DateCreated": "2021-10-21T00:04:00Z",
+    "SubmissionStatusTypeID": 200
+}

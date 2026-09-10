@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-09",
+  "relationships": [
+    {
+      "broad_locality": "Sydney",
+      "specific_locality": "Parramatta",
+      "postcodes": ["2150"],
+      "bbox_wgs84": {
+        "west": 150.99,
+        "south": -33.83,
+        "east": 151.02,
+        "north": -33.80
+      },
+      "evidence_url": "https://www.planning.nsw.gov.au/plans-in-nsw/priority-growth-areas-and-precincts/greater-parramatta-and-olympic-peninsula",
+      "evidence_accessed": "2026-09-09",
+      "evidence_summary": "NSW Planning identifies the Greater Parramatta to Olympic Peninsula corridor as part of Greater Sydney's Central City.",
+      "scope_note": "This permits only the two named locality labels with matching postcode 2150 and an external point in the stated small Parramatta CBD review window. The window is a deliberately restrictive validation condition, not an official suburb boundary. It does not assert that the City of Sydney LGA contains Parramatta. No other city/suburb relationship is inferred."
+    }
+  ]
+}

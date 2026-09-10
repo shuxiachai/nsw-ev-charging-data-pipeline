@@ -1,0 +1,111 @@
+{
+    "UserComments": [
+        {
+            "ID": 24816,
+            "ChargePointID": 66044,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 4,
+            "DateCreated": "2021-09-07T08:47:54.26Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24815,
+            "ChargePointID": 66044,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Easy access. Good location. In the center of town with services within walking distance. ",
+            "DateCreated": "2021-09-07T08:47:31.593Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 29205,
+            "ChargePointID": 66044,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM66044/OCM-66044.orig.2021090708453105.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM66044/OCM-66044.thmb.2021090708453105.jpg",
+            "Comment": "Easy access. Good location. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-07T08:46:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-07-13T23:40:00Z",
+    "ID": 66044,
+    "UUID": "F69DAB54-EAD5-49A5-A5E9-F0248564A5B5",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 66390,
+        "Title": "RAC Electric Highway Harvey",
+        "AddressLine1": "5–31 Hayward Street",
+        "Town": "Harvey‎",
+        "StateOrProvince": "WA‎",
+        "Postcode": "6220",
+        "CountryID": 18,
+        "Latitude": -33.079053,
+        "Longitude": 115.896327,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 91303,
+            "ConnectionTypeID": 2,
+            "Reference": "4234",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 91305,
+            "ConnectionTypeID": 33,
+            "Reference": "4234",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 227077,
+            "ConnectionTypeID": 25,
+            "Reference": "1909",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-13T23:40:00Z",
+    "DateCreated": "2016-05-09T23:15:00Z",
+    "SubmissionStatusTypeID": 200
+}

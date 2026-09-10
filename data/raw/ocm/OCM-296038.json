@@ -1,0 +1,36 @@
+{
+    "DateLastVerified": "2025-01-24T09:21:00Z",
+    "ID": 296038,
+    "UUID": "74329DCD-F506-442C-8C24-03644C065663",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+        "ID": 296425,
+        "Title": "KFC Goulburn",
+        "AddressLine1": "Lockyer Street",
+        "Town": "Goulburn",
+        "StateOrProvince": "New South Wales",
+        "Postcode": "2580",
+        "CountryID": 18,
+        "Latitude": -34.772316512568395,
+        "Longitude": 149.69267286725506,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 527936,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 75,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2025-01-24T09:21:00Z",
+    "DateCreated": "2024-03-03T05:52:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.fuelcheck.nsw.gov.au/fuel/api/v1/fuel/prices/bylocation?fuelType=EV&brands=SelectAll&suburb=BRAIDWOOD&postcode=2622&radius=4&bottomLeftLatitude=-35.46&bottomLeftLongitude=149.78&topRightLatitude=-35.43&topRightLongitude=149.82",
+  "resolved_url": "https://www.fuelcheck.nsw.gov.au/fuel/api/v1/fuel/prices/bylocation?fuelType=EV&brands=SelectAll&suburb=BRAIDWOOD&postcode=2622&radius=4&bottomLeftLatitude=-35.46&bottomLeftLongitude=149.78&topRightLatitude=-35.43&topRightLongitude=149.82",
+  "retrieved_at_utc": "2026-09-09T04:26:57.504208+00:00",
+  "sha256": "7e3cdc99f038378565d6af0f35101d906215540617b15dd9fac2e9654537abdb",
+  "bytes": 1829,
+  "content_type": "application/json; charset=utf-8",
+  "status_code": 200
+}

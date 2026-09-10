@@ -1,0 +1,64 @@
+{
+    "MediaItems": [
+        {
+            "ID": 31031,
+            "ChargePointID": 190675,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM190675/OCM-190675.orig.2022031203323092.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM190675/OCM-190675.thmb.2022031203323092.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 37021,
+                "Username": "Myles"
+            },
+            "DateCreated": "2022-03-12T03:33:00Z"
+        }
+    ],
+    "DateLastVerified": "2022-04-18T10:14:00Z",
+    "ID": 190675,
+    "UUID": "C747D755-3C6A-46CE-B316-0B1ACE006BC9",
+    "DataProviderID": 1,
+    "OperatorID": 3388,
+    "UsageTypeID": 1,
+    "UsageCost": "FREE",
+    "AddressInfo": {
+        "ID": 191034,
+        "Title": "Berri [NRMA]",
+        "AddressLine1": "Gilbert Street",
+        "Town": "Berri",
+        "StateOrProvince": "South Australia",
+        "Postcode": "5343",
+        "CountryID": 18,
+        "Latitude": -34.285689864254955,
+        "Longitude": 140.60355285882747,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 309224,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 309225,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-04-18T10:14:00Z",
+    "DateCreated": "2021-12-17T02:46:00Z",
+    "SubmissionStatusTypeID": 200
+}

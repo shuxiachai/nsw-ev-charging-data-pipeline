@@ -1,0 +1,15 @@
+{
+  "url": "https://exploren.com.au/wp-admin/admin-ajax.php",
+  "resolved_url": "https://exploren.com.au/wp-admin/admin-ajax.php",
+  "method": "POST",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:09:31.720603+00:00",
+  "sha256": "2931638fd8012a6930c53103396633d62886ad3b238c359ed847c2f16d7e616e",
+  "bytes": 2191,
+  "content_type": "application/json; charset=UTF-8",
+  "request_data": {
+    "action": "exploren_get_location_detail",
+    "location_id": "1847",
+    "nonce": "d33a55b9cb"
+  }
+}

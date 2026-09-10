@@ -1,0 +1,179 @@
+{
+    "UserComments": [
+        {
+            "ID": 24867,
+            "ChargePointID": 170276,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 5,
+            "DateCreated": "2021-09-19T11:00:42.073Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24084,
+            "ChargePointID": 170276,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Excelent free charge from C D Dodd Scrap",
+            "Rating": 5,
+            "DateCreated": "2021-03-29T12:24:57.877Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 37079,
+            "ChargePointID": 170276,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.orig.2023032413132615.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.thmb.2023032413132615.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2023-03-24T13:14:00Z"
+        },
+        {
+            "ID": 37077,
+            "ChargePointID": 170276,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.orig.2023032413073159.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.thmb.2023032413073159.jpg",
+            "Comment": "New ABB unit.",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2023-03-24T13:08:00Z"
+        },
+        {
+            "ID": 37078,
+            "ChargePointID": 170276,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.orig.2023032413081518.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.thmb.2023032413081518.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2023-03-24T13:08:00Z"
+        },
+        {
+            "ID": 27076,
+            "ChargePointID": 170276,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.orig.2021032912270969.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.thmb.2021032912270969.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-03-29T12:27:00Z"
+        },
+        {
+            "ID": 27075,
+            "ChargePointID": 170276,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.orig.2021032912231757.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.thmb.2021032912231757.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-03-29T12:23:00Z"
+        },
+        {
+            "ID": 25559,
+            "ChargePointID": 170276,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.orig.2020112304231366.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM170276/OCM-170276.thmb.2020112304231366.jpg",
+            "Comment": "Photo courtesy of Chris Dodd",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "DateCreated": "2020-11-23T04:23:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-04-16T20:18:00Z",
+    "ID": 170276,
+    "UUID": "4DE077AB-B7A8-43EB-9D26-82906FF5E6C8",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 1,
+    "UsageCost": "$0.40 per kWh",
+    "AddressInfo": {
+        "ID": 170635,
+        "Title": "Ross's Discount Home Center",
+        "AddressLine1": "57 James Street",
+        "Town": "Guildford",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6055",
+        "CountryID": 18,
+        "Latitude": -31.899460299819353,
+        "Longitude": 115.97636233048627,
+        "ContactTelephone1": "tel:+611300518038",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 259675,
+            "ConnectionTypeID": 33,
+            "Reference": "5522 A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 60,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 313198,
+            "ConnectionTypeID": 33,
+            "Reference": "5522 B",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 60,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-04-16T20:18:00Z",
+    "DateCreated": "2020-11-23T04:18:00Z",
+    "SubmissionStatusTypeID": 200
+}

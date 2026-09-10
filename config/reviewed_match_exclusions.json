@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-09",
+  "exclusions": [
+    {
+      "review_id": "STANLEY_ST_OCM_WITHHELD_20260909",
+      "record_id": "r_30c4868b9fef2b7494dd",
+      "source_row": 216,
+      "ocm_id": 192687,
+      "representative_record_id": "r_30c4868b9fef2b7494dd",
+      "decision": "withheld_pending_location_evidence",
+      "reason": "withheld_pending_location_evidence",
+      "explanation": "Council identifies the existing JOLT bay in front of 26-28 Stanley Street, and JOLT52 independently supports the source record at 17 Stanley Street. The displaced OCM point has not been independently placed onto the same bay; withhold only the OCM association without claiming a confirmed wrong match.",
+      "expected_source": {
+        "record_id": "r_30c4868b9fef2b7494dd",
+        "location_id": "l_70777e985ad5b5b9ee99",
+        "source_row": 216,
+        "source_objectid": null,
+        "station_name": null,
+        "address": "17 Stanley St, Sydney, 2210",
+        "operator_name": "JOLT",
+        "operator_id": "o_4e1932045daf2a3e6c57",
+        "latitude": -33.96212217,
+        "longitude": 151.0635736,
+        "postcode": "2210",
+        "address_postcode": "2210",
+        "address_conflict": false,
+        "lga": "Georges River Council",
+        "charger_type": "DC",
+        "number_of_plugs": 2,
+        "power_min_kw": 25.0,
+        "power_max_kw": 25.0,
+        "power_kind": "single",
+        "power_raw": "25 kW",
+        "source_category": "Existing Fast Chargers"
+      },
+      "expected_raw_source": {
+        "OBJECTID": "",
+        "Station_name": "",
+        "Station_address": "17 Stanley St, Sydney, 2210",
+        "Operator": "JOLT",
+        "Number_of_plugs": "2",
+        "Charger_Type": "DC",
+        "Charger_rating": "25 kW",
+        "Latitude": "-33.96212217",
+        "Longitude": "151.0635736",
+        "LGANAME": "Georges River Council",
+        "PCODE": "2210",
+        "Source": "Existing Fast Chargers"
+      },
+      "expected_external": {
+        "ocm_id": 192687,
+        "ocm_operator_id": 3529.0,
+        "ocm_operator": "JOLT",
+        "title": "Stanley St Peakhurst NSW",
+        "address": "17-25 Stanley St",
+        "town": " Peakhurst ",
+        "postcode": "2210",
+        "latitude": -33.961219,
+        "longitude": 151.065897,
+        "usage_cost": "0.40",
+        "access_comments": null,
+        "usage_type": "Public - Pay At Location",
+        "status": "Operational",
+        "last_verified": "2023-06-06T12:14:00Z",
+        "number_of_points": 2.0,
+        "data_provider": "Open Charge Map Contributors",
+        "data_license": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "source_file": "data/raw/ocm/OCM-192687.json",
+        "source_url": "https://openchargemap.org/site/poi/details/192687",
+        "has_dc": true
+      },
+      "source_snapshot": {
+        "file": "data/raw/ev_20251216.csv",
+        "url": "https://opendata.transport.nsw.gov.au/data/dataset/be1c4de4-4517-4bd0-8a09-2965ddfc7179/resource/7bbb6461-e52d-4fe7-ace4-a15c30198de0/download/ev_20251216.csv",
+        "resolved_url": "https://opendata.transport.nsw.gov.au/data/dataset/be1c4de4-4517-4bd0-8a09-2965ddfc7179/resource/7bbb6461-e52d-4fe7-ace4-a15c30198de0/download/ev_20251216.csv",
+        "retrieved_at_utc": "2026-09-06T00:51:11.506072+00:00",
+        "sha256": "43970e7751b951ab459a1be7bfd6141756c60ff8aa797debf11c5a597109865a",
+        "bytes": 283033
+      },
+      "external_snapshot": {
+        "file": "data/raw/ocm/OCM-192687.json",
+        "url": "https://raw.githubusercontent.com/openchargemap/ocm-export/8e3bedca48ca94807d96b2f5e7ee02cffe63ae54/data/AU/OCM-192687.json",
+        "resolved_url": "https://raw.githubusercontent.com/openchargemap/ocm-export/8e3bedca48ca94807d96b2f5e7ee02cffe63ae54/data/AU/OCM-192687.json",
+        "retrieved_at_utc": "2026-09-06T00:52:28.572364+00:00",
+        "sha256": "3b53b337996a0cf7367d9f0bc2f6aefcf2d04091678ebc022570d5941a24455e",
+        "bytes": 1355
+      },
+      "evidence": {
+        "file": "data/raw/reviewed/matching_georges_river_20220503_agenda.pdf",
+        "url": "https://georgesriver.infocouncil.biz/Open/2022/05/TAC_03052022_AGN_AT.PDF",
+        "resolved_url": "https://georgesriver.infocouncil.biz/Open/2022/05/TAC_03052022_AGN_AT.PDF",
+        "retrieved_at_utc": "2026-09-09T03:21:07.589627+00:00",
+        "sha256": "200a2dfd3f2ef5c77e155438f0effb0251942e0a2a08bb574cb13652901dffa3",
+        "bytes": 6213625,
+        "locator": "PDF page 39 / printed 35: adjacent property 26; PDF page 42 / printed 38: bay in front of parcel 26-28."
+      },
+      "supporting_evidence": {
+        "file": "data/raw/reviewed/matching_georges_river_20251001_agenda.pdf",
+        "url": "https://georgesriver.infocouncil.biz/RedirectToDoc.aspx?URL=Open%2F2025%2F10%2FLTF_01102025_AGN_AT.PDF",
+        "resolved_url": "https://georgesriver.infocouncil.biz/Open/2025/10/LTF_01102025_AGN_AT.PDF",
+        "retrieved_at_utc": "2026-09-09T03:21:07.802667+00:00",
+        "sha256": "1bcd3d669fb82db2b3f989519d6b12ca863c4da353b35bc21750f857e7dc9885",
+        "bytes": 15133998,
+        "locator": "Page 27: existing JOLT installation; page 30: Stanley Street bay plan."
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+    "DateLastVerified": "2022-09-12T04:04:00Z",
+    "ID": 66031,
+    "UUID": "EB5A7432-B890-4340-A416-B1B604A07480",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 3,
+    "UsageCost": "$0.88 / kWh, or $25 with accommodation",
+    "AddressInfo": {
+        "ID": 66377,
+        "Title": "Eucla Motor Hotel",
+        "AddressLine1": "Eucla-Reid Road",
+        "Town": "Eucla",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6443",
+        "CountryID": 18,
+        "Latitude": -31.677182739271366,
+        "Longitude": 128.88337208224527,
+        "ContactTelephone1": "08 9039 3468",
+        "RelatedURL": "https://www.plugshare.com/location/86660",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 94234,
+            "ConnectionTypeID": 1041,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 94235,
+            "ConnectionTypeID": 29,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 10,
+            "Voltage": 230,
+            "PowerKW": 3,
+            "CurrentTypeID": 10
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-09-12T04:04:00Z",
+    "DateCreated": "2016-05-09T22:49:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,53 @@
+{
+    "MediaItems": [
+        {
+            "ID": 24920,
+            "ChargePointID": 168556,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM168556/OCM-168556.orig.2020100409482771.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM168556/OCM-168556.thmb.2020100409482771.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 27718,
+                "Username": "Mark R"
+            },
+            "DateCreated": "2020-10-04T09:49:00Z"
+        }
+    ],
+    "DateLastVerified": "2020-10-04T09:49:00Z",
+    "ID": 168556,
+    "UUID": "82F6C3E2-6A5D-44F5-A02E-8DBFA1F4BE94",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 6,
+    "AddressInfo": {
+        "ID": 168915,
+        "Title": "Ikea Canberra",
+        "AddressLine1": "1030 Majura Rd",
+        "Town": "Pialligo",
+        "StateOrProvince": "ACT",
+        "Postcode": "2609",
+        "CountryID": 18,
+        "Latitude": -35.29550797984516,
+        "Longitude": 149.18685336825467,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 256021,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "Quantity": 4
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2020-10-04T09:49:00Z",
+    "DateCreated": "2020-10-01T23:38:00Z",
+    "SubmissionStatusTypeID": 200
+}

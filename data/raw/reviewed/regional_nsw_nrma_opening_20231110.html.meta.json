@@ -1,0 +1,12 @@
+{
+  "file": "nsw_regional_nrma_opening.html",
+  "url": "https://www.nsw.gov.au/media-releases/more-ev-chargers-connecting-regional-nsw",
+  "resolved_url": "https://www.nsw.gov.au/media-releases/more-ev-chargers-connecting-regional-nsw",
+  "retrieved_at_utc": "2026-09-09T04:23:13.031266+00:00",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "93f25cf7c3d11f93b0762ab4922824826136d01a0296a84ee21006a11f317e45",
+  "bytes": 140749,
+  "capture_method": "direct_http_response",
+  "original_http_response": true
+}

@@ -1,0 +1,76 @@
+{
+    "MediaItems": [
+        {
+            "ID": 22622,
+            "ChargePointID": 157456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM157456/OCM-157456.orig.2020060812504393.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM157456/OCM-157456.thmb.2020060812504393.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24909,
+                "Username": "Mark H"
+            },
+            "DateCreated": "2020-06-08T12:51:00Z"
+        },
+        {
+            "ID": 22621,
+            "ChargePointID": 157456,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM157456/OCM-157456.orig.2020060812500213.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM157456/OCM-157456.thmb.2020060812500213.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24909,
+                "Username": "Mark H"
+            },
+            "DateCreated": "2020-06-08T12:50:00Z"
+        }
+    ],
+    "DateLastVerified": "2021-12-06T18:18:00Z",
+    "ID": 157456,
+    "UUID": "73CA6BC4-6982-47B1-805E-4EDC39751255",
+    "DataProviderID": 1,
+    "OperatorID": 3298,
+    "UsageTypeID": 2,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 157810,
+        "Title": "Georges River Council, Carlton Depot",
+        "AddressLine1": "11 Dora St",
+        "Town": "Hurstville",
+        "StateOrProvince": "NSW",
+        "Postcode": "2220",
+        "CountryID": 18,
+        "Latitude": -33.96493620946319,
+        "Longitude": 151,
+        "AccessComments": "Check in at front office.",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 226812,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1,
+            "Comments": "Neither app nor RFID required but check in at front office."
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "EO charger, 22kW Type 2, BYO cable. Neither app nor RFID needed currently, just plug in and charge. Business hours only, behind gate.",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-12-06T18:18:00Z",
+    "DateCreated": "2020-06-08T01:50:00Z",
+    "SubmissionStatusTypeID": 200
+}

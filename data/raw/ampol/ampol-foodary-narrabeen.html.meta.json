@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-narrabeen",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-narrabeen",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:48.018950+00:00",
+  "sha256": "ef2da5a13e8725f9555cd16c9989fa1146e6e3a0cb49c88682bb2a329ea29313",
+  "bytes": 149483,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-narrabeen.html"
+}

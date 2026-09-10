@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-windsor-south",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-windsor-south",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:56.209708+00:00",
+  "sha256": "5090fee53190508d08713e23d6fdd3f256e2e7a0c3a7eb7195c6cdb8499460f2",
+  "bytes": 154885,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-windsor-south.html"
+}

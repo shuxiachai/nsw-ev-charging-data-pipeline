@@ -1,0 +1,59 @@
+{
+    "DateLastVerified": "2023-07-17T13:26:00Z",
+    "ID": 190449,
+    "UUID": "751C450F-CC0D-4819-B367-1DB2B52915D9",
+    "DataProviderID": 1,
+    "OperatorID": 3317,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.30",
+    "AddressInfo": {
+        "ID": 190808,
+        "Title": "Ayr QESH",
+        "AddressLine1": "Graham Street",
+        "Town": "Ayr",
+        "StateOrProvince": "Queensland",
+        "Postcode": "4807",
+        "CountryID": 18,
+        "Latitude": -19.573864927671323,
+        "Longitude": 147.40556577868756,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308762,
+            "ConnectionTypeID": 33,
+            "Reference": "4071",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 308763,
+            "ConnectionTypeID": 2,
+            "Reference": "4071",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 308764,
+            "ConnectionTypeID": 25,
+            "Reference": "1246",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "Pay QESH rate per kWh, not Chargefox rate (via Chargefox account) ",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-17T13:26:00Z",
+    "DateCreated": "2021-12-08T13:44:00Z",
+    "SubmissionStatusTypeID": 200
+}

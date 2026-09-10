@@ -1,0 +1,9 @@
+{
+  "url": "https://api.github.com/repos/openchargemap/ocm-export/git/trees/b15714e1b39186816904731d1fc9f29c3e01bdfa",
+  "resolved_url": "https://api.github.com/repos/openchargemap/ocm-export/git/trees/b15714e1b39186816904731d1fc9f29c3e01bdfa",
+  "retrieved_at_utc": "2026-09-06T00:51:55.812474+00:00",
+  "sha256": "a9977d15ffdb04a0729dbb4007f8760b4791651e387f49bac8a1ed0a68d51958",
+  "bytes": 1509,
+  "etag": "W/\"0437bd43df7a86e0c6e873cbc1b95dfc6a866dcf1fbf0fa1a25df6648a4c93b2\"",
+  "last_modified": "Sun, 21 Jun 2026 20:49:57 GMT"
+}

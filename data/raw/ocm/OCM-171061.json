@@ -1,0 +1,67 @@
+{
+    "DateLastVerified": "2023-07-17T13:34:00Z",
+    "ID": 171061,
+    "UUID": "1E9DA586-A399-4D1A-8E97-362675090D85",
+    "DataProviderID": 1,
+    "OperatorID": 3317,
+    "UsageTypeID": 1,
+    "UsageCost": "$0.30 per kWh",
+    "AddressInfo": {
+        "ID": 171420,
+        "Title": "Mount Larcom QESH",
+        "AddressLine1": "Raglan Street",
+        "Town": "Mount Larcom",
+        "StateOrProvince": "Queensland",
+        "Postcode": "4695",
+        "CountryID": 18,
+        "Latitude": -23.810718434831855,
+        "Longitude": 150.98006963498256,
+        "AccessComments": "Carpark on TMR Easment, Dudge & Isabel Barram Park",
+        "RelatedURL": "https://www.chargefox.com/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 261390,
+            "ConnectionTypeID": 2,
+            "Reference": "4069",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 500,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 261391,
+            "ConnectionTypeID": 25,
+            "Reference": "5077",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 400,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 261392,
+            "ConnectionTypeID": 33,
+            "Reference": "4069",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 500,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "Pay QESH rate per kWh, not Chargefox not Chargefox rate (via Chargefox account) ",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-17T13:34:00Z",
+    "DateCreated": "2020-12-19T03:15:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,77 @@
+{
+    "UserComments": [
+        {
+            "ID": 24186,
+            "ChargePointID": 132448,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Susceptible to ICEing",
+            "Rating": 3,
+            "DateCreated": "2021-04-11T04:55:22.203Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 27266,
+            "ChargePointID": 132448,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM132448/OCM-132448.orig.2021041104533569.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM132448/OCM-132448.thmb.2021041104533569.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-11T04:54:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-07-13T23:35:00Z",
+    "ID": 132448,
+    "UUID": "A77DDA5C-6B91-4D5E-BF2F-1E1500CC01DA",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 1,
+    "UsageCost": "$0.27 per kWh",
+    "AddressInfo": {
+        "ID": 132794,
+        "Title": "Alkimos Shopping Center ",
+        "AddressLine1": "35 Gouldian Circuit",
+        "AddressLine2": "Alkimos",
+        "Town": "City of Wanneroo",
+        "StateOrProvince": "WA",
+        "Postcode": "6036",
+        "CountryID": 18,
+        "Latitude": -31.620443448912305,
+        "Longitude": 115.68685197927107,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 185437,
+            "ConnectionTypeID": 25,
+            "Reference": "1",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 240,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "At southern end of car park, free parking. BYO cables. Provided by Chargefox/Jet Charge (EVLink).",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-13T23:35:00Z",
+    "DateCreated": "2019-09-30T05:56:00Z",
+    "SubmissionStatusTypeID": 200
+}

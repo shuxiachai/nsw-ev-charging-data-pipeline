@@ -1,0 +1,69 @@
+{
+    "DateLastVerified": "2023-07-12T23:02:00Z",
+    "ID": 210763,
+    "UUID": "45A71D68-15CE-4C24-8111-EA8EF8BBC782",
+    "DataProviderID": 1,
+    "OperatorID": 3398,
+    "UsageTypeID": 4,
+    "UsageCost": "50c per kWh energy consumed",
+    "AddressInfo": {
+        "ID": 211143,
+        "Title": "Webbe St Carpark",
+        "AddressLine1": "56B Edward St",
+        "AddressLine2": "",
+        "Town": "Norwood",
+        "StateOrProvince": "South Australia",
+        "Postcode": "5067",
+        "CountryID": 18,
+        "Latitude": -34.92007383358501,
+        "Longitude": 138.63562438235135,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 466707,
+            "ConnectionTypeID": 33,
+            "Reference": "MA002A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 466708,
+            "ConnectionTypeID": 2,
+            "Reference": "MA002A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 466709,
+            "ConnectionTypeID": 33,
+            "Reference": "MA002B",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 466710,
+            "ConnectionTypeID": 2,
+            "Reference": "MA002B",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-12T23:02:00Z",
+    "DateCreated": "2022-12-17T23:25:00Z",
+    "SubmissionStatusTypeID": 200
+}

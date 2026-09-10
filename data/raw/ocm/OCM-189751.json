@@ -1,0 +1,122 @@
+{
+    "MediaItems": [
+        {
+            "ID": 43114,
+            "ChargePointID": 189751,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.orig.2024072923123886.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.thmb.2024072923123886.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 53417,
+                "Username": "Rubi"
+            },
+            "DateCreated": "2024-07-29T23:13:00Z"
+        },
+        {
+            "ID": 43113,
+            "ChargePointID": 189751,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.orig.2024072923121940.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.thmb.2024072923121940.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 53417,
+                "Username": "Rubi"
+            },
+            "DateCreated": "2024-07-29T23:12:00Z"
+        },
+        {
+            "ID": 36066,
+            "ChargePointID": 189751,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.orig.2022122707305115.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.thmb.2022122707305115.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 37021,
+                "Username": "Myles"
+            },
+            "DateCreated": "2022-12-27T07:31:00Z"
+        },
+        {
+            "ID": 36065,
+            "ChargePointID": 189751,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.orig.2022122703401238.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.thmb.2022122703401238.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 37021,
+                "Username": "Myles"
+            },
+            "DateCreated": "2022-12-27T03:40:00Z"
+        },
+        {
+            "ID": 31681,
+            "ChargePointID": 189751,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.orig.2022051408035996.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM189751/OCM-189751.thmb.2022051408035996.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 37021,
+                "Username": "Myles"
+            },
+            "DateCreated": "2022-05-14T08:04:00Z"
+        }
+    ],
+    "DateLastVerified": "2025-01-24T09:21:00Z",
+    "ID": 189751,
+    "UUID": "A01B2BEF-47FB-4824-BBBE-6BE0CC2E119A",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 190110,
+        "Title": "RACV Ballarat",
+        "AddressLine1": "Davies Street",
+        "Town": "Ballarat",
+        "StateOrProvince": "Victoria",
+        "Postcode": "3350",
+        "CountryID": 18,
+        "Latitude": -37.5612351886418,
+        "Longitude": 143.86250844804772,
+        "RelatedURL": "https://www.chargefox.com/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 307005,
+            "ConnectionTypeID": 33,
+            "Reference": "",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 350,
+            "CurrentTypeID": 30,
+            "Quantity": 6
+        }
+    ],
+    "NumberOfPoints": 4,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2025-01-24T09:21:00Z",
+    "DateCreated": "2021-11-01T06:45:00Z",
+    "SubmissionStatusTypeID": 200
+}

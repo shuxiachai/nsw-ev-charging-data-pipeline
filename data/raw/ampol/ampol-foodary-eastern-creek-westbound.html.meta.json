@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-eastern-creek-westbound",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-eastern-creek-westbound",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:09:00.257738+00:00",
+  "sha256": "66def85b854fa27cb1c865053ed53066c7a335493f4b9e785d3b96c483bff6d1",
+  "bytes": 154839,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-eastern-creek-westbound.html"
+}

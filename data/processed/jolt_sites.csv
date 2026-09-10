@@ -1,0 +1,187 @@
+jolt_id,station_code,description,address,latitude,longitude,status_snapshot,network_status_snapshot,evse_status_snapshot,carpark_hours_text,source_file,source_url
+9,PAE001,North East Rd & Fosters Rd,"North East Rd & Muller Rd, Greenacres SA 5086",-34.8709062,138.6371942,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+10,PAE002,Port Rd & Webber St (Northbound),"Port Rd & Webber St (Northbound), Queenstown SA 5014",-34.856445,138.510787,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+11,PAE003,Port Rd & Webber St (Southbound),"Port Rd & Webber St (Southbound), Alberton SA 5014",-34.8563003,138.5110449,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+12,PAE004,Port Rd & Cross St (Northbound),"Port Rd & Cross St (Northbound), Queenstown SA 5014",-34.8598559,138.5127751,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+13,PAE005,Port Rd & Cross St (Southbound),"Port Rd & Cross St (Southbound), Alberton SA 5014",-34.8597228,138.5131021,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+14,PAE006,Klemzig Community Hall,Klemzig SA 5087,-34.8756315,138.6314301,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+15,MAR001,Marion Road,"672 Marion Rd, Park Holme SA 5043",-34.9931519,138.5566809,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+16,MAR002,Oaklands Road,"Oaklands Rd, Marion SA 5043",-34.9937002,138.5558979,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+18,MAR004,Finniss St,"Diagonal Rd & Finniss St, Marion SA 5043",-35.0173084,138.5496564,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+19,CHA001,Port Rd & Mary St (Northbound),"Port Road & Mary St (Northbound), Hindmarsh SA 5007",-34.9061271,138.5731282,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+20,CHA002,Port Rd & Mary St (Southbound),"Mary St, Hindmarsh SA 5007",-34.9058639,138.5731676,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+21,CHA003,Port Rd and South Rd (Northbound),"Port Road and South Road (Northbound), West Hindmarsh SA 5007",-34.9026394,138.5679642,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+22,CHA004,Port Rd & South Rd (Southbound),"Port Road and South Road (Southbound), West Hindmarsh SA 5007",-34.902325,138.567725,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+23,CHA005,Port Road & Oval Ave (Northbound),"809-811 Port Rd, Woodville South SA 5011",-34.8828449,138.5382832,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+24,CHA006,Port Road & Oval Ave (Southbound),"Port Road and Oval Ave (Southbound), Woodville SA 5011",-34.8824926,138.5380305,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+25,CHA007,Port Road & King St (Southbound),"481 Port Rd, Croydon SA 5008",-34.8978521,138.561075,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+26,CAM001,Campbelltown,"The ARC, 531 Lower North East Road, Campbelltown SA 5074",-34.8852264,138.6589639,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+27,CAM002,Newton,"Newton Road & Hambledon Rd, Newton SA 5074",-34.8791227,138.6734632,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+28,CAM003,Rostrevor,"278-270 Montacute Rd, Rostrevor SA 5073",-34.887751,138.688881,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+29,CAM004,Montacute Road,"139 Montacute Rd, Campbelltown SA 5074",-34.8884486,138.6729899,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+30,NBE001,Pittwater,"7 Bungan St, Mona Vale NSW 2103",-33.6760496,151.3031304,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+31,STR001,Strathfield,"19 Richmond Rd, Homebush West NSW 2140",-33.8660378,151.0644524,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+32,BUR001,Burwood,"133 Liverpool Road, Burwood NSW 2134",-33.8872485,151.0993351,out of order,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+33,RAN001,Kensington,"110 Anzac Parade, Kensington NSW 2033",-33.9071303,151.2241188,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+34,PAE007,Port Rd & Sussex St (Northbound),"91 Port Road, Queenstown SA 5014",-34.8610148,138.513458,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+35,PAE008,Port Rd & Sussex St (Southbound),"Port Rd & Sussex St (Southbound), Queenstown SA 5014",-34.860908,138.513709,out of order,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+37,NBE002,"The Centre, Forestville","59 The Centre, Forestville NSW 2087",-33.762056,151.214167,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+39,NBE003,Dee Why,"4-16 Oaks Ave, Dee Why NSW 2099",-33.7536865,151.2869839,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+40,NBE004,Pittwater Park,"1 Park St, Mona Vale NSW 2103",-33.676032,151.30375,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+41,NBE005,Freshwater,"30 Dowling St, Freshwater NSW 2096",-33.7789772,151.283889,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+42,BUR002,Burwood Park,"22-36 Park Ave, Burwood NSW 2134",-33.8738488,151.1019444,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+43,BUR003,Strathfield,"14-26 Everton Rd, Strathfield NSW 2135",-33.8719455,151.0953253,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+48,GGR001,Oatley,"20 Letitia Street, Oatley NSW 2223",-33.9816704,151.0819365,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+49,GGR002,Treacy St,"31-49 Treacy St, Hurstville NSW 2220",-33.967861,151.106056,out of order,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+50,GGR003,Beverley Hills Station,"141 Morgan St, Beverly Hills NSW 2209",-33.94925,151.08125,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+51,GGR004,Broadarrow Road,"44 Broadarrow Rd, Narwee NSW 2209",-33.948417,151.071083,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+52,GGR005,Peakhurst,"17 Stanley St, Peakhurst NSW 2210",-33.9621222,151.0635726,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+54,GGR007,"Regent St, Kogarah NSW 2217","2 Premier St, Kogarah NSW 2217, Australia",-33.9624216,151.134321,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+55,GGR008,Mortdale,"30-38 Cooks Street, Mortdale NSW 2223",-33.9697116,151.081072,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+57,RAN003,Maroubra,"827 Anzac Parade, Maroubra NSW 2035",-33.9434978,151.2397222,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+58,RAN004,Perry Street,"550 Bunnerong Rd, Matraville NSW 2036, Australia",-33.961056,151.230944,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+59,RAN005,Flack Ave,"151 Beauchamp Rd, Matraville NSW, Australia",-33.9563308,151.2265981,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+62,BUR006,Croydon Park,"110 Brighton St, Croydon NSW 2132",-33.8946476,151.1096762,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+63,HOR001,11-37 Alexandria Parade,"11-37 Alexandria Parade, Waitara NSW 2077, Australia",-33.709731,151.104586,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+69,HOR002,Beecroft Village,"109 Beecroft Rd, Beecroft NSW 2119",-33.7505155,151.0650833,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+74,NOR003,Portrush Road Reserve,"326a Payneham Rd, Marden SA 5070",-34.89725,138.638528,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+75,NOR001,Nelson St,"62 Nelson St, Stepney SA 5069",-34.9111101,138.6290342,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+76,CHA008,West Hindmarsh,West Hindmarsh SA 5007,-34.8983271,138.5613319,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+77,NOR006,Foodland Felixstow,"471 Payneham Rd, Felixstow SA 5070",-34.8895799,138.6541618,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+78,NOR004,Osmond Terrace,"7 Osmond Terrace, Norwood SA 5067",-34.9159611,138.6315526,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+79,NOR005,Payneham,"374 Payneham Rd, Payneham SA 5070",-34.8956473,138.641897,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+81,AKL001,,"272 Richmond Road, Grey Lynn, Auckland 1021, ",-36.854804,174.732618,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+83,CHA025,Henley Beach,"30-42 Main St, Henley Beach SA 5022 - Only Compatible with Front Charging Ports",-34.919549,138.4953957,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+86,PAE010,Semaphore Road,"80 Semaphore Road, Semaphore SA 5019",-34.8393134,138.4857529,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+89,AKL005,,"65-71 Edinburgh Street, Pukekohe",-37.199741,174.903948,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+90,AKL002,,"61 Lambie Drive, Manukau City Centre, Aucklan",-36.994371,174.872668,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+91,NBE008,Lagoon St,"9 Lagoon St, Narrabeen NSW 2101",-33.7136416,151.2981669,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+92,NBE006,Brookvale,"87 Winbourne Rd, Brookvale NSW 2100",-33.762075,151.2724457,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+93,NBE007,Ocean St,"25-47 Ocean St, Narrabeen NSW 2101",-33.7193339,151.299067,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+94,KNX001,Scoresby,"1335 Ferntree Gully Rd, Scoresby VIC 3179",-37.8985875,145.2304531,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+95,KNX002,Ferntree Gully Station,"100 Station St, Ferntree Gully VIC 3156, Australia",-37.881849,145.294817,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+96,KNX003,1880 Ferntree Gully Rd,"1880 Ferntree Gully Rd, Ferntree Gully VIC 3156, Australia",-37.8834483,145.2757466,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+97,KNX004,426 Burwood Hwy,"426 Burwood Hwy, Wantirna South VIC 3152, Australia",-37.8700662,145.2376782,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+98,KNX005,4 High St,"4 High St, Bayswater VIC 3153, Australia",-37.8419773,145.2655814,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+99,KNX006,Bayswater,"750 Mountain Hwy, Bayswater VIC 3153, Australia",-37.840903,145.2667773,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+100,KNX007,187 Stud Rd Service Rd,"191 Stud Rd, Wantirna South VIC 3152, Australia",-37.859095,145.2405139,out of order,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+102,AKL009,,"87 Lunn Avenue, Mount Wellington, Auckland 10",-36.88754,174.8325,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+105,AKL008,,"5 Astley Avenue, New Lynn, Auckland 0600, New",-36.911288,174.688648,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+106,BCC002,Carindale,"1300 Old Cleveland Rd, Carindale QLD 4152, Australia",-27.5020736,153.1162903,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+107,BCC003,Marketplace West,"17 Samuel St, Camp Hill QLD 4152, Australia",-27.50044,153.076075,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+108,BCC001,Marketplace East,"39 Thomas St, Camp Hill QLD 4152, Australia",-27.5012353,153.0773201,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+110,BUR007,Parramatta Road,"312 Parramatta Rd, Burwood NSW 2134, Australia",-33.8695027,151.1077921,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+111,COS001,Gardeners Road,"904 Gardeners Rd, Mascot NSW 2020
+Carpark open 8:30-19:00",-33.9205,151.190773,active,available,occupied,Carpark open 8:30-19:00,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+112,COS002,Gardeners Road,"904 Gardeners Rd, Mascot NSW 2020, Australia
+Carpark open 8:30-19:00",-33.920593,151.191474,active,available,occupied,Carpark open 8:30-19:00,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+113,BAY001,Dan Murphy’s Cheltenham,"322 Bay Rd, Cheltenham VIC 3192, Australia",-37.9563083,145.0412357,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+114,AKL006,,"186 Lincoln Road, Henderson, Auckland 0610, N",-36.858746,174.628201,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+117,AKL020,,"312 Ti Rakau Drive, East Tāmaki, Auckland 201",-36.92679,174.897353,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+119,HIL002,Rouse Hill,"40 Panmure St, Rouse Hill NSW 2155, Australia",-33.683284,150.916515,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+120,AKL021,,"333 Ti Rakau Drive, Burswood, Auckland 2013, ",-36.927868,174.900972,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+122,BLK001,Glendenning,"670 Richmond Rd, Glendenning NSW 2761, Australia",-33.735521,150.851364,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+123,BLK002,Glendenning,"670 Richmond Rd, Glendenning NSW 2761, Australia",-33.735589,150.851438,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+125,CHC007,,"462 Tuam Street, Phillipstown, Christchurch 8",-43.535556,172.655419,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+126,CHC003,,"255 Saint Asaph Street, Christchurch Central ",-43.536277,172.6409,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+129,PEN001,Penrith Station,"31 Jane St, Penrith NSW 2750, Australia",-33.7503,150.6941,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+131,CHC001,,"23 Lichfield Street, Christchurch Central Cit",-43.534124,172.63471,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+132,AKL022,,"345 Chapel Road, Flat Bush, Auckland 2016, Ne",-36.949968,174.910806,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+133,GGR011,Oatley Station,"2 Oatley Parade, Oatley NSW 2223, Australia",-33.9814,151.0794,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+134,STH001,Cronulla Station,"2A Cronulla St, Cronulla NSW 2230, Australia",-34.0577563,151.1518994,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+135,KUR001,Roseville Station,"1 Clanville Rd, Roseville NSW 2069, Australia
+
+Temporarily compatible with front charging ONLY",-33.7829,151.1752,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+136,HOR009,Berowra Station,"993 Pacific Hwy, Berowra NSW 2081, Australia",-33.6239,151.1518,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+138,BLK003,The Ettamogah,"15 Merriville Rd, Kellyville Ridge NSW 2155, Australia",-33.700373,150.928342,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+139,BLK004,The Ettamogah,"15 Merriville Rd, Kellyville Ridge NSW 2155, Australia",-33.700444,150.928083,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+140,LIV003,Crossroads Hotel,"2260 Camden Valley Way, Casula NSW 2170, Australia",-33.95796,150.886526,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+141,LIV004,Crossroads Hotel,"2260 Camden Valley Way, Casula NSW 2170, Australia",-33.958155,150.886629,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+142,NBE015,Collaroy Beach North Parking Area,"1068 Pittwater Rd, Collaroy NSW 2097, Australia",-33.73111,151.3010109,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+143,BCC004,770 Old Cleveland Road,"770 Old Cleveland Rd, Camp Hill QLD 4152, Australia",-27.493985,153.08535,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+149,AKL027,,"571 Te Atatu Road, Te Atatū Peninsula, Auckla",-36.843118,174.652471,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+150,AKL036,,"217-223 Great South Road, Ōtāhuhu, Auckland 1",-36.941128,174.84061,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+161,AKL029,,"38 Orly Avenue, Māngere, Auckland 2022, New Z",-36.969452,174.79744,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+164,AKL023,,"35 Saint Johns Road, St Johns, Auckland 1072,",-36.875394,174.82802,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+165,CHC008,,"64 Carmen Road, Hornby, Christchurch 8042, Ne",-43.537522,172.52866,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+169,NBE009,Barrenjoey Road,"Barrenjoey Rd, Palm Beach NSW 2108, Australia",-33.596869,151.320162,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+171,AKL031,,"8 Quay Street, Auckland CBD, Auckland 1010, N",-36.84772,174.7813,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+172,AKL032,,"8 Quay Street, Auckland CBD, Auckland 1010, N",-36.847595,174.78091,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+181,CHC016,,"1 Brynley Street, Hornby, Christchurch 8042, ",-43.543333,172.528176,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+182,CHC015,,"1 Brynley Street, Hornby, Christchurch 8042, ",-43.543333,172.528294,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+184,HIL001,29 Windsor Rd,"29 Windsor Rd, Kellyville 2155 NSW",-33.712524,150.958341,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+186,CHC017,,"20 Harewood Road, Papanui, Christchurch 8053,",-43.496281,172.6065,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+187,CHC013,,"51 Pages Road, Linwood, Christchurch 8062, Ne",-43.523832,172.685929,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+189,WLG001,,"91 Johnsonville Road, Johnsonville, Wellingto",-41.224472,174.8075,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+190,CHC026,,"68 Fitzgerald Avenue, Christchurch Central Ci",-43.536022,172.65082,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+191,CHC033,,"75 Shands Road, Hornby, Christchurch 8042, Ne",-43.548577,172.5197,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+196,CHC030,,"482 Cranford Street, Redwood, Christchurch 80",-43.490764,172.621987,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+197,CHC022,,"427 Main South Road, Hornby, Christchurch 804",-43.543784,172.522685,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+198,LAN001,472 Pacific,"472 Pacific Hwy, Artarmon NSW 2064, Australia",-33.808378,151.178563,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+200,NBE014,Narrabeen B-Line,"Pittwater Road, Narrabeen NSW 2101",-33.713763,151.297142,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+201,NBE013,Dee Why B-Line,"725 Pittwater Rd, Dee Why NSW 2099, Australia",-33.752359,151.28656,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+204,CHC020,,"149 Blenheim Road, Riccarton, Christchurch 80",-43.537943,172.5965,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+206,MTB001,Albany Creek Village 1,"700-710 Albany Creek Rd, Albany Creek QLD 4035, Australia",-27.345715,152.96892,active,temporarily unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+210,AKL003,,"228 Great South Road, Takanini 2112, New Zeal",-37.04852,174.92717,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+212,AKL007,,"155 Lincoln Road, Henderson, Auckland 0610, N",-36.863234,174.62938,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+218,AKL024,,"3050 Great North Road, New Lynn, Auckland 060",-36.905764,174.68648,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+227,AKL038,,"112 Whitford Road, Somerville, Auckland 2014,",-36.91354,174.92758,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+228,AKL039,,"112 Whitford Road, Somerville, Auckland 2014,",-36.91386,174.92761,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+235,AKL025,,"627 Mount Wellington Highway, Mount Wellingto",-36.9298,174.84274,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+238,BRM001,Watergardens Hotel,"431 Kings Rd, Taylors Lakes VIC 3038, Australia",-37.6993509,144.7803015,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+239,AKL026,,"639 Great South Road, Manukau City Centre, Au",-36.988292,174.88239,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+240,AKL043,,"6 Alfriston Road, Manurewa East, Auckland 210",-37.023024,174.89983,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+255,AKL013,,"8 Croftfield Lane, Wairau Valley, Auckland 06",-36.7688,174.73952,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+257,BAY007,588 Balcombe Road,"CCS2 Plug 1 is disabled bay 8am-6pm
+
+588 Balcombe Rd, Black Rock VIC 3193, Australia",-37.9754984,145.0174584,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+258,CAS001,Berwick Springs Hotel,"288-296 Clyde Rd, Berwick VIC 3806, Australia",-38.0596377,145.3378605,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+261,AKL012,,"2 Sharkey Street, Manukau City Centre, Auckla",-36.988698,174.87759,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+263,YAR001,461/463 Swan St,"461/463 Swan St, Richmond VIC 3121, Australia",-37.8267978,145.0094036,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+271,BAY008,493A Highett Road,"493A Highett Rd, Highett VIC 3190, Australia",-37.9485597,145.041063,active,available,unavailable,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+272,BCC015,924 Gympie Rd Chermside,"924 Gympie Rd Chermside North QLD 4031, Australia",-27.384,153.03,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+273,DAR001,257 Edwardes St,"257 Edwardes St, Reservoir VIC 3073, Australia",-37.7147317,144.9891475,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+279,BCC007,222 LUTWYCHE RD,"222 Lutwyche Rd, Windsor QLD 4030, Australia",-27.435487,153.031369,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+281,GGR010,Morotai Belmore,"293 Belmore Rd, Riverwood NSW 2210, Australia",-33.950771,151.05197,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+282,RAN007,Coogee Beach,"230 Arden St, Coogee NSW 2034, Australia",-33.921594,151.256556,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+286,BCC009,468 Vulture St,"468 Vulture St, Woolloongabba QLD 4102, Australia",-27.484864,153.038854,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+293,BCC012,725 Gympie Rd,"725 Gympie Rd, Chermside QLD 4032, Australia",-27.3901572,153.0317159,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+294,BCC013,426 Logan Rd,"35 Montague St, Stones Corner QLD 4120, Australia",-27.500927,153.046156,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+296,BCC020,579 Kessels Rd,"579 Kessels Rd, Macgregor QLD 4109, Australia",-27.561995,153.071838,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+297,BCC014,Albion Village,"6 Crosby Rd, Albion QLD 4010, Australia",-27.431886,153.043084,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+298,RAN009,149 Alison Rd,"149 Alison Rd, Randwick NSW 2031, Australia",-33.9130755,151.2387939,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+300,BAY003,Bayside Seaview Shops,"Please turn off head lights when charging
+Left plug is top CCS2 plug in app
+Right plug is bottom CCS2 plug in app
+
+353 Balcombe Rd, Beaumaris VIC 3193, Australia",-37.978965,145.045237,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+301,MAN004,Manningham Bulleen Council Carpark,"178-180 Bulleen Rd, Bulleen VIC 3105, Australia",-37.7647094,145.0828162,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+302,DAR007,Darebin Broadway Activity Centre,"Left plug is top CCS2 plug in app
+Right plug is bottom CCS2 plug in app
+
+2D Cheddar Rd, Reservoir VIC 3073, Australia",-37.7155481,145.0085009,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+303,DAR005,Preston High Street,"181 High St, Preston VIC 3072, Australia",-37.746727,145.0024989,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+304,DAR004,Albion Charles Hotel,"2 Charles St, Northcote VIC 3070, Australia",-37.776676,144.990477,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+310,LIV006,Liverpool Station,"3 Scott St, Liverpool NSW 2170, Australia",-33.9252237,150.9265833,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+311,MVY001,Dan Murphy's Ascot Vale,"291-325 Mt Alexander Rd, Ascot Vale VIC 3032, Australia",-37.777188,144.929382,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+313,FAI001,Cabramatta Station,"165 Railway Pde, Cabramatta NSW 2166, Australia",-33.892428,150.93946,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+314,BLK009,4 Campbell St Blacktown,"4 Campbell St, Blacktown NSW 2148, Australia",-33.770826,150.909597,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+315,BCC011,634 Gympie Rd,"634 Gympie Rd, Chermside QLD 4032, Australia",-27.391192,153.031166,active,available,occupied,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+318,STN001,Dan Murphy's Malvern East,"811 Dandenong Rd, Malvern East VIC 3145, Australia",-37.8745157,145.0396081,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+320,AKL040,,"1B Ponsonby Road, Grey Lynn, Auckland 1011, N",-36.859191,174.75213,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+322,DAR006,JE Moore Oval,"720 Gilbert Rd, Reservoir VIC 3073, Australia",-37.7183632,144.993596,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+323,BCC016,70 Pinelands Rd,"70 Pinelands Rd, Sunnybank Hills QLD 4109, Australia",-27.591075,153.060203,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+327,LCC001,5-15 Lapis St,"5-15 Lapis St, Underwood QLD 4119, Australia",-27.620232,153.11634,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+328,LCC002,3231-3243 Logan Rd,"3231-3243 Logan Rd, Underwood QLD 4119, Australia",-27.609703,153.112279,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+329,BCC010,Ashgrove Shopping Village,"17 Stewart Rd, Ashgrove QLD 4060, Australia",-27.443881,152.992064,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+333,BCC005,191 Moggill Rd,"191 Moggill Rd, Taringa QLD 4068, Australia",-27.492752,152.979058,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+334,BCC024,458 Sandgate Rd,"458 Sandgate Rd, Clayfield QLD 4011, Australia",-27.427855,153.046454,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+335,RCC001,93-95 Redland Bay Rd,"93-95 Redland Bay Rd, Capalaba QLD 4157, Australia",-27.528617,153.195589,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+336,BCC008,1774 Sandgate Rd,"1774 Sandgate Rd, Virginia QLD 4014, Australia",-27.3776501,153.0622171,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+339,BAY009,152 Weatherall Rd,"152 Weatherall Rd, Cheltenham VIC 3193, Australia",-37.9720129,145.0502222,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+340,BCC017,Zillmere Village,"413 Zillmere Road, Zillmere QLD 4034, Australia",-27.3592,153.0384,active,long-term unavailable,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+345,HIL007,3A Old Northern Rd,"3A Old Northern Rd, Baulkham Hills NSW 2153, Australia",-33.762015,150.9933329,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+346,HIL003,20A Lexington Dr,"20A Lexington Dr, Bella Vista NSW 2153, Australia",-33.7347759,150.9464287,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+347,HIL004,1-3 Meridian,"20A Lexington Dr, Bella Vista NSW 2153, Australia",-33.7344989,150.9464581,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+348,BLK013,22 Main St,"22 Main St, Blacktown NSW 2148, Australia",-33.76898,150.907616,out of order,available,out of order,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/
+354,PAR001,Novotel Parramatta,"350 Church St, Parramatta NSW 2150, Australia",-33.8102285,151.0052075,active,available,available,,data/raw/jolt_map.html,https://joltcharge.com/au/find-a-charger/

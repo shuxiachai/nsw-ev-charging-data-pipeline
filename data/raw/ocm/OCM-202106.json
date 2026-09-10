@@ -1,0 +1,46 @@
+{
+    "DateLastVerified": "2024-03-28T12:20:00Z",
+    "ID": 202106,
+    "UUID": "BC7F9C06-DA74-4974-896A-54B78B47E04C",
+    "DataProviderID": 1,
+    "OperatorID": 3554,
+    "UsageTypeID": 1,
+    "UsageCost": "$0.60 per kWh DC, $0.35 per kWh AC",
+    "AddressInfo": {
+        "ID": 202473,
+        "Title": "Kojonup (WA EV Network)",
+        "AddressLine1": "143 Albany Highway",
+        "Town": "Kojonup",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6395",
+        "CountryID": 18,
+        "Latitude": -33.837605443751286,
+        "Longitude": 117.15774179333812,
+        "RelatedURL": "https://teslamotorsclub.com/tmc/posts/6857026/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 337779,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 150,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 453518,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 150,
+            "LevelID": 2,
+            "PowerKW": 11,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 3,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2024-03-28T12:20:00Z",
+    "DateCreated": "2022-09-07T07:33:00Z",
+    "SubmissionStatusTypeID": 200
+}

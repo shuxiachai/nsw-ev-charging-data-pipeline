@@ -1,0 +1,60 @@
+{
+    "MediaItems": [
+        {
+            "ID": 20347,
+            "ChargePointID": 134363,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM134363/OCM-134363.orig.2019111106383121.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM134363/OCM-134363.thmb.2019111106383121.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "DateCreated": "2019-11-11T06:39:00Z"
+        }
+    ],
+    "DateLastVerified": "2022-06-01T23:46:00Z",
+    "ID": 134363,
+    "UUID": "DA026DC2-4E98-44AB-B45C-7A3F24997579",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 134709,
+        "Title": "McCarthy Prestige",
+        "AddressLine1": "Gugeri Street",
+        "AddressLine2": "Claremont",
+        "Town": "Perth",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6010",
+        "CountryID": 18,
+        "Latitude": -31.979331,
+        "Longitude": 115.78509,
+        "ContactTelephone1": "(08) 9384 9400",
+        "RelatedURL": "https://www.mccarthyprestige.com.au",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 188052,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 100,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 240,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 100,
+    "DateLastStatusUpdate": "2022-06-01T23:46:00Z",
+    "DateCreated": "2019-11-11T06:27:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://evie.com.au/wp-admin/admin-ajax.php?action=store_search&lat=-33.8791212&lng=150.9776442&max_results=50&search_radius=5",
+  "resolved_url": "https://evie.com.au/wp-admin/admin-ajax.php?action=store_search&lat=-33.8791212&lng=150.9776442&max_results=50&search_radius=5",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:05:50.644656+00:00",
+  "sha256": "160521f446ceb17faa685e32c12ca678aa10359e8053377045468aa9b9ec11fe",
+  "bytes": 2649,
+  "content_type": "application/json; charset=UTF-8"
+}

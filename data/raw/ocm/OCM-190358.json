@@ -1,0 +1,45 @@
+{
+    "DateLastVerified": "2021-12-19T02:16:00Z",
+    "ID": 190358,
+    "UUID": "0ACC73A1-450F-4E70-911B-0B9505C3CDA1",
+    "DataProviderID": 1,
+    "OperatorID": 3388,
+    "UsageTypeID": 1,
+    "UsageCost": "FREE",
+    "AddressInfo": {
+        "ID": 190717,
+        "Title": "Jugiong [NRMA]",
+        "AddressLine1": "319 Riverside Drive",
+        "Town": "Jugiong",
+        "StateOrProvince": "NSW",
+        "CountryID": 18,
+        "Latitude": -34.82341194348058,
+        "Longitude": 148.32537254091335,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308568,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 308569,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-12-19T02:16:00Z",
+    "DateCreated": "2021-12-01T12:45:00Z",
+    "SubmissionStatusTypeID": 200
+}

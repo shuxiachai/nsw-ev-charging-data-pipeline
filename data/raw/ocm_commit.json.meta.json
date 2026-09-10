@@ -1,0 +1,9 @@
+{
+  "url": "https://api.github.com/repos/openchargemap/ocm-export/commits/main",
+  "resolved_url": "https://api.github.com/repos/openchargemap/ocm-export/commits/main",
+  "retrieved_at_utc": "2026-09-06T00:51:55.489054+00:00",
+  "sha256": "4e64fcdfce0b96eb02bc19113f1abf1e1f636b3256f9b1abf312d9e3b0d0e5cd",
+  "bytes": 762285,
+  "etag": "W/\"38d60521a9cc4d7e3a3183e659f4c784c4ae9798969b77dd3af43b2e34c5e577\"",
+  "last_modified": "Wed, 22 Apr 2026 10:59:34 GMT"
+}

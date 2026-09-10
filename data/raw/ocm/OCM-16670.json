@@ -1,0 +1,134 @@
+{
+    "UserComments": [
+        {
+            "ID": 24497,
+            "ChargePointID": 16670,
+            "CommentTypeID": 10,
+            "UserName": "Christopher Cook",
+            "Comment": "Good spot near shops.",
+            "Rating": 5,
+            "DateCreated": "2021-06-17T01:31:42.827Z",
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 441,
+            "ChargePointID": 16670,
+            "CommentTypeID": 10,
+            "UserName": "",
+            "Comment": "Lock side still not operational",
+            "Rating": 4,
+            "DateCreated": "2013-09-23T13:15:40.923Z",
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 415,
+            "ChargePointID": 16670,
+            "CommentTypeID": 10,
+            "UserName": "",
+            "Comment": "",
+            "Rating": 4,
+            "DateCreated": "2013-08-29T15:50:27.983Z",
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 28175,
+            "ChargePointID": 16670,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM16670/OCM-16670.orig.2021061701304136.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM16670/OCM-16670.thmb.2021061701304136.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "DateCreated": "2021-06-17T01:31:00Z"
+        },
+        {
+            "ID": 28174,
+            "ChargePointID": 16670,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM16670/OCM-16670.orig.2021061701301172.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM16670/OCM-16670.thmb.2021061701301172.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "DateCreated": "2021-06-17T01:30:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-07-13T12:21:00Z",
+    "ID": 16670,
+    "UUID": "57071C69-FB07-4786-B92A-301CF96E3099",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.60 per kwh",
+    "AddressInfo": {
+        "ID": 17015,
+        "Title": "RAC, West Perth",
+        "AddressLine1": "832 Wellington Street",
+        "Town": "West Perth",
+        "StateOrProvince": "WA",
+        "Postcode": "6003",
+        "CountryID": 18,
+        "Latitude": -31.947956,
+        "Longitude": 115.84884,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 91328,
+            "ConnectionTypeID": 2,
+            "Reference": "4524",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 200,
+            "Voltage": 920,
+            "PowerKW": 350,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 91329,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 63,
+            "Voltage": 400,
+            "PowerKW": 43,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 91330,
+            "ConnectionTypeID": 33,
+            "Reference": "4524",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 500,
+            "Voltage": 920,
+            "PowerKW": 350,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-13T12:21:00Z",
+    "DateCreated": "2013-05-29T01:08:00Z",
+    "SubmissionStatusTypeID": 200
+}

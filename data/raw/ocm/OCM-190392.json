@@ -1,0 +1,51 @@
+{
+    "DateLastVerified": "2023-07-16T12:45:00Z",
+    "ID": 190392,
+    "UUID": "274032CF-DE67-4D93-ACBE-350553AEB6F8",
+    "DataProviderID": 1,
+    "OperatorID": 3398,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.60 per kWh",
+    "AddressInfo": {
+        "ID": 190751,
+        "Title": "Evie Macksville",
+        "AddressLine1": "24 Cooper St",
+        "AddressLine2": "Ampol Foodary",
+        "Town": "Macksville",
+        "StateOrProvince": "New South Wales",
+        "Postcode": "2447",
+        "CountryID": 18,
+        "Latitude": -30.709970892832544,
+        "Longitude": 152.91982301754945,
+        "ContactTelephone1": "1300 463 843",
+        "AccessComments": "https://goevie.com.au/our-network/",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308648,
+            "ConnectionTypeID": 33,
+            "Reference": "HS009",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 350,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 308649,
+            "ConnectionTypeID": 2,
+            "Reference": "HS009",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 350,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-16T12:45:00Z",
+    "DateCreated": "2021-12-04T05:14:00Z",
+    "SubmissionStatusTypeID": 200
+}

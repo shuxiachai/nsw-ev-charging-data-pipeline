@@ -1,0 +1,297 @@
+{
+ "currentVersion": 10.91,
+ "cimVersion": "2.9.0",
+ "id": 2,
+ "name": "Suburb",
+ "type": "Feature Layer",
+ "description": "",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 4283,
+  "latestWkid": 4283,
+  "xyTolerance": 8.983153E-9,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -400,
+  "falseY": -400,
+  "xyUnits": 9.999999999999999E8,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 500000,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSFS",
+    "style": "esriSFSSolid",
+    "color": [
+     252,
+     210,
+     209,
+     0
+    ],
+    "outline": {
+     "type": "esriSLS",
+     "style": "esriSLSSolid",
+     "color": [
+      0,
+      112,
+      255,
+      255
+     ],
+     "width": 1
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": 140.9992706408641,
+  "ymin": -37.50533907199997,
+  "xmax": 159.1054303410001,
+  "ymax": -28.15700708930526,
+  "spatialReference": {
+   "wkid": 7844,
+   "latestWkid": 7844,
+   "xyTolerance": 8.983152841195215E-9,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -400,
+   "falseY": -400,
+   "xyUnits": 9.999999999999999E8,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "suburbname",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "cadid",
+   "type": "esriFieldTypeInteger",
+   "alias": "cadid",
+   "domain": null
+  },
+  {
+   "name": "createdate",
+   "type": "esriFieldTypeDate",
+   "alias": "createdate",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "modifieddate",
+   "type": "esriFieldTypeDate",
+   "alias": "modifieddate",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "suburbname",
+   "type": "esriFieldTypeString",
+   "alias": "suburbname",
+   "length": 40,
+   "domain": null
+  },
+  {
+   "name": "postcode",
+   "type": "esriFieldTypeInteger",
+   "alias": "postcode",
+   "domain": null
+  },
+  {
+   "name": "state",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "State",
+   "domain": null
+  },
+  {
+   "name": "startdate",
+   "type": "esriFieldTypeDate",
+   "alias": "startdate",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "enddate",
+   "type": "esriFieldTypeDate",
+   "alias": "enddate",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "lastupdate",
+   "type": "esriFieldTypeDate",
+   "alias": "lastupdate",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "msoid",
+   "type": "esriFieldTypeInteger",
+   "alias": "msoid",
+   "domain": null
+  },
+  {
+   "name": "centroidid",
+   "type": "esriFieldTypeInteger",
+   "alias": "centroidid",
+   "domain": null
+  },
+  {
+   "name": "shapeuuid",
+   "type": "esriFieldTypeString",
+   "alias": "shapeuuid",
+   "length": 38,
+   "domain": null
+  },
+  {
+   "name": "changetype",
+   "type": "esriFieldTypeString",
+   "alias": "changetype",
+   "length": 2,
+   "domain": null
+  },
+  {
+   "name": "processstate",
+   "type": "esriFieldTypeString",
+   "alias": "processstate",
+   "length": 5,
+   "domain": null
+  },
+  {
+   "name": "urbanity",
+   "type": "esriFieldTypeString",
+   "alias": "urbanity",
+   "length": 2,
+   "domain": null
+  },
+  {
+   "name": "shape_Length",
+   "type": "esriFieldTypeDouble",
+   "alias": "shape_Length",
+   "domain": null
+  },
+  {
+   "name": "shape_Area",
+   "type": "esriFieldTypeDouble",
+   "alias": "shape_Area",
+   "domain": null
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape"
+ },
+ "indexes": [
+  {
+   "name": "FDO_OBJECTID",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "FDO_shape",
+   "fields": "shape",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 2000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": false
+ },
+ "supportsDatumTransformation": true,
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeAreaFieldName": "shape_Area",
+  "shapeLengthFieldName": "shape_Length",
+  "units": "esriDecimalDegrees"
+ },
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true,
+ "serviceItemId": "1b804b295ef9466987709b56cc1007b3"
+}

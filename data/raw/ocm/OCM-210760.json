@@ -1,0 +1,103 @@
+{
+    "MediaItems": [
+        {
+            "ID": 36045,
+            "ChargePointID": 210760,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM210760/OCM-210760.orig.2022122507283822.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM210760/OCM-210760.thmb.2022122507283822.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 37021,
+                "Username": "Myles"
+            },
+            "DateCreated": "2022-12-25T07:29:00Z"
+        },
+        {
+            "ID": 36044,
+            "ChargePointID": 210760,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM210760/OCM-210760.orig.2022122507060380.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM210760/OCM-210760.thmb.2022122507060380.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 37021,
+                "Username": "Myles"
+            },
+            "DateCreated": "2022-12-25T07:06:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-07-12T22:43:00Z",
+    "ID": 210760,
+    "UUID": "0A54647D-FAF2-4C49-A209-100852BA10A8",
+    "DataProviderID": 1,
+    "OperatorID": 3398,
+    "UsageTypeID": 4,
+    "UsageCost": "50c per kWh energy consumed.",
+    "AddressInfo": {
+        "ID": 211140,
+        "Title": "Payneham Road",
+        "AddressLine1": "487 Lower North East Rd",
+        "AddressLine2": "",
+        "Town": "Felixstow",
+        "StateOrProvince": "South Australia",
+        "Postcode": "5070",
+        "CountryID": 18,
+        "Latitude": -34.88922847586827,
+        "Longitude": 138.65557887274917,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 351202,
+            "ConnectionTypeID": 2,
+            "Reference": "MA004A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 351203,
+            "ConnectionTypeID": 33,
+            "Reference": "MA004A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 466703,
+            "ConnectionTypeID": 33,
+            "Reference": "MA004B",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 466704,
+            "ConnectionTypeID": 2,
+            "Reference": "MA004B",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-12T22:43:00Z",
+    "DateCreated": "2022-12-17T23:16:00Z",
+    "SubmissionStatusTypeID": 200
+}

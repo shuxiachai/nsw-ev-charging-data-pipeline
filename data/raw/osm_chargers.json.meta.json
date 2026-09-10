@@ -1,0 +1,9 @@
+{
+  "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3Bnwr%5B%22amenity%22%3D%22charging_station%22%5D%28-37.6%2C140.9%2C-28.0%2C153.7%29%3Bout+center+tags%3B",
+  "resolved_url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3Bnwr%5B%22amenity%22%3D%22charging_station%22%5D%28-37.6%2C140.9%2C-28.0%2C153.7%29%3Bout+center+tags%3B",
+  "retrieved_at_utc": "2026-09-06T01:01:28.485631+00:00",
+  "sha256": "92a65d9d9cf64ba4f30c79ed278f4c788acd6206e6db9715f499c352793b994c",
+  "bytes": 254645,
+  "etag": null,
+  "last_modified": null
+}

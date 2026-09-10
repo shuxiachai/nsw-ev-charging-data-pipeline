@@ -1,0 +1,90 @@
+{
+    "UserComments": [
+        {
+            "ID": 21603,
+            "ChargePointID": 132642,
+            "CommentTypeID": 10,
+            "UserName": "Sarah C Tesla M3",
+            "Comment": "BYO cable",
+            "Rating": 4,
+            "DateCreated": "2019-10-05T10:44:46.363Z",
+            "User": {
+                "ID": 22587,
+                "Username": "Sarah C Tesla M3"
+            },
+            "CheckinStatusTypeID": 210
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 19821,
+            "ChargePointID": 132642,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM132642/OCM-132642.orig.2019100503194929.png",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM132642/OCM-132642.thmb.2019100503194929.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "DateCreated": "2019-10-05T03:20:00Z"
+        },
+        {
+            "ID": 19820,
+            "ChargePointID": 132642,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM132642/OCM-132642.orig.2019100503173690.png",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM132642/OCM-132642.thmb.2019100503173690.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1000,
+                "Username": "Christopher Cook"
+            },
+            "DateCreated": "2019-10-05T03:18:00Z"
+        }
+    ],
+    "DateLastVerified": "2024-09-09T07:07:00Z",
+    "ID": 132642,
+    "UUID": "5AE19C71-2732-41BB-975D-B7AD0C510BA2",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 132988,
+        "Title": "McDonald's",
+        "AddressLine1": "Hartung Lane West",
+        "AddressLine2": "Mundaring",
+        "Town": "Perth",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6073",
+        "CountryID": 18,
+        "Latitude": -31.9008869,
+        "Longitude": 116.163497,
+        "AccessComments": "EvLink station, requires BYO type 2 cable.",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 185706,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 100,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 240,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 100,
+    "DateLastStatusUpdate": "2024-09-09T07:07:00Z",
+    "DateCreated": "2019-10-05T03:08:00Z",
+    "SubmissionStatusTypeID": 200
+}

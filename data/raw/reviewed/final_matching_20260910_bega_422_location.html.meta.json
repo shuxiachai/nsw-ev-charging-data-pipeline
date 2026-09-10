@@ -1,0 +1,10 @@
+{
+  "url": "https://obh.org.au/Hospital/location.htm",
+  "resolved_url": "https://obh.org.au/Hospital/location.htm",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:13:59.149286+00:00",
+  "sha256": "84d57011e8723f1864b397fecdab298e5fba81ba63c5acb6136733bc8e372a7f",
+  "bytes": 4114,
+  "content_type": "text/html"
+}

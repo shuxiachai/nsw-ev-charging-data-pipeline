@@ -1,0 +1,2099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>NRMA EV Charging Network Nov 2022</name>
+    <description/>
+    <Style id="icon-1853-FBC02D-normal">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1853-FBC02D-highlight">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1853-FBC02D">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1853-FBC02D-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1853-FBC02D-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Delivered</name>
+      <Placemark>
+        <name>NRMA Fast Charger West Wyalong</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            147.2036694,-33.923758,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Coonabarabran </name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.2791598,-31.2786955,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Tenterfield </name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            152.0186428,-29.057221,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Broken Hill</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            141.4599722,-31.9599864,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Thrumster</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            152.8274162,-31.4580989,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Mildura</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            142.162872,-34.1887274,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA AC Charger - ICC P1 Car Park</name>
+        <description><![CDATA[14 Darling Dr Sydney NSW 2000 (Located within the Exhibition Centre and open 24/7)<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.198738365632,-33.8750891500525,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA AC Charger - ICC P2 Car Park</name>
+        <description><![CDATA[88 Darling Dr Sydney/ Haymarket NSW 2000 (Located within Aware Super Theatre and open 24/7)<br><br>5 chargers are available<br>1x Type 2 plug are available on each charger<br>Speed: 7kW<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.200004214916,-33.876743729488,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Lithgow</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.1609907,-33.4780155,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Inverell</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.113932,-29.775842,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Nyngan</name>
+        <description><![CDATA[Located inside car park<br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            147.197009,-31.564313,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Tanunda</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            138.9582421,-34.5247319,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Mudgee (Short Street)</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.585898,-32.589666,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Batemans Bay -Vesper Street</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.1738264,-35.7096944,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger - Moree</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.841568,-29.465303,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger - Dorrigo</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            152.711863,-30.340144,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Ewingsdale </name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            153.5538664,-28.6360204,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger - Walcha</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.59327,-30.985246,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Cowra</name>
+        <description><![CDATA[Located inside Art Gallery car park. <br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.6943701,-33.8340897,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Cobar</name>
+        <description><![CDATA[Located inside car park.<br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            145.8377362,-31.498598,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Hay</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            144.8428638,-34.5087824,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger - Braidwood</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.799065,-35.446033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger - Gilgandra</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.657691,-31.710955,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Pokolbin</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.2982486,-32.7734377,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Wollongong</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.9001707,-34.4283317,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Bathurst</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.5867701,-33.437558,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Casino</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            153.0484739,-28.865937,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Berri</name>
+        <description><![CDATA[Please be advised that we are currently experiencing a technical issue that has temporarily reduced the charging power at our stations. We are working diligently to resolve the issue as quickly as possible. In the meantime, please note the following adjustments:<br>Berri #1: Charging power is limited to 75kW<br>Berri #2: Charging power is limited to 25W<br><br>We apologise for any inconvenience this may cause and appreciate your understanding and patience as we work to restore full charging capacity.<br><br>Thank you for your cooperation.<br><br>Located inside carpark (Cnr Gilbert & Ahern Streets)<br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            140.6037046,-34.285623,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Nuriootpa</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            138.9977913,-34.4711155,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Balranald </name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            143.5647023,-34.6395331,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Coonamble </name>
+        <description><![CDATA[Located inside car park.<br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.387905,-30.9527772,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Young</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.2949093,-34.3119035,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Alice Springs</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            133.882407,-23.701922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Nullarbor</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            130.8972442,-31.4499845,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Cabarita</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            153.5641437,-28.3316968,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Scone</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.8666636,-32.0504269,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Tamworth</name>
+        <description><![CDATA[Located inside Hands of Fame Park<br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.9274788,-31.0904343,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Adelaide River</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            131.1065512,-13.2387236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Warumungu</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            134.2082949,-19.4365573,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Katherine</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            132.2664637,-14.4667664,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Nanango</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            152.0012911,-26.6699768,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Monto</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.1214364,-24.8636952,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Glen Innes</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.7362845,-29.7384675,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Ararat </name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            142.9264226,-37.2850367,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Sydney Olympic Park</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.0698001,-33.8460275,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Berry</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.7010568,-34.7756058,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Holbrook</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            147.3176963,-35.7176456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Port Pirie</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            138.0680882,-33.1579815,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Mataranka</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            133.0658308,-14.9227698,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Wycheproof</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            143.2252793,-36.0754304,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Wallsend</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.6697665,-32.9027147,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Armidale</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.625272,-30.5879168,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Airlie Beach</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.7031052,-20.2763479,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Ouyen</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            142.3201938,-35.0711991,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger- Bourke</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            145.935003,-30.08853,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Prestons</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.8750193,-33.9304674,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Orange</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.102683,-33.2814356,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Wagga Wagga</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            147.373713,-35.1083395,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Dubbo</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.6093675,-32.2493347,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Biloela</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.5141663,-24.4051677,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Goomeri</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            152.0686988,-26.1850823,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Queanbeyan</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.2335999,-35.3549335,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Jindabyne</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.6197808,-36.4160735,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Wandong</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            145.0266095,-37.358544,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Lithgow</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.1589265,-33.4811315,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Morven</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            147.1263352,-26.4110014,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Port Wakefield</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            138.1550891,-34.1888383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Wilcannia </name>
+        <description><![CDATA[Located in front of Hospital<br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            143.3856134,-31.5574253,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Maryborough</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            152.7061959,-25.5345791,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Mackay</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.184760077173,-21.1428148898756,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Rockhampton</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.5131668,-23.382761,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Bathurst - Stanley St</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.5855888,-33.4135771,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Euston</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            142.746189,-34.5776178,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Gayndah</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.6148181,-25.6279887,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Atherton</name>
+        <description><![CDATA[Located in Railway Lane Car Park<br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            145.475018444327,-17.2654740206068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Picton</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.610914,-34.1682799,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Nowra</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.6004339,-34.8728322,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Parkes</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.1726235,-33.1372098,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Marong</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            144.1337694,-36.7347746,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Gunnedah</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.2509491,-30.9781149,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Grafton</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            152.9331895,-29.6883743,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Temora</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            147.5343486,-34.4459779,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Walgett</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.1177478,-30.020713,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Yass</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.9124838,-34.8412321,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Narrandera</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            146.5501999,-34.7465165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Shepparton</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            145.4017924,-36.3775007,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Moruya</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.0794921,-35.9128334,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Wauchope</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            152.732723,-31.4561261,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Ghan</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            133.2011435,-25.1982385,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Nabiac</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            152.3815741,-32.0990659,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Mt Gambier</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            140.7473434,-37.8114459,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Molong</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.8706612,-33.0912006,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Christmas Hills</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            146.5978727,-41.4837711,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Bega</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.8431415,-36.6732705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Maitland</name>
+        <description><![CDATA[We’re pleased to announce that our Maitland site is now fully commissioned and ready for use. Over the coming weeks, we’ll be undertaking further optimisation works to enhance performance and ensure everything runs as smoothly and efficiently as possible.<br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.5535599,-32.732981,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Border Village</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            129.0037042,-31.6384115,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Calliope</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.1964366,-24.0050742,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Manjimup</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            116.1488198,-34.2393339,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Ingham</name>
+        <description><![CDATA[Enter via Hawkins Street or Fanning Street. Located in the car park behind the cafes, banks and shops.<br><br>Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            146.1537984,-18.6495722,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Mittagong</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.4424426,-34.4500891,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Crows Nest</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.2017585,-33.8270996,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Barcaldine</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            145.2967,-23.5495126,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Jugiong</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.3256679,-34.823443,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger- Brewarrina</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            146.857746,-29.960712,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Albury</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            146.9143513,-36.0837322,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Lakes Entrance</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            147.9857543,-37.8803765,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Eneabba</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            115.271987,-29.8186712,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Colac</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            143.5885855,-38.3407918,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Moss Vale</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.3641488,-34.5539935,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Jerilderie Kennedy St</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            145.724102,-35.355725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Penrith</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            150.6815422,-33.765022,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Yulara</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            130.989840923228,-25.2402674453773,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Dingo</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.335053,-23.650884,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Alpha</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            146.6384759,-23.6487491,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Dubbo</name>
+        <description><![CDATA[<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.5894869,-32.2546018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Yass Crago Mill Precinct</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.913421,-34.844959,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charger Ceduna</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            133.676935,-32.126303,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Toowoomba</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.9504709,-27.5979538,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Mount Isa</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            139.4926331,-20.7250683,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Dubbo</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            148.588545,-32.254668,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Narrabri</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.784033,-30.3247856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Devils Marbles</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            134.2231878,-20.6403678,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Ti Tree</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            133.413403,-22.1283019,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Longreach</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            144.2742312,-23.4377686,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Coorabie</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            132.2251483,-31.7929482,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Warrnambool</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            142.533338,-38.385484,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Goulburn</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            149.7495456,-34.7480195,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Charging Station Agnes Water</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            151.903801,-24.211869,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Gregory</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            130.4806054,-15.6616771,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Kimba</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            136.4217336,-33.1417643,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Julia Creak</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            141.7410443,-20.6576586,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NRMA Fast Charging Station Cloncurry</name>
+        <description><![CDATA[Download the app for real-time status updates, charger details and pricing information.<br><br>Quarter: ]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            140.5058974,-20.7068942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Coming soon</name>
+      <Placemark>
+        <name>Coming Soon: NRMA Charging Station Camooweal</name>
+        <description><![CDATA[description: Target Opening: Q1 2027<br>Quarter: ]]></description>
+        <styleUrl>#icon-1853-FBC02D</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>Target Opening: Q1 2027</value>
+          </Data>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            138.117859,-19.921175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Coming Soon: NRMA Fast Charging Station Wangaratta</name>
+        <description><![CDATA[description: Target Opening: Q1 2027<br>Quarter: ]]></description>
+        <styleUrl>#icon-1853-FBC02D</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>Target Opening: Q1 2027</value>
+          </Data>
+          <Data name="Quarter">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            146.316606,-36.358145,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,66 @@
+{
+    "MediaItems": [
+        {
+            "ID": 39586,
+            "ChargePointID": 202097,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM202097/OCM-202097.orig.2023091604562214.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM202097/OCM-202097.thmb.2023091604562214.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 21580,
+                "Username": "EVReecho"
+            },
+            "DateCreated": "2023-09-16T04:56:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-09-16T04:56:00Z",
+    "ID": 202097,
+    "UUID": "ED3038AB-BCFB-481E-94FC-3929D0F96A0D",
+    "DataProviderID": 1,
+    "OperatorID": 3554,
+    "UsageTypeID": 1,
+    "UsageCost": "DC Charging - $0.60 per kWh at all times",
+    "AddressInfo": {
+        "ID": 202464,
+        "Title": "Northampton (WA EV Network)",
+        "AddressLine1": "Stephen Street",
+        "Town": "Northampton",
+        "StateOrProvince": "Western Australia",
+        "CountryID": 18,
+        "Latitude": -28.351800700760847,
+        "Longitude": 114.63081886035513,
+        "RelatedURL": "",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 337768,
+            "ConnectionTypeID": 33,
+            "Reference": "6207",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 435573,
+            "ConnectionTypeID": 25,
+            "Reference": "1528",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-09-16T04:56:00Z",
+    "DateCreated": "2022-09-07T07:10:00Z",
+    "SubmissionStatusTypeID": 200
+}

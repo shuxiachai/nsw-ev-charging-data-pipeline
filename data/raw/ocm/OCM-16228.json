@@ -1,0 +1,46 @@
+{
+    "DateLastVerified": "2022-12-23T21:59:00Z",
+    "ID": 16228,
+    "UUID": "F3DCDA04-5798-4294-8F33-67E43B6BD403",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 2,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 16573,
+        "Title": "Department of Biodiversity, Conservation and Attractions KMCSC",
+        "AddressLine1": "17 Dick Perry Ave",
+        "AddressLine2": "",
+        "Town": "Kensington",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6151",
+        "CountryID": 18,
+        "Latitude": -31.996175311870495,
+        "Longitude": 115.88449479477242,
+        "ContactTelephone1": "",
+        "ContactTelephone2": "",
+        "ContactEmail": "",
+        "AccessComments": "",
+        "RelatedURL": "",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 14664,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 240,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-23T21:59:00Z",
+    "DateCreated": "2013-03-17T13:37:00Z",
+    "SubmissionStatusTypeID": 200
+}

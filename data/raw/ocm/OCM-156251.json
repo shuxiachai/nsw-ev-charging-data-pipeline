@@ -1,0 +1,102 @@
+{
+    "UserComments": [
+        {
+            "ID": 24887,
+            "ChargePointID": 156251,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Tight access",
+            "Rating": 3,
+            "DateCreated": "2021-09-24T07:33:47.373Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 29331,
+            "ChargePointID": 156251,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM156251/OCM-156251.orig.2021092408032842.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM156251/OCM-156251.thmb.2021092408032842.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-24T08:04:00Z"
+        },
+        {
+            "ID": 29330,
+            "ChargePointID": 156251,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM156251/OCM-156251.orig.2021092407354525.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM156251/OCM-156251.thmb.2021092407354525.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-24T07:36:00Z"
+        },
+        {
+            "ID": 29329,
+            "ChargePointID": 156251,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM156251/OCM-156251.orig.2021092407351821.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM156251/OCM-156251.thmb.2021092407351821.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-09-24T07:35:00Z"
+        }
+    ],
+    "DateLastVerified": "2021-10-13T05:56:00Z",
+    "ID": 156251,
+    "UUID": "18FBDED8-E38E-4E48-9A33-27E2ADE32B66",
+    "DataProviderID": 1,
+    "OperatorID": 5,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+        "ID": 156605,
+        "Title": "Garden City Shopping Centre",
+        "AddressLine1": "",
+        "Town": "Melville City",
+        "StateOrProvince": "WA",
+        "CountryID": 18,
+        "Latitude": -32.034642790058726,
+        "Longitude": 115.83481653094255,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 219886,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-10-13T05:56:00Z",
+    "DateCreated": "2020-05-13T06:53:00Z",
+    "SubmissionStatusTypeID": 200
+}

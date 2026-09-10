@@ -1,0 +1,429 @@
+{
+    "UserComments": [
+        {
+            "ID": 25380,
+            "ChargePointID": 148393,
+            "CommentTypeID": 50,
+            "UserName": "Wild Rice",
+            "Comment": "Tesla HPWC has been removed, probably permanently. The three phase 32 amp outlet remains but it seems to be unpowered. This site may have been decommissioned. ",
+            "DateCreated": "2022-02-12T12:40:56.09Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 50,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 25007,
+            "ChargePointID": 148393,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Using 3 phase outlet, all okay. Getting 240 volt, 16 amp, 3 phase and 12 kW.",
+            "Rating": 4,
+            "DateCreated": "2021-11-03T16:02:33.127Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24952,
+            "ChargePointID": 148393,
+            "CommentTypeID": 1000,
+            "UserName": "Wild Rice",
+            "Comment": "Tesla car reports missing phases. See photo",
+            "DateCreated": "2021-10-16T10:31:22.81Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24708,
+            "ChargePointID": 148393,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Location busy today. On the 3 phase outlet. 11kW",
+            "Rating": 4,
+            "DateCreated": "2021-08-09T04:14:48.767Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24367,
+            "ChargePointID": 148393,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 5,
+            "DateCreated": "2021-05-20T01:34:51.283Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24350,
+            "ChargePointID": 148393,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 4,
+            "DateCreated": "2021-05-17T03:15:23.26Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24339,
+            "ChargePointID": 148393,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Old faithful ",
+            "Rating": 5,
+            "DateCreated": "2021-05-15T07:34:08.623Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24149,
+            "ChargePointID": 148393,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 5,
+            "DateCreated": "2021-04-08T06:15:27.32Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24117,
+            "ChargePointID": 148393,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "11kw",
+            "Rating": 5,
+            "DateCreated": "2021-04-04T17:37:47.477Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24098,
+            "ChargePointID": 148393,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Good place to stop ",
+            "Rating": 5,
+            "DateCreated": "2021-04-01T05:51:49.887Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 39585,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2023091512100656.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2023091512100656.jpg",
+            "Comment": "Parking bay chocks removed to aid non Teslas to charge.",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2023-09-15T12:10:00Z"
+        },
+        {
+            "ID": 30741,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2022021212361082.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2022021212361082.jpg",
+            "Comment": "Tesla HPWC removed. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2022-02-12T12:36:00Z"
+        },
+        {
+            "ID": 30740,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2022021212223437.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2022021212223437.jpg",
+            "Comment": "Tesla HPWC removed. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2022-02-12T12:23:00Z"
+        },
+        {
+            "ID": 29725,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2021110602150821.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2021110602150821.jpg",
+            "Comment": "Missing phase ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-11-06T02:15:00Z"
+        },
+        {
+            "ID": 29526,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2021101610343392.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2021101610343392.jpg",
+            "Comment": "Missing phases, drops back to 15 amp single phase. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-10-16T10:35:00Z"
+        },
+        {
+            "ID": 28934,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2021080904155069.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2021080904155069.jpg",
+            "Comment": "Three phase charging ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-08-09T04:16:00Z"
+        },
+        {
+            "ID": 27153,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2021040417420448.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2021040417420448.jpg",
+            "Comment": "View from south entrance ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-04T17:42:00Z"
+        },
+        {
+            "ID": 27152,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2021040417411360.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2021040417411360.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-04T17:41:00Z"
+        },
+        {
+            "ID": 27151,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2021040417401937.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2021040417401937.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-04T17:40:00Z"
+        },
+        {
+            "ID": 27104,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2021040105510464.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2021040105510464.jpg",
+            "Comment": "View from the south entrance ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-01T05:51:00Z"
+        },
+        {
+            "ID": 27103,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2021040105494317.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2021040105494317.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-01T05:50:00Z"
+        },
+        {
+            "ID": 27102,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2021040105491722.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2021040105491722.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-01T05:49:00Z"
+        },
+        {
+            "ID": 25456,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2020111422285690.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2020111422285690.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-11-14T22:29:00Z"
+        },
+        {
+            "ID": 25455,
+            "ChargePointID": 148393,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.orig.2020111422271146.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM148393/OCM-148393.thmb.2020111422271146.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-11-14T22:27:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-09-15T12:10:00Z",
+    "ID": 148393,
+    "UUID": "40096043-B1DF-4147-A092-53FF3A53B12E",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "OperatorsReference": "29665",
+    "UsageTypeID": 7,
+    "UsageCost": "$0.50 / kWh for non Woolshed customers",
+    "AddressInfo": {
+        "ID": 148745,
+        "Title": "Williams Woolshed",
+        "AddressLine1": "101 Albany Highway",
+        "Town": "Williams",
+        "StateOrProvince": "WA",
+        "Postcode": "6391",
+        "CountryID": 18,
+        "Latitude": -33.0251679447563,
+        "Longitude": 116.878630733403,
+        "ContactTelephone1": "tel:+61447575156",
+        "RelatedURL": "",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 206019,
+            "ConnectionTypeID": 1041,
+            "StatusTypeID": 100,
+            "LevelID": 1,
+            "Amps": 16,
+            "Voltage": 0,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        },
+        {
+            "ID": 206020,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 200,
+            "LevelID": 2,
+            "Amps": 16,
+            "PowerKW": 11,
+            "CurrentTypeID": 20,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "81-J",
+    "StatusTypeID": 100,
+    "DateLastStatusUpdate": "2023-09-15T12:10:00Z",
+    "DateCreated": "2020-02-01T03:06:00Z",
+    "SubmissionStatusTypeID": 200
+}

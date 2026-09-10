@@ -1,0 +1,293 @@
+# Database and engineering decisions
+
+## Grain and relationships
+
+`location` represents a canonical-address/coordinate/operator combination;
+`charger_record` represents one retained TfNSW record. This separation prevents
+two records about the same location from doubling the location count. Original
+rows and heterogeneous charger configurations stay available for auditing.
+One normalized `operator` can serve many locations. One ABS `region` can contain
+many locations. SA4 codes and postcodes are strings, preserving their role as
+identifiers rather than measurements.
+
+Address identity removes formatting differences in commas, whitespace and case,
+an optional trailing `Australia` or `Commonwealth of Australia`, and a trailing
+four-digit postcode immediately following `NSW`. The state token, unit slashes,
+street-number ranges and floor labels remain significant. This normalization
+affects the identity key only: source addresses and postcode evidence are kept.
+The key also requires the same canonical operator and coordinates rounded to six
+decimals. It does not cluster nearby points or infer that different numbered
+premises are the same site.
+
+For the supplied input, this handles 11 groups of formatting variants. Ten
+explicitly reviewed same-site groups are merged by full source-value and
+membership guards in `config/reviewed_identities.json`. Together with Figtree,
+there are 21 locations with multiple source records, including one three-record
+location. `reviewed_identity` records all twenty-one reviewed members and their
+original IDs. The ten groups use fixed whole-row representatives (source rows
+575, 1308, 1590, 817, 1562, 1398, 307, 361, 1528 and 1861), preserving original
+coordinates and heterogeneous equipment values. Other locations use the most
+complete source row across station name, postcode and
+LGA, with source row breaking ties and first-location
+order retained. Its original fields remain together; another observation may
+contain a name absent from the selected representative and remains accessible in
+the retained source records. Address-conflict flags aggregate across all records
+in the location. Conflicting equipment observations are retained and flagged,
+not summed into an invented location-level plug count.
+
+The Cowell Street and Parraween Street reviews join duplicate observations from
+Existing Fast Chargers and Kerbside Charging R1. Council evidence establishes
+venue identity; proximity alone does not authorize these merges. Each review
+guards the full source rows, membership, representative and pinned publication
+semantics. All four source observations remain in the database. See
+[the detailed evidence](identity_evie_council_20260910.md).
+
+Source-specific `external_site`, `osm_site` and `jolt_site` tables preserve source
+identifiers without pretending that their records have identical semantics.
+Each source has an accepted-match table with a unique external site constraint.
+OCM connector rows are separate because a station can have several connector
+types. `augmentation` is an attributed observation table, not a single
+unqualified 'best' value. Its constraints distinguish operator from site scope
+and require exactly one site source for a site observation.
+
+`source_snapshot` holds raw file provenance; `quality_issue` holds row-linked
+diagnostics. `source_resolution` records the automatic OCM/OSM stage, including
+unresolved decisions, original/corrected values and supporting source IDs.
+`reviewed_resolution` records a later, individually reviewed correction without
+rewriting the automatic stage's history. Its primary key references
+`charger_record`; three required foreign keys reference the coordinate,
+corroborating and address-evidence originals in `source_snapshot`. An optional
+fourth foreign key and paired locator retain supporting address evidence; Wagga
+requires both council originals. Independent validation compares these evidence
+relationships with the pinned review configuration. The table also retains
+source element IDs, distances, old/new values, reason and fixed review date.
+`corroborating_role` distinguishes six operator charging-point comparisons from
+Walcha's mapped police-building landmark. Independent validation checks the
+role against the configured source kind.
+
+`reviewed_match_exclusion` binds one withheld location/OCM pair to its retained
+source record, external record and two complete council originals. Its ledger
+is checked against the original values and pinned metadata; validation also
+requires that the withheld pair contributes no site match or OCM attribute.
+
+`reviewed_identity_evidence` links identity review groups to source snapshots,
+evidence roles and publisher element IDs. Validation requires the complete
+configured evidence rows, checks their hashes and ensures each review group
+has the configured membership in `reviewed_identity`.
+
+PKs/FKs/check constraints prevent orphan rows and malformed relationships; a
+resolved automatic decision requires non-null supporting scores and distances.
+Region and location geometries use EPSG:4326, with R-tree indexes for spatial
+queries. `dc_locations` and `dc_augmentation_coverage` provide distinct-location
+analysis views, keeping site-specific and operator-level augmentation separate.
+
+The design normalizes reused entities but intentionally keeps raw JSON and
+source text. This modest redundancy supports auditability and avoids irreversible
+information loss. A fully wide station table would obscure source conflicts;
+a single unstructured JSON store would weaken validation and SQL usability.
+
+## Engineering checks
+
+| Dimension | Implementation and practical limit |
+| --- | --- |
+| Correctness | Schema validation, explicit units, source preservation, unique spatial assignment, conservative matches, PK/FK/check constraints and independent SQL verification. Source coordinate/address truth remains uncertain for flagged records. |
+| Efficiency | One cached bulk query per applicable source, six bounded OCM download workers, spatial candidate index instead of all-pairs comparison, bulk DataFrame inserts. |
+| Scalability | OCM Git Tree listing avoids the Contents API's 1,000-entry cap; matching uses indexed local candidates. Processing is an in-memory batch, suitable for this assignment, not a claim of unlimited distributed scalability. Larger inputs would need partitioned ingestion and incremental storage. |
+| Robustness | HTTP timeouts/retry/backoff, immutable hash-checked cache, explicit incomplete-Overpass failure, JSON parsing and offline mode. Failed downloads remove temporary files; a missing cached body can only be restored with its original manifest hash. Database publication follows successful validation and exports. A changed upstream schema or reviewed source fails explicitly. |
+| Security | HTTPS verification stays enabled; optional credentials remain in environment/header; no embedded website keys or private APIs; external text is data, not SQL or executable code. DDL/table identifiers are code constants; downloaded content is inserted through registered DataFrames. |
+| Privacy | No user account or personal location is needed. Public OCM raw snapshots may include contributor comments; analytical tables do not extract user profiles/comments. Do not repurpose raw contributor metadata. |
+| Ease of use | One command for the pipeline, pinned dependencies, offline rebuild, explicit output dictionary, standalone SQL, deterministic review files and ZIP packaging. |
+
+## Matching and reviewed corrections
+
+Site matching requires the same known canonical operator, no source-address or
+postcode conflict, and explicit source-specific DC evidence. The nearby route
+allows at most 100 m. The extended route allows more than 100 m and at most 250 m
+with address similarity at least 0.65. Both distance routes reject explicit contradictions
+in the parsed street evidence: different street types on the same named street,
+or disjoint house-number intervals on the same named street and type. Overlapping
+intervals such as `17` and `17-25` remain compatible. Missing or unparsed address
+elements are unknown; different street names can indicate different entrances
+and are not automatically compared as house-number contradictions. The same gate
+is applied to OCM, OSM, JOLT and Ampol candidate selection. It does not independently
+prove the accuracy of matches within 100 m that lack external address evidence.
+
+Candidate scores, ambiguity margins and rejection of reused external sites stay
+explicit. Candidate CSVs retain `extended_address_conflict`, including conflicts
+observed inside the nearby route. One individually reviewed Dan Murphy's address
+range exception retains its exact input/evidence guards and is linked from the
+accepted OCM match to the evidence snapshot; it bypasses no other matching gate.
+Missing operator values cannot establish
+identity. OSM socket presence requires an explicit `yes` or finite positive
+number; malformed tokens do not make token order decide the result. See
+[matching changes and limitations](matching_changes_20260909.md).
+
+The generic coordinate-resolution rule requires an unambiguous
+OCM street/locality match with street similarity at least 0.85, corroborated by a
+same-operator OSM charging point within 150 m. The separate reviewed stage then
+applies only the seven source records listed in `config/reviewed_resolutions.json`.
+Tenterfield, Nyngan, Narrabri, Coonamble and Wagga Wagga use identified OSM points
+and named NRMA KML placemarks; Wollongong uses OCM191177 and NRMA KML within 8.40 m.
+Each requires archived council/operator venue context. The map publication,
+operator identities and distances are verified before any changes.
+Walcha separately uses OCM480135 as an approximate road-reserve site point:
+official town-map and council-address evidence are checked alongside its position
+relative to a pinned OSM police building and Apsley Street. Its landmark is not
+a second charger, and its old NRMA KML does not corroborate the selected point.
+
+The ten address originals and all reused coordinate/publication originals have
+fixed review hashes as well as download manifests. A different document at the
+same URL requires another review. The code checks source identity and reads the
+coordinates from pinned map originals on every run; the address documents were
+reviewed individually rather than interpreted by a general document parser.
+Already resolved records are not overwritten. Failed guards do not leave
+partially applied record changes or quality issues. See
+[the reviewed-resolution evidence and contract](reviewed_resolution_design.md).
+
+## Validation and unresolved issues
+
+Tests cover address-format duplicate pairs with source-evidence preservation,
+distinct unit/number/floor/operator/coordinate identities, representative-row
+selection, multi-rating parsing, invalid power, aliases/country distinctions,
+missing values, source-row conservation, spatial coordinate preservation,
+empty DC candidate sets, nearby operator conflicts, competing candidates,
+external-site reuse, explicit street contradictions, missing operators, socket
+token order/non-finite values, cache tampering, review-source guards and database
+constraints. Failure-path tests cover interrupted downloads, source-manifest
+installation, changed review hashes, stale success records and interrupted ZIP
+creation. Actual-database tests use a distinct DC-location denominator and require
+site-specific coverage of at least 50%. These tests check program behavior; they
+are not an independent accuracy assessment of every source record.
+
+`check_reproducibility.py` compares sorted contents of every base table and every
+generated CSV after an offline rebuild. It does not compare DuckDB physical bytes
+or run timestamps. Inputs/outputs must be present before the check.
+
+The original 25 postcode/address conflicts remain visible: the generic stage
+resolves 11 (ten coordinate changes and one postcode-only change), and the
+archived reviewed stage resolves seven more, leaving seven unresolved. The
+automatic audit can still show `unresolved` for records corrected by the later
+reviewed stage; final unresolved counts must come from final records/locations,
+not that audit alone. Unresolved locations stay in the database and augmentation
+denominator but are excluded from `analysis_ready_locations`. Spatial assignment
+and external matching run after both correction stages.
+
+Wollongong now uses a complete operator article and government planning PDF;
+earlier council URLs returning 403 remain research history. Seven other records
+still lack sufficient reviewed point-to-venue evidence. All seven have separate
+regional reviews: official locality polygons for Braidwood, Walgett, Moree,
+Dorrigo, Inverell, Gilgandra and Narellan are wholly covered by exactly one ABS 2026 SA4 and intersect
+no other SA4. Pinned government/operator/venue sources support the source-to-locality
+inferences; their whole extent is used without clipping, buffering or tolerance.
+These decisions change regional statistics while preserving the uncertain points.
+Published sources can share upstream observations, and old
+council plans or NRMA maps do not establish live operating status. A point reused
+from OCM or OSM cannot subsequently provide an independent zero-distance accuracy
+measurement against that same source. One coastal point receives a bounded,
+labelled nearest-region approximation. Some `Charger_rating='AC'` values contain
+no numerical power. Source configuration counts and plug counts need not be
+interchangeable units.
+
+`reviewed_region` preserves the source-point SA4, reviewed regional SA4, full
+official locality geometry, operator placemark, source identity and fixed review
+decision. `reviewed_region_evidence` stores every source relationship, role,
+locator and pinned hash. The validator reconstructs expected audits from the raw
+CSV, metadata, official polygons and NRMA/Evie maps; compares the complete persisted
+WKB and all audit fields; and independently checks whole-area containment in SQL.
+Changing a reviewed region never clears `address_conflict` or authorizes site
+matching. Regional reviews do not remove records from the DC denominator;
+separately evidenced identity merges can change the distinct-location count.
+
+Use `regional_analysis_locations` for region-level counts. It combines ordinary
+analysis-ready locations with the seven reviewed regional assignments and exposes
+no longitude, latitude or point geometry. `analysis_ready_locations` retains its
+stricter point-use rules. Gilgandra and Narellan now enter the regional view
+through their own reviewed evidence, while remaining excluded from point use.
+`locations.csv` retains point `sa4_code` and adds clearly named `regional_sa4_code`
+and provenance fields; the former must not be substituted for the latter in
+regional reporting. See [regional evidence and limits](regional_sa4_review_20260909.md).
+
+External coverage is uneven and observations have different dates. OCM export
+time is not the same as site verification time. OSM missing tags do not imply
+default availability or opening hours. JOLT station codes are distinct from
+generic operator metadata. Network and EVSE states are separate per-site
+observations parsed from the map captured on 6 September 2026. Nulls/unknowns do
+not imply availability; unrecognized nonempty states require review. Validation
+checks all 173 source states, the 82 attributes on 41 accepted matches, and the
+map's actual bytes, manifest and database capture metadata. The script archived
+on 9 September supports field meanings; it does not change the observation date.
+These dated states are not live availability or December 2025 conditions.
+Two map addresses also contain literal parking-hours notes. These are preserved
+as parking information, without inferring weekdays or charger opening hours,
+and checked against the raw map and accepted source links.
+These limits must remain visible in subsequent analysis/reporting.
+
+The TfNSW filename carries a December 2025 date, while official resource metadata
+identifies an April 2026 effective date. Rechecking current and historical-looking
+URLs confirmed the current official bytes but did not certify a December 2025
+observation period. Retain the [source-version limitation](source_version_review_20260908.md).
+Final dataset and augmentation counts come from `outputs/validation.json` after
+the complete build; earlier review documents may contain different snapshots.
+
+## Publication and verification boundaries
+
+The database is built in a separate temporary file and published only after the
+transaction, SQL checks and required CSV/JSON exports succeed. An earlier failure
+retains the prior completed database. CSV/JSON exports themselves are not one
+atomic transaction: a failed export can leave partial or mixed-generation files.
+Run the build and full verification again before treating them as a completed
+deliverable. Concurrent builds into the same output directory are unsupported.
+
+All pipeline connections use UTC. Logical hashing also normalizes aware
+timestamps by instant, so changing a session's display timezone does not alter
+the signature. Naive timestamps are not assigned an invented timezone; actual
+timestamp changes still invalidate evidence.
+
+Packaging rechecks actual input bytes, logical database contents, generated CSVs,
+raw/manifest pairs, current SQL results and test/reproducibility fingerprints.
+Verification and reproducibility checks revoke old success before running; full
+verification publishes success only after all stages pass and the code/input
+fingerprint remains unchanged. `verify_project.py` captures the test output in
+`outputs/test_run.log`. A checksum-valid cache proves the preserved observation's
+identity, not its correctness or freshness.
+
+ZIP creation uses a temporary archive, checks CRCs and required contents, then
+replaces the prior archive. Internal handoffs, self-grading notes and superseded
+review records remain in the working folder but are excluded from the formal ZIP;
+the main design/source/schema documents and current selected evidence are kept.
+Python dependencies and DuckDB's platform-specific spatial extension require an
+initial installation; later offline runs require both that environment and the
+supplied raw snapshots. The code ZIP remains separate from the required project
+report and AI-usage submission.
+
+## Boundary verification update
+
+The external-review update adds guarded same-site identity mappings, case-stable
+operator names, finite integer input counts, close-address conflict rejection and
+explicit locality compatibility before automatic coordinate correction. Different
+clearly parsed town labels are withheld unless normalized equivalent or covered
+by the restricted reviewed relationship in `config/locality_compatibility.json`.
+Unknown/missing locality is not invented. The Sydney/Parramatta rule requires
+postcode 2150 on both sides and a small reviewed coordinate window; it is not a
+general Sydney wildcard. Current automatic corrections do not depend on it.
+
+Coverage composition is reported separately from overall site coverage. A JOLT
+station code remains site data, but a station-code-only location is distinguished
+from one with connector, access, price-text or other non-identifier information.
+The denominator always includes all retained explicit DC locations. Current
+site and non-identifier coverage are both 245/426 (57.51%), including dated
+status; zero locations are station-code-only. These figures do not mean that
+57.51% gained stable equipment, price or access attributes. Excluding station
+codes and network/EVSE states gives 214/426 (50.23%). Thirteen accepted Ampol
+page links supply explicit connector-type claims, eleven at newly covered
+locations. The full per-location service JSON is retained; repeated Bay 01/02
+labels do not prove device counts and their powers are not adopted. Penrith's
+two source locations both remain withheld under the existing external-site
+reuse rule. See [the latest review](external_review_followup_20260910.md). Four previously weak
+matches gained venue evidence; Stanley Street OCM192687 is withheld pending bay
+identity evidence, retaining JOLT52 and operator observations. See
+[external-review decisions](external_review_actions_20260909.md).
+
+See [the boundary-case review](edge_case_review_20260909.md). Power parsing validates the complete expression; postal parsing requires an explicit suffix; zero-conflict audits and empty OSM responses keep their schema. Street parsing preserves Saint names, and source correction rejects explicit numbered-premises contradictions. The later [continuation review](continuation_review_actions_20260909.md) restores valid The Entrance locality evidence. Source row 727 is now individually reviewed using two complete Wagga council originals linking the address range, land parcels, parking venue and NRMA; the general unit-number rule remains unchanged.
+
+SQL validation independently checks spatial methods, finite distances and the actual nearest coastal region. Analysis/DC views must contain all eligible locations, and their coverage must agree with independently counted base tables. Reproducibility and packaging compare persisted table, view and index definitions plus the entire deterministic validation report, in addition to logical rows and CSVs. Dynamic completion timestamps remain excluded.

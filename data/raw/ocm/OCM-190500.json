@@ -1,0 +1,45 @@
+{
+    "DateLastVerified": "2024-11-12T12:09:00Z",
+    "ID": 190500,
+    "UUID": "DC96BF1C-C609-4AA3-83F5-5D01296AB4DA",
+    "DataProviderID": 1,
+    "OperatorID": 3388,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.66/KWh",
+    "AddressInfo": {
+        "ID": 190859,
+        "Title": "Cross Street Carpark [NRMA]",
+        "AddressLine1": "8 Cross Street",
+        "Town": "Wagga Wagga",
+        "Postcode": "NSW",
+        "CountryID": 18,
+        "Latitude": -35.10849079265241,
+        "Longitude": 147.37380421671998,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308866,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 308867,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2024-11-12T12:09:00Z",
+    "DateCreated": "2021-12-11T02:01:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,71 @@
+{
+    "MediaItems": [
+        {
+            "ID": 40677,
+            "ChargePointID": 270947,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM270947/OCM-270947.orig.2023120202592665.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM270947/OCM-270947.thmb.2023120202592665.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2023-12-02T03:00:00Z"
+        },
+        {
+            "ID": 40678,
+            "ChargePointID": 270947,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM270947/OCM-270947.orig.2023120203000849.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM270947/OCM-270947.thmb.2023120203000849.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2023-12-02T03:00:00Z"
+        }
+    ],
+    "DateLastVerified": "2025-03-21T05:15:00Z",
+    "ID": 270947,
+    "UUID": "9B98EBA4-241C-421A-AD8F-50E4378D6A13",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 1,
+    "UsageCost": "$0.45 per kWh",
+    "AddressInfo": {
+        "ID": 271331,
+        "Title": "Hilton Coles",
+        "AddressLine1": "South Street",
+        "AddressLine2": "Hilton",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6183",
+        "CountryID": 18,
+        "Latitude": -32.06408827282525,
+        "Longitude": 115.78180730214649,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 461181,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2025-03-21T05:15:00Z",
+    "DateCreated": "2023-07-07T12:03:00Z",
+    "SubmissionStatusTypeID": 200
+}

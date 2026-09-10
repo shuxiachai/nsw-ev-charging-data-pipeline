@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-09",
+  "sources": [
+    {
+      "file": "data/raw/osm_chargers.json",
+      "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3Bnwr%5B%22amenity%22%3D%22charging_station%22%5D%28-37.6%2C140.9%2C-28.0%2C153.7%29%3Bout+center+tags%3B",
+      "sha256": "92a65d9d9cf64ba4f30c79ed278f4c788acd6206e6db9715f499c352793b994c"
+    },
+    {
+      "file": "data/raw/nrma_stations.kml",
+      "url": "https://www.google.com/maps/d/kml?mid=1x7Qs_rCijBa-6hDJITFvBQNDN0lBkzk&forcekml=1",
+      "sha256": "2f51cd5d52f489657eb9e151cff189251592e7519d6e2ddfff20a2463597546f"
+    },
+    {
+      "file": "data/raw/nrma_network.html",
+      "url": "https://www.mynrma.com.au/cars-and-driving/electric-vehicles/charging-network",
+      "sha256": "21118cbd1fc125861aa914b1e6dd4e4e57f73bfe50f7aef97a9ff495655ca2fe"
+    },
+    {
+      "file": "data/raw/reviewed/tenterfield_council_20200226.pdf",
+      "url": "https://www.tenterfield.nsw.gov.au/content/uploads/2020/02/Agenda-_-Feb-26-2020.pdf",
+      "sha256": "5a6295597965903ec06ecde3edd43eeb1d1be22486ab3732ecb50f460fad9364"
+    },
+    {
+      "file": "data/raw/reviewed/nrma_nyngan_road_trip.html",
+      "url": "https://jss.sitecore.prod.svc.mynrma.com.au/open-road/road-trips/ev-dubbo-to-broken-hill",
+      "sha256": "0fa6388b8b1790cc5d3273c180625e26f076d29cf564e39855fb5d574eaceac3"
+    },
+    {
+      "file": "data/raw/reviewed/narrabri_89_barwan_planning.pdf",
+      "url": "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PAN-378965%2120231017T043350.514%20GMT",
+      "sha256": "ad9139ba18eab35e896a8eb42dde8915c124a3e0709c163eda99df1d76f20abd"
+    },
+    {
+      "file": "data/raw/reviewed/coonamble_annual_2020_2021.pdf",
+      "url": "https://www.coonambleshire.nsw.gov.au/__media_downloads/annual-reports/2020-2021_1_Annual_Report.pdf?downloadable=1",
+      "sha256": "3ba46474f096a366b80a14937662737667dc7196b05ac2c3fd3f6adea2e1775a"
+    },
+    {
+      "file": "data/raw/reviewed/wagga_riverside_business_case_2024.pdf",
+      "url": "https://meetings.wagga.nsw.gov.au/RedirectToInvalidFileName.aspx?FileName=OC_13052024_AGN_4963_AT_ExternalAttachments%5COC_13052024_AGN_4963_AT_Attachment_20853_2.PDF%2A%24",
+      "sha256": "9b69c172994864378e180cde13da17cce1b5cd516b82fec1bb121c2af948e24d"
+    },
+    {
+      "file": "data/raw/reviewed/wagga_council_agenda_20221107.html",
+      "url": "https://meetings.wagga.nsw.gov.au/Open/2022/11/OC_07112022_AGN_4883_AT.htm",
+      "sha256": "8cf36d132024096762128be078de339e3049475865d8bd119a7eb121ceca26c1"
+    },
+    {
+      "file": "data/raw/reviewed/spatial_nrma_ev_charging_game_plan_20260909.html",
+      "url": "https://jss.sitecore.prod.svc.mynrma.com.au/open-road/advice-and-how-to/ev-charging-game-plan",
+      "sha256": "175673d3f829bcdd560abba1547fce56150abc2394b0ae562a3314d9b6929915"
+    },
+    {
+      "file": "data/raw/reviewed/spatial_wollongong_planning_gateway_20260216.pdf",
+      "url": "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PP-2025-2560%2120260216T010043.077%20GMT",
+      "sha256": "cebd869edb4da7f87e080630e22ec8bad9b6214ea400f0c13c9c0cec85926947"
+    },
+    {
+      "file": "data/raw/ocm/OCM-191177.json",
+      "url": "https://raw.githubusercontent.com/openchargemap/ocm-export/8e3bedca48ca94807d96b2f5e7ee02cffe63ae54/data/AU/OCM-191177.json",
+      "sha256": "aaa86a6a4cd6a56f8cefcc51f05dd62677c88b2d29f2980e2c6b30e029650388"
+    },
+    {
+      "file": "data/raw/ocm_reference.json",
+      "url": "https://raw.githubusercontent.com/openchargemap/ocm-export/8e3bedca48ca94807d96b2f5e7ee02cffe63ae54/data/referencedata.json",
+      "sha256": "71c7ea6f70e8f360ff13cc64ada578d07c05af0bf9e92b5efeda591ff695f7e8"
+    },
+    {
+      "file": "data/raw/reviewed/spatial_walcha_town_map_202503.pdf",
+      "url": "https://walchansw.com.au/wp-content/uploads/2025/03/Walcha-Town-Map.pdf",
+      "sha256": "c3aaac4e228b42237e083b720362b9c0e49a493361d62307d5b046d93e74319b"
+    },
+    {
+      "file": "data/raw/reviewed/spatial_walcha_council_20231025.pdf",
+      "url": "https://walcha.nsw.gov.au/wp-content/uploads/2023/10/October-2023-Ordinary-Meeting-Business-Paper-25102023.pdf",
+      "sha256": "81a16970f8a14a3003929d6d464dc023e54ababbaa92ac4e9030b23a727685fc"
+    },
+    {
+      "file": "data/raw/reviewed/spatial_walcha_osm_map_20260909.osm",
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=151.587,-30.988,151.598,-30.977",
+      "sha256": "3a32581808cc05f34a712e63522cc61b6b71efac522b6757bb0f8f5a78d21dca"
+    },
+    {
+      "file": "data/raw/ocm/OCM-480135.json",
+      "url": "https://raw.githubusercontent.com/openchargemap/ocm-export/8e3bedca48ca94807d96b2f5e7ee02cffe63ae54/data/AU/OCM-480135.json",
+      "sha256": "e5e9bcc6eed65735c14160766405a88b255fb602d61e0c081c2e10a3d3cf323e"
+    }
+  ],
+  "map_publication": {
+    "source_file": "data/raw/nrma_network.html",
+    "map_file": "data/raw/nrma_stations.kml"
+  },
+  "resolutions": [
+    {
+      "record_id": "r_adaa6f8f055ae8bae26b",
+      "town": "Tenterfield",
+      "expected_source": {
+        "source_row": 195,
+        "operator_name": "NRMA",
+        "address": "157 Rouse Street, Tenterfield, NSW 2372, Australia",
+        "latitude": -31.5645996,
+        "longitude": 147.1969355,
+        "postcode": "2825",
+        "address_postcode": "2372",
+        "charger_type": "DC"
+      },
+      "coordinate": {
+        "kind": "osm",
+        "file": "data/raw/osm_chargers.json",
+        "element_id": "node/8209129030"
+      },
+      "corroborating": {
+        "kind": "kml",
+        "file": "data/raw/nrma_stations.kml",
+        "element_id": "NRMA Fast Charger Tenterfield "
+      },
+      "address_source_file": "data/raw/reviewed/tenterfield_council_20200226.pdf",
+      "address_evidence": {
+        "pdf_page_1_based": 50,
+        "short_locator": "157 Rouse Street, Tenterfield NSW 2372"
+      },
+      "reason": "Council agenda identifies the NRMA proposal behind the visitor information centre at the source address. Named operator-published KML and same-operator OSM point agree within 32 m. The 2020 plan and dated map snapshots corroborate location, not current operating status."
+    },
+    {
+      "record_id": "r_1e59f65ff126f6e02daf",
+      "town": "Nyngan",
+      "expected_source": {
+        "source_row": 226,
+        "operator_name": "NRMA",
+        "address": "18 Dandaloo St, Nyngan, NSW 2825, Australia",
+        "latitude": -32.0506213,
+        "longitude": 150.8667598,
+        "postcode": "2360",
+        "address_postcode": "2825",
+        "charger_type": "DC"
+      },
+      "coordinate": {
+        "kind": "osm",
+        "file": "data/raw/osm_chargers.json",
+        "element_id": "node/10048386532"
+      },
+      "corroborating": {
+        "kind": "kml",
+        "file": "data/raw/nrma_stations.kml",
+        "element_id": "NRMA Fast Charger Nyngan"
+      },
+      "address_source_file": "data/raw/reviewed/nrma_nyngan_road_trip.html",
+      "address_evidence": {
+        "pdf_page_1_based": null,
+        "short_locator": "18 Dandaloo Street"
+      },
+      "reason": "NRMA road-trip article explicitly identifies the Nyngan charger at 18 Dandaloo Street. Named operator-published KML and OSM agree within 6 m. The conflicting cached OCM label 18 Cobar Street is not treated as a synonym or used as address evidence."
+    },
+    {
+      "record_id": "r_0983acf0fda42653dc7c",
+      "town": "Narrabri",
+      "expected_source": {
+        "source_row": 756,
+        "operator_name": "NRMA",
+        "address": "89 Barwan St, Narrabri, NSW 2390, Australia,",
+        "latitude": -29.0572067,
+        "longitude": 152.0186837,
+        "postcode": "2372",
+        "address_postcode": "2390",
+        "charger_type": "DC"
+      },
+      "coordinate": {
+        "kind": "osm",
+        "file": "data/raw/osm_chargers.json",
+        "element_id": "node/12583296437"
+      },
+      "corroborating": {
+        "kind": "kml",
+        "file": "data/raw/nrma_stations.kml",
+        "element_id": "NRMA Fast Charging Station Narrabri"
+      },
+      "address_source_file": "data/raw/reviewed/narrabri_89_barwan_planning.pdf",
+      "address_evidence": {
+        "pdf_page_1_based": 3,
+        "short_locator": "89 Barwan Street, Narrabri 2390"
+      },
+      "reason": "Council-prepared planning statement identifies the Town Hall car park at 89 Barwan Street and describes an NRMA station under construction on the site. Named operator-published KML and same-operator OSM agree within 33 m; planning status is not a current availability claim."
+    },
+    {
+      "record_id": "r_4a1ff1bb4413b75bd478",
+      "town": "Coonamble",
+      "expected_source": {
+        "source_row": 956,
+        "operator_name": "NRMA",
+        "address": "Skillman's Lane, Coonamble, NSW 2829, Australia",
+        "latitude": -34.8411047,
+        "longitude": 148.912197,
+        "postcode": "2582",
+        "address_postcode": "2829",
+        "charger_type": "DC"
+      },
+      "coordinate": {
+        "kind": "osm",
+        "file": "data/raw/osm_chargers.json",
+        "element_id": "node/9278715200"
+      },
+      "corroborating": {
+        "kind": "kml",
+        "file": "data/raw/nrma_stations.kml",
+        "element_id": "NRMA Fast Charger Coonamble "
+      },
+      "address_source_file": "data/raw/reviewed/coonamble_annual_2020_2021.pdf",
+      "address_evidence": {
+        "pdf_page_1_based": 20,
+        "short_locator": "NRMA EV charging stations have been installed in Skillman’s Lane carpark."
+      },
+      "reason": "Council annual report confirms installed NRMA chargers in the source-named Skillman Lane car park. Named operator-published KML and same-operator OSM agree within 6 m. Historic installation and dated map evidence do not establish live availability."
+    },
+    {
+      "record_id": "r_873bc05df3ccbde0e683",
+      "town": "Wagga Wagga",
+      "expected_source": {
+        "source_row": 727,
+        "operator_name": "NRMA",
+        "address": "8/24 Cross St, Wagga Wagga, NSW 2650",
+        "latitude": -31.7223908,
+        "longitude": 148.6571378,
+        "postcode": "2827",
+        "address_postcode": "2650",
+        "charger_type": "DC"
+      },
+      "coordinate": {
+        "kind": "osm",
+        "file": "data/raw/osm_chargers.json",
+        "element_id": "node/7932870081"
+      },
+      "corroborating": {
+        "kind": "kml",
+        "file": "data/raw/nrma_stations.kml",
+        "element_id": "NRMA Fast Charger Wagga Wagga"
+      },
+      "address_source_file": "data/raw/reviewed/wagga_riverside_business_case_2024.pdf",
+      "address_evidence": {
+        "pdf_page_1_based": 128,
+        "additional_pdf_pages_1_based": [
+          255,
+          318
+        ],
+        "short_locator": "8 - 24 Cross Street; Lot 3 DP828377 carpark; 8 CROSS STREET WAGGA WAGGA 2650"
+      },
+      "supporting_address_source_file": "data/raw/reviewed/wagga_council_agenda_20221107.html",
+      "supporting_address_locator": "HTML lines 2043-2047; paragraph beginning The existing fast chargers: NRMA at Cross-Street Carpark",
+      "reason": "Individually reviewed cross-document site identity: the 2024 council business-case PDF (actual pages 128, 255, 318) links 8-24 Cross Street and 8 Cross Street to Lot 3 DP828377, its carpark use, and the Tarcutta/Cross Street site map. The complete 2022 council agenda HTML identifies an existing NRMA charger at Cross-Street Carpark. Together these archived originals support interpreting this record's 8/24 as the site address range; the raw source address remains unchanged and no generic slash/unit-number equivalence is introduced. Named operator-published KML and same-operator OSM agree within 10.92 m. The PDF alone does not name NRMA or provide charger-bay coordinates; site identity is a reviewer inference across the two originals. The web-extracted 2026 property register is a research lead only, not production evidence. Historical site and map evidence does not establish present charging availability."
+    },
+    {
+      "record_id": "r_84de52950c87598dd45f",
+      "town": "Wollongong",
+      "expected_source": {
+        "source_row": 217,
+        "operator_name": "NRMA",
+        "address": "17 Stewart St, Wollongong NSW 2500, Australia",
+        "latitude": -29.7756503,
+        "longitude": 151.1151033,
+        "postcode": "2453",
+        "address_postcode": "2500",
+        "charger_type": "DC",
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "17 Stewart St, Wollongong NSW 2500, Australia",
+          "Operator": "NRMA",
+          "Number_of_plugs": "4",
+          "Charger_Type": "DC",
+          "Charger_rating": "75 kW",
+          "Latitude": "-29.7756503",
+          "Longitude": "151.1151033",
+          "LGANAME": "Wollongong City Council",
+          "PCODE": "2453",
+          "Source": "TfNSW Regional"
+        }
+      },
+      "coordinate": {
+        "kind": "ocm",
+        "file": "data/raw/ocm/OCM-191177.json",
+        "element_id": "OCM-191177",
+        "operator_id": 3388,
+        "operator_reference_file": "data/raw/ocm_reference.json",
+        "expected_address": {
+          "Title": "Stewart Street Carpark [NRMA]",
+          "AddressLine1": "17 Stewart Street",
+          "Town": "Wollongong",
+          "Postcode": "2500",
+          "CountryID": 18
+        }
+      },
+      "corroborating": {
+        "kind": "kml",
+        "file": "data/raw/nrma_stations.kml",
+        "element_id": "NRMA Fast Charger Wollongong"
+      },
+      "address_source_file": "data/raw/reviewed/spatial_nrma_ev_charging_game_plan_20260909.html",
+      "address_evidence": {
+        "short_locator": "Powering the Gong: first installed/operational NRMA site on Stewart Street"
+      },
+      "supporting_address_source_file": "data/raw/reviewed/spatial_wollongong_planning_gateway_20260216.pdf",
+      "supporting_address_locator": "Actual PDF page 5, section 1.4 and Figure 1: Stewart Street East / Bank Street carpark aerial parcel map",
+      "reason": "NRMA's archived operator article describes its first Wollongong site as installed and operating on Stewart Street. The NSW government gateway report (actual PDF page 5) documents and maps Stewart Street East / Bank Street carpark. The pinned OCM record independently labels the NRMA Stewart Street Carpark at 17 Stewart Street, matching the source's street and postcode, and its point agrees with the named operator-published KML within 8.40 m. Use that archived OCM point with verified operator-reference data; do not fabricate an OSM match. This is a reviewed inference across operator text, named maps and a government venue map, not a survey or a claim of live availability. The 2026 planning report supports the site's cadastral identity, not the December 2025 charging state. Earlier council PDF URLs that returned 403 are research leads only and are not production evidence. All original coordinates, postal fields, address, equipment and source status are retained."
+    },
+    {
+      "record_id": "r_8c4ebd56a9eefd59533d",
+      "town": "Walcha",
+      "expected_source": {
+        "source_row": 78,
+        "operator_name": "NRMA",
+        "address": "10W Apsley St, Walcha NSW 2354, Australia",
+        "latitude": -29.960127,
+        "longitude": 146.8578887,
+        "postcode": "2839",
+        "address_postcode": "2354",
+        "charger_type": "DC",
+        "raw_values": {
+          "OBJECTID": "",
+          "Station_name": "",
+          "Station_address": "10W Apsley St, Walcha NSW 2354, Australia",
+          "Operator": "NRMA",
+          "Number_of_plugs": "4",
+          "Charger_Type": "DC",
+          "Charger_rating": "50 kW",
+          "Latitude": "-29.960127",
+          "Longitude": "146.8578887",
+          "LGANAME": "Walcha Council",
+          "PCODE": "2839",
+          "Source": "TfNSW Regional"
+        }
+      },
+      "coordinate": {
+        "kind": "ocm",
+        "file": "data/raw/ocm/OCM-480135.json",
+        "element_id": "OCM-480135",
+        "operator_id": 3388,
+        "operator_reference_file": "data/raw/ocm_reference.json",
+        "expected_address": {
+          "Title": "NRMA EV Charger Walcha",
+          "AddressLine1": "10W Apsley Street",
+          "Town": "Walcha",
+          "Postcode": "2354",
+          "CountryID": 18
+        }
+      },
+      "corroborating": {
+        "kind": "osm_landmark",
+        "file": "data/raw/reviewed/spatial_walcha_osm_map_20260909.osm",
+        "element_id": "way/737228454",
+        "expected_tags": {
+          "amenity": "police",
+          "building": "yes",
+          "name": "Walcha Police Station",
+          "operator": "NSW Police Force",
+          "operator:wikidata": "Q7011763",
+          "operator:wikipedia": "en:New South Wales Police Force"
+        },
+        "node_refs": [
+          "6902057211",
+          "6902057208",
+          "6902057209",
+          "6902057206",
+          "6902057207",
+          "6902057210",
+          "6902057211"
+        ],
+        "coordinates_lon_lat": [
+          [
+            151.5932272,
+            -30.9828038
+          ],
+          [
+            151.5933876,
+            -30.9828242
+          ],
+          [
+            151.593367,
+            -30.9829438
+          ],
+          [
+            151.5932644,
+            -30.9829308
+          ],
+          [
+            151.5932695,
+            -30.9829012
+          ],
+          [
+            151.5932117,
+            -30.9828938
+          ],
+          [
+            151.5932272,
+            -30.9828038
+          ]
+        ],
+        "distance_range_m": [
+          60,
+          90
+        ],
+        "bearing_range_deg": [
+          250,
+          270
+        ],
+        "street": {
+          "element_id": "way/80476703",
+          "expected_tags": {
+            "highway": "residential",
+            "name": "Apsley Street",
+            "surface": "asphalt"
+          },
+          "node_refs": [
+            "9677213354",
+            "6902057192",
+            "8229908544",
+            "938886075",
+            "8229908543",
+            "6902057201",
+            "2005485219"
+          ],
+          "coordinates_lon_lat": [
+            [
+              151.5918432,
+              -30.9829143
+            ],
+            [
+              151.5936498,
+              -30.9831651
+            ],
+            [
+              151.5937,
+              -30.9831718
+            ],
+            [
+              151.5937895,
+              -30.9831837
+            ],
+            [
+              151.5938821,
+              -30.9831987
+            ],
+            [
+              151.5939263,
+              -30.9832058
+            ],
+            [
+              151.594928,
+              -30.9833411
+            ]
+          ],
+          "max_distance_m": 5
+        }
+      },
+      "address_source_file": "data/raw/reviewed/spatial_walcha_town_map_202503.pdf",
+      "address_evidence": {
+        "pdf_page_1_based": 1,
+        "short_locator": "Official visitor town map: red EV icon on Apsley Street west of Derby Street, near mapped Police Station (1)"
+      },
+      "supporting_address_source_file": "data/raw/reviewed/spatial_walcha_council_20231025.pdf",
+      "supporting_address_locator": "Actual PDF page 107, Tourism Committee minutes (10 October 2023), item 3.3: NRMA construction on road reserve adjacent to 10W Apsley Street",
+      "reason": "Individually reviewed approximate road-reserve site position. The Council-associated official Walcha visitor map (actual PDF page 1) places its EV icon in the Apsley Street block west of Derby Street near Police Station (1). Council's 25 October 2023 business paper (actual PDF page 107, item 3.3) records NRMA construction on the road reserve adjacent to 10W Apsley Street. The pinned OCM NRMA record identifies 10W Apsley Street, Walcha 2354, matching the complete source address. Its point lies 76.76 m west-southwest (258.07 degrees) of the independently mapped police building and within 1 m of the mapped Apsley Street road line. The complete OSM building/street ways, nodes, tags, coordinates and source hash are fixed; bounded direction, distance and street-corridor checks reproduce this map interpretation. Police is a mapped landmark, not a second charger or operator-point corroboration. The OCM point is an approximate position within the documented street site: neither the schematic visitor map nor this point establishes a surveyed charging bay or side of the road. The old NRMA KML is about 258 m farther south and is not used to corroborate this correction. Dated installation and geographic evidence does not establish present charging availability. All original coordinates, postal fields, address and equipment observations remain unchanged in the original fields."
+    }
+  ],
+  "excluded_candidates": []
+}

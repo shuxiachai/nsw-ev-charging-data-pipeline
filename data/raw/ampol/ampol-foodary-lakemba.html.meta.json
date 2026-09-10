@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-lakemba",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-lakemba",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:55.015338+00:00",
+  "sha256": "cc00e2eb4f1e5b9824d0585fb055632fe9df62d7b271a3a095515db7035c8003",
+  "bytes": 149489,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-lakemba.html"
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PP-2025-2560%2120260216T010043.077%20GMT",
+  "final_url": "https://apps.planningportal.nsw.gov.au/prweb/PRRestService/DocMgmt/v1/PublicDocuments/DATA-WORKATTACH-FILE%20PEC-DPE-EP-WORK%20PP-2025-2560%2120260216T010043.077%20GMT",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-09T03:18:06.988688+00:00",
+  "sha256": "cebd869edb4da7f87e080630e22ec8bad9b6214ea400f0c13c9c0cec85926947",
+  "bytes": 795467,
+  "content_type": "application/pdf",
+  "file": "wollongong_planning_gateway_20260216.pdf"
+}

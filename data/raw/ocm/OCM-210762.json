@@ -1,0 +1,64 @@
+{
+    "MediaItems": [
+        {
+            "ID": 36043,
+            "ChargePointID": 210762,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM210762/OCM-210762.orig.2022122506563359.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM210762/OCM-210762.thmb.2022122506563359.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 37021,
+                "Username": "Myles"
+            },
+            "DateCreated": "2022-12-25T06:57:00Z"
+        }
+    ],
+    "DateLastVerified": "2022-12-25T06:59:00Z",
+    "ID": 210762,
+    "UUID": "4D80A92E-4959-4D32-91F8-9553FD4C77C5",
+    "DataProviderID": 1,
+    "OperatorID": 3529,
+    "UsageTypeID": 4,
+    "UsageCost": "",
+    "AddressInfo": {
+        "ID": 211142,
+        "Title": "Foodland Felixstow",
+        "AddressLine1": "471 Payneham Rd",
+        "Town": " Felixstow",
+        "StateOrProvince": "SA",
+        "Postcode": "5070",
+        "CountryID": 18,
+        "Latitude": -34.890016663252645,
+        "Longitude": 138.65439370244155,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 351206,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 351207,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2022-12-25T06:59:00Z",
+    "DateCreated": "2022-12-17T23:20:00Z",
+    "SubmissionStatusTypeID": 200
+}

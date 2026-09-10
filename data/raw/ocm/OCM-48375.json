@@ -1,0 +1,107 @@
+{
+    "UserComments": [
+        {
+            "ID": 23073,
+            "ChargePointID": 48375,
+            "CommentTypeID": 10,
+            "UserName": "ozobken",
+            "Comment": "",
+            "DateCreated": "2020-08-14T06:30:12.46Z",
+            "User": {
+                "ID": 25880,
+                "Username": "ozobken"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 22634,
+            "ChargePointID": 48375,
+            "CommentTypeID": 10,
+            "UserName": "ozobken",
+            "Comment": "",
+            "DateCreated": "2020-05-20T03:38:50.803Z",
+            "User": {
+                "ID": 25880,
+                "Username": "ozobken"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 22587,
+            "ChargePointID": 48375,
+            "CommentTypeID": 10,
+            "UserName": "ozobken",
+            "Comment": "",
+            "DateCreated": "2020-05-12T06:45:35.417Z",
+            "User": {
+                "ID": 25880,
+                "Username": "ozobken"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 22291,
+            "ChargePointID": 48375,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM48375/OCM-48375.orig.2020051206465729.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM48375/OCM-48375.thmb.2020051206465729.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 25880,
+                "Username": "ozobken"
+            },
+            "DateCreated": "2020-05-12T06:47:00Z"
+        }
+    ],
+    "DateLastVerified": "2021-12-01T12:00:00Z",
+    "ID": 48375,
+    "UUID": "AC7C31FF-F107-470D-8022-DC4AECF6F707",
+    "DataProviderID": 1,
+    "OperatorID": 57,
+    "UsageTypeID": 4,
+    "UsageCost": "15c/kWh",
+    "AddressInfo": {
+        "ID": 48721,
+        "Title": "UWA DC FC Veefil",
+        "AddressLine1": "35 hackett drive",
+        "Town": "crawley",
+        "StateOrProvince": "western australia",
+        "CountryID": 18,
+        "Latitude": -31.9788128701367,
+        "Longitude": 115.819373130798,
+        "AccessComments": "Near exit of University Club undercover car park",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 59813,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30
+        },
+        {
+            "ID": 59814,
+            "ConnectionTypeID": 2,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "This now requires payment for use",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-12-01T12:00:00Z",
+    "DateCreated": "2015-06-25T05:35:00Z",
+    "SubmissionStatusTypeID": 200
+}

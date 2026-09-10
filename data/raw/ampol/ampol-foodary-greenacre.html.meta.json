@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-greenacre",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-greenacre",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:57.614617+00:00",
+  "sha256": "0448260fc08fdd92d58f672804795183ca5841e912d5bc7a16668277609929d0",
+  "bytes": 153823,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-greenacre.html"
+}

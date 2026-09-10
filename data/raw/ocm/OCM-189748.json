@@ -1,0 +1,49 @@
+{
+    "DateLastVerified": "2023-07-05T13:16:00Z",
+    "ID": 189748,
+    "UUID": "9396B662-B62B-4409-B868-DBE2057FE2F7",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 190107,
+        "Title": "Brunswick EV Hub",
+        "AddressLine1": "15 Edward Street",
+        "Town": "Brunswick",
+        "StateOrProvince": "Victoria",
+        "Postcode": "3056",
+        "CountryID": 18,
+        "Latitude": -37.77388003814904,
+        "Longitude": 144.961800631472,
+        "ContactTelephone1": "1300 518 038",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 307002,
+            "ConnectionTypeID": 33,
+            "Reference": "8210",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 80,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 351565,
+            "ConnectionTypeID": 25,
+            "Reference": "4517",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 4,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-05T13:16:00Z",
+    "DateCreated": "2021-11-01T06:40:00Z",
+    "SubmissionStatusTypeID": 200
+}

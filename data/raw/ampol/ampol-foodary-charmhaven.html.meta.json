@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-charmhaven",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-charmhaven",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:09:01.978035+00:00",
+  "sha256": "2b84d71aed1ca1aae5429a024522f19739e34ad336558289928ffe9a0f2aee0a",
+  "bytes": 147689,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-charmhaven.html"
+}

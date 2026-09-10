@@ -1,0 +1,11 @@
+{
+  "url": "https://meetings.wagga.nsw.gov.au/Open/2022/11/OC_07112022_AGN_4883_AT.htm",
+  "final_url": "https://meetings.wagga.nsw.gov.au/Open/2022/11/OC_07112022_AGN_4883_AT.htm",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-09T02:48:20.845177+00:00",
+  "sha256": "8cf36d132024096762128be078de339e3049475865d8bd119a7eb121ceca26c1",
+  "bytes": 416682,
+  "content_type": "text/html",
+  "file": "data/raw/reviewed/wagga_council_agenda_20221107.html",
+  "capture_method": "direct_http_response"
+}

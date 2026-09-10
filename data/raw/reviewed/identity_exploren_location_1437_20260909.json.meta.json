@@ -1,0 +1,12 @@
+{
+  "url": "https://exploren.com.au/wp-admin/admin-ajax.php",
+  "method": "POST",
+  "request_action": "exploren_get_location_detail",
+  "location_id": 1437,
+  "published_at_url": "https://exploren.com.au/find-a-charger/?charger_location=1437",
+  "status_code": 200,
+  "sha256": "eb7000061d57da3f8ad6b3650a2e262ec73a46d218086184d2eccdcafd1e45a5",
+  "bytes": 2193,
+  "retrieved_at_utc": "2026-09-09T02:45:31.945439+00:00",
+  "file": "exploren_location_1437.json"
+}

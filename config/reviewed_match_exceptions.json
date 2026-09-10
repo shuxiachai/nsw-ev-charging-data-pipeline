@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-09",
+  "exceptions": [
+    {
+      "review_id": "DM_BATEMANS_BAY_ADDRESS_RANGE_20260909",
+      "record_id": "r_531a8cdb6b482f190a0d",
+      "ocm_id": 190706,
+      "allowed_conflict": "house_number_conflict",
+      "source_snapshot": {
+        "file": "data/raw/ev_20251216.csv",
+        "sha256": "43970e7751b951ab459a1be7bfd6141756c60ff8aa797debf11c5a597109865a"
+      },
+      "external_snapshot": {
+        "file": "data/raw/ocm/OCM-190706.json",
+        "sha256": "e65f2f07b02805494b47f2005d7d51541d1652506cdafc6a2bb9dbfdd2d9dd03"
+      },
+      "expected_raw_source": {
+        "OBJECTID": "",
+        "Station_name": "",
+        "Station_address": "53A Orient St, Batemans Bay, 2536",
+        "Operator": "Evie",
+        "Number_of_plugs": "2",
+        "Charger_Type": "DC",
+        "Charger_rating": "50 kW",
+        "Latitude": "-35.71073278",
+        "Longitude": "150.1776366",
+        "LGANAME": "Eurobodalla Shire Council",
+        "PCODE": "2536",
+        "Source": "Existing Fast Chargers"
+      },
+      "expected_source": {
+        "source_row": 613,
+        "operator_name": "Evie",
+        "address": "53A Orient St, Batemans Bay, 2536",
+        "postcode": "2536",
+        "address_postcode": "2536",
+        "charger_type": "DC",
+        "latitude": -35.71073278,
+        "longitude": 150.1776366
+      },
+      "expected_external": {
+        "ocm_operator": "Evie",
+        "title": "Dan Murphy's",
+        "address": "51 Orient Street",
+        "postcode": "2536",
+        "latitude": -35.709931,
+        "longitude": 150.17774
+      },
+      "evidence": {
+        "file": "data/raw/reviewed/dan_murphys_batemans_bay_address_excerpt_20260909.txt",
+        "sha256": "e63433d94aefac1bc4f714b1a15487e08e63c777c691b4cb216395bedb4cebe8",
+        "url": "https://www.danmurphys.com.au/stores/NSW-Batemans-Bay-1847"
+      },
+      "reason": "The official store-page address range includes both source house numbers; the OCM title identifies the same Dan Murphy store. This exception concerns the venue address only and does not verify current connector, cost or operational attributes."
+    }
+  ]
+}

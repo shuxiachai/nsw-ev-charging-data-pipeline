@@ -1,0 +1,10 @@
+{
+  "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname%3D%27DAPTO%27&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson",
+  "resolved_url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname%3D%27DAPTO%27&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-09T13:04:35.260761+00:00",
+  "sha256": "c991a6aab0122acfc9bb81fea0b7e00a67e6d43df1c8233f58d366230632d374",
+  "bytes": 47493,
+  "content_type": "application/geo+json;charset=UTF-8"
+}

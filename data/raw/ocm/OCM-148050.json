@@ -1,0 +1,38 @@
+{
+    "DateLastVerified": "2025-08-09T09:32:00Z",
+    "ID": 148050,
+    "UUID": "5C90D5E4-913A-4CE1-97F6-13022A138D18",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.45 per kWh",
+    "AddressInfo": {
+        "ID": 148402,
+        "Title": "Primewest Gwelup",
+        "AddressLine1": "707 North Beach Road",
+        "Town": "Gwelup",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6018",
+        "CountryID": 18,
+        "Latitude": -31.87637320132322,
+        "Longitude": 115.79758574847699,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 205542,
+            "ConnectionTypeID": 25,
+            "Reference": "3016",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2025-08-09T09:32:00Z",
+    "DateCreated": "2020-01-24T05:21:00Z",
+    "SubmissionStatusTypeID": 200
+}

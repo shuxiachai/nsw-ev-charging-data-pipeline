@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "description": "Official individual Ampol station pages; connector text is a published observation, not a device inventory or live availability.",
+  "sources": [
+    {
+      "file": "data/raw/ampol/ampol-foodary-alexandria.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-alexandria",
+      "sha256": "6ad56fe7bfada5d05c973b7509418430cfaadb4ec49ce377449fce76e1694249",
+      "bytes": 150795,
+      "retrieved_at_utc": "2026-09-10T02:08:46.569574+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-brownsville.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-brownsville",
+      "sha256": "106263cc8f0667fd9d123a19952428f839509b91aecb0f7f5bc24d5300108df0",
+      "bytes": 148364,
+      "retrieved_at_utc": "2026-09-10T02:08:52.235631+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-charmhaven.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-charmhaven",
+      "sha256": "2b84d71aed1ca1aae5429a024522f19739e34ad336558289928ffe9a0f2aee0a",
+      "bytes": 147689,
+      "retrieved_at_utc": "2026-09-10T02:09:01.978035+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-eastern-creek-eastbound.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-eastern-creek-eastbound",
+      "sha256": "76427ac3f066201d44e45c34306928d24b697bf79d54896a6a06714c49280c21",
+      "bytes": 160426,
+      "retrieved_at_utc": "2026-09-10T02:09:52.781810+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-eastern-creek-westbound.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-eastern-creek-westbound",
+      "sha256": "66def85b854fa27cb1c865053ed53066c7a335493f4b9e785d3b96c483bff6d1",
+      "bytes": 154839,
+      "retrieved_at_utc": "2026-09-10T02:09:00.257738+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-gosford-west-eastbound.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-gosford-west-eastbound",
+      "sha256": "95f70817916c7a4a05adfa24284b66d22859250dcdb7c6f9dd6a0dcfd9a6761f",
+      "bytes": 148264,
+      "retrieved_at_utc": "2026-09-09T03:21:07.258428+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-greenacre.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-greenacre",
+      "sha256": "0448260fc08fdd92d58f672804795183ca5841e912d5bc7a16668277609929d0",
+      "bytes": 153823,
+      "retrieved_at_utc": "2026-09-10T02:08:57.614617+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-lakemba.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-lakemba",
+      "sha256": "cc00e2eb4f1e5b9824d0585fb055632fe9df62d7b271a3a095515db7035c8003",
+      "bytes": 149489,
+      "retrieved_at_utc": "2026-09-10T02:08:55.015338+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-narrabeen.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-narrabeen",
+      "sha256": "ef2da5a13e8725f9555cd16c9989fa1146e6e3a0cb49c88682bb2a329ea29313",
+      "bytes": 149483,
+      "retrieved_at_utc": "2026-09-10T02:08:48.018950+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-penrith-coreen-ave.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-penrith-coreen-ave",
+      "sha256": "7810cc3529bb523491b8f41247ab5a64b14898a9a4c009e8495a2dcb3b15d6e5",
+      "bytes": 156505,
+      "retrieved_at_utc": "2026-09-10T02:08:49.435951+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-seven-hills-abbott-rd.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-seven-hills-abbott-rd",
+      "sha256": "d6fd23c652ec1f88c40998e76c0d9aac50cff6b8a2ec3be715a343e3d9593a46",
+      "bytes": 143308,
+      "retrieved_at_utc": "2026-09-10T02:08:53.629004+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-st-ives.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-st-ives",
+      "sha256": "eac7b15d117536c1e6e8f93f65c1b5ab2f4f0ca3c7d798dea96ed254f9ad4ab0",
+      "bytes": 152260,
+      "retrieved_at_utc": "2026-09-10T02:08:50.837588+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-werrington.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-werrington",
+      "sha256": "409e0836c4475478a0d09b30b2a285b59dc6805a867e88e5f0e35ed71d4095b4",
+      "bytes": 155244,
+      "retrieved_at_utc": "2026-09-09T03:21:07.238001+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-windsor-south.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-windsor-south",
+      "sha256": "5090fee53190508d08713e23d6fdd3f256e2e7a0c3a7eb7195c6cdb8499460f2",
+      "bytes": 154885,
+      "retrieved_at_utc": "2026-09-10T02:08:56.209708+00:00"
+    },
+    {
+      "file": "data/raw/ampol/ampol-foodary-wollongong-north.html",
+      "url": "https://locations.ampol.com.au/en/ampol-foodary-wollongong-north",
+      "sha256": "d25a280130ca688860aa26f614ec7e16299774747e6ee81e6ce489c0cdf7aca2",
+      "bytes": 149734,
+      "retrieved_at_utc": "2026-09-10T02:08:59.053135+00:00"
+    }
+  ]
+}

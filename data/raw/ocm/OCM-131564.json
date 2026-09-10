@@ -1,0 +1,86 @@
+{
+    "UserComments": [
+        {
+            "ID": 21496,
+            "ChargePointID": 131564,
+            "CommentTypeID": 10,
+            "UserName": "i3_REx",
+            "Comment": "",
+            "Rating": 5,
+            "DateCreated": "2019-09-12T08:00:36.543Z",
+            "User": {
+                "ID": 22202,
+                "Username": "i3_REx"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 21485,
+            "ChargePointID": 131564,
+            "CommentTypeID": 10,
+            "UserName": "i3_REx",
+            "Comment": "Activates without Card or App",
+            "Rating": 5,
+            "DateCreated": "2019-09-09T13:47:21.23Z",
+            "User": {
+                "ID": 22202,
+                "Username": "i3_REx"
+            },
+            "CheckinStatusTypeID": 10
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 19533,
+            "ChargePointID": 131564,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM131564/OCM-131564.orig.2019091000442600.png",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM131564/OCM-131564.thmb.2019091000442600.png",
+            "Comment": "prone to ICEing in busy times",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 22202,
+                "Username": "i3_REx"
+            },
+            "DateCreated": "2019-09-10T00:45:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-07-13T23:36:00Z",
+    "ID": 131564,
+    "UUID": "C0F39947-DF44-43BC-8425-0427877BA1E6",
+    "DataProviderID": 1,
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 131910,
+        "Title": "Figtree Grove Shopping Centre ",
+        "AddressLine1": "The Avenue",
+        "Town": "Figtree ",
+        "StateOrProvince": "New South Wales",
+        "Postcode": "2525",
+        "CountryID": 18,
+        "Latitude": -34.43743163189117,
+        "Longitude": 150.86340370780567,
+        "AccessComments": "Enter via the Eastern traffic lights off The Avenue",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 184138,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-13T23:36:00Z",
+    "DateCreated": "2019-09-09T13:25:00Z",
+    "SubmissionStatusTypeID": 200
+}

@@ -1,0 +1,45 @@
+{
+    "DateLastVerified": "2023-12-15T06:34:00Z",
+    "ID": 202098,
+    "UUID": "786D802E-445D-4D95-A364-CFBF9B8CEB11",
+    "DataProviderID": 1,
+    "OperatorID": 3554,
+    "UsageTypeID": 4,
+    "AddressInfo": {
+        "ID": 202465,
+        "Title": "Derby (WA EV Network)",
+        "AddressLine1": "55 Clarendon Street",
+        "Town": "Derby",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6728",
+        "CountryID": 18,
+        "Latitude": -17.305233762820208,
+        "Longitude": 123.6307580058915,
+        "RelatedURL": "https://www.sdwk.wa.gov.au/news/public-notice-proposed-licenceusage-agreement-fast-electric-car-charging-sites/187",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 337769,
+            "ConnectionTypeID": 33,
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 150,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        },
+        {
+            "ID": 505713,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-12-15T06:34:00Z",
+    "DateCreated": "2022-09-07T07:13:00Z",
+    "SubmissionStatusTypeID": 200
+}

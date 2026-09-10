@@ -1,0 +1,9 @@
+{
+  "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname+IN+%28%27GILGANDRA%27%2C%27NARELLAN%27%29&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson&orderByFields=suburbname",
+  "resolved_url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Administrative_Boundaries_Theme_multiCRS/MapServer/2/query?where=suburbname+IN+%28%27GILGANDRA%27%2C%27NARELLAN%27%29&outFields=%2A&returnGeometry=true&outSR=7844&f=geojson&orderByFields=suburbname",
+  "retrieved_at_utc": "2026-09-09T13:02:44.190185+00:00",
+  "sha256": "39e66f9044af01dcaa9266a6f5a8048a5bb55e47565eaff38785d9c1367b9a64",
+  "bytes": 32752,
+  "content_type": "application/geo+json;charset=UTF-8",
+  "status_code": 200
+}

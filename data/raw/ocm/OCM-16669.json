@@ -1,0 +1,43 @@
+{
+    "DateLastVerified": "2023-08-24T05:32:00Z",
+    "ID": 16669,
+    "UUID": "34BC92B9-AC95-40F3-AE75-2772E770637E",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 2,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 17014,
+        "Title": "Mainroads WA",
+        "AddressLine1": "Don Aitken Centre - Waterloo Crescent",
+        "AddressLine2": "",
+        "Town": "East Perth",
+        "StateOrProvince": "WA",
+        "Postcode": "6004",
+        "CountryID": 18,
+        "Latitude": -31.956628,
+        "Longitude": 115.877066,
+        "ContactTelephone1": "64881763",
+        "ContactTelephone2": "",
+        "ContactEmail": "rev@therevproject.com",
+        "AccessComments": "Behind boom gate, Ask reception for access.",
+        "RelatedURL": "",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 474025,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-08-24T05:32:00Z",
+    "DateCreated": "2013-05-29T01:07:00Z",
+    "SubmissionStatusTypeID": 200
+}

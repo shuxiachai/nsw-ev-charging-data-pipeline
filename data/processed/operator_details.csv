@@ -1,0 +1,17 @@
+operator_name,ocm_operator_id,ocm_operator_title,attribute,value,scope,method,source_file
+Ampol AmpCharge,3625,Ampol AmpCharge,operator_website,https://ampcharge.ampol.com.au/,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+BP Pulse (AU),3659,BP Pulse (AU),operator_website,https://www.bp.com/en_au/australia/home/products-services/bppulse.html,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+ChargeHub,3775,Chargehub,operator_website,https://chargehub.solutions,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+ChargePoint,5,ChargePoint,operator_website,http://www.chargepoint.net/,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+ChargePoint,5,ChargePoint,operator_phone,1-408-841-4500,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+Chargefox,3339,Chargefox,operator_website,https://chargefox.com,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+Counties Energy,3547,Counties Energy,operator_website,https://www.countiesenergy.co.nz/articles/ev-charging,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+Engie,3595,Engie,operator_website,https://www.engie.com,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+Everty,3609,Everty,operator_website,https://everty.com.au/,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+Evie,3398,Evie,operator_website,http://goevie.com.au/,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+Exploren,3622,Exploren,operator_website,https://exploren.com.au/,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+JOLT,3529,Jolt,operator_website,https://joltcharge.com,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+NRMA,3388,NRMA,operator_website,https://www.mynrma.com.au/cars-and-driving/electric-vehicles,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+NRMA,3388,NRMA,operator_phone,1300 233 544,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+Tesla,3534,Tesla (including non-tesla),operator_website,https://www.tesla.com/en_AU/support/non-tesla-supercharging,operator,exact_canonical_operator_name,data/raw/ocm_reference.json
+Tesla,23,Tesla (Tesla-only charging),operator_website,http://www.teslamotors.com,operator,exact_canonical_operator_name,data/raw/ocm_reference.json

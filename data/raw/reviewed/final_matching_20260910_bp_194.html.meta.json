@@ -1,0 +1,10 @@
+{
+  "url": "https://map.bp.com/en-AU/AU/gas-station/marulan-north/bp-express-marulan-northbound/2330",
+  "resolved_url": "https://map.bp.com/en-AU/AU/gas-station/marulan-north/bp-express-marulan-northbound/2330",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:05:51.683014+00:00",
+  "sha256": "287ae8e0799b4f1a0bf2762c5113665c6ba8be57a403d24372ce306b211c351f",
+  "bytes": 60257,
+  "content_type": "text/html; charset=utf-8"
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://maps.uow.edu.au/api/map-nodes/221/",
+  "resolved_url": "https://maps.uow.edu.au/api/map-nodes/221/",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-09T13:12:45.451107+00:00",
+  "sha256": "ce0eb370db00ea2b2baea356979cd67ba6663a74847bdabc2e6e2fb07606cd19",
+  "bytes": 925,
+  "content_type": "application/json"
+}

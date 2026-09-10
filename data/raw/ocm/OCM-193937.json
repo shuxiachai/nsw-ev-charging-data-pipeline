@@ -1,0 +1,59 @@
+{
+    "DateLastVerified": "2023-07-29T09:40:00Z",
+    "ID": 193937,
+    "UUID": "CC4BDFA8-451E-4E61-8588-FCDC607F31BE",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 194296,
+        "Title": "Sportsground No.2 [Chargefox]",
+        "AddressLine1": "Smith Street",
+        "Town": "Newcastle",
+        "StateOrProvince": "New South Wales",
+        "Postcode": "2300",
+        "CountryID": 18,
+        "Latitude": -32.93024368595305,
+        "Longitude": 151.76074272098833,
+        "RelatedURL": "https://Chargefox.com",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 315798,
+            "ConnectionTypeID": 25,
+            "Reference": "1157",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 315800,
+            "ConnectionTypeID": 25,
+            "Reference": "1158",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        },
+        {
+            "ID": 471046,
+            "ConnectionTypeID": 33,
+            "Reference": "1969",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 60,
+            "CurrentTypeID": 30,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 5,
+    "StatusTypeID": 75,
+    "DateLastStatusUpdate": "2023-07-29T09:40:00Z",
+    "DateCreated": "2022-07-08T04:30:00Z",
+    "SubmissionStatusTypeID": 200
+}

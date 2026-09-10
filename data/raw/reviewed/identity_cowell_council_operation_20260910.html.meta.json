@@ -1,0 +1,12 @@
+{
+  "url": "https://connect.huntershill.nsw.gov.au/ev/widgets/464182/faqs",
+  "resolved_url": "https://connect.huntershill.nsw.gov.au/ev/widgets/464182/faqs",
+  "retrieved_at_utc": "2026-09-10T07:32:54.963529+00:00",
+  "sha256": "ae3c8b5465c6a345a85d43610ec41c59b5be17f389f7178d5e8cac7bbbc703e8",
+  "bytes": 41610,
+  "method": "GET",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "etag": "W/\"ae3c8b5465c6a345a85d43610ec41c59\"",
+  "last_modified": null
+}

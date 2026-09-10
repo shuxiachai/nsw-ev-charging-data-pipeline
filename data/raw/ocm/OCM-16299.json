@@ -1,0 +1,190 @@
+{
+    "UserComments": [
+        {
+            "ID": 1210,
+            "ChargePointID": 16299,
+            "CommentTypeID": 10,
+            "UserName": "g4qber",
+            "Comment": "Volt n tesla",
+            "DateCreated": "2014-09-12T07:09:55.11Z",
+            "User": {
+                "ID": 1043,
+                "Username": "g4qber"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 1199,
+            "ChargePointID": 16299,
+            "CommentTypeID": 10,
+            "UserName": "g4qber",
+            "Comment": "One side cuts out in middle of charge and causes cel light on volt ",
+            "Rating": 3,
+            "DateCreated": "2014-09-07T23:25:12.647Z",
+            "User": {
+                "ID": 1043,
+                "Username": "g4qber"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 834,
+            "ChargePointID": 16299,
+            "CommentTypeID": 10,
+            "UserName": "g4qber",
+            "Comment": "2010 imiev charging via 15 amp wall socket lots of autumn leaves ",
+            "Rating": 4,
+            "DateCreated": "2014-05-24T05:09:16.82Z",
+            "User": {
+                "ID": 1043,
+                "Username": "g4qber"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 495,
+            "ChargePointID": 16299,
+            "CommentTypeID": 10,
+            "UserName": "g4qber",
+            "Comment": "",
+            "Rating": 5,
+            "DateCreated": "2013-10-17T11:20:36.527Z",
+            "User": {
+                "ID": 1043,
+                "Username": "g4qber"
+            },
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 452,
+            "ChargePointID": 16299,
+            "CommentTypeID": 10,
+            "UserName": "",
+            "Comment": "imiev",
+            "Rating": 5,
+            "DateCreated": "2013-09-28T09:19:12.407Z",
+            "CheckinStatusTypeID": 10
+        },
+        {
+            "ID": 340,
+            "ChargePointID": 16299,
+            "CommentTypeID": 10,
+            "UserName": "Geo",
+            "Comment": "Works",
+            "Rating": 5,
+            "DateCreated": "2013-06-03T12:50:42.173Z",
+            "CheckinStatusTypeID": 0
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 20403,
+            "ChargePointID": 16299,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM16299/OCM-16299.orig.2019111912275731.png",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM16299/OCM-16299.thmb.2019111912275731.png",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 22587,
+                "Username": "Sarah C Tesla M3"
+            },
+            "DateCreated": "2019-11-19T12:28:00Z"
+        },
+        {
+            "ID": 644,
+            "ChargePointID": 16299,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM16299/OCM-16299.orig.2014091922465470.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM16299/OCM-16299.thmb.2014091922465470.jpg",
+            "Comment": "Tesla n volt",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1043,
+                "Username": "g4qber"
+            },
+            "DateCreated": "2014-09-19T22:47:00Z"
+        },
+        {
+            "ID": 640,
+            "ChargePointID": 16299,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM16299/OCM-16299.orig.2014091207091970.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM16299/OCM-16299.thmb.2014091207091970.jpg",
+            "Comment": "Roadster and volt ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1043,
+                "Username": "g4qber"
+            },
+            "DateCreated": "2014-09-12T07:09:00Z"
+        },
+        {
+            "ID": 384,
+            "ChargePointID": 16299,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM16299/OCM-16299.orig.2014052405050753.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM16299/OCM-16299.thmb.2014052405050753.jpg",
+            "Comment": "2010 imiev via 15 amp socket",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 1043,
+                "Username": "g4qber"
+            },
+            "DateCreated": "2014-05-24T05:05:00Z"
+        }
+    ],
+    "DateLastVerified": "2021-10-13T06:02:00Z",
+    "ID": 16299,
+    "UUID": "A4003C61-089A-46D1-BA0A-A11FB551A702",
+    "DataProviderID": 1,
+    "OperatorID": 57,
+    "UsageTypeID": 4,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 16644,
+        "Title": "University of Western Australia",
+        "AddressLine1": "35 Stirling Highway Car Park No. 20",
+        "AddressLine2": "Crawley",
+        "Town": "Perth",
+        "Postcode": "WA",
+        "CountryID": 18,
+        "Latitude": -31.977629271750153,
+        "Longitude": 115.81634480917228,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 14760,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 240,
+            "PowerKW": 4.8,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        },
+        {
+            "ID": 61969,
+            "ConnectionTypeID": 25,
+            "StatusTypeID": 0,
+            "LevelID": 2,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2021-10-13T06:02:00Z",
+    "DateCreated": "2013-03-31T09:19:00Z",
+    "SubmissionStatusTypeID": 200
+}

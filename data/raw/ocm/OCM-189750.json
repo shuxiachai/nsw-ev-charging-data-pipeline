@@ -1,0 +1,69 @@
+{
+    "DateLastVerified": "2023-07-06T20:53:00Z",
+    "ID": 189750,
+    "UUID": "237B0647-0A2F-4B19-B942-C52C0B2D2EC1",
+    "DataProviderID": 1,
+    "OperatorID": 3398,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.40 / Kwh",
+    "AddressInfo": {
+        "ID": 190109,
+        "Title": "Uni Hill Town Centre",
+        "AddressLine1": "19 Graduate Drive",
+        "Town": "Bundoora",
+        "StateOrProvince": "Victoria",
+        "Postcode": "3082",
+        "CountryID": 18,
+        "Latitude": -37.682971406829196,
+        "Longitude": 145.07101659256762,
+        "ContactTelephone1": "1300 463 843",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 307004,
+            "ConnectionTypeID": 33,
+            "Reference": "MM014A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 351557,
+            "ConnectionTypeID": 2,
+            "Reference": "MM014A",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 461052,
+            "ConnectionTypeID": 33,
+            "Reference": "MM014B",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 461053,
+            "ConnectionTypeID": 2,
+            "Reference": "MM014B",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 50,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-06T20:53:00Z",
+    "DateCreated": "2021-11-01T06:42:00Z",
+    "SubmissionStatusTypeID": 200
+}

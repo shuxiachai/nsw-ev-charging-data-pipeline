@@ -1,0 +1,11 @@
+{
+  "url": "https://locations.ampol.com.au/en/ampol-foodary-st-ives",
+  "final_url": "https://locations.ampol.com.au/en/ampol-foodary-st-ives",
+  "method": "GET",
+  "status_code": 200,
+  "retrieved_at_utc": "2026-09-10T02:08:50.837588+00:00",
+  "sha256": "eac7b15d117536c1e6e8f93f65c1b5ab2f4f0ca3c7d798dea96ed254f9ad4ab0",
+  "bytes": 152260,
+  "content_type": "text/html; charset=UTF-8",
+  "file": "ampol-foodary-st-ives.html"
+}

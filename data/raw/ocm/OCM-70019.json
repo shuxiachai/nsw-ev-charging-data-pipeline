@@ -1,0 +1,210 @@
+{
+    "UserComments": [
+        {
+            "ID": 24943,
+            "ChargePointID": 70019,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 4,
+            "DateCreated": "2021-10-11T07:21:25.25Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24337,
+            "ChargePointID": 70019,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 4,
+            "DateCreated": "2021-05-15T03:30:33.8Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24316,
+            "ChargePointID": 70019,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "DateCreated": "2021-05-10T08:14:14.093Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24258,
+            "ChargePointID": 70019,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "DateCreated": "2021-04-29T08:26:06.627Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24255,
+            "ChargePointID": 70019,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Well sited. Access is good",
+            "Rating": 5,
+            "DateCreated": "2021-04-28T07:41:30.18Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 29499,
+            "ChargePointID": 70019,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.orig.2021101107291785.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.thmb.2021101107291785.jpg",
+            "Comment": "Probably not non Tesla compatible ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-10-11T07:29:00Z"
+        },
+        {
+            "ID": 29498,
+            "ChargePointID": 70019,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.orig.2021101107274417.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.thmb.2021101107274417.jpg",
+            "Comment": "Now with a long cable",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-10-11T07:28:00Z"
+        },
+        {
+            "ID": 27425,
+            "ChargePointID": 70019,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.orig.2021042807404036.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.thmb.2021042807404036.jpg",
+            "Comment": "Access is good. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-28T07:41:00Z"
+        },
+        {
+            "ID": 27424,
+            "ChargePointID": 70019,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.orig.2021042807395172.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.thmb.2021042807395172.jpg",
+            "Comment": "Access is good",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-28T07:40:00Z"
+        },
+        {
+            "ID": 27423,
+            "ChargePointID": 70019,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.orig.2021042807384038.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM70019/OCM-70019.thmb.2021042807384038.jpg",
+            "Comment": "Tesla HPWC has a short cable. ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-28T07:39:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-08-17T12:39:00Z",
+    "ID": 70019,
+    "UUID": "032F1CDA-3EA0-4336-992B-D82AB15AFA88",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 4,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 70365,
+        "Title": "Stockland baldivis ",
+        "AddressLine1": "Norseman approach",
+        "AddressLine2": "",
+        "Town": "Baldivis ",
+        "StateOrProvince": "",
+        "Postcode": "",
+        "CountryID": 18,
+        "Latitude": -32.332038197451894,
+        "Longitude": 115.81543780164884,
+        "ContactTelephone1": "",
+        "ContactTelephone2": "",
+        "ContactEmail": "",
+        "AccessComments": "",
+        "RelatedURL": "",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 98913,
+            "ConnectionTypeID": 25,
+            "Reference": "6426",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 2
+        },
+        {
+            "ID": 218610,
+            "ConnectionTypeID": 30,
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "07-K",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-08-17T12:39:00Z",
+    "DateCreated": "2016-07-01T22:20:00Z",
+    "SubmissionStatusTypeID": 200
+}

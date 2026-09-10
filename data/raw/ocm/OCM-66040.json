@@ -1,0 +1,98 @@
+{
+    "MediaItems": [
+        {
+            "ID": 21111,
+            "ChargePointID": 66040,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM66040/OCM-66040.orig.2020020109115193.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM66040/OCM-66040.thmb.2020020109115193.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24821,
+                "Username": "RaVOLT"
+            },
+            "DateCreated": "2020-02-01T09:12:00Z"
+        },
+        {
+            "ID": 21110,
+            "ChargePointID": 66040,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM66040/OCM-66040.orig.2020020109110847.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM66040/OCM-66040.thmb.2020020109110847.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24821,
+                "Username": "RaVOLT"
+            },
+            "DateCreated": "2020-02-01T09:11:00Z"
+        }
+    ],
+    "DateLastVerified": "2023-07-13T23:46:00Z",
+    "ID": 66040,
+    "UUID": "C08B02B2-B9D8-4AF2-A9A2-5C55495B3730",
+    "DataProviderID": 1,
+    "OperatorID": 3339,
+    "UsageTypeID": 4,
+    "UsageCost": "See operators website",
+    "AddressInfo": {
+        "ID": 66386,
+        "Title": "Augusta Car Park RAC Electric Highway",
+        "AddressLine1": "72 Blackwood Avenue",
+        "Town": "Augusta‎",
+        "StateOrProvince": "WA‎",
+        "Postcode": "6290",
+        "CountryID": 18,
+        "Latitude": -34.315148,
+        "Longitude": 115.158737,
+        "AccessComments": "",
+        "RelatedURL": "",
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 91309,
+            "ConnectionTypeID": 2,
+            "Reference": "4043",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        },
+        {
+            "ID": 91310,
+            "ConnectionTypeID": 25,
+            "Reference": "1904",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 7,
+            "CurrentTypeID": 10,
+            "Quantity": 1
+        },
+        {
+            "ID": 91311,
+            "ConnectionTypeID": 33,
+            "Reference": "4043",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "Amps": 125,
+            "Voltage": 400,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1
+        }
+    ],
+    "NumberOfPoints": 1,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-13T23:46:00Z",
+    "DateCreated": "2016-05-09T22:49:00Z",
+    "SubmissionStatusTypeID": 200
+}

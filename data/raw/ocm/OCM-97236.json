@@ -1,0 +1,169 @@
+{
+    "UserComments": [
+        {
+            "ID": 24217,
+            "ChargePointID": 97236,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "",
+            "Rating": 3,
+            "DateCreated": "2021-04-21T06:10:31.78Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24208,
+            "ChargePointID": 97236,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Charging from the short cable outlet, which usually does not work for me.",
+            "DateCreated": "2021-04-19T06:08:41.547Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24191,
+            "ChargePointID": 97236,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "Southern charger (long cable) charges okay.  This site is poorly positioned,  on main access to car park.",
+            "Rating": 3,
+            "DateCreated": "2021-04-12T05:39:52.15Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 10,
+            "IsActionedByEditor": false
+        },
+        {
+            "ID": 24190,
+            "ChargePointID": 97236,
+            "CommentTypeID": 10,
+            "UserName": "Wild Rice",
+            "Comment": "The north most charger (short cable) would not charge.  Red light, reset would not fix.",
+            "Rating": 3,
+            "DateCreated": "2021-04-12T05:37:32.357Z",
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "CheckinStatusTypeID": 25,
+            "IsActionedByEditor": false
+        }
+    ],
+    "MediaItems": [
+        {
+            "ID": 27349,
+            "ChargePointID": 97236,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM97236/OCM-97236.orig.2021042106232528.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM97236/OCM-97236.thmb.2021042106232528.jpg",
+            "Comment": "Charging on short cable ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-21T06:24:00Z"
+        },
+        {
+            "ID": 27348,
+            "ChargePointID": 97236,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM97236/OCM-97236.orig.2021042106223197.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM97236/OCM-97236.thmb.2021042106223197.jpg",
+            "Comment": "Access ",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2021-04-21T06:23:00Z"
+        },
+        {
+            "ID": 21145,
+            "ChargePointID": 97236,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM97236/OCM-97236.orig.2020020405313683.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM97236/OCM-97236.thmb.2020020405313683.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-04T05:32:00Z"
+        },
+        {
+            "ID": 21144,
+            "ChargePointID": 97236,
+            "ItemURL": "https://media.openchargemap.io/images/AU/OCM97236/OCM-97236.orig.2020020405302414.jpg",
+            "ItemThumbnailURL": "https://media.openchargemap.io/images/AU/OCM97236/OCM-97236.thmb.2020020405302414.jpg",
+            "Comment": "",
+            "IsEnabled": true,
+            "IsVideo": false,
+            "IsFeaturedItem": false,
+            "IsExternalResource": false,
+            "User": {
+                "ID": 24819,
+                "Username": "Wild Rice"
+            },
+            "DateCreated": "2020-02-04T05:30:00Z"
+        }
+    ],
+    "DateLastVerified": "2025-05-30T22:01:00Z",
+    "ID": 97236,
+    "UUID": "6D60D569-C68B-4FFD-9ECC-841BA096955A",
+    "DataProviderID": 1,
+    "OperatorID": 23,
+    "OperatorsReference": "38532",
+    "UsageTypeID": 1,
+    "UsageCost": "Free",
+    "AddressInfo": {
+        "ID": 97582,
+        "Title": "Stockland Riverton Center",
+        "AddressLine1": "High Road",
+        "AddressLine2": "Riverton",
+        "Town": "Perth",
+        "StateOrProvince": "Western Australia",
+        "Postcode": "6147",
+        "CountryID": 18,
+        "Latitude": -32.0396593286931,
+        "Longitude": 115.904397939737,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 138087,
+            "ConnectionTypeID": 1036,
+            "StatusTypeID": 30,
+            "LevelID": 2,
+            "Amps": 32,
+            "Voltage": 230,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 2,
+    "GeneralComments": "tesla dest charger 00-H left 03-J right",
+    "StatusTypeID": 30,
+    "DateLastStatusUpdate": "2025-05-30T22:01:00Z",
+    "DateCreated": "2018-01-12T04:48:00Z",
+    "SubmissionStatusTypeID": 200
+}

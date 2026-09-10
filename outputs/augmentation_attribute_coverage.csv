@@ -1,0 +1,16 @@
+scope,attribute,covered_dc_locations,source_observations,fraction_all_dc
+operator,operator_network_map_url,2,2,0.004694835680751174
+operator,operator_phone,67,67,0.1572769953051643
+operator,operator_website,419,476,0.9835680751173709
+site,access,49,49,0.11502347417840375
+site,access_comments,17,17,0.03990610328638498
+site,dc_connector_types,211,291,0.4953051643192488
+site,fee,70,70,0.1643192488262911
+site,opening_hours,44,44,0.10328638497652583
+site,operator_carpark_hours_text,2,2,0.004694835680751174
+site,operator_evse_status_snapshot,41,41,0.09624413145539906
+site,operator_network_status_snapshot,41,41,0.09624413145539906
+site,operator_station_code,41,41,0.09624413145539906
+site,usage_cost_text,103,103,0.24178403755868544
+site,usage_type,131,131,0.3075117370892019
+site,website,31,31,0.07276995305164319

@@ -1,0 +1,62 @@
+{
+    "DateLastVerified": "2023-07-17T13:33:00Z",
+    "ID": 190444,
+    "UUID": "46BB491C-8C2C-4D9C-BAFD-62FF5D360959",
+    "DataProviderID": 1,
+    "OperatorID": 3317,
+    "UsageTypeID": 4,
+    "UsageCost": "$0.30 per kWh",
+    "AddressInfo": {
+        "ID": 190803,
+        "Title": "Marlborough QESH",
+        "AddressLine1": "Puma Marlborough",
+        "AddressLine2": "71209 Kunwarara Road",
+        "Town": "Marlborough",
+        "StateOrProvince": "Queensland",
+        "Postcode": "4705",
+        "CountryID": 18,
+        "Latitude": -22.82792884592763,
+        "Longitude": 149.9324998642801,
+        "DistanceUnit": 0
+    },
+    "Connections": [
+        {
+            "ID": 308748,
+            "ConnectionTypeID": 33,
+            "Reference": "4004",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1,
+            "Comments": ""
+        },
+        {
+            "ID": 308749,
+            "ConnectionTypeID": 2,
+            "Reference": "4004",
+            "StatusTypeID": 50,
+            "LevelID": 3,
+            "PowerKW": 50,
+            "CurrentTypeID": 30,
+            "Quantity": 1,
+            "Comments": ""
+        },
+        {
+            "ID": 308750,
+            "ConnectionTypeID": 25,
+            "Reference": "1004",
+            "StatusTypeID": 50,
+            "LevelID": 2,
+            "PowerKW": 22,
+            "CurrentTypeID": 20,
+            "Quantity": 2
+        }
+    ],
+    "NumberOfPoints": 3,
+    "GeneralComments": "Pay QESH rate per kWh, not Chargefox rate (via Chargefox account) ",
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2023-07-17T13:33:00Z",
+    "DateCreated": "2021-12-08T13:25:00Z",
+    "SubmissionStatusTypeID": 200
+}
