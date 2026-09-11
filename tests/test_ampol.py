@@ -255,3 +255,51 @@ def test_acquire_validates_path_and_domain_before_fetch(tmp_path, monkeypatch):
     with pytest.raises(ValueError, match='source path'):
         ampol.acquire_ampol(root=tmp_path, config=config)
     assert not calls
+
+
+@pytest.mark.parametrize('full,reason,postal', [
+    ('999 Test Street,2000,Sydney,Au', 'house_number_conflict', False),
+    ('Test Street, 999,2000,Sydney,Au', 'house_number_conflict', False),
+    ('1 Test Road,2000,Sydney,Au', 'street_type_conflict', False),
+    ('1 Test Street,2001,Sydney,Au', '', True),
+    ('1 Test Street, Sydney NSW 2001', '', True),
+])
+def test_full_ampol_address_cannot_hide_a_conflict(monkeypatch, full, reason, postal):
+    locations, records, _ = frames()
+    locations.loc[0, 'operator_name'] = 'Ampol AmpCharge'
+    source = current_location()
+    source['address']['fullAddress'] = full
+    site = parse(source)
+    monkeypatch.setattr(ampol, 'load_ampol_sites', lambda **kwargs: pd.DataFrame([site]))
+    sites, matches, audit, attributes = ampol.ampol_augment(locations, records)
+    assert matches.empty and attributes.empty
+    assert audit.iloc[0].decision == 'rejected_evidence'
+    assert audit.iloc[0].extended_address_conflict == reason
+    assert bool(audit.iloc[0].postcode_conflict) is postal
+    assert sites.iloc[0].address_raw == full
+
+
+@pytest.mark.parametrize('full', [
+    '1 Test Street,2000,Sydney,Au', 'Test Street, 1,2000,Sydney,Au',
+    '1 Test Street, Sydney NSW 2000', '1 Test Street, Sydney, 2000, Australia',
+    'Test Street,2000,Sydney,Au', 'Ampol Foodary Test',
+])
+def test_compatible_or_unparsed_full_address_keeps_valid_ampol_match(monkeypatch, full):
+    locations, records, _ = frames()
+    locations.loc[0, 'operator_name'] = 'Ampol AmpCharge'
+    source = current_location()
+    source['address']['fullAddress'] = full
+    monkeypatch.setattr(ampol, 'load_ampol_sites', lambda **kwargs: pd.DataFrame([parse(source)]))
+    _, matches, audit, attributes = ampol.ampol_augment(locations, records)
+    assert len(matches) == len(attributes) == 1
+    assert not audit.iloc[0].postcode_conflict
+
+
+def test_four_digit_ampol_house_number_is_not_a_postcode(monkeypatch):
+    locations, records, _ = frames()
+    locations.loc[0, ['operator_name', 'address']] = ['Ampol AmpCharge', '1250 Test St, Sydney NSW 2000']
+    source = current_location()
+    source['address'].update(street='1250 Test Street', fullAddress='1250 Test Street,2000,Sydney,Au')
+    monkeypatch.setattr(ampol, 'load_ampol_sites', lambda **kwargs: pd.DataFrame([parse(source)]))
+    _, matches, audit, _ = ampol.ampol_augment(locations, records)
+    assert len(matches) == 1 and not audit.iloc[0].postcode_conflict

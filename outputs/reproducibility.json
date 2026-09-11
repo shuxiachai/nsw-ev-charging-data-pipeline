@@ -3,7 +3,7 @@
   "csv_outputs_identical": true,
   "schema_identical": true,
   "validation_report_identical": true,
-  "project_fingerprint": "0fa6873d6161ac1e7962b17f4755d3427d1a0ee5a6bfb39e02692ea1742dc43e",
+  "project_fingerprint": "e7357d6261889bbdec1e232be99cc324c1e735befedbe9cb2fe7c741d6f89ff4",
   "tables": {
     "amp_charge_site": "b66a1ec71493da462dfea3389f6cff668f3f814e43594e849899bd329c185fb6",
     "amp_charge_site_match": "30024994c95d931c4db3c2de2561cba8ea763dd80f4dceb9c598963c7afa8a15",
@@ -76,6 +76,6 @@
     "views": "2c57cafdb71f2b9f530a71217b794b31e713b0f83db1d02bf6c98675b5f9844a",
     "indexes": "31020e8a9126038e92ebb4f89fc870ec9177730b1d29bb82c92d3250f0464e21"
   },
-  "validation_report_sha256": "d6047d4e9dd0222b4a7226b389d1b9dad3a7f972bbb6d5e3b01c0cc72ac089a3",
+  "validation_report_sha256": "3ca548473dbcda011c1c4c488248ea4c2d6f9ece556323e5346aec4d3325d82c",
   "excluded": "Database physical bytes and run timestamps are not reproducibility criteria."
 }

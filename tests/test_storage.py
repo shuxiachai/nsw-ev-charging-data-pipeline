@@ -162,6 +162,22 @@ def test_independent_validation_rejects_bad_spatial_and_resolution_states(logica
     assert not validate(logical_database_copy)["integrity_passed"]
 
 
+@pytest.mark.parametrize("assignment", [
+    "original_latitude=NULL,original_longitude=NULL",
+    "original_latitude=NULL,latitude=latitude+0.000001,geometry=ST_Point(longitude,latitude+0.000001)",
+    "original_latitude=latitude+0.000001,latitude=latitude+0.000001,geometry=ST_Point(longitude,latitude+0.000001)",
+])
+def test_original_coordinate_evidence_cannot_be_erased_or_rewritten(logical_database_copy, assignment):
+    logical_database_copy.execute(
+        "UPDATE location SET " + assignment +
+        " WHERE location_id=(SELECT location_id FROM charger_record WHERE source_row=2)")
+    result = validate(logical_database_copy)
+    assert not result["integrity_passed"]
+    assert not result["integrity_checks"]["original_coordinates_match_source_representatives"]
+    if "NULL" in assignment:
+        assert not result["integrity_checks"]["coordinate_changes_have_resolution_evidence"]
+
+
 @pytest.mark.parametrize("assignment", ["sa4_method='typo_method'", "sa4_distance_m=-1", "sa4_distance_m='Infinity'::DOUBLE"])
 def test_spatial_constraints_reject_invalid_method_and_distance(assignment):
     with connect(DB) as con:

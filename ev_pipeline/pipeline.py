@@ -4,6 +4,7 @@ from hashlib import sha256
 import json
 import logging
 from pathlib import Path
+import re
 
 import duckdb
 import pandas as pd
@@ -226,6 +227,59 @@ def reviewed_source_quality_valid(con):
         return False
 
 
+def original_coordinates_match_representatives(con):
+    """Check retained original points against the selected source observations.
+
+    Selection follows location_representatives: a reviewed representative first,
+    then final metadata completeness and source-row order. Invalid source pairs
+    legitimately clean to two NULLs; they must not be confused with erased
+    evidence for a source pair that was valid.
+    """
+    from .clean import text
+
+    try:
+        preferred = {}
+        for location_id, record_id in con.execute(
+                "SELECT DISTINCT location_id,representative_record_id FROM reviewed_identity").fetchall():
+            if location_id in preferred and preferred[location_id] != record_id:
+                return False
+            preferred[location_id] = record_id
+        observations = con.execute("""
+            SELECT c.record_id,c.location_id,c.source_row,c.raw_json,
+                   CASE WHEN v.decision='resolved' THEN v.new_postcode
+                        WHEN a.decision='resolved' THEN a.new_postcode END AS corrected_postcode,
+                   coalesce(v.decision,a.decision) AS resolution_decision
+            FROM charger_record c LEFT JOIN source_resolution a USING(record_id)
+            LEFT JOIN reviewed_resolution v USING(record_id)
+        """).fetchall()
+        ranked, membership = {}, {}
+        for record_id, location_id, source_row, raw_json, corrected_postcode, decision in observations:
+            raw = json.loads(raw_json)
+            lat = pd.to_numeric(text(raw["Latitude"]), errors="coerce")
+            lon = pd.to_numeric(text(raw["Longitude"]), errors="coerce")
+            valid = pd.notna(lat) and pd.notna(lon) and -90 <= lat <= 90 and -180 <= lon <= 180
+            point = (float(lat), float(lon)) if valid else (None, None)
+            postcode = re.fullmatch(r"(?:NSW\s+)?(\d{4})", text(raw["PCODE"]), flags=re.I)
+            postcode = postcode.group(1) if postcode else None
+            if decision == "resolved":
+                postcode = corrected_postcode
+            completeness = (int(bool(text(raw["Station_name"]))) + int(postcode is not None)
+                            + int(bool(text(raw["LGANAME"]))))
+            rank = (record_id != preferred.get(location_id), -completeness, source_row)
+            membership.setdefault(location_id, set()).add(record_id)
+            if location_id not in ranked or rank < ranked[location_id][0]:
+                ranked[location_id] = (rank, point)
+        if any(record_id not in membership.get(location_id, set())
+               for location_id, record_id in preferred.items()):
+            return False
+        actual = con.execute("SELECT location_id,original_latitude,original_longitude FROM location").fetchall()
+        return len(actual) == len(ranked) and all(
+            location_id in ranked and (lat, lon) == ranked[location_id][1]
+            for location_id, lat, lon in actual)
+    except (ValueError, TypeError, KeyError):
+        return False
+
+
 def validate(con):
     from .matching_review import database_match_exclusions_valid
     from .regional import database_regional_reviews_valid
@@ -337,7 +391,8 @@ def validate(con):
         "no_conflicting_address_osm_match": scalar("SELECT count(*) FROM osm_site_match JOIN location USING(location_id) WHERE address_conflict") == 0,
         "no_conflicting_address_jolt_match": scalar("SELECT count(*) FROM jolt_site_match JOIN location USING(location_id) WHERE address_conflict") == 0,
         "spatial_query_executes": scalar("SELECT count(*) FROM region WHERE ST_IsValid(geometry)") == scalar("SELECT count(*) FROM region"),
-        "coordinate_changes_have_resolution_evidence": scalar("SELECT count(*) FROM location l WHERE (latitude<>original_latitude OR longitude<>original_longitude) AND NOT EXISTS (SELECT 1 FROM source_resolution s JOIN charger_record c USING(record_id) WHERE c.location_id=l.location_id AND s.decision='resolved' AND s.new_latitude=l.latitude AND s.new_longitude=l.longitude) AND NOT EXISTS (SELECT 1 FROM reviewed_resolution s JOIN charger_record c USING(record_id) WHERE c.location_id=l.location_id AND s.new_latitude=l.latitude AND s.new_longitude=l.longitude)") == 0,
+        "coordinate_changes_have_resolution_evidence": scalar("SELECT count(*) FROM location l WHERE (latitude IS DISTINCT FROM original_latitude OR longitude IS DISTINCT FROM original_longitude) AND NOT EXISTS (SELECT 1 FROM source_resolution s JOIN charger_record c USING(record_id) WHERE c.location_id=l.location_id AND s.decision='resolved' AND s.new_latitude=l.latitude AND s.new_longitude=l.longitude) AND NOT EXISTS (SELECT 1 FROM reviewed_resolution s JOIN charger_record c USING(record_id) WHERE c.location_id=l.location_id AND s.new_latitude=l.latitude AND s.new_longitude=l.longitude)") == 0,
+        "original_coordinates_match_source_representatives": original_coordinates_match_representatives(con),
         "reviewed_resolutions_applied_to_locations": scalar("SELECT count(*) FROM reviewed_resolution s JOIN charger_record c USING(record_id) JOIN location l USING(location_id) WHERE l.address_conflict OR l.latitude IS DISTINCT FROM s.new_latitude OR l.longitude IS DISTINCT FROM s.new_longitude OR l.postcode IS DISTINCT FROM s.new_postcode") == 0,
         "automatic_resolutions_applied_to_analysis_locations": scalar("SELECT count(*) FROM source_resolution s JOIN charger_record c USING(record_id) JOIN location l USING(location_id) WHERE s.decision='resolved' AND NOT l.address_conflict AND (l.latitude IS DISTINCT FROM s.new_latitude OR l.longitude IS DISTINCT FROM s.new_longitude OR l.postcode IS DISTINCT FROM s.new_postcode)") == 0,
         "locations_have_consistent_point_geometry": scalar("SELECT count(*) FROM location WHERE geometry IS NULL OR latitude IS NULL OR longitude IS NULL OR ST_X(geometry) IS DISTINCT FROM longitude OR ST_Y(geometry) IS DISTINCT FROM latitude") == 0,

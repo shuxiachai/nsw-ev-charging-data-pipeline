@@ -46,26 +46,37 @@ def address_identity(value):
     return re.sub(r"\bnsw\s+\d{4}$", "nsw", value)
 
 
-def power(value):
-    """Return individual-plug min/max; never sum kW into an invented site rating."""
+def _power_details(value):
+    """Parse ratings and explicit configuration counts with one complete grammar.
+
+    A multiplier establishes a configuration expression; unmultiplied terms in
+    that expression each contribute one. Bare ratings without any multiplier do
+    not establish a site's plug count.
+    """
     value = text(value).lower().replace("\N{MINUS SIGN}", "-")
     number = r"-?\d+(?:\.\d+)?"
     term = rf"(?:(\d+)\s*[x×]\s*)?({number})\s*kw"
     # Validate the whole expression before extracting values. A partial match
     # would turn 1,250 kW into 250, 1e2 kW into 2, or a range into one endpoint.
     if re.fullmatch(number, value):
-        nums = [value]
+        terms = [("", value)]
     elif re.fullmatch(rf"{term}(?:\s*[&+/;]\s*{term})*", value):
         terms = re.findall(term, value)
         if any(quantity and int(quantity) <= 0 for quantity, _ in terms):
-            return None, None, "invalid"
-        nums = [rating for _, rating in terms]
+            return None, None, "invalid", None
     else:
-        return None, None, "unknown"
-    values = [float(n) for n in nums]
+        return None, None, "unknown", None
+    values = [float(rating) for _, rating in terms]
     if any(not math.isfinite(n) or n <= 0 for n in values):
-        return None, None, "invalid"
-    return min(values), max(values), "multiple" if len(values) > 1 else "single"
+        return None, None, "invalid", None
+    configured = (sum(int(quantity) if quantity else 1 for quantity, _ in terms)
+                  if any(quantity for quantity, _ in terms) else None)
+    return min(values), max(values), "multiple" if len(values) > 1 else "single", configured
+
+
+def power(value):
+    """Return individual-plug min/max; never sum kW into an invented site rating."""
+    return _power_details(value)[:3]
 
 
 def extract_address_postcode(value):
@@ -119,7 +130,7 @@ def load_clean():
             flag("missing_source_id", "Stable content-based record/location identifiers generated", "info")
         if not r["Station_name"]:
             flag("missing_station_name", "Name remains null; address is the display fallback", "info")
-        lo, hi, kind = power(r["Charger_rating"])
+        lo, hi, kind, configured = _power_details(r["Charger_rating"])
         if kind in ("unknown", "invalid"):
             flag("power_unavailable", f"Preserved unparseable rating: {r['Charger_rating']}")
         plugs = pd.to_numeric(r["Number_of_plugs"], errors="coerce")
@@ -128,9 +139,8 @@ def load_clean():
             plugs = None
         else:
             plugs = int(plugs)
-        configured = re.findall(r"(\d+)\s*x\s*\d+(?:\.\d+)?\s*kw", r["Charger_rating"], re.I)
-        if configured and plugs is not None and sum(map(int, configured)) != plugs:
-            flag("configuration_count_disagreement", f"Rating configuration count={sum(map(int, configured))}, Number_of_plugs={plugs}; units may differ, both values retained")
+        if configured is not None and plugs is not None and configured != plugs:
+            flag("configuration_count_disagreement", f"Rating configuration count={configured}, Number_of_plugs={plugs}; units may differ, both values retained")
         ctype = r["Charger_Type"].upper()
         if ctype not in ("AC", "DC", "UPCOMING"):
             flag("unknown_charger_type", r["Charger_Type"], "error")

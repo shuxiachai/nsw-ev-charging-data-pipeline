@@ -160,9 +160,6 @@ duplicated in the code submission.
    but does not establish the records' observation period. Acceptance as the
    assignment's December 2025 input still requires course confirmation. No newer
    file is silently substituted.
-   The v2.1 revision log says "Revised data format" but does not establish the
-   records' observation period. Acceptance of this currently published resource
-   as the course's December 2025 input still requires course confirmation.
 2. **ABS:** parse the official Edition 4 download page for the 2026 SA4 shapefile
    ZIP, download it in Python, and read the ZIP directly with GeoPandas. Select
    NSW by `STE_CODE26='1'`. The two nonspatial special categories have no polygons
@@ -308,6 +305,10 @@ To adopt a candidate version:
   conflicts. Corrections require one OCM candidate with street similarity at
   least 0.85, agreement on postcode (or town when external postcode is missing),
   and a same-operator OSM charging location within 150 m of that candidate.
+  Both source and OCM addresses must contain parsed streets; equal generic venue
+  labels cannot authorize correction. The OCM address's explicit postal suffix
+  must agree with its independent postcode and the source. Full and structured
+  OSM fields are also checked against each other before providing corroboration.
   Explicit street-number/type contradictions disqualify correction even when
   the string similarity is high. Different clearly parsed localities require
   verified compatibility; postcode agreement alone cannot authorize a move.
@@ -343,6 +344,10 @@ To adopt a candidate version:
 - Parse individual-plug kW values. `2x350kW & 6x175kW` becomes minimum 175 and
   maximum 350, not a made-up total station power. Bare `AC` is unknown power.
   Count disagreements are flagged because configured units and plugs can differ.
+  Power and configuration counts share a whole-expression parser: `x` and `×`
+  are equivalent, and `2x50 kW + 22 kW` describes three configuration units.
+  Bare ratings without any multiplier do not establish a plug count; unsupported
+  expressions do not generate a misleading count from only part of the text.
   `location_power_observations` exposes every available source-record rating,
   including nonrepresentative rows, with source-row and snapshot provenance.
   A rating is parsed only when its whole expression is supported; ambiguous
@@ -391,7 +396,7 @@ measured with WGS84 ellipsoidal distance. A match requires the same canonical
 operator and no postcode/source-address conflict, plus either:
 
 - distance at most 100 m; or
-- distance at most 250 m and street-address similarity at least 0.65.
+- distance at most 250 m and address similarity at least 0.65.
 
 Both routes reject explicit conflicts between house-number intervals or street
 types on the same named street. One exact Dan Murphy's address-range exception
@@ -402,6 +407,10 @@ validated as nullable, finite, non-Boolean, nonnegative integers before SQL
 insertion, so fractional quantities cannot be silently rounded.
 
 The score is `0.65 * max(0, 1-distance_m/300) + 0.35 * address_similarity`.
+Ordinary matching compares normalized street components, or the first
+comma-delimited label when a street cannot be parsed; missing text scores zero.
+This label fallback is weaker evidence and is not allowed to justify automatic
+coordinate correction.
 Two eligible candidates less than 0.10 apart in score are left ambiguous. Reuse
 of one external site for different source locations is sent to review, not
 automatically accepted. OCM and OSM candidates must have explicit DC evidence.
@@ -431,6 +440,11 @@ OSM matching checks `addr:full` alongside house-number/street fields and explici
 postcodes before ranking candidates. A contradiction in either representation,
 including between the two OSM representations, cannot be hidden by the other.
 Missing fields remain unknown; all original tags are retained.
+OCM embedded postal suffixes and Ampol full/structured address fields receive
+the same explicit-conflict checks. Ampol's native `street,postcode,locality,Au`
+layout and reversed street-number layout are recognized without treating a
+four-digit house number as a postcode. Conflicting candidates stay in the audit
+and cannot contribute site attributes.
 Recognized generic network-map URLs are also operator-scoped. In particular,
 the two exact NRMA network-page paths are not treated as individual site pages;
 site-detail URLs, query strings and fragments are not generalized by that rule.
@@ -474,8 +488,13 @@ Some corrected coordinates come from OCM or OSM: their same-source zero-distance
 not independent accuracy measurements. Inspect the resolution evidence and
 review CSVs before drawing location-specific conclusions.
 
+Coordinate verification uses null-safe comparisons and checks retained originals
+against each location's representative source record. Invalid original coordinate
+pairs may legitimately be null; a null cannot hide an unsupported change or the
+erasure of valid original coordinates.
+
 The integrated Windows/Python 3.12 verification for this follow-up passed
-**924 tests and 46 integrity checks**. Results are recorded in
+**1,006 tests and 47 integrity checks**. Results are recorded in
 `outputs/test_evidence.json` and `outputs/validation.json`. An offline rebuild
 reproduced all 23 base tables, 40 generated CSVs, persisted schema definitions
 and the complete deterministic validation report.

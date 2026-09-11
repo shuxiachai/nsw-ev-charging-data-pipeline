@@ -92,6 +92,13 @@ Region and location geometries use EPSG:4326, with R-tree indexes for spatial
 queries. `dc_locations` and `dc_augmentation_coverage` provide distinct-location
 analysis views, keeping site-specific and operator-level augmentation separate.
 
+Coordinate-change validation uses null-safe comparisons and independently
+checks retained originals against the representative source record's raw JSON.
+It reconstructs the same whole-row selection rules, including reviewed
+representatives and corrected-postcode completeness. Invalid original coordinate
+pairs legitimately clean to two nulls; erased valid originals or unsupported
+coordinate changes fail verification.
+
 The design normalizes reused entities but intentionally keeps raw JSON and
 source text. This modest redundancy supports auditability and avoids irreversible
 information loss. A fully wide station table would obscure source conflicts;
@@ -129,11 +136,18 @@ also checks those two OSM representations against each other. Explicit postcodes
 from either representation or `addr:postcode` must not contradict each other or
 the source. Structured addresses keep their existing score; full text supplies
 the primary address only when structured fields are absent. Original tags stay
-in `tags_json`. Additional evidence can reject candidates but cannot waive shared
-distance, operator, ambiguity or reuse checks; other providers retain their rules.
+in `tags_json`. OCM address-embedded postal suffixes must agree with its separate
+postcode and the source. Ampol checks `fullAddress` against structured street
+and postcode fields, including its native `street,postcode,locality,Au` order
+and a reversed `street,number` component. The common evidence helper compares
+all supplied address observations with each other. Additional evidence can
+reject candidates but cannot waive distance, operator, ambiguity or reuse checks.
 
 Candidate scores, ambiguity margins and rejection of reused external sites stay
-explicit. Candidate CSVs retain `extended_address_conflict`, including conflicts
+explicit. Ordinary address similarity compares normalized street components,
+falling back to the first comma-delimited label when a street cannot be parsed.
+That label agreement is weaker evidence and cannot authorize an automatic
+coordinate correction. Candidate CSVs retain `extended_address_conflict`, including conflicts
 observed inside the nearby route. One individually reviewed Dan Murphy's address
 range exception retains its exact input/evidence guards and is linked from the
 accepted OCM match to the evidence snapshot; it bypasses no other matching gate.
@@ -144,7 +158,11 @@ number; malformed tokens do not make token order decide the result. See
 
 The generic coordinate-resolution rule requires an unambiguous
 OCM street/locality match with street similarity at least 0.85, corroborated by a
-same-operator OSM charging point within 150 m. This requires a known operator
+same-operator OSM charging point within 150 m. Both source and OCM addresses must
+have parsed street components; generic venue labels alone remain unresolved
+with `street_evidence_unavailable`. The OCM postal fields and OSM full/structured
+address fields must be internally consistent before providing correction
+evidence. Missing OSM address fields remain unknown. This requires a known operator
 identity: empty, non-networked, unknown-operator and
 business-owner labels cannot justify a coordinate or postcode correction.
 Such records retain original values with `operator_identity_unavailable` in the
@@ -218,6 +236,13 @@ measurement against that same source. One coastal point receives a bounded,
 labelled nearest-region approximation. Some `Charger_rating='AC'` values contain
 no numerical power. Source configuration counts and plug counts need not be
 interchangeable units.
+
+Power bounds and configuration counts share one whole-expression parser.
+ASCII `x` and Unicode `×` multipliers are equivalent. When at least one term
+has an explicit multiplier, each unmultiplied term in the same supported
+configuration contributes one to its stated count. Bare ratings without any
+multiplier do not establish a plug inventory. Unknown or invalid expressions
+produce no partial configuration count; their raw text remains available.
 
 `reviewed_region` preserves the source-point SA4, reviewed regional SA4, full
 official locality geometry, operator-map or venue-address evidence, source identity and fixed review

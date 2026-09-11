@@ -1,5 +1,6 @@
 """Conservative point matching plus separately identified operator enrichment."""
 from difflib import SequenceMatcher
+from itertools import combinations
 import json
 import math
 import re
@@ -9,7 +10,7 @@ import pandas as pd
 from pyproj import Geod
 
 from .acquire import RAW
-from .clean import operator, text
+from .clean import extract_address_postcode, operator, text
 from .matching_review import load_address_exceptions
 from .augmentation_semantics import classify_url_attribute, operator_website_hosts, source_verified_at
 from .operator_review import load_operator_reviews, usable_operator_details
@@ -57,13 +58,15 @@ def _street_parts(part):
     return None
 
 
-def street_component(value):
+def street_component(value, *, fallback=True):
     value = text(value)
     for part in value.split(","):
         parsed = _street_parts(part)
         if parsed:
             return " ".join(address_key(parsed[2]))
-    return " ".join(address_key(value.split(",")[0]))
+    # Ordinary proximity matching retains a label fallback. Callers making
+    # coordinate corrections must explicitly require a parsed street instead.
+    return " ".join(address_key(value.split(",")[0])) if fallback else ""
 
 
 def _street_evidence(value):
@@ -116,6 +119,22 @@ def extended_address_conflict(left, right):
         if a[2][1] < b[2][0] or b[2][1] < a[2][0]:
             return "house_number_conflict"
     return ""
+
+
+def address_evidence_conflicts(addresses, postcodes=()):
+    """Reject explicit contradictions across all supplied address observations.
+
+    Missing/unparsed fields remain unknown. A full address and its structured
+    fields must agree internally even when neither can be compared to a source
+    street. Read postal suffixes only; four-digit house numbers are not postcodes.
+    """
+    addresses = tuple(addresses)
+    conflict = next((reason for left, right in combinations(addresses, 2)
+                     if (reason := extended_address_conflict(left, right))), "")
+    known_postcodes = {extract_address_postcode(value) for value in addresses} - {None}
+    known_postcodes.update(text(value) for value in postcodes
+                           if re.fullmatch(r"\d{4}", text(value)))
+    return conflict, len(known_postcodes) > 1
 
 
 def acceptable_candidate(distance, same_operator, address_score, postcode_conflict, source_conflict,
@@ -216,6 +235,8 @@ def match_sites(locations, records, sites, *, address_exceptions=None, additiona
         # but contradictions in the source disqualify automatic site matching.
         pc = text(s.address_postcode) or text(s.postcode)
         pc_conflict = bool(pc and text(e.postcode) and pc != text(e.postcode))
+        _, embedded_pc_conflict = address_evidence_conflicts((s.address, e.address), (pc, e.postcode))
+        pc_conflict = pc_conflict or embedded_pc_conflict
         extra_conflict = ""
         if additional_address_evidence is not None:
             extra_conflict, extra_pc_conflict = additional_address_evidence(s, e)

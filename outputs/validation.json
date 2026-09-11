@@ -39,6 +39,7 @@
     "no_conflicting_address_jolt_match": true,
     "spatial_query_executes": true,
     "coordinate_changes_have_resolution_evidence": true,
+    "original_coordinates_match_source_representatives": true,
     "reviewed_resolutions_applied_to_locations": true,
     "automatic_resolutions_applied_to_analysis_locations": true,
     "locations_have_consistent_point_geometry": true,

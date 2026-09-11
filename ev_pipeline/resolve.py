@@ -5,7 +5,8 @@ import re
 import pandas as pd
 from .acquire import ROOT, RAW
 from .clean import extract_address_postcode, operator, text
-from .augment import external_data, address_similarity, extended_address_conflict, _street_parts, GEOD, EMPTY_OPS
+from .augment import (external_data, address_similarity, extended_address_conflict,
+                      address_evidence_conflicts, street_component, _street_parts, GEOD, EMPTY_OPS)
 
 AUDIT_COLUMNS = [
     "record_id", "source_row", "decision", "reason", "source_address", "old_latitude",
@@ -128,8 +129,18 @@ def resolve_conflicts(records, issues):
             # a genuinely conflicting four-digit postcode cannot be ignored.
             external_pc = text(e.postcode)
             locality_agrees = postcode_matches or (town_matches and not re.fullmatch(r"\d{4}", external_pc))
+            if not locality_agrees:
+                continue
+            _, postcode_conflict = address_evidence_conflicts(
+                (r.address, e.address), (r.address_postcode, e.postcode))
+            if postcode_conflict:
+                rejected_evidence.append(f"OCM {e.ocm_id}: postcode_conflict")
+                continue
+            if not all(street_component(value, fallback=False) for value in (r.address, e.address)):
+                rejected_evidence.append(f"OCM {e.ocm_id}: street_evidence_unavailable")
+                continue
             sim = address_similarity(r.address, e.address)
-            if not locality_agrees or sim < 0.85:
+            if sim < 0.85:
                 continue
             relation = locality_relation(source_town, town, r.address_postcode, e.postcode, e.latitude, e.longitude)
             if relation == "unverified_difference":
@@ -151,12 +162,10 @@ def resolve_conflicts(records, issues):
                     tags = s["tags"]
                     addresses = [text(tags.get("addr:full")), " ".join(filter(None, [
                         text(tags.get("addr:housenumber")), text(tags.get("addr:street"))]))]
-                    postcodes = {text(tags.get("addr:postcode"))}
-                    postcodes.update(extract_address_postcode(address) for address in addresses)
-                    postcode_conflict = any(re.fullmatch(r"\d{4}", value or "")
-                                            and value != r.address_postcode for value in postcodes)
-                    conflicts = {extended_address_conflict(address, known)
-                                 for address in addresses for known in (r.address, e.address)} - {""}
+                    conflict, postcode_conflict = address_evidence_conflicts(
+                        (r.address, e.address, *addresses),
+                        (r.address_postcode, e.postcode, tags.get("addr:postcode")))
+                    conflicts = {conflict} - {""}
                     if postcode_conflict:
                         conflicts.add("postcode_conflict")
                     if conflicts:

@@ -220,3 +220,65 @@ def test_known_operator_still_supports_both_correction_methods(
     expected_latitude = latitude if method == "postcode_verified_ocm_osm" else -33.85
     assert (row.latitude, row.longitude) == (expected_latitude, 151.20)
     assert [issue["code"] for issue in issues] == [method]
+
+
+@pytest.mark.parametrize("full,split_street,reason", [
+    ("1 Test St, Sydney NSW 2000", "Test Street", "house_number_conflict"),
+    ("999 Test Road, Sydney NSW 2000", "Test Street", "street_type_conflict"),
+])
+def test_internally_conflicting_osm_cannot_support_a_different_source_street(
+        corroborated_candidate, full, split_street, reason):
+    source = corroborated_candidate("10 King Street", osm_tags={
+        "addr:full": full, "addr:housenumber": "999", "addr:street": split_street})
+    source["address"] = "10 King Street, Sydney NSW 2000"
+    records = pd.DataFrame([source])
+    result, audit = resolve_conflicts(records, [])
+    assert audit.iloc[0].decision == "unresolved"
+    assert reason in audit.iloc[0].reason
+    pd.testing.assert_frame_equal(records, result[records.columns])
+
+
+def test_internal_osm_conflict_excludes_only_that_corroborator(corroborated_candidate):
+    source = corroborated_candidate("10 King Street", osm_tags={
+        "addr:full": "1 Test St, Sydney NSW 2000", "addr:housenumber": "999", "addr:street": "Test Street"},
+        extra_osm=[{"type": "node", "id": 2, "lat": -33.8501, "lon": 151.20,
+                    "tags": {"operator": "Evie", "addr:full": "10 King St, Sydney NSW 2000"}}])
+    source["address"] = "10 King Street, Sydney NSW 2000"
+    _, audit = resolve_conflicts(pd.DataFrame([source]), [])
+    assert audit.iloc[0].decision == "resolved"
+    assert audit.iloc[0].osm_id == "node/2"
+
+
+@pytest.mark.parametrize("label", ["Shopping Centre", "Car Park", "Town Centre"])
+@pytest.mark.parametrize("latitude", [-33.86, -33.8501])
+def test_generic_venue_agreement_cannot_authorize_correction(corroborated_candidate, label, latitude):
+    source = corroborated_candidate(label)
+    source.update(address=label + ", Sydney NSW 2000", latitude=latitude)
+    assert address_similarity(source["address"], label) == 1.0
+    records = pd.DataFrame([source])
+    result, audit = resolve_conflicts(records, [])
+    assert audit.iloc[0].decision == "unresolved"
+    assert "street_evidence_unavailable" in audit.iloc[0].reason
+    pd.testing.assert_frame_equal(records, result[records.columns])
+
+
+@pytest.mark.parametrize("street", ["Lot 12 Hume Hwy", "Cnr Herring Rd & Waterloo Rd", "Little Hoskins St"])
+def test_parsed_streets_do_not_require_a_simple_house_number(corroborated_candidate, street):
+    source = corroborated_candidate(street)
+    source["address"] = street + ", Sydney NSW 2000"
+    result, audit = resolve_conflicts(pd.DataFrame([source]), [])
+    assert audit.iloc[0].decision == "resolved"
+    assert not result.iloc[0].address_conflict
+
+
+@pytest.mark.parametrize("address", [
+    "10 Test Street, Sydney NSW 2001", "10 Test Street, Sydney, 2001, Australia",
+    "10 Test Street, Sydney 2001 NSW",
+])
+def test_ocm_embedded_postcode_cannot_be_overridden_by_separate_field(corroborated_candidate, address):
+    source = corroborated_candidate(address, osm_tags={"addr:full": "10 Test St, Sydney NSW 2000"})
+    records = pd.DataFrame([source])
+    result, audit = resolve_conflicts(records, [])
+    assert audit.iloc[0].decision == "unresolved"
+    assert "OCM 1: postcode_conflict" in audit.iloc[0].reason
+    pd.testing.assert_frame_equal(records, result[records.columns])

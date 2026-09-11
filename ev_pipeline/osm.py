@@ -1,11 +1,10 @@
 """OpenStreetMap station enrichment, attributed separately from OCM."""
 import json
 import math
-import re
 import pandas as pd
 from .acquire import RAW
-from .clean import extract_address_postcode, operator, text
-from .augment import extended_address_conflict, match_sites
+from .clean import operator, text
+from .augment import address_evidence_conflicts, match_sites
 from .augmentation_semantics import classify_url_attribute, operator_website_hosts
 
 DC_SOCKETS = {"type2_combo": "CCS (Type 2)", "type1_combo": "CCS (Type 1)", "chademo": "CHAdeMO",
@@ -38,15 +37,9 @@ def osm_address_conflicts(source, external):
     Full and split addresses are independent observations: neither can hide a
     contradiction in the other. Missing/unparsed evidence remains unknown.
     """
-    full, split = external.address_full, external.address_split
-    conflicts = [extended_address_conflict(left, right)
-                 for left, right in [(source.address, full), (source.address, split), (full, split)]]
-    postcodes = {extract_address_postcode(full), extract_address_postcode(split)} - {None}
-    for value in [external.postcode, text(source.address_postcode) or text(source.postcode)]:
-        value = text(value)
-        if re.fullmatch(r"\d{4}", value):
-            postcodes.add(value)
-    return next((conflict for conflict in conflicts if conflict), ""), len(postcodes) > 1
+    return address_evidence_conflicts(
+        (source.address, external.address_full, external.address_split),
+        (external.postcode, text(source.address_postcode) or text(source.postcode)))
 
 
 def osm_augment(locations, records, *, operator_details=None):

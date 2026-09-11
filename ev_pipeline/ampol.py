@@ -16,7 +16,7 @@ from urllib.parse import urlsplit
 import pandas as pd
 
 from .acquire import ROOT, fetch
-from .augment import match_sites
+from .augment import address_evidence_conflicts, match_sites
 from .clean import operator, text
 
 
@@ -193,13 +193,31 @@ def load_ampol_sites(*, root=ROOT, config=None):
     return sites
 
 
+def ampol_address_conflicts(source, external):
+    """Check complete and structured evidence without replacing either value.
+
+    Ampol's native fullAddress uses street,postcode,locality,Au. Recognize that
+    complete layout explicitly, including a reversed street,number component;
+    other formats still receive the shared conservative address checks.
+    """
+    addresses = [source.address, external.address, external.address_raw]
+    postcodes = [text(source.address_postcode) or text(source.postcode), external.postcode]
+    native = re.fullmatch(r"(.+),\s*(\d{4})\s*,\s*([^,]+),\s*(?:Au|Australia)",
+                          text(external.address_raw), flags=re.I)
+    if native:
+        postcodes.append(native.group(2))
+        if text(native.group(1)):
+            addresses.append(_street_address({"street": native.group(1)}))
+    return address_evidence_conflicts(addresses, postcodes)
+
+
 def ampol_augment(locations, records, *, root=ROOT, config=None):
     sites = load_ampol_sites(root=root, config=config)
-    proxy = sites[["address", "postcode", "latitude", "longitude", "has_dc"]].copy()
+    proxy = sites[["address", "address_raw", "postcode", "latitude", "longitude", "has_dc"]].copy()
     proxy["ocm_id"] = range(1, len(sites) + 1)
     proxy["ocm_operator"] = operator("Ampol")
     mapping = dict(zip(proxy.ocm_id, sites.ampol_id))
-    matches, audit = match_sites(locations, records, proxy)
+    matches, audit = match_sites(locations, records, proxy, additional_address_evidence=ampol_address_conflicts)
     for frame in [matches, audit]:
         frame["ampol_id"] = frame.ocm_id.map(mapping)
         frame.drop(columns="ocm_id", inplace=True)
