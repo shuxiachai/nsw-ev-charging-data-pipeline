@@ -22,7 +22,7 @@ Start with the [pipeline](ev_pipeline/pipeline.py), [cleaning](ev_pipeline/clean
 snapshot below. The repository includes source code, tests, technical notes,
 small frozen originals with all manifests, processed CSVs and result summaries.
 
-The [review-fixes-2026-09-10 Release](https://github.com/shuxiachai/comp5339-assignment1-2026s2/releases/tag/review-fixes-2026-09-10)
+The [10 September data snapshot Release](https://github.com/shuxiachai/comp5339-assignment1-2026s2/releases/tag/review-fixes-2026-09-10)
 contains `COMP5339_A1_Code_and_Database.zip` and `SHA256.txt`. The ZIP includes the
 complete frozen inputs and DuckDB database. Large PDF/ZIP originals, the database,
 local environments and review scratch files are excluded from Git history.
@@ -30,14 +30,15 @@ Repository collaborators can access this private Release after accepting an
 invitation. The release is a reviewed working baseline, not a final submission
 declaration; the report and group details remain separate deliverables.
 
-To run the current reviewed version, download the ZIP and `SHA256.txt`, compare the ZIP's
-SHA-256 with the published checksum, extract it into a new folder, then follow
-Quick start below. On Windows, `Get-FileHash -Algorithm SHA256 <zip-path>` computes
-the checksum. Links to PDF originals in the source documentation refer to files
-included in that full package.
+The Release preserves the 10 September code and data snapshot; `main` includes
+later boundary-case fixes. No new submission ZIP is generated for each code edit.
+Download that ZIP and `SHA256.txt`, check the checksum, and extract it to recover
+the frozen data. On Windows, `Get-FileHash -Algorithm SHA256 <zip-path>` computes
+the checksum. Use the Git-clone instructions below to run the latest code.
+Links to PDF originals refer to files included in the snapshot.
 
 To work in a Git clone, use `git clone https://github.com/shuxiachai/comp5339-assignment1-2026s2.git`.
-For this reviewed version, copy the extracted package's `data/` directory into
+Copy the extracted snapshot's `data/` directory into
 the clone, then run Quick start from the clone. This restores the large frozen
 originals and database without replacing the checked-out code. A clone alone
 does not include all evidence required for an offline build. Match the data
@@ -312,6 +313,9 @@ To adopt a candidate version:
   verified compatibility; postcode agreement alone cannot authorize a move.
   An OSM corroborator with an explicit contradictory street number/type or
   postcode is also withheld; its absence of address fields remains unknown.
+  Automatic correction also requires a known operator: empty, non-networked,
+  unknown-operator and business-owner labels cannot establish shared identity.
+  Rejected corrections retain their original values and an explicit audit reason.
   Eleven original conflicts meet this rule: ten coordinate corrections and one
   postcode-only correction. Original fields and source IDs are retained in
   `source_resolution`. A second, explicitly reviewed stage corrects seven further
@@ -423,6 +427,10 @@ The unverified Counties Energy assignment at Richmond (one AC location) is
 withheld using guarded source evidence, with its candidate value and reason in
 `quality_issue`. No operator label or DC coverage is changed by that decision.
 See [the operator identity review](docs/operator_identity_review_20260910.md).
+OSM matching checks `addr:full` alongside house-number/street fields and explicit
+postcodes before ranking candidates. A contradiction in either representation,
+including between the two OSM representations, cannot be hidden by the other.
+Missing fields remain unknown; all original tags are retained.
 Recognized generic network-map URLs are also operator-scoped. In particular,
 the two exact NRMA network-page paths are not treated as individual site pages;
 site-detail URLs, query strings and fragments are not generalized by that rule.
@@ -467,7 +475,7 @@ not independent accuracy measurements. Inspect the resolution evidence and
 review CSVs before drawing location-specific conclusions.
 
 The integrated Windows/Python 3.12 verification for this follow-up passed
-**867 tests and 46 integrity checks**. Results are recorded in
+**924 tests and 46 integrity checks**. Results are recorded in
 `outputs/test_evidence.json` and `outputs/validation.json`. An offline rebuild
 reproduced all 23 base tables, 40 generated CSVs, persisted schema definitions
 and the complete deterministic validation report.
@@ -499,7 +507,8 @@ overlap and must not be summed.
 ## Important output files
 
 The archive-specific `submission/package_verification.json`, supplied beside
-the Release ZIP, records the current fresh-environment and archive checks.
+the Release ZIP, records checks for that dated snapshot. Current code verification
+is recorded in `outputs/test_evidence.json` and `outputs/reproducibility.json`.
 The earlier [fresh-environment check](docs/fresh_environment_20260910.md)
 documents the initial baseline and retains its historical counts and hash.
 Fresh environment setup is distinct from a fresh retrieval of historical sources.

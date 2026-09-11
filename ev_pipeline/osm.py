@@ -1,10 +1,11 @@
 """OpenStreetMap station enrichment, attributed separately from OCM."""
 import json
 import math
+import re
 import pandas as pd
 from .acquire import RAW
-from .clean import operator, text
-from .augment import match_sites
+from .clean import extract_address_postcode, operator, text
+from .augment import extended_address_conflict, match_sites
 from .augmentation_semantics import classify_url_attribute, operator_website_hosts
 
 DC_SOCKETS = {"type2_combo": "CCS (Type 2)", "type1_combo": "CCS (Type 1)", "chademo": "CHAdeMO",
@@ -31,6 +32,23 @@ def positive_socket(value):
     return False
 
 
+def osm_address_conflicts(source, external):
+    """Check every explicit OSM address field before candidate ranking.
+
+    Full and split addresses are independent observations: neither can hide a
+    contradiction in the other. Missing/unparsed evidence remains unknown.
+    """
+    full, split = external.address_full, external.address_split
+    conflicts = [extended_address_conflict(left, right)
+                 for left, right in [(source.address, full), (source.address, split), (full, split)]]
+    postcodes = {extract_address_postcode(full), extract_address_postcode(split)} - {None}
+    for value in [external.postcode, text(source.address_postcode) or text(source.postcode)]:
+        value = text(value)
+        if re.fullmatch(r"\d{4}", value):
+            postcodes.add(value)
+    return next((conflict for conflict in conflicts if conflict), ""), len(postcodes) > 1
+
+
 def osm_augment(locations, records, *, operator_details=None):
     data = json.loads((RAW / "osm_chargers.json").read_text(encoding="utf-8"))
     if data.get("remark"):
@@ -41,7 +59,9 @@ def osm_augment(locations, records, *, operator_details=None):
         point = e if e["type"] == "node" else e["center"]
         op = operator(tags.get("operator") or tags.get("brand") or tags.get("network"))
         sockets = sorted(label for key, label in DC_SOCKETS.items() if positive_socket(tags.get("socket:" + key)))
-        addr = " ".join(filter(None, [tags.get("addr:housenumber"), tags.get("addr:street")]))
+        split = " ".join(filter(None, [text(tags.get("addr:housenumber")), text(tags.get("addr:street"))]))
+        full = text(tags.get("addr:full"))
+        addr = split or full
         osm_id = f"{e['type']}/{e['id']}"
         rows.append({"osm_id": osm_id, "name": tags.get("name"), "operator_name": op,
                      "latitude": point["lat"], "longitude": point["lon"], "address": addr,
@@ -50,6 +70,7 @@ def osm_augment(locations, records, *, operator_details=None):
                      "tags_json": json.dumps(tags, ensure_ascii=False), "source_file": "data/raw/osm_chargers.json",
                      "source_url": "https://www.openstreetmap.org/" + osm_id})
         proxy.append({"ocm_id": i, "osm_id": osm_id, "ocm_operator": op, "address": addr,
+                      "address_full": full, "address_split": split,
                       "postcode": tags.get("addr:postcode", ""), "latitude": point["lat"], "longitude": point["lon"],
                       "has_dc": bool(sockets) or tags.get("frequency") == "0"})
     # An empty, complete Overpass response is valid and must retain the same
@@ -57,10 +78,10 @@ def osm_augment(locations, records, *, operator_details=None):
     sites = pd.DataFrame(rows, columns=["osm_id", "name", "operator_name", "latitude", "longitude", "address",
                                        "dc_connector_types", "opening_hours", "access", "fee", "website",
                                        "tags_json", "source_file", "source_url"])
-    proxy = pd.DataFrame(proxy, columns=["ocm_id", "osm_id", "ocm_operator", "address", "postcode",
+    proxy = pd.DataFrame(proxy, columns=["ocm_id", "osm_id", "ocm_operator", "address", "address_full", "address_split", "postcode",
                                         "latitude", "longitude", "has_dc"])
     mapping = proxy.set_index("ocm_id").osm_id
-    matches, audit = match_sites(locations, records, proxy)
+    matches, audit = match_sites(locations, records, proxy, additional_address_evidence=osm_address_conflicts)
     for frame in (matches, audit):
         frame["osm_id"] = frame.ocm_id.map(mapping)
         frame.drop(columns="ocm_id", inplace=True)

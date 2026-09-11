@@ -2,10 +2,15 @@ import json
 import pandas as pd
 import pytest
 from ev_pipeline import resolve
-from ev_pipeline.clean import load_clean
+from ev_pipeline.clean import load_clean, operator
 from ev_pipeline.resolve import resolve_conflicts
 from ev_pipeline.augment import address_similarity, GEOD
 from ev_pipeline.pipeline import connect, DB
+
+UNKNOWN_OPERATOR_LABELS = [
+    None, "", "   ", "Non-networked", "NON-NETWORKED", "(non-networked)",
+    "(unknown operator)", "(business owner at location)",
+]
 
 
 @pytest.mark.parametrize("a,b", [
@@ -51,12 +56,12 @@ def test_stored_resolution_evidence_matches_actual_external_geometry():
 @pytest.fixture
 def corroborated_candidate(monkeypatch):
     """One OCM/OSM point agrees exactly; source address identity still matters."""
-    def configure(address, osm_tags=None, extra_osm=None):
-        external = pd.DataFrame([dict(ocm_id=1, ocm_operator="Evie", postcode="2000", town="Sydney",
+    def configure(address, osm_tags=None, extra_osm=None, operator_name="Evie"):
+        external = pd.DataFrame([dict(ocm_id=1, ocm_operator=operator(operator_name), postcode="2000", town="Sydney",
                                      address=address, latitude=-33.85, longitude=151.20,
                                      source_file="synthetic.json")])
         osm = {"elements": [dict(type="node", id=1, lat=-33.85, lon=151.20,
-                                 tags={"operator": "Evie", "amenity": "charging_station", **(osm_tags or {})})]}
+                                 tags={"operator": operator_name, "amenity": "charging_station", **(osm_tags or {})})]}
         osm["elements"].extend(extra_osm or [])
 
         class MemorySnapshot:
@@ -68,7 +73,7 @@ def corroborated_candidate(monkeypatch):
 
         monkeypatch.setattr(resolve, "external_data", lambda: (external, None, None))
         monkeypatch.setattr(resolve, "RAW", MemorySnapshot())
-        return dict(record_id="r_fixture", source_row=2, location_id="l_fixture", operator_name="Evie",
+        return dict(record_id="r_fixture", source_row=2, location_id="l_fixture", operator_name=operator(operator_name),
                     latitude=-33.86, longitude=151.20, postcode="2001", address_postcode="2000",
                     address_conflict=True, address="10 Test St, Sydney NSW 2000")
     return configure
@@ -110,9 +115,10 @@ def test_correcting_one_record_does_not_reuse_its_street_evidence_for_another(co
     pd.testing.assert_series_equal(records.iloc[1], resolved[records.columns].iloc[1])
 
 
-def test_no_conflicts_keeps_the_audit_schema_without_reading_external_sources(monkeypatch):
+@pytest.mark.parametrize("operator_name", UNKNOWN_OPERATOR_LABELS + ["Evie"])
+def test_no_conflicts_keeps_the_audit_schema_without_reading_external_sources(monkeypatch, operator_name):
     records = pd.DataFrame([dict(record_id="r_fixture", latitude=-33.86, longitude=151.20,
-                                 postcode="2000", address_conflict=False)])
+                                 postcode="2000", address_conflict=False, operator_name=operator(operator_name))])
     monkeypatch.setattr(resolve, "external_data", lambda: pytest.fail("Unneeded external read"))
     for source in (records, records.iloc[:0].copy()):
         issues = []
@@ -174,3 +180,43 @@ def test_contradictory_nearest_osm_does_not_hide_a_valid_corroborator(corroborat
          "tags": {"operator": "Evie", "amenity": "charging_station", "addr:postcode": "2000"}}])
     _, audit = resolve_conflicts(pd.DataFrame([source]), [])
     assert audit.iloc[0].decision == "resolved" and audit.iloc[0].osm_id == "way/2"
+
+
+@pytest.mark.parametrize("operator_name", UNKNOWN_OPERATOR_LABELS)
+@pytest.mark.parametrize("latitude", [-33.86, -33.8501], ids=["coordinate_conflict", "postcode_only"])
+def test_shared_unknown_operator_cannot_corroborate_a_correction(
+        corroborated_candidate, operator_name, latitude):
+    source = corroborated_candidate("10 Test Street", operator_name=operator_name)
+    source["latitude"] = latitude
+    records = pd.DataFrame([source])
+    issues = []
+    resolved, audit = resolve_conflicts(records, issues)
+    decision = audit.iloc[0]
+    assert decision.decision == "unresolved"
+    assert "operator_identity_unavailable" in decision.reason
+    assert decision[["new_latitude", "new_longitude", "new_postcode", "ocm_id", "osm_id"]].isna().all()
+    assert resolved.iloc[0].resolution_method == "unchanged"
+    assert resolved.iloc[0].address_conflict and resolved.iloc[0].original_address_conflict
+    pd.testing.assert_frame_equal(records, resolved[records.columns])
+    assert not issues
+
+
+@pytest.mark.parametrize("operator_name", ["Evie", "Tesla"])
+@pytest.mark.parametrize("latitude,method", [
+    (-33.86, "coordinates_verified_ocm_osm"),
+    (-33.8501, "postcode_verified_ocm_osm"),
+])
+def test_known_operator_still_supports_both_correction_methods(
+        corroborated_candidate, operator_name, latitude, method):
+    source = corroborated_candidate("10 Test Street", operator_name=operator_name)
+    source["latitude"] = latitude
+    issues = []
+    resolved, audit = resolve_conflicts(pd.DataFrame([source]), issues)
+    row = resolved.iloc[0]
+    assert audit.iloc[0].decision == "resolved" and audit.iloc[0].reason == method
+    assert row.resolution_method == method and not row.address_conflict
+    assert row.postcode == "2000" and row.original_postcode == "2001"
+    assert row.original_latitude == latitude and row.original_address_conflict
+    expected_latitude = latitude if method == "postcode_verified_ocm_osm" else -33.85
+    assert (row.latitude, row.longitude) == (expected_latitude, 151.20)
+    assert [issue["code"] for issue in issues] == [method]

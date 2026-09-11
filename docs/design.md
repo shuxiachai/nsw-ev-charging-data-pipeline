@@ -123,6 +123,15 @@ and are not automatically compared as house-number contradictions. The same gate
 is applied to OCM, OSM, JOLT and Ampol candidate selection. It does not independently
 prove the accuracy of matches within 100 m that lack external address evidence.
 
+OSM supplies an additional evidence gate before candidate ranking. It compares
+the source with both `addr:full` and structured house-number/street fields, and
+also checks those two OSM representations against each other. Explicit postcodes
+from either representation or `addr:postcode` must not contradict each other or
+the source. Structured addresses keep their existing score; full text supplies
+the primary address only when structured fields are absent. Original tags stay
+in `tags_json`. Additional evidence can reject candidates but cannot waive shared
+distance, operator, ambiguity or reuse checks; other providers retain their rules.
+
 Candidate scores, ambiguity margins and rejection of reused external sites stay
 explicit. Candidate CSVs retain `extended_address_conflict`, including conflicts
 observed inside the nearby route. One individually reviewed Dan Murphy's address
@@ -135,7 +144,11 @@ number; malformed tokens do not make token order decide the result. See
 
 The generic coordinate-resolution rule requires an unambiguous
 OCM street/locality match with street similarity at least 0.85, corroborated by a
-same-operator OSM charging point within 150 m. The separate reviewed stage then
+same-operator OSM charging point within 150 m. This requires a known operator
+identity: empty, non-networked, unknown-operator and
+business-owner labels cannot justify a coordinate or postcode correction.
+Such records retain original values with `operator_identity_unavailable` in the
+unresolved audit. The separate reviewed stage
 applies only the seven source records listed in `config/reviewed_resolutions.json`.
 Tenterfield, Nyngan, Narrabri, Coonamble and Wagga Wagga use identified OSM points
 and named NRMA KML placemarks; Wollongong uses OCM191177 and NRMA KML within 8.40 m.

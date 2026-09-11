@@ -186,7 +186,13 @@ def external_data():
     return pd.DataFrame(sites), pd.DataFrame(connectors), ref
 
 
-def match_sites(locations, records, sites, *, address_exceptions=None):
+def match_sites(locations, records, sites, *, address_exceptions=None, additional_address_evidence=None):
+    """Match candidates after all provider-specific contradiction gates.
+
+    An optional callback returns (address conflict reason, postcode conflict)
+    for a source/external row pair. It can only add rejection evidence; the
+    distance, similarity, ranking and reuse rules stay common to all providers.
+    """
     address_exceptions = address_exceptions or {}
     dcids = set(records.loc[records.charger_type == "DC", "location_id"])
     src = locations[locations.location_id.isin(dcids) & locations.latitude.notna() & locations.longitude.notna()].copy()
@@ -206,12 +212,20 @@ def match_sites(locations, records, sites, *, address_exceptions=None):
         same = source_operator == external_operator and source_operator.casefold() not in EMPTY_OPS
         sim = address_similarity(s.address, e.address)
         address_conflict = extended_address_conflict(s.address, e.address)
-        exception = address_exceptions.get((c.location_id, int(c.ocm_id)), {})
-        exception_applied = bool(address_conflict and exception.get("allowed_conflict") == address_conflict)
         # Prefer postcode parsed from the address over a contradictory PCODE,
         # but contradictions in the source disqualify automatic site matching.
         pc = text(s.address_postcode) or text(s.postcode)
         pc_conflict = bool(pc and text(e.postcode) and pc != text(e.postcode))
+        extra_conflict = ""
+        if additional_address_evidence is not None:
+            extra_conflict, extra_pc_conflict = additional_address_evidence(s, e)
+            address_conflict = address_conflict or extra_conflict
+            pc_conflict = pc_conflict or extra_pc_conflict
+        exception = address_exceptions.get((c.location_id, int(c.ocm_id)), {})
+        # A reviewed exception to the primary address does not waive additional
+        # contradictory fields that were not covered by that exception.
+        exception_applied = bool(address_conflict and not extra_conflict
+                                 and exception.get("allowed_conflict") == address_conflict)
         eligible = acceptable_candidate(dist, same, sim, pc_conflict, bool(s.address_conflict),
                                         bool(address_conflict) and not exception_applied)
         evidence.append({"location_id": c.location_id, "ocm_id": int(c.ocm_id), "distance_m": dist,

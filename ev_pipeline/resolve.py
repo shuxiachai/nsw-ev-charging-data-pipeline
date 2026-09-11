@@ -5,7 +5,7 @@ import re
 import pandas as pd
 from .acquire import ROOT, RAW
 from .clean import extract_address_postcode, operator, text
-from .augment import external_data, address_similarity, extended_address_conflict, _street_parts, GEOD
+from .augment import external_data, address_similarity, extended_address_conflict, _street_parts, GEOD, EMPTY_OPS
 
 AUDIT_COLUMNS = [
     "record_id", "source_row", "decision", "reason", "source_address", "old_latitude",
@@ -113,7 +113,14 @@ def resolve_conflicts(records, issues):
         candidates = []
         rejected_evidence = []
         source_town = source_locality(r.address)
-        for e in ocm[ocm.ocm_operator == r.operator_name].itertuples():
+        # Shared placeholder labels do not identify a network or a site, even
+        # when the source, OCM and OSM all use the same label. Keep the conflict
+        # unresolved rather than treating that equality as operator evidence.
+        known_operator = text(r.operator_name).casefold() not in EMPTY_OPS
+        if not known_operator:
+            rejected_evidence.append(f"operator_identity_unavailable ({text(r.operator_name) or '<missing>'})")
+        eligible_ocm = ocm[ocm.ocm_operator == r.operator_name] if known_operator else ocm.iloc[:0]
+        for e in eligible_ocm.itertuples():
             postcode_matches = text(e.postcode) == r.address_postcode
             town = normalize_locality(e.town)
             town_matches = bool(source_town and town and source_town == town)
