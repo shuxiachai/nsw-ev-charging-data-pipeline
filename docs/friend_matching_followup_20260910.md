@@ -1,5 +1,7 @@
 # Follow-up evidence for three pending OSM associations
 
+Current documentary status is updated in [the 13 September follow-up](matching_followup_20260913.md), including Parkes readable-page support. The dated observations below remain the earlier checkpoint.
+
 Review date: 10 September 2026. This is an AI-assisted review of published
 evidence, not independently labelled human ground truth or an accuracy estimate.
 It follows the [earlier 27-case review](final_matching_review_20260910.md), whose

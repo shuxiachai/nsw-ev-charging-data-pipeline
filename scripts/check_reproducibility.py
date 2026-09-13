@@ -1,3 +1,9 @@
+# USYD CODE CITATION ACKNOWLEDGEMENT
+# I declare that OpenAI Codex was used to review and revise this file.
+# AI-generated or AI-revised material is included in this file.
+# See the separate Generative AI and Automated Writing Tools Usage Report
+# for the tools, purposes, extent of use and representative prompts.
+
 """Rebuild offline and compare logical data, schema and deterministic outputs."""
 from hashlib import sha256
 from datetime import datetime, timezone

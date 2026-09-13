@@ -28,7 +28,10 @@ DOCUMENTS = ["design.md", "schema.md", "sources.md", "source_version_review_2026
              "final_matching_review_20260910.csv", "fresh_environment_20260910.md",
               "identity_evie_council_20260910.md", "external_review_followup_20260910.md",
               "standalone_sql.md", "operator_identity_review_20260910.md",
-              "friend_review_actions_20260910.md", "friend_matching_followup_20260910.md"]
+              "friend_review_actions_20260910.md", "friend_matching_followup_20260910.md",
+              "matching_followup_20260913.md", "evidence/tesla_34173_readable_20260913.txt",
+              "evidence/tesla_34173_readable_20260913.txt.meta.json",
+              "evidence/tesla_34173_web_open_capture.json"]
 EXCLUDED_FILES = {"outputs/clean_environment_verification.json"}
 REQUIRED = ["README.md", "requirements.txt", "sql/schema.sql", "data/processed/ev_chargers.duckdb",
             "docs/design.md", "docs/schema.md", "docs/sources.md"]

@@ -8,9 +8,13 @@ The group must verify its actual contributions and disclose the assistance used;
 a prepared report or declaration does not itself establish compliance with the
 course's authorship requirements.
 
-Files with documented Codex-assisted revisions after the collaboration
-baseline carry a `USYD CODE CITATION ACKNOWLEDGEMENT` at the beginning.
-These notices record verified assistance; unmarked files are not thereby
+All Python and SQL source files carry a `USYD CODE CITATION ACKNOWLEDGEMENT`.
+For 53 files, dated implementation/review records or later Git revisions
+document file-specific Codex-assisted changes, including work before the
+first collaboration commit. Three initial-draft files (__init__.py,
+__main__.py and evidence.py) instead disclose the group's confirmation
+that the initial draft used AI generation or substantive revision; their
+file-specific tool attribution was not retained. They are not separately
 declared AI-free. The separate AI usage report records the tools, purposes,
 extent of use and representative prompts, including other members' actual
 tool use. File-level notices do not replace that submission item.
@@ -517,14 +521,16 @@ have short-lived meaning: 57.51% is not a claim that this many locations gained
 stable connector, price or access information. Excluding both status and station
 codes leaves 214/426 locations (50.23%) with other site information, including two
 literal JOLT carpark-hours notes. This narrower measure is only slightly above
-50% and remains a coverage measure, not a matching-accuracy estimate. Two
-OSM-only contributors (source rows 422 and 1742) still have pending site
-evidence. Conditionally excluding their contributions would give
-(214 - 2) / 426 = 49.77%; no such exclusions are applied in the current database.
-Official planning evidence now supports the Goulburn venue (row 1309), without
-verifying its precise charger point or equipment attributes. The 27 reviewed
-OSM links now comprise 15 with venue support and 12 pending. See the
-[latest matching evidence and limitations](docs/friend_matching_followup_20260910.md).
+50% and remains a coverage measure, not a matching-accuracy estimate.
+Of the two priority OSM-only contributors, Bega (source row 422) remains pending;
+Parkes (1742) now has venue support from the club property originals and a
+clearly identified Tesla official-page text extraction. This is not an archived
+HTTP-original or proof of historical equipment values. Withholding only Bega
+hypothetically gives 213/426 = 50.00% excluding identifiers/status and
+244/426 = 57.28% site scope; no exclusion is applied. Goulburn's planning evidence
+also supports its venue without surveying the point or equipment. The same
+27-case review cohort now comprises 16 with venue support and 11 pending.
+See the [current evidence and extraction limits](docs/matching_followup_20260913.md).
 Per-attribute coverage is 211 DC locations for connector types, 103 for cost text,
 44 for opening hours and 31 for site websites. The two generic network-map URL
 observations are operator-scoped. Rows in `augmentation_attribute_coverage.csv`

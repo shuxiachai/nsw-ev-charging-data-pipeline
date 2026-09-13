@@ -1,0 +1,15 @@
+{
+  "acquisition_started_utc": "2026-09-13 07:10:18 UTC",
+  "acquisition_completed_no_later_than_utc": "2026-09-13 07:10:44 UTC",
+  "requested_url": "https://www.tesla.com/findus/location/supercharger/34173",
+  "tool": "web.run",
+  "operation": {
+    "open": [
+      {
+        "ref_id": "https://www.tesla.com/findus/location/supercharger/34173"
+      }
+    ],
+    "response_length": "long"
+  },
+  "returned_payload": "www.tesla.com (https://www.tesla.com/findus/location/supercharger/34173)\nciteturn148view0 [wordlim: 200] Crawled: 3 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://www.tesla.com/findus/location/supercharger/34173\",\"lineno\":null}); Total lines: 38\nL0: cite0†Back to List L1: \nL2: cite1†Image Tesla Supercharger\nL3: \nL4: Parkes, NSW\nL5: \nL6: Parkes Services Club\nL7: \nL8: This Supercharger is Open to Tesla and Other EVs with CCS compatibility\nL9: \nL10: 20 Caledonia Street\nL11: \nL12: Parkes, New South Wales 2870\nL13: \nL14: * * *\nL15: \nL16: 4 Superchargers Up to 300kW max\nL17: \nL18: Access Hours Available 24/7\nL19: \nL20: * * *\nL21: \nL22: Pricing for Tesla & Members\nL23: \nL24: * * *\nL25: \nL26: Pricing for Non-Tesla\nL27: \nL28: * * *\nL29: \nL30: Roadside Assistance Tesla Owner Service: 1 800 64 6952\nL31: \nL32: * * *\nL33: \nL34: cite2†Supercharger Open To OthersSupported Vehicles: Tesla, Other EVs L35: \nL36: cite3†Image†maps.googleapis.com L37: cite4†Tesla © 2026 cite5†Privacy & Legal cite6†Contact cite7†Careers cite8†Get Newsletter cite9†Locations "
+}

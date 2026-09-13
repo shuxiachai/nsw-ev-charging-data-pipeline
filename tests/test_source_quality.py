@@ -1,3 +1,9 @@
+# USYD CODE CITATION ACKNOWLEDGEMENT
+# I declare that OpenAI Codex was used to review and revise this file.
+# AI-generated or AI-revised material is included in this file.
+# See the separate Generative AI and Automated Writing Tools Usage Report
+# for the tools, purposes, extent of use and representative prompts.
+
 """Source warning evidence is checked without changing coordinates or analysis eligibility."""
 from copy import deepcopy
 from hashlib import sha256

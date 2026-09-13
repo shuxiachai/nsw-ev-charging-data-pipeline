@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "source_url": "https://www.tesla.com/findus/location/supercharger/34173",
+  "publisher": "Tesla",
+  "title": "Parkes, NSW - Parkes Services Club - Tesla Supercharger 34173",
+  "capture_method": "web_tool_readable_page_text",
+  "tool": "web.run open",
+  "tool_request": {
+    "open": [
+      {
+        "ref_id": "https://www.tesla.com/findus/location/supercharger/34173"
+      }
+    ],
+    "response_length": "long"
+  },
+  "acquisition_started_at_utc": "2026-09-13T07:10:18Z",
+  "acquisition_completed_no_later_than_utc": "2026-09-13T07:10:44Z",
+  "metadata_written_at_utc": "2026-09-13T07:14:38.102625+00:00",
+  "text_file": "tesla_34173_readable_20260913.txt",
+  "encoding": "UTF-8",
+  "bytes": 765,
+  "sha256": "9f263af243ba001f6ac2824b29c63be8e124a890ab1256781a76fa96ba3c0942",
+  "complete_tool_return_preserved": false,
+  "original_http_html": false,
+  "original_http_status_code": null,
+  "original_http_response_headers": null,
+  "tool_reported_content_type": "text/html",
+  "tool_reported_total_lines": 38,
+  "tool_reported_crawl_age": "3 days ago",
+  "publisher_observation_date_known": false,
+  "preservation_note": "All source line labels L0-L37 and readable page body are retained. Tool citation markers and the engine metadata header are removed for readability. The exact tool result, including these markers, is separately retained in tesla_34173_web_open_capture.json. This is a tool extraction, not publisher-original HTML. Line endings are normalized to LF and trailing layout whitespace is removed; readable content and source line labels are unchanged.",
+  "access_limit_note": "An ordinary direct requests.get of this URL returned HTTP 403 during the preceding read-only review. No access-control bypass or retry sequence was used. That status is not presented as the response status of web.open.",
+  "review_type": "AI-assisted source-evidence review; not independent human ground truth",
+  "source_locators": {
+    "venue": "L4-L6",
+    "address": "L10-L12",
+    "ccs_compatibility": "L8",
+    "charger_count_and_current_power": "L16",
+    "access_hours": "L18"
+  },
+  "scope": "Supports venue association when combined with the frozen club homepage and financial-report property table; does not survey exact charger coordinates or validate historical equipment, price or access at the earlier source snapshot date.",
+  "complete_readable_body_preserved": true,
+  "exact_tool_result_file": "tesla_34173_web_open_capture.json"
+}

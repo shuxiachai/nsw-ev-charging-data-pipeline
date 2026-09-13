@@ -338,3 +338,7 @@ OSM matching reviews are listed in
 [the targeted matching follow-up](friend_matching_followup_20260910.md).
 These September captures add evidence context, not historical station attributes
 or new accepted matches. A planning approval alone is not proof of operation.
+
+## Parkes readable-page supplement on 13 September
+
+The [current matching follow-up](matching_followup_20260913.md) adds a saved Tesla official-page text extraction to the two frozen Parkes property originals. The extraction, its SHA-256/UTC metadata and exact tool-return record are under `docs/evidence`; it is not an HTTP-original archive, not a new pipeline raw snapshot and not new station attributes. Parkes now has venue support, while Bega remains pending. All actual coverage numbers and historical equipment values remain unchanged.
