@@ -1,3 +1,9 @@
+-- USYD CODE CITATION ACKNOWLEDGEMENT
+-- I declare that OpenAI Codex was used to review and revise this file.
+-- AI-generated or AI-revised material is included in this file.
+-- See the separate Generative AI and Automated Writing Tools Usage Report
+-- for the tools, purposes, extent of use and representative prompts.
+
 -- All geometry columns use longitude/latitude WGS84 (EPSG:4326).
 -- DuckDB 1.5.5: first installation needs internet access. Ordinary INSTALL is
 -- a local no-op when this connection's extension directory already has spatial;

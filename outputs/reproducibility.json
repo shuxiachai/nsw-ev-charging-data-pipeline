@@ -3,7 +3,7 @@
   "csv_outputs_identical": true,
   "schema_identical": true,
   "validation_report_identical": true,
-  "project_fingerprint": "e7357d6261889bbdec1e232be99cc324c1e735befedbe9cb2fe7c741d6f89ff4",
+  "project_fingerprint": "9bf5535feffd7f97dc222c21ef012e7aec98deff00ed8b9b621aa47de7970569",
   "tables": {
     "amp_charge_site": "b66a1ec71493da462dfea3389f6cff668f3f814e43594e849899bd329c185fb6",
     "amp_charge_site_match": "30024994c95d931c4db3c2de2561cba8ea763dd80f4dceb9c598963c7afa8a15",

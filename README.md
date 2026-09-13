@@ -8,6 +8,13 @@ The group must verify its actual contributions and disclose the assistance used;
 a prepared report or declaration does not itself establish compliance with the
 course's authorship requirements.
 
+Files with documented Codex-assisted revisions after the collaboration
+baseline carry a `USYD CODE CITATION ACKNOWLEDGEMENT` at the beginning.
+These notices record verified assistance; unmarked files are not thereby
+declared AI-free. The separate AI usage report records the tools, purposes,
+extent of use and representative prompts, including other members' actual
+tool use. File-level notices do not replace that submission item.
+
 For the current result, start with the validated snapshot below and
 [the latest review fixes](docs/friend_review_actions_20260910.md). The main
 technical references are [design](docs/design.md), [schema](docs/schema.md) and
