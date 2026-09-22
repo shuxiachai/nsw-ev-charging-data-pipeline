@@ -93,7 +93,13 @@ not widened to obtain these results.
 
 The existing targeted review of 27 address-missing accepted OSM links found
 venue-level support for fourteen, including one retained connector conflict,
-and left thirteen pending stronger site evidence. It was AI-assisted evidence
+and left thirteen pending stronger site evidence. Two of those thirteen were
+supported later: Goulburn, source row 1309, in
+[the Goulburn follow-up](friend_matching_followup_20260910.md), and Parkes,
+source row 1742, in [the Parkes follow-up](matching_followup_20260913.md). The
+current position over the same 27 links is therefore sixteen supported and
+eleven pending; the counts in this paragraph describe this document's date.
+It was AI-assisted evidence
 review, not independently labelled human ground truth or a precision estimate.
 No confirmed wrong-site relationship was established by that bounded review.
 Missing web evidence alone is not a reason to call a link incorrect or silently
