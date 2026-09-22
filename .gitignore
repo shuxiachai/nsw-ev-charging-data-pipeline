@@ -24,9 +24,13 @@ submission/
 data/raw/**/*.pdf
 data/raw/**/*.zip
 
-# Machine-specific test logs and superseded internal review material.
+# Rewritten by every scripts/verify_project.py run, so not tracked here.
+# They are still packaged: scripts/package_submission.py includes outputs/, and
+# README.md cites outputs/tests.xml as test evidence for the submission.
 outputs/test_run.log
 outputs/tests.xml
+
+# Superseded internal review material; also excluded from the submission ZIP.
 outputs/clean_environment_verification.json
 docs/matching_review_20260908.md
 docs/matching_review_20260908.csv
