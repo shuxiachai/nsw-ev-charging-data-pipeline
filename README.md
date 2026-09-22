@@ -125,7 +125,7 @@ The guide also opens the delivered database read-only without rebuilding it.
 | `-m ev_pipeline all --offline` | Full processing using existing cache and installed spatial extension, no downloads |
 | `-m ev_pipeline build` | Same cached rebuild, always offline |
 | `-m ev_pipeline validate` | Independently query database integrity and augmentation coverage |
-| `-m pytest -q` | Unit, adversarial matching, cache and actual database integration tests |
+| `-m pytest -q` | Unit, adversarial matching, cache and actual database integration tests; run `-m ev_pipeline all` once first, which populates the project extension directory `.runtime/duckdb_extensions` that the submission package excludes |
 | `scripts/check_reproducibility.py` | Rebuild offline and compare table contents, persisted schema, CSVs and the complete validation report |
 | `scripts/verify_project.py` | Run tests, offline reproducibility and database checks; bind evidence to current code and input manifests |
 | `scripts/package_submission.py` | Build the code/database ZIP after validation and reproducibility gates pass |
