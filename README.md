@@ -4,8 +4,8 @@ Reproducible NSW EV charger acquisition, cleaning, SA4 integration, web-data
 augmentation and DuckDB storage. This package contains the **code deliverable**;
 the six-page project report, title-page identities/team contributions, and genAI
 usage report are separate submission items and are not supplied here.
-This ZIP is the complete submitted version. It runs and can be marked from its
-own contents; no repository access is needed.
+This code/database ZIP runs and can be marked from its own contents; no
+repository access is needed.
 
 All Python and SQL source files carry a `USYD CODE CITATION ACKNOWLEDGEMENT`.
 For 53 files, dated implementation/review records or later Git revisions
@@ -26,8 +26,9 @@ their old counts do not describe the current database.
 
 ## Group collaboration on GitHub (not needed to run or mark this ZIP)
 
-The submitted ZIP was built from the final `main` revision. This section only
-describes how the group worked.
+The currently retained ZIP is a working snapshot. Rebuild it from the final
+validated `main` revision at final submission. This section only describes how
+the group worked.
 
 The private repository is [shuxiachai/comp5339-assignment1-2026s2](https://github.com/shuxiachai/comp5339-assignment1-2026s2).
 Start with the [pipeline](ev_pipeline/pipeline.py), [cleaning](ev_pipeline/clean.py),
