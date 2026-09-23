@@ -4,9 +4,8 @@ Reproducible NSW EV charger acquisition, cleaning, SA4 integration, web-data
 augmentation and DuckDB storage. This package contains the **code deliverable**;
 the six-page project report, title-page identities/team contributions, and genAI
 usage report are separate submission items and are not supplied here.
-The group must verify its actual contributions and disclose the assistance used;
-a prepared report or declaration does not itself establish compliance with the
-course's authorship requirements.
+This ZIP is the complete submitted version. It runs and can be marked from its
+own contents; no repository access is needed.
 
 All Python and SQL source files carry a `USYD CODE CITATION ACKNOWLEDGEMENT`.
 For 53 files, dated implementation/review records or later Git revisions
@@ -25,7 +24,10 @@ technical references are [design](docs/design.md), [schema](docs/schema.md) and
 [sources](docs/sources.md). Earlier dated reviews document historical checkpoints;
 their old counts do not describe the current database.
 
-## Group collaboration on GitHub
+## Group collaboration on GitHub (not needed to run or mark this ZIP)
+
+The submitted ZIP was built from the final `main` revision. This section only
+describes how the group worked.
 
 The private repository is [shuxiachai/comp5339-assignment1-2026s2](https://github.com/shuxiachai/comp5339-assignment1-2026s2).
 Start with the [pipeline](ev_pipeline/pipeline.py), [cleaning](ev_pipeline/clean.py),
@@ -45,7 +47,7 @@ The Release preserves the 10 September code and data snapshot; `main` includes
 later boundary-case fixes. No new submission ZIP is generated for each code edit.
 Download that ZIP and `SHA256.txt`, check the checksum, and extract it to recover
 the frozen data. On Windows, `Get-FileHash -Algorithm SHA256 <zip-path>` computes
-the checksum. Use the Git-clone instructions below to run the latest code.
+the checksum.
 Links to PDF originals refer to files included in the snapshot.
 
 To work in a Git clone, use `git clone https://github.com/shuxiachai/comp5339-assignment1-2026s2.git`.
@@ -151,7 +153,7 @@ docs/              design decisions, source attribution and schema diagram
 data/raw/          original inputs and per-file provenance/hash manifests
 data/processed/    final DuckDB plus derived CSV exports
 outputs/           quality issues, all match decisions, review samples, validation
-submission/        generated code/database ZIP and SHA256.txt
+submission/        generated ZIP and SHA256.txt (repository only, not in the ZIP)
 requirements.txt   exact versions from the tested isolated environment
 ```
 
