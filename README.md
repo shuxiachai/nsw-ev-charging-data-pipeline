@@ -2,7 +2,7 @@
 
 A reproducible data engineering pipeline for electric vehicle charging infrastructure in New South Wales, Australia. It combines source acquisition, cleaning, cross-source matching, SA4 spatial integration and DuckDB storage, retaining evidence behind corrections and enrichment decisions.
 
-This project grew out of **COMP5339 Data Engineering, Assignment 1, Semester 2 2026, at the University of Sydney**, developed by **TUT17-Group07**. Following submission, the repository is being organized as a continuing project. Version 0.1.1 includes canonical augmentation IDs, snapshot tools, automated tests and a reproducible release. Original record/location identities and the frozen source observations remain preserved. The submitted coursework archive is retained separately.
+This project grew out of **COMP5339 Data Engineering, Assignment 1, Semester 2 2026, at the University of Sydney**, developed by **TUT17-Group07**. Following submission, the repository is being organized as a continuing project. Version 0.1.2 includes canonical augmentation IDs, snapshot tools, automated tests and a reproducible release. Original record/location identities and the frozen source observations remain preserved. The submitted coursework archive is retained separately.
 
 [![Tests](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/workflows/tests.yml)
 
@@ -52,9 +52,9 @@ Evidence: [tests](outputs/test_evidence.json), [validation](outputs/validation.j
 
 ### Restore frozen inputs
 
-A Git clone contains code, manifests, small source files and CSV results. Large original PDFs/ZIPs and the generated DuckDB database are delivered in the [v0.1.1 release](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/releases/tag/v0.1.1).
+A Git clone contains code, manifests, small source files and CSV results. Large original PDFs/ZIPs and the generated DuckDB database are delivered in the [v0.1.2 release](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/releases/tag/v0.1.2).
 
-After cloning, `python scripts/restore_snapshot.py` reads the pinned release descriptor, downloads and verifies the archive, and restores only missing raw originals. It checks every body against the checkout's source manifest and preserves tracked code, manifests, CSVs and existing raw files. `python scripts/preflight.py` reports all remaining missing or corrupt inputs together.
+After cloning, `python scripts/restore_snapshot.py` validates the pinned release descriptor and raw inventory. Complete valid inputs skip downloading; otherwise the tool reuses a verified checksum-keyed cache or downloads the archive with an exclusive temporary file and restores only missing raw originals. It checks every body against the checkout's source manifest and preserves tracked code, manifests, CSVs and existing raw files. `python scripts/preflight.py` reports all remaining missing or corrupt inputs together.
 
 You can instead download the complete versioned ZIP and checksum from the release, verify them, and work in its extracted project root. That archive includes code, frozen inputs, CSV results and DuckDB. Its release descriptor is published separately to avoid a self-referential archive checksum. Already-complete extracted archives can run preflight directly without restoration.
 
@@ -89,7 +89,7 @@ Run from the folder containing this README. If you already extracted a complete 
 | `scripts/verify_project.py` | Run tests, offline rebuild comparisons and database checks |
 | `scripts/package_submission.py` | Build the legacy coursework ZIP after verification |
 
-Do not run concurrent builds into the same output directory. `scripts/package_release.py` produces the verified public code/data archive including project documentation and examples. The legacy coursework packager retains its earlier file selection. The submitted coursework archive remains unchanged.
+Do not run concurrent builds into the same output directory. `scripts/package_release.py` requires fresh schema-v2 full-suite evidence and bidirectional raw-source/manifest pairing before producing the public code/data archive including project documentation and examples. The legacy coursework packager retains its earlier file selection. The submitted coursework archive remains unchanged.
 
 ## Repository layout
 
@@ -140,3 +140,9 @@ v0.1.0 replaces legacy positional augmentation hashes with `a_v1_` IDs based on 
 ## Release verification
 
 v0.1.1 passes **1,112 full tests and 47 database checks**, plus **190 fast tests on both Windows and Ubuntu**. [Full GitHub integration CI](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/runs/36674876695) also passes. An independent public clone and fresh Python environment anonymously downloaded the release, restored 18 missing originals, rebuilt the database, and exactly matched the published signatures of 23 tables, 40 CSVs, schema, validation report and source fingerprint. See the [verification record](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/blob/main/docs/releases/v0.1.1-verification.json).
+
+## Verification and recovery boundaries
+
+The full verifier isolates pytest selection and plugin settings, uses only the declared `tests/` fixture boundary, and records collection plus setup/call/teardown results. Release approval requires matching fresh report/JUnit artifacts, no deselected or skipped tests, and the unchanged source fingerprint; a selected passing subset cannot approve a public release.
+
+Snapshot downloads use 60-second blocking-operation timeouts, checksum-qualified cache directories and per-invocation temporary files. Descriptor errors and transport failures produce a nonzero diagnostic. A failed download leaves previous cache data intact and cannot remove another invocation's temporary file. Raw originals without provenance manifests cannot enter the release.

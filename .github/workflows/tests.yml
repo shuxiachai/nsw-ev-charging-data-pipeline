@@ -35,6 +35,8 @@ jobs:
           tests/test_augmentation_identity.py
           tests/test_demo.py
           tests/test_snapshot_tools.py
+          tests/test_restore_download.py
+          tests/test_release_verification.py
           tests/test_evidence_fingerprint.py
           tests/test_spatial_distance.py
           tests/test_csv_portability.py

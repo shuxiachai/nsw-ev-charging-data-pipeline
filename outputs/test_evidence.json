@@ -1,5 +1,25 @@
 {
+  "schema_version": 2,
   "passed": true,
-  "tests": 1112,
-  "project_fingerprint": "3598a20390a04fc786f2bc834ebd9fc04bb708f4f1305320a8e28b039aee3fb3"
+  "tests": 1239,
+  "project_fingerprint": "7d2830a3348bfb26745931851c9dcb1932d98f3990059c64ec20682120424612",
+  "full_suite": {
+    "collected": 1239,
+    "selected": 1239,
+    "executed": 1239,
+    "passed": 1239,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "xpassed": 0,
+    "deselected": 0,
+    "collection_errors": 0,
+    "collection_skipped": 0
+  },
+  "test_run": {
+    "run_id": "e10f0840ed6f4afda3293a5198ad3132",
+    "report_sha256": "fcabe2ac7eacaa0d839aca7217b22faee98a2d26fbf49dee679351c4fcbd9573",
+    "junit_sha256": "0613948c5604c43f99ce6506c48ba0a682b6cda30a58eb1378ecffc11ad4463f"
+  }
 }

@@ -7,18 +7,22 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import http.client
 import json
 import os
-from pathlib import Path, PurePosixPath
+from pathlib import Path, PurePosixPath, PureWindowsPath
 import shutil
 import tempfile
+import urllib.error
+import urllib.parse
 import urllib.request
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 RUNTIME = ROOT / ".runtime"
-DEFAULT_DESCRIPTOR = ROOT / "docs" / "releases" / "v0.1.1.json"
+DEFAULT_DESCRIPTOR = ROOT / "docs" / "releases" / "v0.1.2.json"
+HTTP_TIMEOUT_SECONDS = 60
 
 
 class RestoreError(ValueError):
@@ -89,25 +93,20 @@ def validate_archive_checksum(archive: Path, expected: str) -> None:
         raise RestoreError(f"archive SHA256 mismatch: expected {expected.lower()}, found {actual}")
 
 
-def plan_restore(archive: Path, raw: Path = RAW) -> list[tuple[Path, str, zipfile.ZipInfo]]:
-    """Validate the whole restore before returning any missing body write plans."""
+def raw_preflight(raw: Path = RAW) -> list[tuple[Path, str, int]]:
+    """Check all manifests and existing bodies before allowing any restore."""
     if not raw.is_dir():
         raise RestoreError(f"raw snapshot directory is missing: {display_path(raw)}")
     manifests = sorted(path for path in raw.rglob("*.meta.json") if path.is_file())
     if not manifests:
         raise RestoreError(f"no raw snapshot manifests found: {display_path(raw)}")
-    members = archive_members(archive)
-    plans: list[tuple[Path, str, zipfile.ZipInfo]] = []
-    problems: list[str] = []
-    expected_members = {
-        manifest.with_name(manifest.name.removesuffix(".meta.json")).relative_to(raw.parents[1]).as_posix()
-        for manifest in manifests
-    }
-    for member, info in members.items():
-        if info.is_dir():
-            continue
-        if member.startswith("data/raw/") and not member.endswith(".meta.json") and member not in expected_members:
-            problems.append(f"archive contains raw body without a current manifest: {member}")
+    expected_bodies = {path.with_name(path.name.removesuffix(".meta.json")) for path in manifests}
+    problems = [
+        f"raw body without a current manifest: {body.relative_to(raw).as_posix()}"
+        for body in sorted(path for path in raw.rglob("*") if path.is_file())
+        if not body.name.endswith(".meta.json") and body not in expected_bodies
+    ]
+    inventory: list[tuple[Path, str, int]] = []
     for manifest in manifests:
         body = manifest.with_name(manifest.name.removesuffix(".meta.json"))
         try:
@@ -115,10 +114,33 @@ def plan_restore(archive: Path, raw: Path = RAW) -> list[tuple[Path, str, zipfil
         except RestoreError as exc:
             problems.append(str(exc))
             continue
+        if body.exists() and (
+            not body.is_file() or body.stat().st_size != expected_size or file_sha256(body) != expected_hash
+        ):
+            problems.append(f"existing body is corrupt and will not be overwritten: {display_path(body)}")
+        inventory.append((body, expected_hash, expected_size))
+    if problems:
+        raise RestoreError("restore preflight failed:\n" + "\n".join(problems))
+    return inventory
+
+
+def plan_restore(archive: Path, raw: Path = RAW) -> list[tuple[Path, str, zipfile.ZipInfo]]:
+    """Validate the whole restore before returning any missing body write plans."""
+    inventory = raw_preflight(raw)
+    members = archive_members(archive)
+    plans: list[tuple[Path, str, zipfile.ZipInfo]] = []
+    problems: list[str] = []
+    expected_members = {
+        body.relative_to(raw.parents[1]).as_posix() for body, _, _ in inventory
+    }
+    for member, info in members.items():
+        if info.is_dir():
+            continue
+        if member.startswith("data/raw/") and not member.endswith(".meta.json") and member not in expected_members:
+            problems.append(f"archive contains raw body without a current manifest: {member}")
+    for body, expected_hash, expected_size in inventory:
         relative = body.relative_to(raw.parents[1]).as_posix()
         if body.exists():
-            if not body.is_file() or body.stat().st_size != expected_size or file_sha256(body) != expected_hash:
-                problems.append(f"existing body is corrupt and will not be overwritten: {relative}")
             continue
         info = members.get(relative)
         if info is None:
@@ -168,24 +190,61 @@ def restore(archive: Path, expected_sha256: str, raw: Path = RAW) -> int:
 def descriptor_values(path: Path) -> tuple[str, str, str]:
     try:
         descriptor = json.loads(path.read_text(encoding="utf-8"))
-        return descriptor["archive_name"], descriptor["download_url"], descriptor["archive_sha256"]
+        values = descriptor["archive_name"], descriptor["download_url"], descriptor["archive_sha256"]
+        validate_download_values(*values)
+        return values
     except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
         raise RestoreError(f"invalid release descriptor {path}: {exc}") from exc
 
 
-def download(url: str, archive_name: str, expected_sha256: str) -> Path:
-    if Path(archive_name).name != archive_name:
-        raise RestoreError("release descriptor archive_name must be a filename")
-    RUNTIME.mkdir(exist_ok=True)
-    target = RUNTIME / archive_name
-    temporary = target.with_suffix(target.suffix + ".part")
+def validate_download_values(archive_name: str, url: str, expected_sha256: str) -> None:
+    if (not isinstance(archive_name, str) or not archive_name or archive_name in {".", ".."}
+            or any(c in '<>:"/\\|?*' or ord(c) < 32 for c in archive_name)
+            or archive_name.endswith((".", " ")) or PureWindowsPath(archive_name).is_reserved()):
+        raise RestoreError("release descriptor archive_name must be a safe filename")
+    if (not isinstance(expected_sha256, str) or len(expected_sha256) != 64
+            or not all(c in "0123456789abcdefABCDEF" for c in expected_sha256)):
+        raise RestoreError("archive SHA256 must be a 64-character hexadecimal value")
+    if (not isinstance(url, str) or not url or not url.isascii()
+            or any(c.isspace() or ord(c) < 32 or ord(c) == 127 for c in url)):
+        raise RestoreError("release descriptor download_url must be an HTTP(S) URL")
     try:
-        with urllib.request.urlopen(url) as response, temporary.open("wb") as destination:
-            shutil.copyfileobj(response, destination, length=1024 * 1024)
+        parsed = urllib.parse.urlsplit(url)
+        # Reading port also rejects malformed and out-of-range port numbers.
+        parsed.port
+        valid = (parsed.scheme in {"http", "https"} and parsed.hostname
+                 and "\\" not in parsed.netloc and parsed.username is None and parsed.password is None)
+    except ValueError as exc:
+        raise RestoreError("release descriptor download_url must be an HTTP(S) URL") from exc
+    if not valid:
+        raise RestoreError("release descriptor download_url must be an HTTP(S) URL")
+
+
+def download(url: str, archive_name: str, expected_sha256: str) -> Path:
+    validate_download_values(archive_name, url, expected_sha256)
+    expected_sha256 = expected_sha256.lower()
+    # A returned path must remain valid when another release uses the same name.
+    target = RUNTIME / "snapshots" / expected_sha256 / archive_name
+    temporary: Path | None = None
+    try:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        if target.is_file() and file_sha256(target) == expected_sha256:
+            return target
+        descriptor, temporary_name = tempfile.mkstemp(prefix=".download-", suffix=".part", dir=target.parent)
+        temporary = Path(temporary_name)
+        with os.fdopen(descriptor, "wb") as destination:
+            with urllib.request.urlopen(url, timeout=HTTP_TIMEOUT_SECONDS) as response:
+                shutil.copyfileobj(response, destination, length=1024 * 1024)
         validate_archive_checksum(temporary, expected_sha256)
         os.replace(temporary, target)
+    except (OSError, urllib.error.URLError, http.client.HTTPException) as exc:
+        raise RestoreError(f"cannot download snapshot {archive_name}: {exc}") from exc
     finally:
-        temporary.unlink(missing_ok=True)
+        if temporary is not None:
+            try:
+                temporary.unlink(missing_ok=True)
+            except OSError as exc:
+                raise RestoreError(f"cannot remove temporary snapshot {temporary}: {exc}") from exc
     return target
 
 
@@ -202,10 +261,17 @@ def main(argv: list[str] | None = None) -> int:
             archive, expected = args.archive, args.sha256
         else:
             name, url, expected = descriptor_values(args.descriptor)
+            inventory = raw_preflight(RAW)
+            if all(body.is_file() for body, _, _ in inventory):
+                print("Raw snapshot preflight passed; no bodies need restoring.")
+                return 0
             archive = download(url, name, expected)
-        restore(archive, expected)
+        restore(archive, expected, RAW)
         return 0
     except RestoreError as exc:
+        print(f"Snapshot restore failed: {exc}")
+        return 1
+    except (OSError, urllib.error.URLError, http.client.HTTPException, zipfile.BadZipFile) as exc:
         print(f"Snapshot restore failed: {exc}")
         return 1
 

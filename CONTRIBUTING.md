@@ -15,3 +15,5 @@ Source bytes and their manifests form a versioned snapshot. Stage updated observ
 Preserve source observations, publisher attribution, AI acknowledgements and the original group credits. Label synthetic examples clearly. Distinguish tests of internal consistency from independent verification of charger facts.
 
 The submitted coursework archive is a historical baseline. New processing changes belong in a new version and release; they should not replace previously submitted files. See [coursework provenance](docs/coursework/README.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+
+Public release verification requires schema-v2 full-suite evidence. External pytest selection/plugin settings are isolated, and skipped/deselected or inconsistent results cannot approve a release. Shared test fixtures belong under `tests/conftest.py`; repository-root conftest files do not control the verifier.

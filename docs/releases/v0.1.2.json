@@ -1,0 +1,30 @@
+{
+  "version": "0.1.2",
+  "archive_name": "nsw-ev-charging-data-pipeline-v0.1.2.zip",
+  "archive_sha256": "635955a447047a0761db3b3c5cbe1ba8a178f6e90cccdac2dee1d6e4605e0062",
+  "archive_bytes": 209027477,
+  "archive_file_count": 2998,
+  "download_url": "https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/releases/download/v0.1.2/nsw-ev-charging-data-pipeline-v0.1.2.zip",
+  "created_at_utc": "2026-09-30T06:41:31.800436+00:00",
+  "project_fingerprint": "7d2830a3348bfb26745931851c9dcb1932d98f3990059c64ec20682120424612",
+  "test_count": 1239,
+  "test_evidence_schema_version": 2,
+  "full_suite": {
+    "collected": 1239,
+    "selected": 1239,
+    "executed": 1239,
+    "passed": 1239,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "xpassed": 0,
+    "deselected": 0,
+    "collection_errors": 0,
+    "collection_skipped": 0
+  },
+  "test_report_sha256": "fcabe2ac7eacaa0d839aca7217b22faee98a2d26fbf49dee679351c4fcbd9573",
+  "test_junit_sha256": "0613948c5604c43f99ce6506c48ba0a682b6cda30a58eb1378ecffc11ad4463f",
+  "integrity_checks": 47,
+  "descriptor_note": "docs/releases descriptors are outside the archive to avoid a self-referential archive checksum"
+}

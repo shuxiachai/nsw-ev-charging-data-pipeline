@@ -14,8 +14,9 @@ sys.path.insert(0, str(ROOT))
 from ev_pipeline.evidence import project_fingerprint
 from ev_pipeline.pipeline import DB, connect, snapshots, validate
 from scripts.check_reproducibility import table_hashes, file_hashes, schema_hashes, validation_hash
+from scripts.verification_evidence import included_file, validate_test_evidence, verify_raw_pairs
 
-VERSION = "0.1.1"
+VERSION = "0.1.2"
 ARCHIVE_NAME = f"nsw-ev-charging-data-pipeline-v{VERSION}.zip"
 DIRECTORIES = ("ev_pipeline", "config", "sql", "scripts", "tests", "data/raw",
                "data/processed", "outputs", "docs", "examples", ".github")
@@ -31,7 +32,7 @@ def release_files():
     result = []
     for path in sorted(set(files)):
         name = path.relative_to(ROOT).as_posix()
-        if "__pycache__" in path.parts or path.suffix.lower() in {".pyc", ".part", ".wal", ".building"}:
+        if not included_file(path):
             continue
         if name.startswith("docs/releases/") or name == "outputs/clean_environment_verification.json":
             continue
@@ -42,14 +43,17 @@ def release_files():
     names = {p.relative_to(ROOT).as_posix() for p in result}
     if not required.issubset(names):
         raise ValueError(f"Release files missing: {sorted(required - names)}")
+    verify_raw_pairs(ROOT, result)
     return result
 
 
 def verified_evidence():
+    verify_raw_pairs(ROOT)
     current = project_fingerprint()
     tests = json.loads((ROOT / "outputs/test_evidence.json").read_text(encoding="utf-8"))
     repro = json.loads((ROOT / "outputs/reproducibility.json").read_text(encoding="utf-8"))
-    if not tests.get("passed") or tests.get("project_fingerprint") != current or repro.get("project_fingerprint") != current:
+    validate_test_evidence(ROOT, tests, current)
+    if repro.get("project_fingerprint") != current:
         raise ValueError("Current code/input verification evidence is absent or stale")
     for key in ("table_content_identical", "csv_outputs_identical", "schema_identical", "validation_report_identical"):
         if repro.get(key) is not True:
@@ -98,6 +102,10 @@ def main():
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "project_fingerprint": fingerprint,
         "test_count": tests["tests"],
+        "test_evidence_schema_version": tests["schema_version"],
+        "full_suite": tests["full_suite"],
+        "test_report_sha256": tests["test_run"]["report_sha256"],
+        "test_junit_sha256": tests["test_run"]["junit_sha256"],
         "integrity_checks": len(checks["integrity_checks"]),
         "member_sha256": hashes,
         "descriptor_note": "docs/releases descriptors are outside the archive to avoid a self-referential archive checksum",

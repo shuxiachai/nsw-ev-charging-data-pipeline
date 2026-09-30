@@ -14,6 +14,8 @@ To restore missing raw bodies from a local archive, provide the archive checksum
 python scripts/restore_snapshot.py --archive path/to/snapshot.zip --sha256 <sha256>
 ```
 
-With no arguments, the tool reads `docs/releases/v0.1.1.json`, downloads the pinned public release into `.runtime`, verifies its checksum, and restores missing raw bodies.
+With no arguments, the tool reads `docs/releases/v0.1.2.json`, validates the descriptor and local inputs, then reuses a valid cache or downloads the pinned public release into `.runtime/snapshots/<sha256>/`. Complete valid inputs skip downloading. Every downloaded archive is checksum-verified before use, and only missing raw bodies are restored.
 
 The restore is deliberately narrow: it accepts no unsafe, duplicate, or symlink ZIP members; it validates every required body against the current tracked manifest before writing anything; it never replaces existing data, manifests, source code, generated CSVs, or the database. A corrupt existing raw body is an error and must be repaired deliberately rather than overwritten by this tool.
+
+Each download owns its exclusive temporary file. Different checksums have separate cache directories, even if their archive filenames are identical. Network operations have a 60-second timeout per blocking operation, not a total-transfer deadline. Failed or interrupted downloads preserve existing cache entries. Invalid descriptor fields are rejected before network access.

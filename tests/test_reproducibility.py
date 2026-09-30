@@ -57,6 +57,9 @@ def test_timestamp_serialization_does_not_invent_timezone_for_naive_values():
 
 
 def verification_fixture(tmp_path, monkeypatch, failed_stage=None, fingerprints=None):
+    from hashlib import sha256
+    from scripts import verification_evidence as ve
+
     monkeypatch.setattr(verify_project, "ROOT", tmp_path)
     monkeypatch.setattr(verify_project, "sys", SimpleNamespace(
         executable="test-python", stdout=SimpleNamespace(reconfigure=lambda **kwargs: None)))
@@ -65,15 +68,33 @@ def verification_fixture(tmp_path, monkeypatch, failed_stage=None, fingerprints=
     (tmp_path / "outputs").mkdir()
     evidence = tmp_path / "outputs/test_evidence.json"
     evidence.write_text(json.dumps({"passed": True, "project_fingerprint": "same-inputs"}))
+    raw = tmp_path / "data/raw"
+    raw.mkdir(parents=True)
+    (raw / "source.txt").write_bytes(b"source")
+    (raw / "source.txt.meta.json").write_text(json.dumps({"bytes": 6, "sha256": sha256(b"source").hexdigest()}))
+
+    def run_tests(root, fingerprint):
+        nodeid = "tests/test_fixture.py::test_passes"
+        report = {"schema_version": ve.SCHEMA_VERSION, "run_id": "fixture-run", "scope": "tests",
+                  "config": "pytest.ini", "project_fingerprint": fingerprint, "exitstatus": 0,
+                  "collected_nodeids": [nodeid], "selected_nodeids": [nodeid], "deselected_nodeids": [],
+                  "collection_errors": 0, "collection_skipped": 0,
+                  "reports": [{"nodeid": nodeid, "when": phase, "outcome": "passed", "wasxfail": False}
+                              for phase in ("setup", "call", "teardown")]}
+        (root / "outputs/test_report.json").write_text(json.dumps(report))
+        (root / "outputs/tests.xml").write_text(
+            '<testsuites><testsuite tests="1" errors="0" failures="0" skipped="0">'
+            '<testcase classname="tests.test_fixture" name="test_passes"><properties>'
+            f'<property name="release_nodeid" value="{nodeid}"/>'
+            '</properties></testcase></testsuite></testsuites>')
+        return ve.successful_evidence(root, fingerprint, "fixture-run")
 
     def run(command, **kwargs):
-        if "pytest" in command:
-            (tmp_path / "outputs/tests.xml").write_text(
-                '<testsuites><testsuite tests="1" errors="0" failures="0"/></testsuites>')
-        elif failed_stage is not None and failed_stage in command:
+        if failed_stage is not None and failed_stage in command:
             raise subprocess.CalledProcessError(1, command)
         return SimpleNamespace(returncode=0, stdout="", stderr="")
 
+    monkeypatch.setattr(verify_project, "run_tests", run_tests)
     monkeypatch.setattr(verify_project.subprocess, "run", run)
     return evidence
 
@@ -94,10 +115,13 @@ def test_verification_rejects_code_or_manifest_changes_during_the_run(tmp_path, 
 
 
 def test_success_is_published_after_all_verification_stages(tmp_path, monkeypatch):
+    from scripts.verification_evidence import validate_test_evidence
+
     evidence = verification_fixture(tmp_path, monkeypatch)
     verify_project.main()
-    assert json.loads(evidence.read_text()) == {
-        "passed": True, "tests": 1, "project_fingerprint": "same-inputs"}
+    result = json.loads(evidence.read_text())
+    assert result["passed"] is True and result["tests"] == result["full_suite"]["executed"] == 1
+    validate_test_evidence(tmp_path, result, "same-inputs")
 
 
 def test_rebuild_exception_revokes_old_reproducibility_success(tmp_path, monkeypatch):

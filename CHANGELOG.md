@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2 — 2026-09-30
+
+- Isolated concurrent download temporaries and keyed verified cache entries by SHA-256.
+- Added descriptor validation, bounded network operations, clear transport diagnostics and verified-cache reuse.
+- Prevented public packaging of raw bodies without matching provenance manifests.
+- Bound release approval to fresh full-suite collection/execution evidence, rejecting deselection, skipped tests and inconsistent artifacts.
+- Added targeted adversarial tests for concurrent, interrupted, malformed and stale-evidence cases.
+
 ## 0.1.1 — 2026-09-30
 
 - Corrected the snapshot preflight test's simulated project root, exposed by GitHub runners using temporary directories outside the repository.
