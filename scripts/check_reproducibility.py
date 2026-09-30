@@ -72,7 +72,7 @@ def main():
     # Revoke prior success even when reading the baseline or rebuilding fails.
     evidence.write_text(json.dumps({"table_content_identical": False, "csv_outputs_identical": False,
                                     "schema_identical": False, "validation_report_identical": False,
-                                    "project_fingerprint": fingerprint}), encoding="utf-8")
+                                    "project_fingerprint": fingerprint}), encoding="utf-8", newline="\n")
     before_tables, before_files = table_hashes(), file_hashes()
     before_schema, before_validation = schema_hashes(), validation_hash()
     acquire(offline=True)
@@ -87,7 +87,7 @@ def main():
               "tables": after_tables, "csv_outputs": after_files,
               "schema": after_schema, "validation_report_sha256": after_validation,
               "excluded": "Database physical bytes and run timestamps are not reproducibility criteria."}
-    evidence.write_text(json.dumps(result, indent=2), encoding="utf-8")
+    evidence.write_text(json.dumps(result, indent=2), encoding="utf-8", newline="\n")
     gates = ["table_content_identical", "csv_outputs_identical", "schema_identical", "validation_report_identical"]
     print(json.dumps({key: result[key] for key in gates}, indent=2))
     if not all(result[key] for key in gates):

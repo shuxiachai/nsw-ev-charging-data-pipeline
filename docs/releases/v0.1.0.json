@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "archive_name": "nsw-ev-charging-data-pipeline-v0.1.0.zip",
+  "archive_sha256": "26864238a0170285875a63791ae191f5b4f716aed66275a21c95edc4785da120",
+  "archive_bytes": 208909584,
+  "archive_file_count": 2994,
+  "download_url": "https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/releases/download/v0.1.0/nsw-ev-charging-data-pipeline-v0.1.0.zip",
+  "created_at_utc": "2026-09-30T05:22:07.642446+00:00",
+  "project_fingerprint": "c2f5f36c7bff861e0b4bab2db4e71db7ac15f9973735959dfe0f7b0de60deeec",
+  "test_count": 1111,
+  "integrity_checks": 47,
+  "descriptor_note": "docs/releases descriptors are outside the archive to avoid a self-referential archive checksum"
+}

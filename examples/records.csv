@@ -1,0 +1,6 @@
+record_id,location_id,sa4_code,charger_type
+r1,L1,R1,DC
+r2,L1,R1,DC
+r3,L2,R1,DC
+r4,L3,R2,DC
+r5,L4,R2,AC

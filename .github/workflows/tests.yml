@@ -1,0 +1,57 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fast:
+    name: fast (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install -e . --no-deps
+      - run: nsw-ev-pipeline --help
+      - run: python -m pytest --collect-only -q
+      - run: >-
+          python -m pytest -q
+          tests/test_power_configuration.py
+          tests/test_augmentation_semantics.py
+          tests/test_augmentation_identity.py
+          tests/test_demo.py
+          tests/test_snapshot_tools.py
+          tests/test_evidence_fingerprint.py
+          tests/test_spatial_distance.py
+          tests/test_csv_portability.py
+
+  full-integration:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install -e . --no-deps
+      - run: nsw-ev-pipeline --help
+      - run: python scripts/restore_snapshot.py
+      - run: python scripts/preflight.py
+      - run: python -m ev_pipeline all
+      - run: python scripts/verify_project.py

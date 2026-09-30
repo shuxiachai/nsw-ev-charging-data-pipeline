@@ -2,7 +2,9 @@
 
 A reproducible data engineering pipeline for electric vehicle charging infrastructure in New South Wales, Australia. It combines source acquisition, cleaning, cross-source matching, SA4 spatial integration and DuckDB storage, retaining evidence behind corrections and enrichment decisions.
 
-This project grew out of **COMP5339 Data Engineering, Assignment 1, Semester 2 2026, at the University of Sydney**, developed by **TUT17-Group07**. Following submission, the repository is being organized as a continuing project. The current algorithms and validated data snapshot remain those of the coursework baseline; this documentation update introduces no new pipeline results.
+This project grew out of **COMP5339 Data Engineering, Assignment 1, Semester 2 2026, at the University of Sydney**, developed by **TUT17-Group07**. Following submission, the repository is being organized as a continuing project. Version 0.1.0 adds canonical augmentation IDs, snapshot tools, automated tests and a reproducible release. Original record/location identities and the frozen source observations remain preserved. The submitted coursework archive is retained separately.
+
+[![Tests](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/workflows/tests.yml)
 
 [Documentation](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/blob/main/docs/README.md) · [Architecture](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/blob/main/docs/architecture.md) · [Database schema](docs/schema.md) · [Data sources](docs/sources.md) · [Coursework origin](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/tree/main/docs/coursework)
 
@@ -42,7 +44,7 @@ These figures describe the frozen September 2026 project snapshot, not live char
 | Database tables | 23 |
 | Recorded tests / integrity checks | 1,006 / 47 |
 
-Evidence: [tests](outputs/test_evidence.json), [validation](outputs/validation.json), [reproducibility](outputs/reproducibility.json). Coverage measures completeness, not matching accuracy. Eight disputed points are excluded from distance-based analysis; reviewed locality evidence supports their regional assignments.
+Evidence: [tests](outputs/test_evidence.json), [validation](outputs/validation.json), [reproducibility](outputs/reproducibility.json). The table records the original coursework test count; the linked evidence reports the current release's full test count. Coverage measures completeness, not matching accuracy. Eight disputed points are excluded from distance-based analysis; reviewed locality evidence supports their regional assignments.
 
 ## Run the pipeline
 
@@ -50,11 +52,13 @@ Evidence: [tests](outputs/test_evidence.json), [validation](outputs/validation.j
 
 ### Restore frozen inputs
 
-A Git clone contains code, manifests, small source files and CSV results. Large source PDFs/ZIPs and the generated DuckDB database are excluded from Git.
+A Git clone contains code, manifests, small source files and CSV results. Large original PDFs/ZIPs and the generated DuckDB database are delivered in the [v0.1.0 release](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/releases/tag/v0.1.0).
 
-For the coursework baseline, obtain the ZIP and checksum from the [reviewed 10 September snapshot](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/releases/tag/review-fixes-2026-09-10). Verify the checksum, extract the archive separately, and restore its frozen `data/` files into the checkout. Preserve the checkout's tracked files, including manifests and processed CSVs; source and manifest hashes must agree. The pipeline stops on incompatible inputs. That Release contains historical code and is not the final submitted code version. Release access follows repository permissions.
+After cloning, `python scripts/restore_snapshot.py` reads the pinned release descriptor, downloads and verifies the archive, and restores only missing raw originals. It checks every body against the checkout's source manifest and preserves tracked code, manifests, CSVs and existing raw files. `python scripts/preflight.py` reports all remaining missing or corrupt inputs together.
 
-The final submitted archive was retained separately on 25 September 2026. See [coursework provenance](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/tree/main/docs/coursework) for its identifier. Future changes to pinned inputs require a matching data snapshot.
+You can instead download the complete versioned ZIP and checksum from the release, verify them, and work in its extracted project root. That archive includes code, frozen inputs, CSV results and DuckDB. Its release descriptor is published separately to avoid a self-referential archive checksum. Already-complete extracted archives can run preflight directly without restoration.
+
+The 10 September Releases and the final submitted coursework ZIP are historical baselines. Use the version-matched public release for current reproduction.
 
 ### Install and run
 
@@ -63,24 +67,29 @@ git clone https://github.com/shuxiachai/nsw-ev-charging-data-pipeline.git
 cd nsw-ev-charging-data-pipeline
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-# Restore the verified data/ snapshot before the next command.
+.\.venv\Scripts\python.exe -m pip install -e . --no-deps
+.\.venv\Scripts\python.exe scripts/restore_snapshot.py
+.\.venv\Scripts\python.exe scripts/preflight.py
 .\.venv\Scripts\python.exe -m ev_pipeline all
 .\.venv\Scripts\python.exe scripts/verify_project.py
 ```
 
-Run from the folder containing this README. If you already extracted a complete code/database archive, skip the clone and `cd` steps and work in its project root. If `py` is unavailable, use a Python 3.12 executable path. On Linux/macOS, use `python3.12 -m venv .venv` and `.venv/bin/python`; those platforms have not been verified for this project.
+Run from the folder containing this README. If you already extracted a complete code/database archive, skip the clone, `cd` and `restore_snapshot.py` steps, then work in its project root and run preflight directly. If `py` is unavailable, use a Python 3.12 executable path. On Linux/macOS, use `python3.12 -m venv .venv` and `.venv/bin/python`; those platforms have not been verified for this project.
 
-`all` verifies cached inputs and can download missing sources. Restore the frozen snapshot first: some reviewed originals cannot be reacquired through a generic GET, and current publisher responses may differ. After inputs, dependencies and the extension are installed, `all --offline` rebuilds without downloading data.
+`all` verifies cached inputs and can download missing sources. Restore the frozen snapshot first: some reviewed originals cannot be reacquired through a generic GET, and current publisher responses may differ. After inputs, dependencies and the extension are installed, `all --offline` rebuilds without downloading data. Editable installation adds the equivalent `nsw-ev-pipeline` command. This release supports execution from an editable checkout or complete extracted archive; a standalone wheel does not bundle the data snapshot.
 
 | Command after the Python interpreter | Purpose |
 | --- | --- |
+| `scripts/preflight.py` | Check every raw source and manifest before building |
+| `scripts/restore_snapshot.py` | Restore missing raw files from the pinned public release |
+| `examples/demo.py` | Run the small synthetic DuckDB example |
 | `-m ev_pipeline acquire` | Download missing sources and verify cached inputs |
 | `-m ev_pipeline all --offline` | Rebuild from the verified local snapshot |
 | `-m ev_pipeline validate` | Check database integrity and coverage |
 | `scripts/verify_project.py` | Run tests, offline rebuild comparisons and database checks |
 | `scripts/package_submission.py` | Build the legacy coursework ZIP after verification |
 
-Do not run concurrent builds into the same output directory. The legacy packager retains its coursework file selection; new repository navigation and course-reference pages are not included in its ZIP. The submitted archive is unchanged by this reorganization.
+Do not run concurrent builds into the same output directory. `scripts/package_release.py` produces the verified public code/data archive including project documentation and examples. The legacy coursework packager retains its earlier file selection. The submitted coursework archive remains unchanged.
 
 ## Repository layout
 
@@ -116,6 +125,14 @@ OpenAI Codex, ChatGPT and Claude Code assisted with development, reviews and wri
 
 ## Reuse and next steps
 
-No project-wide code license has been selected yet. Third-party data, operator publications and University teaching materials retain their respective rights and terms; their presence here does not grant a new reuse license. Consult the [source register](docs/sources.md) for source-specific notes.
+Original project code and project-authored documentation use the [MIT license](LICENSE). The repository owner has confirmed publication authorization for the frozen data snapshot. Original publisher attributions and license metadata are retained in the [third-party notices](THIRD_PARTY_NOTICES.md) and [source register](docs/sources.md); MIT does not replace those publisher terms.
 
-Planned next steps are to establish code licensing with contributors, document redistribution terms for a reusable data release, verify additional platforms, and improve inspection of unresolved matches. These are future work, not implemented features.
+See [contribution guidance](CONTRIBUTING.md), [version history](CHANGELOG.md), [snapshot tools](docs/snapshot-tools.md) and the [synthetic example](examples/README.md). Windows/Linux CI runs focused regression tests; the full integration workflow verifies the complete snapshot. Further development can improve independently labelled matching evidence and support additional Python versions.
+
+## Augmentation ID migration
+
+v0.1.0 replaces legacy positional augmentation hashes with `a_v1_` IDs based on fixed named fields, normalized null/numeric values and the verified source snapshot SHA-256. Adding unrelated columns or changing pandas null representation no longer changes an observation's identity. All providers share one scheme. Existing external references to coursework augmentation IDs must be regenerated; original record and location ID rules are unchanged.
+
+## Quick example
+
+`python examples/demo.py` runs without the full data snapshot or spatial extension. The synthetic fixture demonstrates duplicate source records, distinct DC location counts, site versus operator scope, and retained connector disagreements.

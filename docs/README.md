@@ -12,6 +12,14 @@ This repository grew out of COMP5339 Assignment 1 and retains its validated cour
 | Query the database directly | [Standalone SQL](standalone_sql.md) |
 | Understand the coursework origin | [Coursework references](coursework/README.md) |
 
+## Running and contributing
+
+- [Checksum-pinned snapshot tools](snapshot-tools.md)
+- [Synthetic DuckDB demo](../examples/README.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Version history](../CHANGELOG.md)
+- [Licensing and source notices](../THIRD_PARTY_NOTICES.md)
+
 ## Current evidence
 
 - [Validation and coverage](../outputs/validation.json)

@@ -270,7 +270,11 @@ def spatial_assign(records, issues, coastal_tolerance_m=50):
         for lid, group in near.groupby("location_id"):
             codes = group.sa4_code.dropna().unique()
             if len(codes) == 1:
-                assignment[lid] = (codes[0], "coastal_nearest_within_50m", float(group.distance_m.min()))
+                distance_m = float(group.distance_m.min())
+                if math.isfinite(distance_m) and 0 <= distance_m <= coastal_tolerance_m:
+                    # Retain full precision for eligibility; report metres to six
+                    # decimals so projection round-off does not change exports.
+                    assignment[lid] = (codes[0], "coastal_nearest_within_50m", round(distance_m, 6))
     for r in loc.itertuples():
         a = assignment.get(r.location_id, (None, "invalid_coordinates", None))
         if a[1] != "point_in_polygon":

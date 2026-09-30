@@ -3,6 +3,7 @@
 # as AI-generated or AI-revised. File-specific tool attribution was not retained.
 # See the separate Generative AI and Automated Writing Tools Usage Report
 # for the reported tools, scope of assistance and representative prompts.
+# OpenAI Codex subsequently revised verification fingerprint coverage in this file.
 
 """Bind validation evidence to exact project inputs and executable source files."""
 from hashlib import sha256
@@ -11,8 +12,12 @@ from .acquire import ROOT, RAW
 
 def project_fingerprint():
     paths = [ROOT / "requirements.txt", ROOT / "pytest.ini"]
+    if (ROOT / "pyproject.toml").is_file():
+        paths.append(ROOT / "pyproject.toml")
     for directory, suffix in [("ev_pipeline", ".py"), ("scripts", ".py"), ("tests", ".py"), ("sql", ".sql"), ("config", ".json")]:
         paths.extend((ROOT / directory).rglob("*" + suffix))
+    paths.extend(path for path in (ROOT / "examples").rglob("*")
+                 if path.is_file() and path.suffix.lower() in {".py", ".csv", ".sql", ".json"})
     paths.extend(RAW.rglob("*.meta.json"))
     hashes = {p.relative_to(ROOT).as_posix(): sha256(p.read_bytes()).hexdigest() for p in sorted(set(paths))}
     digest = sha256()

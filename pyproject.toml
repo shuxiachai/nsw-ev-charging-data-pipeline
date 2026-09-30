@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nsw-ev-charging-data-pipeline"
+version = "0.1.0"
+description = "Evidence-preserving NSW EV charging data cleaning, spatial integration and enrichment"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  {name = "Jingbo Chai"},
+  {name = "Lyu Zhong"},
+  {name = "Chengsi Li"},
+  {name = "Sen Wang"},
+]
+dependencies = [
+  "duckdb==1.5.5",
+  "geopandas==1.1.4",
+  "numpy==2.5.2",
+  "pandas==3.0.5",
+  "pyogrio==0.13.0",
+  "pyproj==3.8.0",
+  "requests==2.34.2",
+  "shapely==2.1.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[project.scripts]
+nsw-ev-pipeline = "ev_pipeline.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/shuxiachai/nsw-ev-charging-data-pipeline"
+Issues = "https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/issues"
+
+[tool.setuptools]
+packages = ["ev_pipeline"]
+

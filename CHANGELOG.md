@@ -1,0 +1,14 @@
+# Changelog
+
+## 0.1.0 — 2026-09-30
+
+- Added MIT licensing for original software, publisher notices and contribution guidance.
+- Added editable Python package metadata and the `nsw-ev-pipeline` command.
+- Added source preflight and checksum-verified snapshot restoration tools.
+- Added Windows and Linux automated regression checks.
+- Added a small synthetic DuckDB example demonstrating records, locations, site coverage and source conflicts.
+- Introduced versioned, canonical augmentation IDs using named fields and verified source identity. Augmentation IDs change once from the coursework baseline; location and record identity rules remain unchanged.
+- Standardized CSV record separators and generated JSON report newlines to LF and reported coastal distances to six decimal metres after full-precision eligibility checks.
+- Added a versioned public code/data release and documented clean-checkout reproduction evidence.
+
+The original coursework archive and its September 2026 results remain a separately identified historical snapshot. Data completeness metrics are not matching-accuracy measures.

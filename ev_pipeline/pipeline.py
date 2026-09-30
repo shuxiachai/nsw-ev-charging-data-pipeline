@@ -16,8 +16,9 @@ import duckdb
 import pandas as pd
 
 from .acquire import ROOT, RAW
-from .clean import load_clean, spatial_assign, identifier
+from .clean import load_clean, spatial_assign
 from .augment import augment
+from .augmentation_identity import augmentation_identifiers
 from .osm import osm_augment
 from .jolt import jolt_augment
 from .ampol import ampol_augment
@@ -460,17 +461,12 @@ def build(offline=True):
     matches, audit, attributes, match_exclusions = apply_match_exclusions(
         locations, records, sites, matches, audit, attributes)
     osm_sites, osm_matches, osm_audit, osm_attrs = osm_augment(locations, records, operator_details=details)
-    attributes["osm_id"] = None
-    attributes = pd.concat([attributes, osm_attrs], ignore_index=True)
     jolt_sites, jolt_matches, jolt_audit, jolt_attrs = jolt_augment(locations, records)
-    attributes["jolt_id"] = None
-    attributes = pd.concat([attributes, jolt_attrs], ignore_index=True)
-    attributes.insert(0, "augmentation_id", [identifier("a_", list(r)) for r in attributes.itertuples(index=False, name=None)])
     ampol_sites, ampol_matches, ampol_audit, ampol_attrs = ampol_augment(locations, records)
-    # Preserve every pre-existing observation ID when adding a new provider.
-    attributes["ampol_id"] = None
-    ampol_attrs.insert(0, "augmentation_id", [identifier("a_", list(r)) for r in ampol_attrs.itertuples(index=False, name=None)])
-    attributes = pd.concat([attributes, ampol_attrs], ignore_index=True)
+    attributes = pd.concat([attributes, osm_attrs, jolt_attrs, ampol_attrs], ignore_index=True)
+    source_snapshots = snapshots()
+    source_hashes = source_snapshots.set_index("source_file").sha256.to_dict()
+    attributes.insert(0, "augmentation_id", augmentation_identifiers(attributes, source_hashes))
     from .augmentation_semantics import attribute_differences, connector_quality
     differences = attribute_differences(attributes)
     connector_issues = connector_quality(sites, connectors, matches)
@@ -484,7 +480,7 @@ def build(offline=True):
     with connect(temp, offline=offline) as con:
         con.execute("BEGIN TRANSACTION")
         con.execute((ROOT / "sql/schema.sql").read_text(encoding="utf-8"))
-        insert(con, "source_snapshot", snapshots())
+        insert(con, "source_snapshot", source_snapshots)
         region_data = pd.DataFrame({"sa4_code": regions.sa4_code, "sa4_name": regions.sa4_name, "wkt": regions.geometry.to_wkt()})
         con.register("regions_input", region_data)
         con.execute("INSERT INTO region SELECT sa4_code,sa4_name,4,ST_GeomFromText(wkt) FROM regions_input")
@@ -542,7 +538,7 @@ def build(offline=True):
             GROUP BY r.sa4_code,r.sa4_name ORDER BY r.sa4_code
         """).df()
         if not checks["integrity_passed"]:
-            (QA / "failed_validation.json").write_text(json.dumps(checks, indent=2), encoding="utf-8")
+            (QA / "failed_validation.json").write_text(json.dumps(checks, indent=2), encoding="utf-8", newline="\n")
             raise ValueError(f"Database integrity checks failed: {checks}; final database not replaced")
         con.execute("COMMIT")
         con.execute("CHECKPOINT")
@@ -557,42 +553,42 @@ def build(offline=True):
                         "external_connectors": connectors, "osm_sites": osm_sites, "osm_site_matches": osm_matches,
                         "jolt_sites": jolt_sites, "jolt_site_matches": jolt_matches,
                         "ampol_sites": ampol_sites, "ampol_site_matches": ampol_matches}.items():
-        frame.to_csv(OUT / (name + ".csv"), index=False)
-    quality.to_csv(QA / "quality_issues.csv", index=False)
-    identity_audit.to_csv(QA / "reviewed_identity.csv", index=False)
-    identity_evidence.to_csv(QA / "reviewed_identity_evidence.csv", index=False)
-    match_exclusions.to_csv(QA / "reviewed_match_exclusion.csv", index=False)
-    coverage_attributes.to_csv(QA / "augmentation_attribute_coverage.csv", index=False)
-    coverage_composition.to_csv(QA / "augmentation_composition.csv", index=False)
-    resolution.to_csv(QA / "source_resolution.csv", index=False)
-    reviewed_resolution.to_csv(QA / "reviewed_resolution.csv", index=False)
-    region_reviews.to_csv(QA / "reviewed_region.csv", index=False)
-    region_evidence.to_csv(QA / "reviewed_region_evidence.csv", index=False)
-    regional_locations.to_csv(OUT / "regional_analysis_locations.csv", index=False)
-    regional_counts.to_csv(QA / "regional_sa4_counts.csv", index=False)
-    differences.to_csv(QA / "cross_source_attribute_differences.csv", index=False)
-    connector_issues.to_csv(QA / "connector_quality_issues.csv", index=False)
-    power_observations.to_csv(OUT / "location_power_observations.csv", index=False)
-    duplicates.to_csv(QA / "removed_duplicates.csv", index=False)
-    audit.to_csv(QA / "matching_candidates.csv", index=False)
-    osm_audit.to_csv(QA / "osm_matching_candidates.csv", index=False)
-    jolt_audit.to_csv(QA / "jolt_matching_candidates.csv", index=False)
-    ampol_audit.to_csv(QA / "ampol_matching_candidates.csv", index=False)
-    ampol_matches.sort_values(["score", "location_id"]).to_csv(QA / "ampol_matching_review_sample.csv", index=False)
-    jolt_matches.sort_values(["score", "location_id"]).to_csv(QA / "jolt_matching_review_sample.csv", index=False)
-    osm_matches.sort_values(["score", "location_id"]).head(30).to_csv(QA / "osm_matching_review_sample.csv", index=False)
+        frame.to_csv(OUT / (name + ".csv"), index=False, lineterminator="\n")
+    quality.to_csv(QA / "quality_issues.csv", index=False, lineterminator="\n")
+    identity_audit.to_csv(QA / "reviewed_identity.csv", index=False, lineterminator="\n")
+    identity_evidence.to_csv(QA / "reviewed_identity_evidence.csv", index=False, lineterminator="\n")
+    match_exclusions.to_csv(QA / "reviewed_match_exclusion.csv", index=False, lineterminator="\n")
+    coverage_attributes.to_csv(QA / "augmentation_attribute_coverage.csv", index=False, lineterminator="\n")
+    coverage_composition.to_csv(QA / "augmentation_composition.csv", index=False, lineterminator="\n")
+    resolution.to_csv(QA / "source_resolution.csv", index=False, lineterminator="\n")
+    reviewed_resolution.to_csv(QA / "reviewed_resolution.csv", index=False, lineterminator="\n")
+    region_reviews.to_csv(QA / "reviewed_region.csv", index=False, lineterminator="\n")
+    region_evidence.to_csv(QA / "reviewed_region_evidence.csv", index=False, lineterminator="\n")
+    regional_locations.to_csv(OUT / "regional_analysis_locations.csv", index=False, lineterminator="\n")
+    regional_counts.to_csv(QA / "regional_sa4_counts.csv", index=False, lineterminator="\n")
+    differences.to_csv(QA / "cross_source_attribute_differences.csv", index=False, lineterminator="\n")
+    connector_issues.to_csv(QA / "connector_quality_issues.csv", index=False, lineterminator="\n")
+    power_observations.to_csv(OUT / "location_power_observations.csv", index=False, lineterminator="\n")
+    duplicates.to_csv(QA / "removed_duplicates.csv", index=False, lineterminator="\n")
+    audit.to_csv(QA / "matching_candidates.csv", index=False, lineterminator="\n")
+    osm_audit.to_csv(QA / "osm_matching_candidates.csv", index=False, lineterminator="\n")
+    jolt_audit.to_csv(QA / "jolt_matching_candidates.csv", index=False, lineterminator="\n")
+    ampol_audit.to_csv(QA / "ampol_matching_candidates.csv", index=False, lineterminator="\n")
+    ampol_matches.sort_values(["score", "location_id"]).to_csv(QA / "ampol_matching_review_sample.csv", index=False, lineterminator="\n")
+    jolt_matches.sort_values(["score", "location_id"]).to_csv(QA / "jolt_matching_review_sample.csv", index=False, lineterminator="\n")
+    osm_matches.sort_values(["score", "location_id"]).head(30).to_csv(QA / "osm_matching_review_sample.csv", index=False, lineterminator="\n")
     # Reproducible audit sample prioritises weakest accepted matches, not flattering examples.
-    matches.sort_values(["score", "location_id"]).head(30).to_csv(QA / "matching_review_sample.csv", index=False)
+    matches.sort_values(["score", "location_id"]).head(30).to_csv(QA / "matching_review_sample.csv", index=False, lineterminator="\n")
     dcids = set(records.loc[records.charger_type == "DC", "location_id"])
     site_ids = set(attributes.loc[attributes.scope == "site", "location_id"])
-    locations[locations.location_id.isin(dcids) & ~locations.location_id.isin(site_ids)].to_csv(QA / "unmatched_dc_locations.csv", index=False)
-    locations[locations.sa4_method != "point_in_polygon"].to_csv(QA / "spatial_exceptions.csv", index=False)
+    locations[locations.location_id.isin(dcids) & ~locations.location_id.isin(site_ids)].to_csv(QA / "unmatched_dc_locations.csv", index=False, lineterminator="\n")
+    locations[locations.sa4_method != "point_in_polygon"].to_csv(QA / "spatial_exceptions.csv", index=False, lineterminator="\n")
     by_op = []
     for op, group in locations[locations.location_id.isin(dcids)].groupby("operator_name"):
         ids = set(group.location_id)
         by_op.append({"operator": op, "dc_locations": len(ids), "site_matches": len(ids & site_ids),
                       "any_augmentation": len(ids & set(attributes.location_id))})
-    pd.DataFrame(by_op).to_csv(QA / "coverage_by_operator.csv", index=False)
+    pd.DataFrame(by_op).to_csv(QA / "coverage_by_operator.csv", index=False, lineterminator="\n")
     checks.update({"input_rows": len(raw), "cleaned_records": len(records), "locations": len(locations), "regions": len(regions),
                    "duplicate_rows_removed": len(duplicates), "quality_issue_counts": quality.code.value_counts().to_dict(),
                    "reviewed_identity_groups": int(identity_audit.review_id.nunique()),
@@ -624,9 +620,9 @@ def build(offline=True):
                                    "Coastal nearest assignment is an approximation, not an exact containment result.",
                                    "OCM observations may be older than the export; prices are unparsed historical text.",
                                    "Ampol connector labels are dated per-location website claims with repeated service descriptions; they are not live verification or a complete equipment inventory."]})
-    (QA / "validation.json").write_text(json.dumps(checks, indent=2, ensure_ascii=False), encoding="utf-8")
+    (QA / "validation.json").write_text(json.dumps(checks, indent=2, ensure_ascii=False), encoding="utf-8", newline="\n")
     (QA / "run_manifest.json").write_text(json.dumps({"completed_at_utc": datetime.now(timezone.utc).isoformat(),
-        "duckdb_version": duckdb.__version__, "input_snapshots": len(snapshots()), "database": DB.relative_to(ROOT).as_posix()}, indent=2), encoding="utf-8")
+        "duckdb_version": duckdb.__version__, "input_snapshots": len(snapshots()), "database": DB.relative_to(ROOT).as_posix()}, indent=2), encoding="utf-8", newline="\n")
     # Exports can fail (for example, disk-full or a locked CSV). Publish the new
     # database only after all required exports have succeeded. Existing database
     # bytes remain intact on earlier failures; verification rejects partial CSVs.

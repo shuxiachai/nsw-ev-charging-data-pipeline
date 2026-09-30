@@ -24,7 +24,7 @@ def main():
     evidence.parent.mkdir(parents=True, exist_ok=True)
     fingerprint = project_fingerprint()
     # A failed verification must not leave an old 'pass' usable by the packager.
-    evidence.write_text(json.dumps({"passed": False, "project_fingerprint": fingerprint}), encoding="utf-8")
+    evidence.write_text(json.dumps({"passed": False, "project_fingerprint": fingerprint}), encoding="utf-8", newline="\n")
     runtime = (ROOT / ".runtime").resolve()
     if not runtime.is_relative_to(ROOT.resolve()):
         raise ValueError("Test temporary directory must remain in the project")
@@ -37,7 +37,7 @@ def main():
     result = subprocess.run([sys.executable, "-m", "pytest", "-q", "--junitxml=outputs/tests.xml", "--basetemp=" + str(basetemp),
                              "-o", "cache_dir=" + str(basetemp / "cache")],
                             cwd=ROOT, capture_output=True, text=True, encoding="utf-8", env=env)
-    (ROOT / "outputs/test_run.log").write_text(result.stdout + result.stderr, encoding="utf-8")
+    (ROOT / "outputs/test_run.log").write_text(result.stdout + result.stderr, encoding="utf-8", newline="\n")
     print(result.stdout + result.stderr)
     if result.returncode:
         raise RuntimeError("Tests failed; full output saved in outputs/test_run.log")
@@ -51,7 +51,7 @@ def main():
     if project_fingerprint() != fingerprint:
         raise ValueError("Project changed during verification; rerun against unchanged inputs and code")
     # Publish success only after every stage passes for the same project version.
-    evidence.write_text(json.dumps({"passed": True, "tests": count, "project_fingerprint": fingerprint}, indent=2), encoding="utf-8")
+    evidence.write_text(json.dumps({"passed": True, "tests": count, "project_fingerprint": fingerprint}, indent=2), encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

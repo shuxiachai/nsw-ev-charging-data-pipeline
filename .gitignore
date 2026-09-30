@@ -19,7 +19,7 @@ submission/
 *.building
 *.part
 
-# The full frozen originals and database are supplied in the private Release.
+# The full frozen originals and database are supplied in versioned public Releases.
 # Keep adjacent manifests and smaller originals readable in the repository.
 data/raw/**/*.pdf
 data/raw/**/*.zip
@@ -34,3 +34,8 @@ outputs/tests.xml
 outputs/clean_environment_verification.json
 docs/matching_review_20260908.md
 docs/matching_review_20260908.csv
+
+# Editable packaging metadata and local builds.
+*.egg-info/
+build/
+dist/

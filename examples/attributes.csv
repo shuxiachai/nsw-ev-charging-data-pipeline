@@ -1,0 +1,5 @@
+location_id,attribute,value,scope,source,observed_at
+L1,dc_connector_types,CCS2,site,Synthetic OSM,2026-09-06
+L3,dc_connector_types,CCS2,site,Synthetic OCM,2026-04-22
+L3,dc_connector_types,CCS1,site,Synthetic OSM,2026-09-06
+L2,website,https://example.invalid/operator,operator,Synthetic operator,2026-09-06
