@@ -139,7 +139,7 @@ v0.1.0 replaces legacy positional augmentation hashes with `a_v1_` IDs based on 
 
 ## Release verification
 
-v0.1.1 passes **1,112 full tests and 47 database checks**, plus **190 fast tests on both Windows and Ubuntu**. [Full GitHub integration CI](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/runs/36674876695) also passes. An independent public clone and fresh Python environment anonymously downloaded the release, restored 18 missing originals, rebuilt the database, and exactly matched the published signatures of 23 tables, 40 CSVs, schema, validation report and source fingerprint. See the [verification record](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/blob/main/docs/releases/v0.1.1-verification.json).
+v0.1.2 passes **1,239 full tests and 47 database checks**, including **127 new edge-case tests**, plus **317 fast tests on both Windows and Ubuntu**. [Full GitHub integration CI](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/runs/36680141618) also passes. An independent public clone and fresh Python environment anonymously downloaded the release, restored 18 missing originals, reused the verified cache with network access disabled, rebuilt the database, and exactly matched the published signatures of 23 tables, 40 CSVs, schema, validation report and source fingerprint. See the [v0.1.2 verification record](docs/releases/v0.1.2-verification.json); the [v0.1.1 record](docs/releases/v0.1.1-verification.json) is retained.
 
 ## Verification and recovery boundaries
 

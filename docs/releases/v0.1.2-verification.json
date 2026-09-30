@@ -1,0 +1,59 @@
+{
+  "version": "0.1.2",
+  "verified_at_utc": "2026-09-30T06:58:28.114664+00:00",
+  "tested_source_commit": "18bc66ca0fb265692c397d4a8dd71d7e87889651",
+  "source_fingerprint": "7d2830a3348bfb26745931851c9dcb1932d98f3990059c64ec20682120424612",
+  "archive_sha256": "635955a447047a0761db3b3c5cbe1ba8a178f6e90cccdac2dee1d6e4605e0062",
+  "archive_bytes": 209027477,
+  "archive_members": 2998,
+  "local_full_tests_passed": 1239,
+  "new_edge_case_tests": 127,
+  "test_evidence_schema_version": 2,
+  "full_suite": {
+    "collected": 1239,
+    "selected": 1239,
+    "executed": 1239,
+    "passed": 1239,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "xpassed": 0,
+    "deselected": 0,
+    "collection_errors": 0,
+    "collection_skipped": 0
+  },
+  "test_report_sha256": "fcabe2ac7eacaa0d839aca7217b22faee98a2d26fbf49dee679351c4fcbd9573",
+  "test_junit_sha256": "0613948c5604c43f99ce6506c48ba0a682b6cda30a58eb1378ecffc11ad4463f",
+  "integrity_checks_passed": 47,
+  "fast_ci_cases_per_platform": 317,
+  "fast_ci_platforms": [
+    "Ubuntu",
+    "Windows"
+  ],
+  "github_full_integration_platform": "Ubuntu",
+  "github_workflow_conclusion": "success",
+  "github_workflow_url": "https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/runs/36680141618",
+  "independent_read_only_review": "completed; root-conftest collection finding corrected and re-reviewed",
+  "new_user_checkout": {
+    "source": "public GitHub clone",
+    "download": "anonymous public v0.1.2 Release",
+    "missing_raw_files_restored": 18,
+    "separate_python_environment": true,
+    "verified_download_cache_reused_with_network_disabled": true,
+    "published_table_signatures_match": true,
+    "published_csv_signatures_match": true,
+    "published_schema_signatures_match": true,
+    "published_validation_signature_matches": true,
+    "published_source_fingerprint_matches": true,
+    "integrity_checks": 47,
+    "table_count": 23,
+    "csv_count": 40
+  },
+  "coursework_submission_artifacts_unchanged": true,
+  "coursework_submission_artifact_sha256": {
+    "COMP5339_A1_Code_and_Database.zip": "57896d3555571299ea08804ea8cf398e20c5a6067e0a0dbc29938d1e308ad3b4",
+    "COMP5339_Assignment1_Report_TUT17_Group07.pdf": "ef6fc20f247cd7720e547cf498b3c1a647fff9e668558bfe76e1ebd4befc3a11",
+    "Generative_AI_Usage_Report_TUT17_Group07.pdf": "963bc8b2f6e7d0c9bf0109c112466c0b87a175c6b8ec452dc80fbdae573e860a"
+  }
+}
