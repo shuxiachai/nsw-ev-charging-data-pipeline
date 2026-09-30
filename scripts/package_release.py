@@ -15,7 +15,7 @@ from ev_pipeline.evidence import project_fingerprint
 from ev_pipeline.pipeline import DB, connect, snapshots, validate
 from scripts.check_reproducibility import table_hashes, file_hashes, schema_hashes, validation_hash
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 ARCHIVE_NAME = f"nsw-ev-charging-data-pipeline-v{VERSION}.zip"
 DIRECTORIES = ("ev_pipeline", "config", "sql", "scripts", "tests", "data/raw",
                "data/processed", "outputs", "docs", "examples", ".github")

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 — 2026-09-30
+
+- Corrected the snapshot preflight test's simulated project root, exposed by GitHub runners using temporary directories outside the repository.
+- Added a relocated-project CLI regression; production preflight behavior and data observations are unchanged.
+- Updated the package version and pinned release descriptor.
+
 ## 0.1.0 — 2026-09-30
 
 - Added MIT licensing for original software, publisher notices and contribution guidance.

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nsw-ev-charging-data-pipeline"
-version = "0.1.0"
+version = "0.1.1"
 description = "Evidence-preserving NSW EV charging data cleaning, spatial integration and enrichment"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"

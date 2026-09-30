@@ -6,6 +6,8 @@
 import hashlib
 import json
 from pathlib import Path
+import subprocess
+import sys
 import zipfile
 
 import pytest
@@ -44,13 +46,33 @@ def test_preflight_reports_every_missing_and_corrupt_companion(tmp_path):
     assert "MISSING second.txt" in issues
 
 
-def test_preflight_only_requires_database_when_requested(tmp_path, monkeypatch):
+def test_preflight_only_requires_database_when_requested(tmp_path, monkeypatch, capsys):
     root, raw, target = raw_fixture(tmp_path)
     target.write_bytes(b"frozen source")
+    monkeypatch.setattr(preflight, "ROOT", root)
     monkeypatch.setattr(preflight, "RAW", raw)
     monkeypatch.setattr(preflight, "DB", root / "data/processed/ev_chargers.duckdb")
     assert preflight.main([]) == 0
+    assert capsys.readouterr().out == "Snapshot preflight passed.\n"
     assert preflight.main(["--require-db"]) == 1
+    assert capsys.readouterr().out == (
+        "Snapshot preflight failed:\nMISSING DATABASE data/processed/ev_chargers.duckdb\n")
+
+
+def test_preflight_missing_database_diagnostic_survives_project_relocation(tmp_path):
+    root, _, target = raw_fixture(tmp_path)
+    target.write_bytes(b"frozen source")
+    script = root / "scripts/preflight.py"
+    script.parent.mkdir()
+    script.write_bytes(Path(preflight.__file__).read_bytes())
+    outside_project = tmp_path / "caller"
+    outside_project.mkdir()
+    assert not outside_project.is_relative_to(root)
+    result = subprocess.run([sys.executable, "-B", str(script), "--require-db"],
+                            cwd=outside_project, capture_output=True, text=True, check=False)
+    assert result.returncode == 1
+    assert result.stdout == "Snapshot preflight failed:\nMISSING DATABASE data/processed/ev_chargers.duckdb\n"
+    assert result.stderr == ""
 
 
 @pytest.mark.parametrize("exists", [False, True])

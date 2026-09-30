@@ -2,7 +2,7 @@
 
 A reproducible data engineering pipeline for electric vehicle charging infrastructure in New South Wales, Australia. It combines source acquisition, cleaning, cross-source matching, SA4 spatial integration and DuckDB storage, retaining evidence behind corrections and enrichment decisions.
 
-This project grew out of **COMP5339 Data Engineering, Assignment 1, Semester 2 2026, at the University of Sydney**, developed by **TUT17-Group07**. Following submission, the repository is being organized as a continuing project. Version 0.1.0 adds canonical augmentation IDs, snapshot tools, automated tests and a reproducible release. Original record/location identities and the frozen source observations remain preserved. The submitted coursework archive is retained separately.
+This project grew out of **COMP5339 Data Engineering, Assignment 1, Semester 2 2026, at the University of Sydney**, developed by **TUT17-Group07**. Following submission, the repository is being organized as a continuing project. Version 0.1.1 includes canonical augmentation IDs, snapshot tools, automated tests and a reproducible release. Original record/location identities and the frozen source observations remain preserved. The submitted coursework archive is retained separately.
 
 [![Tests](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/workflows/tests.yml)
 
@@ -52,7 +52,7 @@ Evidence: [tests](outputs/test_evidence.json), [validation](outputs/validation.j
 
 ### Restore frozen inputs
 
-A Git clone contains code, manifests, small source files and CSV results. Large original PDFs/ZIPs and the generated DuckDB database are delivered in the [v0.1.0 release](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/releases/tag/v0.1.0).
+A Git clone contains code, manifests, small source files and CSV results. Large original PDFs/ZIPs and the generated DuckDB database are delivered in the [v0.1.1 release](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/releases/tag/v0.1.1).
 
 After cloning, `python scripts/restore_snapshot.py` reads the pinned release descriptor, downloads and verifies the archive, and restores only missing raw originals. It checks every body against the checkout's source manifest and preserves tracked code, manifests, CSVs and existing raw files. `python scripts/preflight.py` reports all remaining missing or corrupt inputs together.
 

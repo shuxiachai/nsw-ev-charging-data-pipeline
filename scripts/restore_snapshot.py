@@ -18,7 +18,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 RUNTIME = ROOT / ".runtime"
-DEFAULT_DESCRIPTOR = ROOT / "docs" / "releases" / "v0.1.0.json"
+DEFAULT_DESCRIPTOR = ROOT / "docs" / "releases" / "v0.1.1.json"
 
 
 class RestoreError(ValueError):
