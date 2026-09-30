@@ -1,0 +1,34 @@
+{
+  "version": "0.1.1",
+  "verified_at_utc": "2026-09-30T05:59:24.429404+00:00",
+  "tested_source_commit": "09aab281ea1bee0f565227cf43e8f802db27f30b",
+  "source_fingerprint": "3598a20390a04fc786f2bc834ebd9fc04bb708f4f1305320a8e28b039aee3fb3",
+  "archive_sha256": "9707fe0266f1f5994df6fb5b146f0469569e8f5674bb1dc44c57fb6935d39041",
+  "archive_bytes": 208909400,
+  "archive_members": 2994,
+  "local_full_tests_passed": 1112,
+  "integrity_checks_passed": 47,
+  "fast_ci_cases_per_platform": 190,
+  "fast_ci_platforms": [
+    "Ubuntu",
+    "Windows"
+  ],
+  "github_full_integration_platform": "Ubuntu",
+  "github_workflow_conclusion": "success",
+  "github_workflow_url": "https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/runs/36674876695",
+  "new_user_checkout": {
+    "source": "public GitHub clone",
+    "download": "anonymous public v0.1.1 Release",
+    "missing_raw_files_restored": 18,
+    "separate_python_environment": true,
+    "published_table_signatures_match": true,
+    "published_csv_signatures_match": true,
+    "published_schema_signatures_match": true,
+    "published_validation_signature_matches": true,
+    "published_source_fingerprint_matches": true,
+    "integrity_checks": 47,
+    "table_count": 23,
+    "csv_count": 40
+  },
+  "coursework_submission_artifacts_unchanged": true
+}

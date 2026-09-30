@@ -48,7 +48,7 @@ Evidence: [tests](outputs/test_evidence.json), [validation](outputs/validation.j
 
 ## Run the pipeline
 
-**Requirements:** Python 3.12, the dependencies in `requirements.txt`, and the DuckDB spatial extension. Windows execution has been verified. Initial dependency and extension installation requires internet access.
+**Requirements:** Python 3.12, the dependencies in `requirements.txt`, and the DuckDB spatial extension. Windows and Ubuntu/Linux execution have been verified. Initial dependency and extension installation requires internet access.
 
 ### Restore frozen inputs
 
@@ -74,7 +74,7 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe scripts/verify_project.py
 ```
 
-Run from the folder containing this README. If you already extracted a complete code/database archive, skip the clone, `cd` and `restore_snapshot.py` steps, then work in its project root and run preflight directly. If `py` is unavailable, use a Python 3.12 executable path. On Linux/macOS, use `python3.12 -m venv .venv` and `.venv/bin/python`; those platforms have not been verified for this project.
+Run from the folder containing this README. If you already extracted a complete code/database archive, skip the clone, `cd` and `restore_snapshot.py` steps, then work in its project root and run preflight directly. If `py` is unavailable, use a Python 3.12 executable path. On Linux/macOS, use `python3.12 -m venv .venv` and `.venv/bin/python`; Ubuntu is covered by integration CI; macOS has not been verified.
 
 `all` verifies cached inputs and can download missing sources. Restore the frozen snapshot first: some reviewed originals cannot be reacquired through a generic GET, and current publisher responses may differ. After inputs, dependencies and the extension are installed, `all --offline` rebuilds without downloading data. Editable installation adds the equivalent `nsw-ev-pipeline` command. This release supports execution from an editable checkout or complete extracted archive; a standalone wheel does not bundle the data snapshot.
 
@@ -136,3 +136,7 @@ v0.1.0 replaces legacy positional augmentation hashes with `a_v1_` IDs based on 
 ## Quick example
 
 `python examples/demo.py` runs without the full data snapshot or spatial extension. The synthetic fixture demonstrates duplicate source records, distinct DC location counts, site versus operator scope, and retained connector disagreements.
+
+## Release verification
+
+v0.1.1 passes **1,112 full tests and 47 database checks**, plus **190 fast tests on both Windows and Ubuntu**. [Full GitHub integration CI](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/actions/runs/36674876695) also passes. An independent public clone and fresh Python environment anonymously downloaded the release, restored 18 missing originals, rebuilt the database, and exactly matched the published signatures of 23 tables, 40 CSVs, schema, validation report and source fingerprint. See the [verification record](https://github.com/shuxiachai/nsw-ev-charging-data-pipeline/blob/main/docs/releases/v0.1.1-verification.json).
